@@ -1,0 +1,43 @@
+html {
+  font-family: var(--font-family-base, ui-sans-serif, system-ui, sans-serif);
+  line-height: var(--line-height-base);
+}
+
+body {
+  margin: 0;  
+  padding: 0;  
+  box-sizing: border-box;  
+}
+
+img,
+picture,
+video,
+svg {
+  max-width: 100%;
+  height: auto;
+} 
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

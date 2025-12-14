@@ -1,0 +1,33 @@
+@import './colour-variables.css';
+
+.colour-white {
+  color: var(--colour-white);
+}
+
+.colour-black {
+  color: var(--colour-black);
+}
+
+.colour-neutral {
+  color: var(--colour-neutral);
+}
+
+.bg-primary {
+  background-color: var(--colour-primary);
+}
+
+.bg-secondary {
+  background-color: var(--colour-secondary);
+}
+
+.bg-gray-100 {
+  background-color: var(--colour-gray-100);
+}
+
+.bg-gray-300 {
+  background-color: var(--colour-gray-300);
+}
+
+.bg-gray-500 {
+  background-color: var(--colour-gray-500);
+}

@@ -1,0 +1,42 @@
+:root {
+  /* Primary */
+  --colour-primary: #007bff;
+  --colour-primary-light: #0083E5;
+  --colour-primary-dark: #004085;
+  --colour-primary-hover: #0056b3;
+
+  /* Secondary */
+  --colour-secondary: #883244;
+  --colour-secondary-hover: #993B4E;
+  --colour-secondary-light: #BA455D;
+  --colour-secondary-dark: #5D222F;
+
+  /* Neutral */
+  --colour-neutral: #1F425E;
+
+  /* White */
+  --colour-white: #E4E6E7;
+
+  /* Black */
+  --colour-black: #1A1D20;
+
+  /* Grey */
+  --colour-gray-100: #BDC1C3;
+  --colour-gray-300: #9BA0A3;
+  --colour-gray-500: #595D60;
+
+  /* Alerts */
+  --colour-success: #28a745;
+  --colour-warning: #ffc107;
+  --colour-error: #dc3545;
+  --colour-info: #17a2b8;
+
+
+  /* Breakpoints (for reference, use in media queries) */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
