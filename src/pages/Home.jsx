@@ -5,7 +5,15 @@ export const Home = () => {
     <div className="container">
       <h1>Components</h1>
       <h2>Button</h2>
-      <Button />
+      <Button
+          colour={"primary"}
+          withoutHover
+          paddingSize={"small"}
+          borderType={"squareBlack"}
+          to={"/"}
+        >
+          This is my amazing button
+        </Button>
     </div>
   )
 }

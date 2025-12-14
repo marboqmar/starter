@@ -30,5 +30,9 @@
   --colour-warning: #ffc107;
   --colour-error: #dc3545;
   --colour-info: #17a2b8;
+
+  /* Text */
+  --colour-text-black: var(--colour-black);
+  --colour-text-inverted: var(--colour-white);
 }
 
