@@ -1,46 +1,53 @@
-h1 {
+h1,
+.heading-1 {
   font-size: var(--font-size-4xl);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-sm);
   color: var(--color-black);
 }
 
-h2 {
+h2,
+.heading-2 {
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-sm);
   color: var(--color-black);
 }
 
-h3 {
+h3,
+.heading-3 {
   font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-sm);
   color: var(--color-black);
 }
 
-h4 {
+h4,
+.heading-4 {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-base);
   color: var(--color-black);
 }
 
-h5 {
+h5,
+.heading-5 {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-base);
   color: var(--color-black);
 }
 
-h6 {
+h6,
+.heading-6 {
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-base);
   color: var(--color-black);
 }
 
-p {
+p,
+.body-copy {
   font-size: var(--font-size-base);
   line-height: var(--line-height-lg);
   color: var(--color-black);
