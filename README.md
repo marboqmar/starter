@@ -10,11 +10,13 @@ This is a starter project to use as a foundation for future projects, containing
 - **ESLint** - Code linting
 - **CSS** - Styling (no preprocessors)
 
-## Why CSS?
+## Why CSS rather than SCSS?
 
 The author prefers CSS over SCSS, as nesting is not found easier to read, especially in very large files. Apart from nesting, the author sees no real advantage in using SCSS, since CSS now supports variables (custom properties) and does not require compilation, which is a significant benefit.
 
-While CSS lacks mixins, the author does not consider using multiple classes instead of mixins a major drawback. Another limitation is that CSS variables cannot be used in `@media` queries, which requires writing breakpoints manually. However, the author still considers the fact that CSS does not need to be compiled a major benefit.
+While CSS lacks mixins, the author does not consider using multiple classes instead of mixins a major drawback. 
+
+Another limitation is that CSS variables cannot be used in `@media` queries, which requires writing breakpoints manually. However, the author still considers the fact that CSS does not need to be compiled a major benefit.
 
 ## Getting Started
 
@@ -58,7 +60,7 @@ src/
 
 ## Customisation
 
-The top priority of this project is easy and quick customisation of its components.
+The top priority of this project is to provide components that can be custised quickly and easily.
 
 ### Variables
 
@@ -71,7 +73,6 @@ To adapt the componens of this project to your designs, modify the variables fou
 All variables use CSS custom properties, so you can override them in your own CSS files or modify them directly in these files.
 
 ### Breakpoints
-As previously discussed, CSS variables cannot be used in `@media` queries, so breakpoint values must be written manually.
 
 The breakpoints used for this project are:
 - Mobile-sm: `< 380px`. This is the default.
@@ -94,4 +95,4 @@ Usage in CSS:
 }
 ```
 
-**Note:** To modify these breakpoints, do a global search and replace all instances manually across your CSS files.
+As previously discussed, CSS variables cannot be used in `@media` queries, so breakpoint values must be written manually. Consequently, in order to modify these breakpoints, do a global search and replace all instances manually across your CSS files.
