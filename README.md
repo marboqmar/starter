@@ -72,14 +72,15 @@ To adapt the componens of this project to your designs, modify the variables fou
 
 All variables use CSS custom properties, so you can override them in your own CSS files or modify them directly in these files.
 
+Also, modify the container and grid classes as needed. These can be found in `src/css/global/layout.css`.
+
 ### Breakpoints
 
 The breakpoints used for this project are:
-- Mobile-sm: `< 380px`. This is the default.
-- Mobile: `>= 380px`
-- Tablet: `>= 768px`
-- Desktop: `>= 1024px`
-- Desktop-lg: `>= 1280px`
+- Mobile: `< 768px` This is the default.
+- Tablet: `>= 768px`.
+- Desktop: `>= 1024px`.
+- Desktop-lg: `>= 1280px`.
 
 Usage in CSS:
 

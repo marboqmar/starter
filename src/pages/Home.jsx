@@ -1,5 +1,11 @@
+import { Button } from "../components/atoms/Button/Button"
+
 export const Home = () => {
   return (
-    <h2 className="home">This is my home content</h2>
+    <div className="container">
+      <h1>Components</h1>
+      <h2>Button</h2>
+      <Button />
+    </div>
   )
 }

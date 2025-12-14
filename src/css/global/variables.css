@@ -5,8 +5,7 @@
  * Note: CSS variables cannot be used in @media queries, so these values
  * must be written directly in media queries.
  *
- * Mobile-sm (default): < 380px
- * Mobile:              >= 380px
+ * Mobile (default):    < 768px
  * Tablet:              >= 768px
  * Desktop:             >= 1024px
  * Desktop-lg:          >= 1280px
@@ -55,4 +54,7 @@
   --radius-xl: 0.75rem;      /* 12px */
   --radius-2xl: 1rem;        /* 16px */
   --radius-full: 9999px;
+
+  /* Grid */
+  --grid-columns: 12;        /* Default number of columns for grid system */
 }

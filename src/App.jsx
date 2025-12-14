@@ -8,7 +8,6 @@ export const App = () => {
     <>
       <Header />
       <div className="main">
-        <h1>Test</h1>
         <Outlet />
       </div>
       <Footer />
