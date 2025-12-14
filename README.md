@@ -42,12 +42,12 @@ src/
 │   └── organisms/      
 ├── css/
 │   ├── global/         # Global styles
-│   │   ├── colour-variables.css    # Color tokens
-│   │   ├── colours.css             # Color utility classes
-│   │   ├── site.css                # Base reset and site styles
+│   │   ├── colour-variables.css     # Color tokens
+│   │   ├── colours.css              # Color utility classes
+│   │   ├── site.css                 # Base reset and site styles
 │   │   ├── typography-variables.css # Typography tokens
-│   │   ├── typography.css          # Typography styles
-│   │   └── variables.css           # Spacing, border radius
+│   │   ├── typography.css           # Typography styles
+│   │   └── variables.css            # Spacing, border radius
 │   ├── pages/          # Page-specific styles
 │   └── style.css       # Main stylesheet entry point
 ├── pages/              # Page components
