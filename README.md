@@ -24,7 +24,7 @@ To set up this project:
 
 1. Clone this repository from GitHub.
 2. Access the project's root folder and run `pnpm install`.
-3. Every time you access the project, run from the project's root folder `pnpm run dev` to start the development server.
+3. Every time you want to work on the project, access the project and run from the project's root folder `pnpm run dev` to start the development server.
 
 ### Available Scripts
 
