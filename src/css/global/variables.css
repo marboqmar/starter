@@ -1,5 +1,23 @@
+/*
+ * BREAKPOINTS
+ * ===========
+ * These are the breakpoints used throughout the project.
+ * Note: CSS variables cannot be used in @media queries, so these values
+ * must be written directly in media queries.
+ *
+ * Mobile-sm (default): < 380px
+ * Mobile:              >= 380px
+ * Tablet:              >= 768px
+ * Desktop:             >= 1024px
+ * Desktop-lg:          >= 1280px
+ *
+ * Usage example:
+ *   @media (min-width: 768px) { ... }
+ *   @media (min-width: 1024px) { ... }
+ */
+
 :root {
-  /* Spacing */
+  /* Spacing - Fixed values */
   --spacing-0-25: 0.25rem;   /* 4px */
   --spacing-0-5: 0.5rem;     /* 8px */
   --spacing-1: 1rem;         /* 16px */
@@ -10,11 +28,31 @@
   --spacing-4: 4rem;         /* 64px */
   --spacing-5: 5rem;         /* 80px */
 
+  /* Spacing - Responsive */
+  /* Mobile */
+  --spacing-sm: 1rem;        /* 16px */
+  --spacing-md: 1.5rem;      /* 24px */
+  --spacing-lg: 2rem;        /* 32px */
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    --spacing-sm: 1.5rem;    /* 24px */
+    --spacing-md: 2rem;      /* 32px */
+    --spacing-lg: 2.5rem;    /* 40px */
+  }
+  
+  /* Desktop */
+  @media (min-width: 1024px) {
+    --spacing-sm: 2rem;      /* 32px */
+    --spacing-md: 2.5rem;    /* 40px */
+    --spacing-lg: 3rem;      /* 48px */
+  }
+
   /* Border Radius */
-  --radius-sm: 0.25rem;    /* 4px */
-  --radius-md: 0.375rem;   /* 6px */
-  --radius-lg: 0.5rem;     /* 8px */
-  --radius-xl: 0.75rem;    /* 12px */
-  --radius-2xl: 1rem;      /* 16px */
+  --radius-sm: 0.25rem;      /* 4px */
+  --radius-md: 0.375rem;     /* 6px */
+  --radius-lg: 0.5rem;       /* 8px */
+  --radius-xl: 0.75rem;      /* 12px */
+  --radius-2xl: 1rem;        /* 16px */
   --radius-full: 9999px;
 }

@@ -32,11 +32,14 @@
   --colour-info: #17a2b8;
 
 
-  /* Breakpoints (for reference, use in media queries) */
-  --breakpoint-sm: 640px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 1024px;
-  --breakpoint-xl: 1280px;
-  --breakpoint-2xl: 1536px;
+  /* Breakpoints (for reference only - cannot be used in @media queries) */
+  /* Mobile: < 768px (default) */
+  /* Tablet: >= 768px */
+  /* Desktop: >= 1024px */
+  --breakpoint-sm: 640px;   /* Not currently used */
+  --breakpoint-md: 768px;   /* Tablet breakpoint */
+  --breakpoint-lg: 1024px;  /* Desktop breakpoint */
+  --breakpoint-xl: 1280px;  /* Not currently used */
+  --breakpoint-2xl: 1536px; /* Not currently used */
 }
 
