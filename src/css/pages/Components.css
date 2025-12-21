@@ -3,10 +3,6 @@
   flex-direction: column;
 }
 
-.button-examples h3 {
-  max-width: 16rem;
-}
-
 .button-group {
   display: flex;
   flex-direction: column;
@@ -22,5 +18,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .button-examples {
+    text-align: center;
   }
 }
