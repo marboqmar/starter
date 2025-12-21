@@ -1,51 +1,75 @@
 .button {
   cursor: pointer;
-  border: 1px solid #0083E5;
-  border-radius: 6px;
-  padding: 14px 48px;
+  border: none;
 }
 
-.button--colour-primary {
+/* Primary */
+.button--primary {
   background-color: var(--colour-primary);
   color: var(--colour-text-inverted);
 }
 
-.button--colour-none {
-  background: none;
+.button--primary:hover {
+  background-color: var(--colour-primary-hover);
 }
 
-.button--paddingSize-none {
-  padding: 0;
+/* Secondary */
+.button--secondary {
+  background-color: var(--colour-secondary);
+  color: var(--colour-text-inverted);
 }
 
-.button--paddingSize-small {
-  padding: 12px;
+.button--secondary:hover {
+  background-color: var(--colour-secondary-hover);
 }
 
-.button--border-squareBlack {
-  border: none;
-  box-shadow: 0 0 0 1px black, 0 0 0 2px white;
+/* Padding */
+/* 8px 16px on mobile, 12px 24px on tablet */
+.button__padding-size--small {
+  padding: var(--spacing-0-5) var(--spacing-1);
+}
+
+/* 12px 24px on mobile, 16px 32px on tablet */
+.button__padding-size--large {
+  padding: var(--spacing-0-75) var(--spacing-1-5);
+}
+
+/* Border radius */
+.button__border-radius--none {
   border-radius: 0;
 }
 
-.button--border-none {
-  border: none;
+.button__border-radius--small {
+  border-radius: var(--spacing-0-375);
 }
 
-.button:hover {
-  background-color: #0083E5;
+.button__border-radius--large {
+  border-radius: var(--spacing-0-75);
 }
 
-.button--withoutHover:hover {
-  background-color: transparent;
+/* Link */
+.button--link {
+  color: var(--colour-text-black);
 }
 
+/* Disabled */
 .button:disabled {
-  opacity: 0.6;
   cursor: not-allowed;
-  background-color: #8A8F93;
-  border: 1px solid #595D60;
+  color: var(--colour-text-black);
+  background-color: var(--colour-gray-100);
+  border: 1px solid var(--colour-gray-300);
 }
+
 .button:disabled:hover {
-  background-color: #8A8F93;
+  background-color: var(--colour-gray-300);
+}
+
+@media (min-width: 768px) {
+  .button__padding-size--small {
+    padding: var(--spacing-0-75) var(--spacing-1-5);
+  }
+
+  .button__padding-size--large {
+    padding: var(--spacing-1) var(--spacing-2);
+  }  
 }

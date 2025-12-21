@@ -18,7 +18,9 @@
 :root {
   /* Spacing - Fixed values */
   --spacing-0-25: 0.25rem;   /* 4px */
+  --spacing-0-375: 0.375rem; /* 6px */
   --spacing-0-5: 0.5rem;     /* 8px */
+  --spacing-0-75: 0.75rem;   /* 12px */
   --spacing-1: 1rem;         /* 16px */
   --spacing-1-5: 1.5rem;     /* 24px */
   --spacing-2: 2rem;         /* 32px */
