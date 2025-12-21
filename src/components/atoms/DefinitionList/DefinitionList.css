@@ -1,0 +1,16 @@
+.definition-list__group {
+  display: flex;
+  margin-bottom: var(--spacing-sm);
+}
+
+.definition-list__group:last-child {
+  margin-bottom: 0;
+}
+
+.definition-list__term::after {
+  content: ":";
+}
+
+.definition-list__description {
+  margin-left: var(--spacing-0-25);
+}

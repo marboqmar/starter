@@ -1,5 +1,12 @@
 import { Button } from "../components/atoms/Button/Button"
 import { Link } from "react-router-dom";
+import { DefinitionList } from "../components/atoms/DefinitionList/DefinitionList";
+
+const descriptions = [
+  { id: 1, term: 'Colour', description: 'Blue' },
+  { id: 2, term: 'Material', description: 'Cotton' },
+  { id: 3, term: 'Size', description: 'Small' }
+]
 
 export const Components = () => {
   return (
@@ -80,6 +87,10 @@ export const Components = () => {
         </Button>
         {" "} consectetur adipiscing elit.
       </p>
+
+      {/* Definition list */}
+      <h2>Definition list</h2>
+      <DefinitionList items={descriptions} />
     </div>
   )
 }

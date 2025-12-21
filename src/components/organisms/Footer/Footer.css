@@ -1,3 +1,3 @@
 .footer {
-  color: green;
+  color: var(--colour-text-black);
 }

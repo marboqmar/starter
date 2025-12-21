@@ -2,6 +2,6 @@ import "./Header.css";
 
 export const Header = () => {
   return (
-    <h2 className="header">This is my header</h2>
+    <h2 className="header">Header</h2>
   )
 }
