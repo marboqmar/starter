@@ -1,3 +1,26 @@
-.home {
-  color: purple;
+.button-examples {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-examples h3 {
+  max-width: 16rem;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.button-group .button {
+  max-width: 16rem;
+}
+
+@media (min-width: 768px) {
+  .button-components {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

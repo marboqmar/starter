@@ -7,57 +7,70 @@ export const Components = () => {
       <h1>Components</h1>
       {/* Buttons */}
       <h2>Buttons</h2>
+      <div className="button-components">
+        {/* Buttons - Colours / States */}
+        <div className="button-examples">
+          <h3>Colours / States</h3>
+          <div className="button-group">
+            <Button
+            >
+              Primary
+            </Button>
+            <Button
+              colour={"secondary"}
+            >
+              Secondary
+            </Button>
+            <Button
+              disabled
+            >
+              Disabled
+            </Button>
+          </div>
+        </div>
 
-      {/* Buttons - Colours / States */}
-      <h3>Colours / States</h3>
-      <Button
-      >
-        Primary
-      </Button>
-      <Button
-        colour={"secondary"}
-      >
-        Secondary
-      </Button>
-      <Button
-        disabled
-      >
-        Disabled
-      </Button>
+        {/* Buttons - Padding */}
+        <div className="button-examples">
+          <h3>Padding</h3>
+          <div className="button-group">
+            <Button
+            >
+              Small padding
+            </Button>
+            <Button
+              paddingSize={"large"}
+            >
+              Large padding
+            </Button>
+          </div>
+        </div>
 
-      {/* Buttons - Padding */}
-      <h3>Padding</h3>
-      <Button
-      >
-        Small padding
-      </Button>
-      <Button
-        paddingSize={"large"}
-      >
-        Large padding
-      </Button>
-
-      {/* Buttons - Border radius */}
-      <h3>Border radius</h3>
-      <Button
-        borderRadius={"none"}
-      >
-        No border radius
-      </Button>
-      <Button
-        borderRadius={"small"}
-      >
-        Small border radius
-      </Button>
-      <Button
-        borderRadius={"large"}
-      >
-        Large border radius
-      </Button>
+        {/* Buttons - Border radius */}
+        <div className="button-examples">
+          <h3>Border radius</h3>
+          <div className="button-group">
+            <Button
+              borderRadius={"none"}
+            >
+              No border radius
+            </Button>
+            <Button
+              borderRadius={"small"}
+            >
+              Small border radius
+            </Button>
+            <Button
+              borderRadius={"large"}
+            >
+              Large border radius
+            </Button>
+          </div>
+        </div>
+      </div>
 
       {/* Buttons - Link */}
       <h3>Link</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. {" "}
+      <p>Lorem ipsum dolor sit amet, {" "}
         <Button
           component={Link}
           isLink
@@ -65,7 +78,7 @@ export const Components = () => {
         >
           This is a link.
         </Button>
-        {" "} Fusce eu risus vitae
+        {" "} consectetur adipiscing elit.
       </p>
     </div>
   )
