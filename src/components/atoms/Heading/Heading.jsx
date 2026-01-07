@@ -10,7 +10,7 @@ import { classNames } from "../../../utils/helpers";
  * children: the content of the heading (ReactNode)
  * className: additional CSS classes to apply (string)
  * 
- * Example:
+ * Examples:
  * <Heading level={1}>Main title</Heading>
  * <Heading>This is a heading level 2</Heading>
  */

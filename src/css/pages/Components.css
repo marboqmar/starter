@@ -29,6 +29,12 @@
   border-radius: var(--radius-sm);
 }
 
+.icon.large-coloured {
+  width: var(--spacing-xl);
+  height: var(--spacing-xl);
+  fill: var(--colour-success);
+}
+
 @media (min-width: 768px) {
   .button-components {
     display: flex;

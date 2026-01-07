@@ -2,6 +2,7 @@ import { Button } from "../components/atoms/Button/Button"
 import { Link } from "react-router-dom";
 import { DefinitionList } from "../components/atoms/DefinitionList/DefinitionList";
 import { Heading } from "../components/atoms/Heading/Heading";
+import { Icon } from "../components/atoms/Icon/Icon"
 
 const descriptions = [
   { id: 1, term: 'Colour', description: 'blue' },
@@ -111,7 +112,25 @@ export const Components = () => {
         </div>
       </div>
 
-      <Heading level={7}>Testing testing</Heading>
+      {/* Icon */}
+      <div className="component-section">
+        <Heading>Icon</Heading>
+        <Heading level={3}>Decorative icon</Heading>
+        <p>The following icon contains the HTML attributes aria-hidden="true", tabindex="-1", and focusable="false".</p>
+        <Icon isDecorative>
+          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+        </Icon>
+        <Heading level={3}>Non decorative icon</Heading>
+        <p>The following icon contains the HTML attributes role="img" and aria-label.</p>
+        <Icon ariaLabel={"check mark"}>
+          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+        </Icon>
+        <Heading level={3}>Different colours and sizes</Heading>
+        <p>The previous icons are inheritting the colour of the text, but the colour and size can be modified using CSS.</p>
+        <Icon isDecorative className="large-coloured">
+          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+        </Icon>
+      </div>
     </div>
   )
 }

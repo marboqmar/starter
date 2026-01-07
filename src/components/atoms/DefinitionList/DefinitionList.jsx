@@ -3,7 +3,7 @@ import { classNames } from "../../../utils/helpers";
 
 /**
  * Definition list component
- * Renders a semantic definition list (dl) with terms and descriptions.
+ * Renders a semantic definition list with terms and descriptions.
  * 
  * Component props:
  * items: array of objects, each containing:
