@@ -6,7 +6,7 @@ import { classNames } from "../../../utils/helpers";
  * Renders a semantic heading (h1-h6).
  * 
  * Component props:
- * level: the heading level (number). The default is 2
+ * level: the heading level (number). Minimum 1 and maximum 6, defaults to 2
  * children: the content of the heading (ReactNode)
  * className: additional CSS classes to apply (string)
  * 
@@ -16,8 +16,10 @@ import { classNames } from "../../../utils/helpers";
  */
 
 export const Heading = ({ level, children, className = "" }) => {
-  const headingLevel =  level ? level : 2; 
+  const convertLevelToNumber = Number(level);
+  const headingLevel = (convertLevelToNumber >= 1 && convertLevelToNumber <= 6) ? convertLevelToNumber : 2;
   const HeadingComponent = `h${headingLevel}`;
+
   return (
     <HeadingComponent className={classNames(`heading-${headingLevel}`, className)}>
       {children}

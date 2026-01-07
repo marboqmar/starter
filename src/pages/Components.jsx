@@ -98,7 +98,6 @@ export const Components = () => {
         <DefinitionList items={descriptions} />
       </div>
 
-
       {/* Headings */}
       <div className="component-section">
         <Heading>Headings</Heading>
@@ -111,6 +110,8 @@ export const Components = () => {
           <Heading level={6}>The quick brown fox jumps over the lazy dog</Heading>
         </div>
       </div>
+
+      <Heading level={7}>Testing testing</Heading>
     </div>
   )
 }
