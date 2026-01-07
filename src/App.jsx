@@ -7,9 +7,9 @@ export const App = () => {
   return (
     <>
       <Header />
-      <div className="main">
+      <main role="main" className="main">
         <Outlet />
-      </div>
+      </main>
       <Footer />
     </>
   )

@@ -1,5 +1,5 @@
 html {
-  font-family: var(--font-family-base, ui-sans-serif, system-ui, sans-serif);
+  font-family: var(--font-family-base);
   line-height: var(--line-height-base);
 }
 

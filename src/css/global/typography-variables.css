@@ -1,11 +1,9 @@
 :root {
   /* Font family */
-  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  --font-family-alt: 'Courier New', Courier, monospace;
+  --font-family-base: "Familjen Grotesk", sans-serif;
+  --font-family-heading: "Bitter", serif;
 
-  /* Font size - Responsive */
-  /* Mobile */
+  /* Font size - Responsive (mobile defaults) */
   --font-size-xs: 0.75rem;       /* 12px */
   --font-size-sm: 0.875rem;      /* 14px */
   --font-size-base: 1rem;        /* 16px */
@@ -14,17 +12,6 @@
   --font-size-2xl: 1.5rem;       /* 24px */
   --font-size-3xl: 1.875rem;     /* 30px */
   --font-size-4xl: 2.25rem;      /* 36px */
-  /* Desktop */
-  @media (min-width: 1024px) {
-    --font-size-xs: 0.875rem;    /* 14px */
-    --font-size-sm: 1rem;        /* 16px */
-    --font-size-base: 1.125rem;  /* 18px */
-    --font-size-lg: 1.25rem;     /* 20px */
-    --font-size-xl: 1.5rem;      /* 24px */
-    --font-size-2xl: 1.875rem;   /* 30px */
-    --font-size-3xl: 2.25rem;    /* 36px */
-    --font-size-4xl: 2.625rem;   /* 42px */
-  }
 
   /* Font weight */
   --font-weight-light: 300;
@@ -34,7 +21,22 @@
   --font-weight-bold: 700;
 
   /* Line height */
+  --line-height-xs: 1;
   --line-height-sm: 1.25;
   --line-height-base: 1.5;
   --line-height-lg: 1.75;
+}
+
+/* Font size - Desktop overrides*/
+@media (min-width: 1024px) {
+  :root {
+    --font-size-xs: 0.875rem;    /* 14px */
+    --font-size-sm: 1rem;        /* 16px */
+    --font-size-base: 1.125rem;  /* 18px */
+    --font-size-lg: 1.25rem;     /* 20px */
+    --font-size-xl: 1.5rem;      /* 24px */
+    --font-size-2xl: 1.875rem;   /* 30px */
+    --font-size-3xl: 2.25rem;    /* 36px */
+    --font-size-4xl: 2.625rem;   /* 42px */
+  }
 }

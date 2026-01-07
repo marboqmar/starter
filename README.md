@@ -74,6 +74,9 @@ All variables use CSS custom properties, so you can override them in your own CS
 
 Also, modify the container and grid classes as needed. These can be found in `src/css/global/layout.css`.
 
+### Typography
+To modify the typography, update the font families in `src/css/global/typography-variables.css`, and then adjust the font link in `index.html`.
+
 ### Breakpoints
 
 The breakpoints used for this project are:

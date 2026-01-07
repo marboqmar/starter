@@ -14,13 +14,14 @@ import { classNames } from "../../../utils/helpers";
  * 
  * Example:
  * const descriptions = [
- *   { id: 1, term: 'Colour', description: 'Blue' },
- *   { id: 2, term: 'Material', description: 'Cotton' },
- *   { id: 3, term: 'Size', description: 'Small' }
+ *   { id: 1, term: 'Colour', description: 'blue' },
+ *   { id: 2, term: 'Material', description: 'cotton' },
+ *   { id: 3, term: 'Size', description: 'small' }
  * ]
  * 
  * <DefinitionList items={descriptions} />
  */
+
 export const DefinitionList = ({ items = [], className = '' }) => {
   if (!items || items.length === 0) {
     return null;

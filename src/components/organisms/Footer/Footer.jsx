@@ -2,6 +2,10 @@ import "./Footer.css";
 
 export const Footer = () => {
   return (
-    <h2 className="footer">Footer</h2>
+    <footer role="contentinfo" className="footer">
+    <div className="container">
+      <h2>Footer</h2>
+    </div>
+  </footer>
   )
 }

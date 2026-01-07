@@ -29,27 +29,13 @@
   --spacing-4: 4rem;         /* 64px */
   --spacing-5: 5rem;         /* 80px */
 
-  /* Spacing - Responsive */
-  /* Mobile */
+  /* Spacing - Responsive defaults (mobile) */
   --spacing-sm: 1rem;        /* 16px */
   --spacing-md: 1.5rem;      /* 24px */
   --spacing-lg: 2rem;        /* 32px */
+  --spacing-xl: 3rem;        /* 48px */
 
-  /* Tablet */
-  @media (min-width: 768px) {
-    --spacing-sm: 1.5rem;    /* 24px */
-    --spacing-md: 2rem;      /* 32px */
-    --spacing-lg: 2.5rem;    /* 40px */
-  }
-  
-  /* Desktop */
-  @media (min-width: 1024px) {
-    --spacing-sm: 2rem;      /* 32px */
-    --spacing-md: 2.5rem;    /* 40px */
-    --spacing-lg: 3rem;      /* 48px */
-  }
-
-  /* Border Radius */
+  /* Border radius */
   --radius-sm: 0.25rem;      /* 4px */
   --radius-md: 0.375rem;     /* 6px */
   --radius-lg: 0.5rem;       /* 8px */
@@ -59,4 +45,24 @@
 
   /* Grid */
   --grid-columns: 12;        /* Default number of columns for grid system */
+}
+
+/* Spacing - Tablet overrides */
+@media (min-width: 768px) {
+  :root {
+    --spacing-sm: 1.5rem;    /* 24px */
+    --spacing-md: 2rem;      /* 32px */
+    --spacing-lg: 2.5rem;    /* 40px */
+    --spacing-xl: 4rem;      /* 64px */
+  }
+}
+
+/* Spacing - Desktop overrides */
+@media (min-width: 1024px) {
+  :root {
+    --spacing-sm: 2rem;      /* 32px */
+    --spacing-md: 2.5rem;    /* 40px */
+    --spacing-lg: 3rem;      /* 48px */
+    --spacing-xl: 5rem;      /* 80px */
+  }
 }

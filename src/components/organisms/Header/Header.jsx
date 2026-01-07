@@ -2,6 +2,10 @@ import "./Header.css";
 
 export const Header = () => {
   return (
-    <h2 className="header">Header</h2>
+    <header role="banner" className="header">
+      <div className="container">
+        <h2>Header</h2>
+      </div>
+    </header>
   )
 }

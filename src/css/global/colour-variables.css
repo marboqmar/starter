@@ -1,9 +1,9 @@
 :root {
   /* Primary */
-  --colour-primary: #007bff;
+  --colour-primary: #0055af;
+  --colour-primary-hover: #00458F;
   --colour-primary-light: #0083E5;
-  --colour-primary-dark: #004085;
-  --colour-primary-hover: #0056b3;
+  --colour-primary-dark: #013976;
 
   /* Secondary */
   --colour-secondary: #883244;
