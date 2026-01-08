@@ -30,6 +30,27 @@ ol {
   list-style: none;
 }
 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p,
+blockquote,
+dd, 
+dl {
+  margin: 0;
+}
+
+code {
+  font-size: var(--font-size-sm);
+  background-color: var(--colour-gray-50);
+  border-radius: var(--radius-sm);
+  padding-right: var(--spacing-0-25);
+  padding-left: var(--spacing-0-25);
+}
+
 /* Remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
   *,

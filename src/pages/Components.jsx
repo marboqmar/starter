@@ -12,16 +12,16 @@ const descriptions = [
 
 export const Components = () => {
   return (
-    <div className="container">
-      <Heading level={1}>Components</Heading>
+    <div className="components container">
+      <Heading level={1} className="margin-bottom-md">Components</Heading>
       {/* Buttons */}
       <div className="component-section">
         <Heading>Buttons</Heading>
-        <div className="button-components">
+        <div className="button-components stack gap-md">
           {/* Buttons - Colours / States */}
-          <div className="button-examples">
+          <div className="button-examples stack gap-sm">
             <Heading level={3}>Colours / States</Heading>
-            <div className="button-group">
+            <div className="button-group stack gap-sm">
               <Button
               >
                 Primary
@@ -40,9 +40,9 @@ export const Components = () => {
           </div>
 
           {/* Buttons - Padding */}
-          <div className="button-examples">
+          <div className="button-examples stack gap-sm">
             <Heading level={3}>Padding</Heading>
-            <div className="button-group">
+            <div className="button-group stack gap-sm">
               <Button
               >
                 Small padding
@@ -56,9 +56,9 @@ export const Components = () => {
           </div>
 
           {/* Buttons - Border radius */}
-          <div className="button-examples">
+          <div className="button-examples stack gap-sm">
             <Heading level={3}>Border radius</Heading>
-            <div className="button-group">
+            <div className="button-group stack gap-sm">
               <Button
                 borderRadius={"none"}
               >
@@ -77,19 +77,20 @@ export const Components = () => {
             </div>
           </div>
         </div>
-
         {/* Buttons - Link */}
-        <Heading level={3}>Link</Heading>
-        <p>Lorem ipsum dolor sit amet, {" "}
-          <Button
-            component={Link}
-            isLink
-            to={"/"}
-          >
-            This is a link.
-          </Button>
-          {" "} consectetur adipiscing elit.
-        </p>
+        <div className="stack gap-sm margin-top-md">
+          <Heading level={3}>Link</Heading>
+          <p>Lorem ipsum dolor sit amet, {" "}
+            <Button
+              component={Link}
+              isLink
+              to={"/"}
+            >
+              This is a link.
+            </Button>
+            {" "} consectetur adipiscing elit.
+          </p>
+        </div>
       </div>
 
 
@@ -102,7 +103,7 @@ export const Components = () => {
       {/* Headings */}
       <div className="component-section">
         <Heading>Headings</Heading>
-        <div className="heading-examples">
+        <div className="heading-examples stack gap-sm">
           <Heading level={1}>The quick brown fox jumps over the lazy dog</Heading>
           <Heading>The quick brown fox jumps over the lazy dog</Heading>
           <Heading level={3}>The quick brown fox jumps over the lazy dog</Heading>
@@ -115,21 +116,40 @@ export const Components = () => {
       {/* Icon */}
       <div className="component-section">
         <Heading>Icon</Heading>
-        <Heading level={3}>Decorative icon</Heading>
-        <p>The following icon contains the HTML attributes aria-hidden="true", tabindex="-1", and focusable="false".</p>
-        <Icon isDecorative>
-          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-        </Icon>
-        <Heading level={3}>Non decorative icon</Heading>
-        <p>The following icon contains the HTML attributes role="img" and aria-label.</p>
-        <Icon ariaLabel={"check mark"}>
-          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-        </Icon>
-        <Heading level={3}>Different colours and sizes</Heading>
-        <p>The previous icons are inheritting the colour of the text, but the colour and size can be modified using CSS.</p>
-        <Icon isDecorative className="large-coloured">
-          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-        </Icon>
+        <div className="icon-example stack gap-sm">
+          <Heading level={3}>Decorative icon</Heading>
+          <p>
+            The following icon contains the HTML attributes{" "}
+            <code>aria-hidden="true"</code>,{" "}
+            <code>tabindex="-1"</code>, and{" "}
+            <code>focusable="false"</code>:
+          </p>
+          <Icon isDecorative>
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+          </Icon>
+        </div>
+        <div className="icon-example stack gap-sm">
+          <Heading level={3}>Non decorative icon</Heading>
+          <p>
+            The following icon contains the HTML attributes{" "}
+            <code>role="img"</code> and{" "}
+            <code>aria-label</code>:
+          </p>
+          <Icon ariaLabel={"check mark"}>
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+          </Icon>
+        </div>
+        <div className="icon-example stack gap-sm">
+          <Heading level={3}>Different colours and sizes</Heading>
+          <p>
+            The previous icons, by default, are inheritting the colour of the text and have size of 
+            1.5rem by 1.5rem. But, the colour and size of the icon component can be modified using 
+            CSS, as demonstrated in the following icon:
+          </p>
+          <Icon isDecorative className="large-coloured">
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+          </Icon>
+        </div>
       </div>
     </div>
   )

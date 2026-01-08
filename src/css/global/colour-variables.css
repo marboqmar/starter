@@ -15,12 +15,13 @@
   --colour-neutral: #1F425E;
 
   /* White */
-  --colour-white: #E4E6E7;
+  --colour-white: #F7F7F7;
 
   /* Black */
   --colour-black: #1A1D20;
 
   /* Grey */
+  --colour-gray-50: #E4E6E7;
   --colour-gray-100: #BDC1C3;
   --colour-gray-300: #9BA0A3;
   --colour-gray-500: #595D60;
