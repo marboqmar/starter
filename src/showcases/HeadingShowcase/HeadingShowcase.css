@@ -1,0 +1,5 @@
+.heading-examples {
+  background-color: var(--colour-gray-50);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+}

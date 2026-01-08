@@ -3,15 +3,18 @@ import { classNames } from "../../../utils/helpers";
 
 /**
  * Icon component
- * Renders an SVG.
  * 
  * Component props:
- * viewBox: position and dimension of the icon. Defaults to "0 0 24 24"
- * isDecorative: adds aria-hidden true and tabindex -1 if true, and role img and aria-label if false (boolean)
- * ariaLabel: icon's accessible name (string). It is only added if isDecorative is false
- * rest: additional props to pass to the underlying component (object)
- * 
- * Example:
+ * @param {string} [className] - Additional CSS classes.
+ * @param {string} [viewBox="0 0 24 24"] - Position and dimension of the icon.
+ * @param {boolean} [isDecorative=false] - 
+ * false (default): adds the attributes role img and aria-label.
+ * true: adds the attributes aria-hidden true and tabindex -1.
+ * @param {string} [ariaLabel] - Required if isDecorative is false. Provides the accessible name.
+ * @param {ReactNode} [children] - Icon content.
+ * @param {object} [rest] - Supports all standard HTML <svg> attributes.
+ *
+ * @example
  * <Icon isDecorative>
  *   <path d="M9..." />
  * </Icon>

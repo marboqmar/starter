@@ -1,0 +1,9 @@
+.icon-example {
+  margin-bottom: var(--spacing-md);
+}
+
+.icon.large-coloured {
+  width: var(--spacing-xl);
+  height: var(--spacing-xl);
+  fill: var(--colour-success);
+}
