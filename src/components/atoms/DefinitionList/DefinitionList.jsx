@@ -3,32 +3,31 @@ import { classNames } from "../../../utils/helpers";
 
 /**
  * Definition list component
- * Renders a semantic definition list with terms and descriptions.
  * 
  * Component props:
- * items: array of objects, each containing:
- *   - id: unique identifier for React key (string or number)
- *   - term: the term to be described (string)
- *   - description: the description of the term (string)
- * className: additional CSS classes to apply (string)
- * 
- * Example:
- * const descriptions = [
+ * @param {string} [className] - Additional CSS classes.
+ * @param {Object[]} items - Content of the definition list.
+ * @param {string|number} items[].id - Unique identifier for React key.
+ * @param {string} items[].term - The term to be described (dt).
+ * @param {string} items[].description - The description of the term (dd).
+ * @param {object} [rest] - Additional props passed.
+ *
+ * @example
+ * const descriptionGroup = [
  *   { id: 1, term: 'Colour', description: 'blue' },
  *   { id: 2, term: 'Material', description: 'cotton' },
- *   { id: 3, term: 'Size', description: 'small' }
  * ]
  * 
- * <DefinitionList items={descriptions} />
+ * <DefinitionList items={descriptionGroup} />
  */
 
-export const DefinitionList = ({ items = [], className = '' }) => {
+export const DefinitionList = ({ items = [], className = '', ...rest }) => {
   if (!items || items.length === 0) {
     return null;
   }
 
   return (
-    <dl className={classNames("definition-list", className)}>
+    <dl className={classNames("definition-list", className)} {...rest}>
       {items.map((item) => (
         <div key={item.id} className="definition-list__group">
           <dt className="definition-list__term">{item.term}</dt>

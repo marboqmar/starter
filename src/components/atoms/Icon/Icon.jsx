@@ -12,7 +12,7 @@ import { classNames } from "../../../utils/helpers";
  * true: adds the attributes aria-hidden true and tabindex -1.
  * @param {string} [ariaLabel] - Required if isDecorative is false. Provides the accessible name.
  * @param {ReactNode} [children] - Icon content.
- * @param {object} [rest] - Supports all standard HTML <svg> attributes.
+ * @param {object} [rest] - Additional props passed.
  *
  * @example
  * <Icon isDecorative>

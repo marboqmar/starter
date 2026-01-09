@@ -2,51 +2,29 @@ import "./Button.css";
 import { classNames } from "../../../utils/helpers";
 
 /**
- * Button component 
- * Customizable button that can render as a button or link.
- * 
- * Defaults are automatically applied for buttons (not links):
- * - colour: "primary"
- * - paddingSize: "small"
- * - borderRadius: "small"
+ * Button component that can render as a button or link
  * 
  * Component props:
- * className: additional CSS classes to apply (string)
- * colour: colour variant (string). Options: 
- *  - "primary" (default for buttons)
- *  - "secondary"
- * paddingSize: padding size variant (string). Options: 
- *  - "small" (default for buttons)
- *  - "large"
- * borderRadius: border radius variant (string). Options: 
- *  - "small" (default for buttons)
- *  - "large"
- * component: HTML element or React component to render (string). Options:
- *  - "button" (default)
- *  - "Link"
- * isLink: adds "button--link" class (boolean)
- * type: button type (string). Only applies to button elements. Options: 
- *  - "button" (default for buttons)
- *  - "submit"
- *  - "reset"
- * to: route path for Link component (string)
- * role: ARIA role attribute (string)
- * disabled: whether the button is disabled (boolean)
- * children - Button content (ReactNode)
- * rest: additional props to pass to the underlying component (object)
+ * @param {string} [className] - Additional CSS classes.
+ * @param {'primary' | 'secondary'} [colour] - Button styling. Defaults to 'primary' for <button>.
+ * @param {'small' | 'large'} [paddingSize] - Padding variant. Defaults to 'small' for <button>.
+ * @param {'small' | 'large'} [borderRadius] - Border radius. Defaults to 'small' for <button>.
+ * @param {ElementType} [component="button"] - The element to render (e.g., 'button', 'a', or Link).
+ * @param {boolean} [isLink=false] - Applies the 'button--link' styling class.
+ * @param {'button' | 'submit' | 'reset'} [type="button"] - HTML type attribute (buttons only).
+ * @param {string} [to] - Target URL if component is Link.
+ * @param {string} [role] - ARIA role.
+ * @param {boolean} [disabled] - Disables the button and adds disabled styling.
+ * @param {node} [children] - Button content.
+ * @param {object} [rest] - Additional props passed.
+ *
+ * @example
+ * // Button with secondary colour and large padding
+ * <Button colour="secondary" paddingSize="large">Text</Button>
  * 
- * Examples:
- * Basic button with defaults:
- * <Button>Button text</Button>
- * 
- * Button with secondary colour
- * <Button colour="secondary">Submit</Button>
- * 
- * Link
+ * @example
+ * // Link
  * <Button component={Link} isLink to="/about">About</Button>
- * 
- * Button with extra classes and attributes:
- * <Button type="button" className="extra-class" aria-label="Close"><svg>...</svg></Button>
  */
 
 export const Button = ({
@@ -64,7 +42,6 @@ export const Button = ({
   ...rest
 }) => {
   const Component = component;
-
   const isButtonComponent = Component === "button";
   
   // Apply defaults only for buttons (not links)

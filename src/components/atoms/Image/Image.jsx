@@ -10,7 +10,7 @@ import { classNames } from "../../../utils/helpers";
  * @param {'lazy' | 'eager'} [loading="lazy"] - 
  * 'lazy' (default) uses async decoding. 
  * 'eager' uses sync decoding for LCP optimization.
- * @param {object} [rest] - Supports all standard HTML <img> attributes.
+ * @param {object} [rest] - Additional props passed.
  *
  * @example
  * // Lazy loading (default)
