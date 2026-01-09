@@ -41,8 +41,6 @@ export const Icon = ({
       "aria-label": ariaLabel,
     } ;
 
-  console.log(href);
-
   const content = href ? <use href={href} xlinkHref={href} /> : children;
 
   return (

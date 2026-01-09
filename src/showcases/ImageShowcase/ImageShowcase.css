@@ -1,3 +1,9 @@
 .image-example {
   margin-bottom: var(--spacing-md);
 }
+
+@media (min-width: 768px) {
+  .image-example img {
+    max-width: 800px;
+  }
+}
