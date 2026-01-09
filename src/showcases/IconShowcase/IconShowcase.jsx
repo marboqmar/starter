@@ -12,7 +12,7 @@ export const IconShowcase = () => {
           The following icon contains the HTML attributes{" "}
           <code>aria-hidden="true"</code>,{" "}
           <code>tabindex="-1"</code>, and{" "}
-          <code>focusable="false"</code>:
+          <code>focusable="false"</code>.
         </p>
         <Icon isDecorative>
           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
@@ -23,7 +23,7 @@ export const IconShowcase = () => {
         <p>
           The following icon contains the HTML attributes{" "}
           <code>role="img"</code> and{" "}
-          <code>aria-label</code>:
+          <code>aria-label</code>.
         </p>
         <Icon ariaLabel={"check mark"}>
           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
@@ -32,13 +32,20 @@ export const IconShowcase = () => {
       <div className="icon-example stack gap-sm">
         <Heading level={3}>Different colours and sizes</Heading>
         <p>
-          The previous icons, by default, are inheritting the colour of the text and have size of 
-          1.5rem by 1.5rem. But, the colour and size of the icon component can be modified using 
-          CSS, as demonstrated in the following icon:
+          The colour and size of the icon component can be modified using 
+          CSS, as demonstrated in the following icon.
         </p>
         <Icon isDecorative className="large-coloured">
           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
         </Icon>
+      </div>
+      <div className="icon-example stack gap-sm">
+        <Heading level={3}>Icon from an SVG file</Heading>
+        <p>
+          The icon component also allows to use icons from an external SVG sprite. These icons can 
+          also be modified using CSS.
+        </p>
+        <Icon className="large-coloured" href="/assets/icons/sprite.svg#checkmark"></Icon>
       </div>
     </div>
   )

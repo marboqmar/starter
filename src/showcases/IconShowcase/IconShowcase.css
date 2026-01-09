@@ -5,5 +5,5 @@
 .icon.large-coloured {
   width: var(--spacing-xl);
   height: var(--spacing-xl);
-  fill: var(--colour-success);
+  color: var(--colour-success);
 }

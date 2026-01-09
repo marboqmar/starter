@@ -7,6 +7,7 @@ import { classNames } from "../../../utils/helpers";
  * Component props:
  * @param {string} [className] - Additional CSS classes.
  * @param {string} [viewBox="0 0 24 24"] - Position and dimension of the icon.
+ * @param {string} [href] - Path to an external SVG sprite (e.g., "/icons.svg#menu").
  * @param {boolean} [isDecorative=false] - 
  * false (default): adds the attributes role img and aria-label.
  * true: adds the attributes aria-hidden true and tabindex -1.
@@ -23,6 +24,7 @@ import { classNames } from "../../../utils/helpers";
 export const Icon = ({ 
   className = "",
   viewBox = "0 0 24 24",
+  href,
   isDecorative = false,
   ariaLabel,
   children,
@@ -39,6 +41,10 @@ export const Icon = ({
       "aria-label": ariaLabel,
     } ;
 
+  console.log(href);
+
+  const content = href ? <use href={href} xlinkHref={href} /> : children;
+
   return (
     <svg 
       viewBox={viewBox}
@@ -46,7 +52,7 @@ export const Icon = ({
       {...accessibilityProps}
       {...rest}
     >
-      {children}
+      {content}
     </svg>
   )
 };

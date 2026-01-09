@@ -6,14 +6,11 @@ export const ImageShowcase = () => {
   return (
     <div className="component-section">
       <Heading>Image</Heading>
-      <p className="margin-bottom-md">
-        The image component has a default empty{" "}
-        <code>alt</code> to avoid accessibility issues, and also a default lazy loading.
-      </p>
       <div className="image-example stack gap-sm">
-        <Heading>Image with descriptive alt</Heading>
+        <Heading level={3}>Image with descriptive <code>alt</code></Heading>
+        <p>The following image contains a descriptive alternative text.</p>
         <Image 
-          src="/test-image.png" 
+          src="/assets/images/test-image.png" 
           alt={
             "Test image displaying an adult smiling on the background and the word test displayed " +
             "centred"
@@ -21,12 +18,20 @@ export const ImageShowcase = () => {
         />
       </div>
       <div className="image-example stack gap-sm">
-        <Heading>Image with an empty alt</Heading>
-        <Image src="/test-image.png" />  
+        <Heading level={3}>Image with an empty <code>alt</code></Heading>
+        <p>
+          The image component has a default empty{" "}
+          <code>alt</code> to avoid accessibility issues, and also a default lazy loading.
+        </p>
+        <Image src="/assets/images/test-image.png" />  
       </div>
       <div className="image-example stack gap-sm">
-        <Heading>Image with eager loading</Heading>
-        <Image src="/test-image.png" loading="eager" />  
+        <Heading level={3}>Image with eager loading</Heading>
+        <p>
+          When an image is set to be eager loaded,{" "} 
+          <code>decoding="sync"</code> is also applied automatically.
+        </p>
+        <Image src="/assets/images/test-image.png" loading="eager" />  
       </div>
     </div>
   )
