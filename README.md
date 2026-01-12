@@ -46,9 +46,9 @@ src/
 │   ├── global/         # Global styles
 │   │   ├── colour-variables.css     # Color tokens
 │   │   ├── colours.css              # Color utility classes
+│   │   ├── layout.css               # Margin, flex, and grid classes
 │   │   ├── site.css                 # Base reset and site styles
 │   │   ├── typography-variables.css # Typography tokens
-│   │   ├── typography.css           # Typography styles
 │   │   └── variables.css            # Spacing, border radius
 │   ├── pages/          # Page-specific styles
 │   └── style.css       # Main stylesheet entry point
@@ -60,7 +60,7 @@ src/
 
 ## Customisation
 
-The top priority of this project is to provide components that can be custised quickly and easily.
+The top priority of this project is to provide components that can be customised quickly and easily.
 
 ### Variables
 
@@ -72,10 +72,14 @@ To adapt the componens of this project to your designs, modify the variables fou
 
 All variables use CSS custom properties, so you can override them in your own CSS files or modify them directly in these files.
 
-Also, modify the container and grid classes as needed. These can be found in `src/css/global/layout.css`.
+Modify the container and grid classes as needed. These can be found in `src/css/global/layout.css`.
+
+The focus styles can be found on `src/css/global/site.css`.
 
 ### Typography
 To modify the typography, update the font families in `src/css/global/typography-variables.css`, and then adjust the font link in `index.html`.
+
+The `code` tag styling is located on `src/css/global/site.css`.
 
 ### Breakpoints
 

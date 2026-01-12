@@ -51,6 +51,17 @@ code {
   padding-left: var(--spacing-0-25);
 }
 
+/* Focus */
+.button:focus-visible,
+.input:focus-visible,
+.text-area:focus-visible {
+  outline: none;
+  box-shadow: 
+    0 0 0 1px var(--colour-white),
+    0 0 0 2px var(--colour-primary-dark),
+    0 0 4px 4px var(--colour-primary-light);
+}
+
 /* Remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
   *,
