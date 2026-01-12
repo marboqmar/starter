@@ -29,7 +29,7 @@ export const InputShowcase = () => {
       </div>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Read only</Heading>
-        <Input id="read-only-showcase-input" value="This value can not be edited" />
+        <Input id="read-only-showcase-input" value="This value can not be edited" readOnly />
       </div>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Disabled</Heading>
