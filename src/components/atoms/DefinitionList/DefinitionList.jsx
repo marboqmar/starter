@@ -36,4 +36,4 @@ export const DefinitionList = ({ items = [], className = '', ...rest }) => {
       ))}
     </dl>
   );
-}
+};

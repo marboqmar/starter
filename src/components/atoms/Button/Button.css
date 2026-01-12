@@ -10,7 +10,7 @@
 }
 
 .button--primary:hover {
-  background-color: var(--colour-primary-hover);
+  background-color: var(--colour-primary-dark);
 }
 
 /* Secondary */
@@ -20,7 +20,7 @@
 }
 
 .button--secondary:hover {
-  background-color: var(--colour-secondary-hover);
+  background-color: var(--colour-secondary-dark);
 }
 
 /* Padding */

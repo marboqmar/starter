@@ -4,6 +4,7 @@ import { Heading } from "../components/atoms/Heading/Heading";
 import { HeadingShowcase } from "../showcases/HeadingShowcase/HeadingShowcase";
 import { IconShowcase } from "../showcases/IconShowcase/IconShowcase";
 import { ImageShowcase } from "../showcases/ImageShowcase/ImageShowcase";
+import { InputShowcase } from "../showcases/InputShowcase/InputShowcase";
 
 export const Components = () => {
   return (
@@ -23,6 +24,9 @@ export const Components = () => {
 
       {/* Image */}
       <ImageShowcase />
+
+      {/* Input */}
+      <InputShowcase />
     </div>
   )
 }

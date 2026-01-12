@@ -6,7 +6,7 @@ export const ImageShowcase = () => {
   return (
     <div className="component-section">
       <Heading>Image</Heading>
-      <div className="image-example stack gap-sm">
+      <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Image with descriptive <code>alt</code></Heading>
         <p>The following image contains a descriptive alternative text.</p>
         <Image 
@@ -17,7 +17,7 @@ export const ImageShowcase = () => {
           }
         />
       </div>
-      <div className="image-example stack gap-sm">
+      <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Image with an empty <code>alt</code></Heading>
         <p>
           The image component has a default empty{" "}
@@ -25,7 +25,7 @@ export const ImageShowcase = () => {
         </p>
         <Image src="/assets/images/test-image-sm.png" />  
       </div>
-      <div className="image-example stack gap-sm">
+      <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Image with eager loading</Heading>
         <p>
           When an image is set to be eager loaded,{" "} 
@@ -34,7 +34,7 @@ export const ImageShowcase = () => {
         </p>
         <Image src="/assets/images/test-image-sm.png" loading="eager" />  
       </div>
-      <div className="image-example stack gap-sm">
+      <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Responsive images</Heading>
         <p>
           This component supports responsive image delivery through the attributes{" "}
