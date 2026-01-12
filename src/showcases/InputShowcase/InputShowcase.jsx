@@ -8,27 +8,56 @@ export const InputShowcase = () => {
       <Heading>Input</Heading>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Text type</Heading>
-        <Input id="text-input" placeholder="Jon Doe" />
+        <Input 
+          id="text-showcase-input" 
+          placeholder="Jon Doe" 
+          name="name" 
+          autocomplete="name" 
+        />
       </div>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Password type</Heading>
-        <Input type={"password"} id="password-input" />
+        <Input 
+          type={"password"} 
+          id="password-showcase-input" 
+          name="password" 
+          autocomplete="current-password" 
+        />
       </div>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Number type</Heading>
-        <Input type={"number"} id="number-input" placeholder="12345" />
+        <Input 
+          type={"number"} 
+          id="number-showcase-input" 
+          placeholder="12345"
+          name="test-number"
+        />
       </div>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Date type</Heading>
-        <Input type={"date"} id="date-input" />
+        <Input 
+          type={"date"} 
+          id="date-showcase-input"
+          name="birthday" 
+          autocomplete="bday"
+        />
       </div>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Disabled type</Heading>
-        <Input disabled id="disabled-input" />
+        <Input 
+          disabled 
+          id="disabled-showcase-input" 
+        />
       </div>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Focused</Heading>
-        <Input className="input--focused" id="text-input" placeholder="Jon Doe" />
+        <Input 
+          className="input--focused" 
+          id="focused-showcase-input" 
+          placeholder="Jon Doe" 
+          name="name" 
+          autocomplete="name" 
+        />
       </div>
     </div>
   )

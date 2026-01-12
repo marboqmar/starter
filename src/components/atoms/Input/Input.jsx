@@ -17,7 +17,12 @@ import { forwardRef } from "react";
  * <Input disabled id="disabled-input" />
  * 
  * @example
- * <Input type={"password"} id="password-input" />
+ * <Input 
+ *   type={"password"} 
+ *   name="password" 
+ *   autocomplete="current-password" 
+ *   id="password-showcase-input" 
+ * />
  */
 
 export const Input = forwardRef(({
