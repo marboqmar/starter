@@ -1,16 +1,17 @@
-import "./Button.css";
-import { classNames } from "../../../utils/helpers";
+import './Button.css';
+import { classNames } from '../../../utils/helpers';
 
 /**
  * Button component that can render as a button or link
- * 
+ *
  * Component props:
  * @param {string} [className] - Additional CSS classes.
- * @param {'primary' | 'secondary'} [colour] - Button styling. Defaults to 'primary' for <button>.
+ * @param {'primary' | 'secondary'} [buttonStyle] - Button styling. Defaults to 'primary' for
+ * <button>.
  * @param {'small' | 'large'} [paddingSize] - Padding variant. Defaults to 'small' for <button>.
  * @param {'small' | 'large'} [borderRadius] - Border radius. Defaults to 'small' for <button>.
  * @param {ElementType} [component="button"] - The element to render (e.g., 'button', 'a', or Link).
- * @param {boolean} [isLink=false] - Applies the 'button--link' styling class.
+ * @param {boolean} [buttonAppearance] - Applies the 'button-appearance' styling class.
  * @param {'button' | 'submit' | 'reset'} [type="button"] - HTML type attribute (buttons only).
  * @param {string} [to] - Target URL if component is Link.
  * @param {string} [role] - ARIA role.
@@ -20,20 +21,24 @@ import { classNames } from "../../../utils/helpers";
  *
  * @example
  * // Button with secondary colour and large padding
- * <Button colour="secondary" paddingSize="large">Text</Button>
- * 
+ * <Button buttonStyle="secondary" paddingSize="large">Text</Button>
+ *
  * @example
- * // Link
- * <Button component={Link} isLink to="/about">About</Button>
+ * // Link that looks like a button
+ * <Button component={Link} to="/about" buttonAppearance buttonStyle={'primary'}>About</Button>
+ *
+ * @example
+ * // Standard text link (not a button)
+ * <Button component={Link} to="/contact">Contact</Button>
  */
 
 export const Button = ({
-  className = "",
-  colour,
+  className = '',
+  buttonStyle,
   paddingSize,
   borderRadius,
-  component = "button",
-  isLink,
+  component = 'button',
+  buttonAppearance,
   type,
   to,
   role,
@@ -42,32 +47,31 @@ export const Button = ({
   ...rest
 }) => {
   const Component = component;
-  const isButtonComponent = Component === "button";
-  
-  // Apply defaults only for buttons (not links)
-  const finalColour = isButtonComponent ? (colour || "primary") : colour;
-  const finalPaddingSize = isButtonComponent ? (paddingSize || "small") : paddingSize;
-  const finalBorderRadius = isButtonComponent ? (borderRadius || "small") : borderRadius;
+  const isButtonComponent = Component === 'button';
+
+  // Apply styling default only for buttons (not links)
+  const finalStyling = isButtonComponent ? buttonStyle || 'primary' : buttonStyle;
+
+  // Apply link styling,
+  const hasButtonAppearance = !isButtonComponent && buttonAppearance;
+  const notButtonAppearance = !isButtonComponent && !hasButtonAppearance;
 
   // Button-specific props
-  const buttonProps = isButtonComponent 
-    ? { 
-        type: "button",
+  const buttonProps = isButtonComponent
+    ? {
+        type: 'button',
         disabled: disabled,
-      } 
+      }
     : {};
 
-  const classes = classNames(
-    "button",
-    className,
-    {
-      [`button--${finalColour}`]: finalColour,
-      [`button__padding-size--${finalPaddingSize}`]: finalPaddingSize,
-      [`button__border-radius--${finalBorderRadius}`]: finalBorderRadius,
-      "button--link": isLink,
-      "button--disabled": disabled,
-    }
-  );
+  const classes = classNames('button', className, {
+    [`button--${finalStyling}`]: finalStyling,
+    [`button__padding-size--${paddingSize}`]: paddingSize,
+    [`button__border-radius--${borderRadius}`]: borderRadius,
+    'button-appearance': hasButtonAppearance,
+    'button--link': notButtonAppearance,
+    'button--disabled': disabled,
+  });
 
   return (
     <Component
@@ -75,7 +79,7 @@ export const Button = ({
       role={role}
       to={to}
       {...buttonProps}
-      type={type}
+      {...(type && { type })}
       {...rest}
     >
       {children}

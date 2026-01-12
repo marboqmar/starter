@@ -1,12 +1,15 @@
 .button {
   cursor: pointer;
   border: none;
+  box-sizing: border-box;
 }
 
 /* Primary */
 .button--primary {
   background-color: var(--colour-primary);
   color: var(--colour-text-inverted);
+  padding: var(--spacing-0-5) var(--spacing-1);
+  border-radius: var(--spacing-0-375);
 }
 
 .button--primary:hover {
@@ -17,6 +20,8 @@
 .button--secondary {
   background-color: var(--colour-secondary);
   color: var(--colour-text-inverted);
+  padding: var(--spacing-0-5) var(--spacing-1);
+  border-radius: var(--spacing-0-375);
 }
 
 .button--secondary:hover {
@@ -48,8 +53,19 @@
 }
 
 /* Link */
-.button--link {
+.button--link,
+.button--link:visited {
   color: var(--colour-text-black);
+}
+
+.button-appearance {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+
+.button-appearance:visited {
+  color: var(--colour-text-inverted);
 }
 
 /* Disabled */
@@ -71,5 +87,5 @@
 
   .button__padding-size--large {
     padding: var(--spacing-1) var(--spacing-2);
-  }  
+  }
 }
