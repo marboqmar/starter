@@ -12,12 +12,10 @@ import { forwardRef } from "react";
  * @param {string} [className] - Additional CSS classes.
  * @param {string} type - The input type.
  * @param {object} [rest] - Additional props passed.
- * 
- * @example
- * <Input disabled id="disabled-input" />
- * 
+ *
  * @example
  * <Input 
+ *   disabled
  *   type={"password"} 
  *   name="password" 
  *   autocomplete="current-password" 
