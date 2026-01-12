@@ -1,9 +1,9 @@
-import "./HeadingShowcase.css";
-import { Heading } from "../../components/atoms/Heading/Heading";
+import './HeadingShowcase.css';
+import { Heading } from '../../../components/atoms/Heading/Heading';
 
 export const HeadingShowcase = () => {
   return (
-    <div className="component-section">
+    <div className="atom-section">
       <Heading>Headings</Heading>
       <div className="heading-examples stack gap-sm">
         <Heading level={1}>The quick brown fox jumps over the lazy dog</Heading>
@@ -14,5 +14,5 @@ export const HeadingShowcase = () => {
         <Heading level={6}>The quick brown fox jumps over the lazy dog</Heading>
       </div>
     </div>
-  )
+  );
 };

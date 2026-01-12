@@ -1,11 +1,11 @@
 import './ButtonShowcase.css';
-import { Button } from '../../components/atoms/Button/Button';
+import { Button } from '../../../components/atoms/Button/Button';
 import { Link } from 'react-router-dom';
-import { Heading } from '../../components/atoms/Heading/Heading';
+import { Heading } from '../../../components/atoms/Heading/Heading';
 
 export const ButtonShowcase = () => {
   return (
-    <div className="component-section">
+    <div className="atom-section">
       <Heading>Buttons</Heading>
       <div className="button-components stack gap-md">
         {/* Buttons - Colours / States */}

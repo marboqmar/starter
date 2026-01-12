@@ -8,5 +8,5 @@
 @import "./global/colours.css";
 
 /* Pages */
-@import "./pages/Components.css";
+@import "./pages/Atoms.css";
 @import "./pages/Homepage.css";

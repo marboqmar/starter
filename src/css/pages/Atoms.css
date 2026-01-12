@@ -1,7 +1,7 @@
-.component-section {
+.atom-section {
   margin-bottom: var(--spacing-xl);
 }
 
-.component-section .heading-2 {
+.atom-section .heading-2 {
   margin-bottom: var(--spacing-sm);
 }

@@ -1,10 +1,10 @@
-import { ButtonShowcase } from '../showcases/ButtonShowcase/ButtonShowcase';
-import { DefinitionListShowcase } from '../showcases/DefinitionListShowcase/DefinitionListShowcase';
+import { ButtonShowcase } from '../showcases/atoms/ButtonShowcase/ButtonShowcase';
+import { DefinitionListShowcase } from '../showcases/atoms/DefinitionListShowcase/DefinitionListShowcase';
 import { Heading } from '../components/atoms/Heading/Heading';
-import { HeadingShowcase } from '../showcases/HeadingShowcase/HeadingShowcase';
-import { IconShowcase } from '../showcases/IconShowcase/IconShowcase';
-import { ImageShowcase } from '../showcases/ImageShowcase/ImageShowcase';
-import { InputShowcase } from '../showcases/InputShowcase/InputShowcase';
+import { HeadingShowcase } from '../showcases/atoms/HeadingShowcase/HeadingShowcase';
+import { IconShowcase } from '../showcases/atoms/IconShowcase/IconShowcase';
+import { ImageShowcase } from '../showcases/atoms/ImageShowcase/ImageShowcase';
+import { InputShowcase } from '../showcases/atoms/InputShowcase/InputShowcase';
 
 export const Atoms = () => {
   return (
