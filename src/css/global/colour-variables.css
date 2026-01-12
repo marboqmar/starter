@@ -27,10 +27,10 @@
   --colour-gray-500: #535862;
 
   /* Alerts */
-  --colour-success: #28a745;
-  --colour-warning: #ffc107;
-  --colour-error: #dc3545;
-  --colour-info: #17a2b8;
+  --colour-success: #12B76A;
+  --colour-warning: #F79009;
+  --colour-error: #F04438;
+  --colour-info: #2E90FA;
 
   /* Text */
   --colour-text-black: var(--colour-black);
