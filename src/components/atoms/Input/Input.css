@@ -1,0 +1,13 @@
+.input {
+  max-width: 100%;
+  padding: var(--spacing-0-5);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--colour-primary);
+}
+
+/* Disabled */
+.input:disabled {
+  cursor: not-allowed;
+  border: 1px solid var(--colour-gray-300);
+  background-color: var(--colour-gray-50);
+}

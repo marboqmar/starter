@@ -26,6 +26,10 @@ export const ButtonShowcase = () => {
             >
               Disabled
             </Button>
+            <Button className="button--focused"
+            >
+              Focused
+            </Button>
           </div>
         </div>
 
