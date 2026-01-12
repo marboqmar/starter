@@ -8,7 +8,7 @@ export const InputShowcase = () => {
       <Heading>Input</Heading>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Text type</Heading>
-        <Input id="text-showcase-input" placeholder="Jon Doe" name="name" autocomplete="name" />
+        <Input id="text-showcase-input" placeholder="Jon Doe" name="name" autoComplete="name" />
       </div>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Password type</Heading>
@@ -16,7 +16,7 @@ export const InputShowcase = () => {
           type={'password'}
           id="password-showcase-input"
           name="password"
-          autocomplete="current-password"
+          autoComplete="current-password"
         />
       </div>
       <div className="stack gap-sm margin-bottom-md">
@@ -25,7 +25,7 @@ export const InputShowcase = () => {
       </div>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Date type</Heading>
-        <Input type={'date'} id="date-showcase-input" name="birthday" autocomplete="bday" />
+        <Input type={'date'} id="date-showcase-input" name="birthday" autoComplete="bday" />
       </div>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Read only</Heading>
@@ -42,7 +42,7 @@ export const InputShowcase = () => {
           id="focused-showcase-input"
           placeholder="Jon Doe"
           name="name"
-          autocomplete="name"
+          autoComplete="name"
         />
       </div>
     </div>

@@ -1,14 +1,14 @@
-import "./Icon.css";
-import { classNames } from "../../../utils/helpers";
+import './Icon.css';
+import { classNames } from '../../../utils/helpers';
 
 /**
  * Icon component
- * 
+ *
  * Component props:
  * @param {string} [className] - Additional CSS classes.
  * @param {string} [viewBox="0 0 24 24"] - Position and dimension of the icon.
  * @param {string} [href] - Path to an external SVG sprite (e.g., "/icons.svg#menu").
- * @param {boolean} [isDecorative=false] - 
+ * @param {boolean} [isDecorative=false] -
  * false (default): adds the attributes role img and aria-label.
  * true: adds the attributes aria-hidden true and tabindex -1.
  * @param {string} [ariaLabel] - Required if isDecorative is false. Provides the accessible name.
@@ -21,9 +21,9 @@ import { classNames } from "../../../utils/helpers";
  * </Icon>
  */
 
-export const Icon = ({ 
-  className = "",
-  viewBox = "0 0 24 24",
+export const Icon = ({
+  className = '',
+  viewBox = '0 0 24 24',
   href,
   isDecorative = false,
   ariaLabel,
@@ -32,25 +32,25 @@ export const Icon = ({
 }) => {
   const accessibilityProps = isDecorative
     ? {
-      "aria-hidden": "true",
-      tabIndex: -1,
-      focusable: "false",
+        'aria-hidden': 'true',
+        'tabIndex': -1,
+        'focusable': 'false',
       }
     : {
-      role: "img",
-      "aria-label": ariaLabel,
-    } ;
+        'role': 'img',
+        'aria-label': ariaLabel,
+      };
 
   const content = href ? <use href={href} xlinkHref={href} /> : children;
 
   return (
-    <svg 
+    <svg
       viewBox={viewBox}
-      className={classNames("icon", className)}
+      className={classNames('icon', className)}
       {...accessibilityProps}
       {...rest}
     >
       {content}
     </svg>
-  )
+  );
 };

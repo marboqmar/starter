@@ -1,39 +1,38 @@
 :root {
   /* Primary */
-  --colour-primary: #5925DC;
-  --colour-primary-light: #6938EF;
-  --colour-primary-dark: #4A1FB8;
+  --colour-primary: #5925dc;
+  --colour-primary-light: #6938ef;
+  --colour-primary-dark: #4a1fb8;
 
   /* Secondary */
-  --colour-secondary: #9E165F;
-  --colour-secondary-light: #C11574;
+  --colour-secondary: #9e165f;
+  --colour-secondary-light: #c11574;
   --colour-secondary-dark: #851651;
 
   /* Neutral */
-  --colour-neutral: #1F425E;
+  --colour-neutral: #1f425e;
 
   /* White */
-  --colour-white: #FDFDFD;
+  --colour-white: #fdfdfd;
 
   /* Black */
-  --colour-black: #1A1D20;
+  --colour-black: #1a1d20;
 
   /* Grey */
-  --colour-gray-50: #F5F5F5;
-  --colour-gray-100: #E9EAEB;
-  --colour-gray-200: #D5D7DA;
-  --colour-gray-300: #A4A7AE;
+  --colour-gray-50: #f5f5f5;
+  --colour-gray-100: #e9eaeb;
+  --colour-gray-200: #d5d7da;
+  --colour-gray-300: #a4a7ae;
   --colour-gray-400: #717680;
   --colour-gray-500: #535862;
 
   /* Alerts */
-  --colour-success: #12B76A;
-  --colour-warning: #F79009;
-  --colour-error: #F04438;
-  --colour-info: #2E90FA;
+  --colour-success: #12b76a;
+  --colour-warning: #f79009;
+  --colour-error: #f04438;
+  --colour-info: #2e90fa;
 
   /* Text */
   --colour-text-black: var(--colour-black);
   --colour-text-inverted: var(--colour-white);
 }
-

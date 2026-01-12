@@ -4,9 +4,9 @@ html {
 }
 
 body {
-  margin: 0;  
-  padding: 0;  
-  box-sizing: border-box;  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background-color: var(--colour-white);
 }
 
@@ -16,7 +16,7 @@ video,
 svg {
   max-width: 100%;
   height: auto;
-} 
+}
 
 input,
 button,
@@ -30,15 +30,15 @@ ol {
   list-style: none;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p,
 blockquote,
-dd, 
+dd,
 dl {
   margin: 0;
 }
@@ -56,9 +56,7 @@ code {
 .input:focus-visible,
 .text-area:focus-visible {
   outline: none;
-  box-shadow: 
-    0 0 0 1px var(--colour-white),
-    0 0 0 2px var(--colour-primary-dark),
+  box-shadow: 0 0 0 1px var(--colour-white), 0 0 0 2px var(--colour-primary-dark),
     0 0 4px 4px var(--colour-primary-light);
 }
 
@@ -73,4 +71,3 @@ code {
     scroll-behavior: auto !important;
   }
 }
-

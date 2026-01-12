@@ -1,4 +1,4 @@
-@import './colour-variables.css';
+@import "./colour-variables.css";
 
 .colour-white {
   color: var(--colour-white);

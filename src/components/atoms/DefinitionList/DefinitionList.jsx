@@ -1,9 +1,9 @@
-import "./DefinitionList.css"
-import { classNames } from "../../../utils/helpers";
+import './DefinitionList.css';
+import { classNames } from '../../../utils/helpers';
 
 /**
  * Definition list component
- * 
+ *
  * Component props:
  * @param {string} [className] - Additional CSS classes.
  * @param {Object[]} items - Content of the definition list.
@@ -17,7 +17,7 @@ import { classNames } from "../../../utils/helpers";
  *   { id: 1, term: 'Colour', description: 'blue' },
  *   { id: 2, term: 'Material', description: 'cotton' },
  * ]
- * 
+ *
  * <DefinitionList items={descriptionGroup} />
  */
 
@@ -27,8 +27,8 @@ export const DefinitionList = ({ items = [], className = '', ...rest }) => {
   }
 
   return (
-    <dl className={classNames("definition-list", className)} {...rest}>
-      {items.map((item) => (
+    <dl className={classNames('definition-list', className)} {...rest}>
+      {items.map(item => (
         <div key={item.id} className="definition-list__group">
           <dt className="definition-list__term">{item.term}</dt>
           <dd className="definition-list__description">{item.description}</dd>

@@ -1,14 +1,14 @@
 /* Margins - small */
-.margin-sm  { 
-  margin: var(--spacing-sm); 
+.margin-sm {
+  margin: var(--spacing-sm);
 }
 
-.margin-top-sm { 
-  margin-top: var(--spacing-sm); 
+.margin-top-sm {
+  margin-top: var(--spacing-sm);
 }
 
-.margin-bottom-sm { 
-  margin-bottom: var(--spacing-sm); 
+.margin-bottom-sm {
+  margin-bottom: var(--spacing-sm);
 }
 
 .margin-x-sm {
@@ -22,16 +22,16 @@
 }
 
 /* Margins - medium */
-.margin-md  { 
-  margin: var(--spacing-md); 
+.margin-md {
+  margin: var(--spacing-md);
 }
 
-.margin-top-md { 
-  margin-top: var(--spacing-md); 
+.margin-top-md {
+  margin-top: var(--spacing-md);
 }
 
-.margin-bottom-md { 
-  margin-bottom: var(--spacing-md); 
+.margin-bottom-md {
+  margin-bottom: var(--spacing-md);
 }
 
 .margin-x-md {
@@ -45,16 +45,16 @@
 }
 
 /* Margins - large */
-.margin-lg  { 
-  margin: var(--spacing-lg); 
+.margin-lg {
+  margin: var(--spacing-lg);
 }
 
-.margin-top-lg { 
-  margin-top: var(--spacing-lg); 
+.margin-top-lg {
+  margin-top: var(--spacing-lg);
 }
 
-.margin-bottom-lg { 
-  margin-bottom: var(--spacing-lg); 
+.margin-bottom-lg {
+  margin-bottom: var(--spacing-lg);
 }
 
 .margin-x-lg {
@@ -81,16 +81,16 @@
 }
 
 /* Gap */
-.gap-sm { 
-  gap: var(--spacing-sm); 
+.gap-sm {
+  gap: var(--spacing-sm);
 }
 
-.gap-md { 
-  gap: var(--spacing-md); 
+.gap-md {
+  gap: var(--spacing-md);
 }
 
-.gap-lg { 
-  gap: var(--spacing-lg); 
+.gap-lg {
+  gap: var(--spacing-lg);
 }
 
 /* Grid */
@@ -177,7 +177,6 @@
     grid-template-columns: repeat(12, 1fr);
   }
 }
-
 
 /* Grid column span */
 .col-span-1 {
