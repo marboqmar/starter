@@ -49,14 +49,14 @@ export const Button = ({
   const Component = component;
   const isButtonComponent = Component === 'button';
 
-  // Apply styling default only for buttons (not links)
+  // Apply styling default only for buttons (not links).
   const finalStyling = isButtonComponent ? buttonStyle || 'primary' : buttonStyle;
 
-  // Apply link styling,
+  // Apply link styling.
   const hasButtonAppearance = !isButtonComponent && buttonAppearance;
   const notButtonAppearance = !isButtonComponent && !hasButtonAppearance;
 
-  // Button-specific props
+  // Button-specific props.
   const buttonProps = isButtonComponent
     ? {
         type: 'button',
