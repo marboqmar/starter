@@ -5,6 +5,11 @@
   border: 1px solid var(--colour-primary);
 }
 
+/* Error */
+.input--error {
+  border: 1px solid var(--colour-error);
+}
+
 /* Disabled */
 .input:disabled {
   cursor: not-allowed;

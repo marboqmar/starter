@@ -30,6 +30,7 @@
   --spacing-5: 5rem; /* 80px */
 
   /* Spacing - Responsive defaults (mobile) */
+  --spacing-xs: 0.5rem; /* 8px */
   --spacing-sm: 1rem; /* 16px */
   --spacing-md: 1.5rem; /* 24px */
   --spacing-lg: 2rem; /* 32px */
@@ -49,6 +50,7 @@
 /* Spacing - Tablet overrides */
 @media (min-width: 768px) {
   :root {
+    --spacing-xs: 1rem; /* 16px */
     --spacing-sm: 1.5rem; /* 24px */
     --spacing-md: 2rem; /* 32px */
     --spacing-lg: 2.5rem; /* 40px */
@@ -59,6 +61,7 @@
 /* Spacing - Desktop overrides */
 @media (min-width: 1024px) {
   :root {
+    --spacing-xs: 1.5rem; /* 24px */
     --spacing-sm: 2rem; /* 32px */
     --spacing-md: 2.5rem; /* 40px */
     --spacing-lg: 3rem; /* 48px */

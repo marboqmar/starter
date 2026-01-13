@@ -1,0 +1,8 @@
+.input-helper-text {
+  display: block;
+  margin-top: var(--spacing-0-5);
+}
+
+.input-helper-text--error {
+  color: var(--colour-error);
+}

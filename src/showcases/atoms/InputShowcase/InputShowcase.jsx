@@ -1,49 +1,68 @@
 import './InputShowcase.css';
 import { Input } from '../../../components/atoms/Input/Input';
 import { Heading } from '../../../components/atoms/Heading/Heading';
+import { Label } from '../../../components/atoms/Label/Label';
 
 export const InputShowcase = () => {
   return (
     <div className="atom-section">
       <Heading>Input</Heading>
-      <div className="stack gap-sm margin-bottom-md">
-        <Heading level={3}>Text type</Heading>
-        <Input id="text-showcase-input" placeholder="Jon Doe" name="name" autoComplete="name" />
-      </div>
-      <div className="stack gap-sm margin-bottom-md">
-        <Heading level={3}>Password type</Heading>
+      <div className="stack gap-md">
         <Input
-          type={'password'}
+          label="Text type"
+          id="text-showcase-input"
+          placeholder="Jon Doe"
+          name="name"
+          autoComplete="name"
+        />
+        <Input
+          label="Password type"
+          type="password"
           id="password-showcase-input"
           name="password"
           autoComplete="current-password"
         />
-      </div>
-      <div className="stack gap-sm margin-bottom-md">
-        <Heading level={3}>Number type</Heading>
-        <Input type={'number'} id="number-showcase-input" placeholder="12345" name="test-number" />
-      </div>
-      <div className="stack gap-sm margin-bottom-md">
-        <Heading level={3}>Date type</Heading>
-        <Input type={'date'} id="date-showcase-input" name="birthday" autoComplete="bday" />
-      </div>
-      <div className="stack gap-sm margin-bottom-md">
-        <Heading level={3}>Read only</Heading>
-        <Input id="read-only-showcase-input" value="This value can not be edited" readOnly />
-      </div>
-      <div className="stack gap-sm margin-bottom-md">
-        <Heading level={3}>Disabled</Heading>
-        <Input disabled id="disabled-showcase-input" value="This input is disabled" />
-      </div>
-      <div className="stack gap-sm margin-bottom-md">
-        <Heading level={3}>Focused</Heading>
         <Input
+          label="Number type"
+          type="number"
+          id="number-showcase-input"
+          placeholder="12345"
+          name="test-number"
+        />
+        <Input
+          label="Date type"
+          type="date"
+          id="date-showcase-input"
+          name="birthday"
+          autoComplete="bday"
+        />
+        <Input label="Required" required id="required-showcase-input" />
+        <Input
+          label="With helper text"
+          id="helper-text-showcase-input"
+          helperText="This is a helper text"
+        />
+        <Input
+          label="Read only"
+          id="read-only-showcase-input"
+          value="This value can not be edited"
+          readOnly
+        />
+        <Input
+          label="Disabled"
+          disabled
+          id="disabled-showcase-input"
+          value="This input is disabled"
+        />
+        <Input
+          label="Focused"
           className="input--focused"
           id="focused-showcase-input"
           placeholder="Jon Doe"
           name="name"
           autoComplete="name"
         />
+        <Input label="Error" id="error-showcase-input" errorHelperText="This is an error message" />
       </div>
     </div>
   );
