@@ -1,5 +1,5 @@
-.button-group .button,
-.link-group .button-appearance {
+.button-examples .button,
+.link-examples .button-appearance {
   max-width: 16rem;
 }
 
@@ -10,13 +10,20 @@
 }
 
 @media (min-width: 768px) {
-  .button-atoms {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .button-examples {
     text-align: center;
+    align-items: center;
+  }
+
+  .button-examples .button,
+  .button-examples .button-appearance {
+    width: 12rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .button-examples .button,
+  .button-examples .button-appearance {
+    width: 16rem;
   }
 }

@@ -7,53 +7,48 @@ export const ButtonShowcase = () => {
   return (
     <div className="atom-section">
       <Heading>Buttons</Heading>
-      <div className="button-atoms stack gap-md">
+      <div className="button-atoms grid grid-cols-1 grid-cols-tablet-2 grid-cols-desktop-lg-4 gap-lg">
         {/* Buttons - Colours / States */}
         <div className="button-examples stack gap-sm">
           <Heading level={3}>Colours / States</Heading>
-          <div className="button-group stack gap-sm">
-            <Button>Primary</Button>
-            <Button buttonStyle={'secondary'}>Secondary</Button>
-            <Button disabled>Disabled</Button>
-            <Button className="button--focused">Focused</Button>
-          </div>
+          <Button>Primary</Button>
+          <Button buttonStyle={'secondary'}>Secondary</Button>
+          <Button disabled>Disabled</Button>
+          <Button className="button--focused">Focused</Button>
         </div>
 
         {/* Buttons - Padding */}
         <div className="button-examples stack gap-sm">
           <Heading level={3}>Padding</Heading>
-          <div className="button-group stack gap-sm">
-            <Button>Small padding</Button>
-            <Button paddingSize={'large'}>Large padding</Button>
-          </div>
+          <Button>Small padding</Button>
+          <Button paddingSize={'large'}>Large padding</Button>
         </div>
 
         {/* Buttons - Border radius */}
         <div className="button-examples stack gap-sm">
           <Heading level={3}>Border radius</Heading>
-          <div className="button-group stack gap-sm">
-            <Button borderRadius={'none'}>No border radius</Button>
-            <Button>Small border radius</Button>
-            <Button borderRadius={'large'}>Large border radius</Button>
-          </div>
+          <Button borderRadius={'none'}>No border radius</Button>
+          <Button>Small border radius</Button>
+          <Button borderRadius={'large'}>Large border radius</Button>
         </div>
-      </div>
-      {/* Buttons - Link */}
-      <div className="link-group stack gap-sm margin-top-md">
-        <Heading level={3}>Links</Heading>
-        <Button component={Link} buttonAppearance buttonStyle={'primary'} to={'/'}>
-          Button-looking link
-        </Button>
-        <Button component={Link} buttonAppearance buttonStyle={'secondary'} to={'/'}>
-          Button-looking link
-        </Button>
-        <p>
-          Lorem ipsum{' '}
-          <Button component={Link} to={'/'}>
-            inline link
+
+        {/* Buttons - Link */}
+        <div className="button-examples stack gap-sm">
+          <Heading level={3}>Links</Heading>
+          <Button component={Link} buttonAppearance buttonStyle={'primary'} to={'/'}>
+            Button-looking link
           </Button>
-          .
-        </p>
+          <Button component={Link} buttonAppearance buttonStyle={'secondary'} to={'/'}>
+            Button-looking link
+          </Button>
+          <p>
+            Lorem ipsum{' '}
+            <Button component={Link} to={'/'}>
+              inline link
+            </Button>
+            .
+          </p>
+        </div>
       </div>
     </div>
   );
