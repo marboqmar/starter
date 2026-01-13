@@ -12,7 +12,7 @@ import { classNames } from '../../../utils/helpers';
  * false (default): adds the attributes role img and aria-label.
  * true: adds the attributes aria-hidden true and tabindex -1.
  * @param {string} [ariaLabel] - Required if isDecorative is false. Provides the accessible name.
- * @param {ReactNode} [children] - Icon content.
+ * @param {node} children - Icon content.
  * @param {object} [rest] - Additional props passed.
  *
  * @example

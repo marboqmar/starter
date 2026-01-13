@@ -16,7 +16,7 @@ import { classNames } from '../../../utils/helpers';
  * @param {string} [to] - Target URL if component is Link.
  * @param {string} [role] - ARIA role.
  * @param {boolean} [disabled] - Disables the button and adds disabled styling.
- * @param {node} [children] - Button content.
+ * @param {node} children - Button content.
  * @param {object} [rest] - Additional props passed.
  *
  * @example
