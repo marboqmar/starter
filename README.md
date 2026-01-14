@@ -99,8 +99,6 @@ The `--icon-alignment-height` variable (located in `src/css/global/typography-va
 align the icon accordingly. If the line height or font sizes used are different, update this
 variable accordingly.
 
-If the label's text height line is not `--line-height-base`, then also modify `--checkbox-alignment-height` on `src/css/global/typography-variables.css` to be the same as the checkbox uses this height to centre appropriately to the label's first line.
-
 ### Breakpoints
 
 The breakpoints used for this project are:

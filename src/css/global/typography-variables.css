@@ -25,7 +25,9 @@
   --line-height-base: 1.5;
   --line-height-lg: 1.75;
 
-  /* Icon's wrapper height to align the icon to the first line of text (e.g. checkbox and label) */
+  /* Icon 'first-line anchor' used to align icons to the first line of text. This variable 
+  returns the line height in px, which shall be applied to the icon's wrapper height and then 
+  centre the icon within it's wrapper (e.g. align checkbox to label's first line) */
   --icon-alignment-height: calc(var(--font-size-base) * var(--line-height-base));
 }
 
