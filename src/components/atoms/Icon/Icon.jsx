@@ -19,6 +19,10 @@ import { classNames } from '../../../utils/helpers';
  * <Icon isDecorative>
  *   <path d="M9..." />
  * </Icon>
+ *
+ * @example
+ * // Icon from SVG sprite file
+ * <Icon href="/assets/icons/sprite.svg#checkmark"></Icon>
  */
 
 export const Icon = ({
