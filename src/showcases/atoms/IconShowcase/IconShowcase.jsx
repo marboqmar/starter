@@ -42,7 +42,7 @@ export const IconShowcase = () => {
           The icon component also allows to use icons from an external SVG sprite. These icons can
           also be modified using CSS.
         </p>
-        <Icon className="large-coloured" href="/assets/icons/sprite.svg#checkmark"></Icon>
+        <Icon className="large-coloured" name="checkmark"></Icon>
       </div>
     </div>
   );
