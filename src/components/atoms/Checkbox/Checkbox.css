@@ -43,7 +43,7 @@
   transform: translate(-50%, -50%) scale(0.5);
   pointer-events: none; /* Clicks go through to the input */
   opacity: 0;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   color: var(--colour-white);
 }
 
