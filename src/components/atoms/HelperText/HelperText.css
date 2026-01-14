@@ -1,8 +1,34 @@
-.input-helper-text {
+.helper-text-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-0-25);
+}
+
+.helper-text-wrapper:has(.helper-text--error) {
+  margin-top: var(--spacing-0-5);
+}
+
+.helper-text {
   display: block;
   color: var(--colour-gray-600);
 }
 
-.input-helper-text--error {
+.helper-text--error {
   color: var(--colour-error);
+}
+
+.helper-text--error-icon {
+  width: var(--spacing-1-5);
+  height: var(--spacing-1-5);
+  color: var(--colour-error);
+}
+
+.helper-text--error-icon-wrapper {
+  /* Align error icon to centre of messages's first line */
+  height: var(
+    --icon-alignment-height
+  ); /* This is the same as the line height, to centre it appropriately */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

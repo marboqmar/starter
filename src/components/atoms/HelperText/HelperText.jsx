@@ -1,5 +1,6 @@
 import './HelperText.css';
 import { classNames } from '../../../utils/helpers';
+import { Icon } from '../../../components/atoms/Icon/Icon';
 
 /**
  * HelperText component
@@ -20,16 +21,20 @@ import { classNames } from '../../../utils/helpers';
 
 export const HelperText = ({ className = '', isErrorText, id, children, ...rest }) => {
   return (
-    <span
-      className={classNames(
-        'input-helper-text',
-        { 'input-helper-text--error': isErrorText },
-        className,
+    <div className="helper-text-wrapper">
+      {isErrorText && (
+        <div className="helper-text--error-icon-wrapper">
+          <Icon className="helper-text--error-icon" name="error" isDecorative />
+        </div>
       )}
-      id={id}
-      {...rest}
-    >
-      {children}
-    </span>
+
+      <span
+        className={classNames('helper-text', { 'helper-text--error': isErrorText }, className)}
+        id={id}
+        {...rest}
+      >
+        {children}
+      </span>
+    </div>
   );
 };

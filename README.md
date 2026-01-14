@@ -93,6 +93,12 @@ and then adjust the font link in `index.html`.
 
 The `code` tag styling is located on `src/css/global/site.css`.
 
+The `--icon-alignment-height` variable (located in `src/css/global/typography-variables.css`) is a
+'first-line anchor', used to align the icon to the first line of text. It uses the variables
+`--line-height-base` and `--font-size-base` to calculate the height the first line of text has and
+align the icon accordingly. If the line height or font sizes used are different, update this
+variable accordingly.
+
 If the label's text height line is not `--line-height-base`, then also modify `--checkbox-alignment-height` on `src/css/global/typography-variables.css` to be the same as the checkbox uses this height to centre appropriately to the label's first line.
 
 ### Breakpoints

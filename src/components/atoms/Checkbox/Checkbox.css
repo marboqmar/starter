@@ -12,8 +12,8 @@
   position: relative;
   /* Align checkbox to centre of label's first line */
   height: var(
-    --checkbox-alignment-height
-  ); /* This is the same as the font height, to centre it appropriately */
+    --icon-alignment-height
+  ); /* This is the same as the line height, to centre it appropriately */
   display: flex;
   align-items: center;
   justify-content: center;

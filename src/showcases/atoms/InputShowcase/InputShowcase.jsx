@@ -63,6 +63,12 @@ export const InputShowcase = () => {
           autoComplete="name"
         />
         <Input label="Error" id="error-showcase-input" errorHelperText="This is an error message" />
+        <Input
+          label="Long error message"
+          id="long-error-showcase-input"
+          errorHelperText="Long error message. This is a very long error message that will wrap to 
+          a second line on smaller screens to test alignment."
+        />
         <div className="stack gap-sm margin-y-md">
           <Heading level={3}>Checkboxes</Heading>
           <Checkbox label="Checkbox" />
