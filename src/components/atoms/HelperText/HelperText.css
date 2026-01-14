@@ -1,6 +1,6 @@
 .input-helper-text {
   display: block;
-  margin-top: var(--spacing-0-5);
+  color: var(--colour-gray-600);
 }
 
 .input-helper-text--error {

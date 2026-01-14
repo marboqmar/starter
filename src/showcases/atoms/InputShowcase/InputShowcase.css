@@ -2,7 +2,8 @@
   max-width: 20rem;
 }
 
-.input--focused {
+.input--focused,
+.focused-showcase-checkmark {
   outline: none;
   box-shadow: 0 0 0 1px var(--colour-white), 0 0 0 2px var(--colour-primary-dark),
     0 0 4px 4px var(--colour-primary-light);

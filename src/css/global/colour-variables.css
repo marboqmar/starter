@@ -25,11 +25,13 @@
   --colour-gray-300: #a4a7ae;
   --colour-gray-400: #717680;
   --colour-gray-500: #535862;
+  --colour-gray-600: #414651;
 
   /* Alerts */
   --colour-success: #12b76a;
   --colour-warning: #f79009;
   --colour-error: #f04438;
+  --colour-error-transparent: rgba(240, 68, 56, 0.1);
   --colour-info: #2e90fa;
 
   /* Text */

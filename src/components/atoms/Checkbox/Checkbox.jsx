@@ -1,19 +1,18 @@
-import './Input.css';
+import './Checkbox.css';
 import { classNames } from '../../../utils/helpers';
 import { forwardRef } from 'react';
+import { Icon } from '../Icon/Icon';
 import { Label } from '../Label/Label';
 import { useId } from 'react';
 import { HelperText } from '../HelperText/HelperText';
 
 /**
- * Input component
- * Handles text-based types: text, email, password, tel, number, search, etc.
+ * Checkbox component
  * Uses forwardRef to allow the parent component to grab a reference to a DOM node inside a child
  * component.
  *
  * Component props:
  * @param {string} [className] - Additional CSS classes.
- * @param {string} [type="text"] - The input type.
  * @param {string} [label] - The content of the label. Needed to avoid accessibility issues.
  * @param {string} [id=randomId] - The ID to relate label, input, and helper text. If no ID is
  * provided, it defaults to a randomly generated ID.
@@ -23,34 +22,15 @@ import { HelperText } from '../HelperText/HelperText';
  * @param {object} [rest] - Additional props passed.
  *
  * @example
- * <Input
- *   label="Password"
- *   required
- *   type="password"
- *   name="password"
- *   autoComplete="current-password"
- *   id="password-showcase-input"
- * />
+ * <Checkbox label="Checkbox" />
  *
  * @example
- * // Helper text
- * <Input
- *   label="With helper text"
- *   id="helper-text-showcase-input"
- *   helperText="This is a helper text"
- * />
- *
- * @example
- * // Disabled input
- * <Input disabled id="disabled-showcase-input" value="This input is disabled" />
- *
+ * // Disabled checkbox
+ * <Checkbox disabled label="Disabled checkbox" />
  */
 
-export const Input = forwardRef(
-  (
-    { className = '', type = 'text', label, id, helperText, errorHelperText, required, ...rest },
-    ref,
-  ) => {
+export const Checkbox = forwardRef(
+  ({ className = '', label, id, helperText, errorHelperText, required, ...rest }, ref) => {
     // If the user does not provide an ID, generate a random one.
     const generatedId = useId();
     const inputId = id || generatedId;
@@ -69,33 +49,41 @@ export const Input = forwardRef(
       : {};
 
     return (
-      <div className="input-wrapper">
-        {/* Label */}
-        {label && (
-          <Label htmlFor={inputId} required={required}>
-            {label}
-          </Label>
-        )}
+      <div className="checkbox-wrapper">
+        <div className="checkbox-field">
+          {/* Input */}
+          <div className="checkbox-control">
+            <input
+              id={inputId}
+              className={classNames('checkbox', className, {
+                'checkbox--error': !!errorHelperText,
+              })}
+              type="checkbox"
+              ref={ref}
+              {...errorProps}
+              {...rest}
+            />
 
-        {/* Input */}
-        <input
-          id={inputId}
-          className={classNames('input', className, { 'input--error': !!errorHelperText })}
-          type={type}
-          ref={ref}
-          {...errorProps}
-          {...rest}
-        />
+            <Icon name="checkmark" className="checkbox-icon" aria-hidden="true" isDecorative />
+          </div>
 
-        {/* Helper text */}
-        {messageToShow && (
-          <HelperText id={isInvalid ? errorId : undefined} isErrorText={isInvalid}>
-            {messageToShow}
-          </HelperText>
-        )}
+          <div className="checkbox-content">
+            {/* Label */}
+            {label && (
+              <Label htmlFor={inputId} required={required}>
+                {label}
+              </Label>
+            )}
+
+            {/* Helper text */}
+            {messageToShow && (
+              <HelperText id={isInvalid ? errorId : undefined} isErrorText={isInvalid}>
+                {messageToShow}
+              </HelperText>
+            )}
+          </div>
+        </div>
       </div>
     );
   },
 );
-
-Input.displayName = 'Input';

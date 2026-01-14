@@ -1,6 +1,7 @@
 # Starter
 
-This is a starter project to use as a foundation for future projects, containing basic components and being easily customisable.
+This is a starter project to use as a foundation for future projects, containing basic components
+and being easily customisable.
 
 ## Tech Stack
 
@@ -12,11 +13,16 @@ This is a starter project to use as a foundation for future projects, containing
 
 ## Why CSS rather than SCSS?
 
-The author prefers CSS over SCSS, as nesting is not found easier to read, especially in very large files. Apart from nesting, the author sees no real advantage in using SCSS, since CSS now supports variables (custom properties) and does not require compilation, which is a significant benefit.
+The author prefers CSS over SCSS, as nesting is not found easier to read, especially in very large
+files. Apart from nesting, the author sees no real advantage in using SCSS, since CSS now supports
+variables (custom properties) and does not require compilation, which is a significant benefit.
 
-While CSS lacks mixins, the author does not consider using multiple classes instead of mixins a major drawback. 
+While CSS lacks mixins, the author does not consider using multiple classes instead of mixins a
+major drawback.
 
-Another limitation is that CSS variables cannot be used in `@media` queries, which requires writing breakpoints manually. However, the author still considers the fact that CSS does not need to be compiled a major benefit.
+Another limitation is that CSS variables cannot be used in `@media` queries, which requires writing
+breakpoints manually. However, the author still considers the fact that CSS does not need to be
+compiled a major benefit.
 
 ## Getting Started
 
@@ -24,7 +30,8 @@ To set up this project:
 
 1. Clone this repository from GitHub.
 2. Access the project's root folder and run `pnpm install`.
-3. Every time you want to work on the project, access the project and run from the project's root folder `pnpm run dev` to start the development server.
+3. Every time you want to work on the project, access the project and run from the project's root
+   folder `pnpm run dev` to start the development server.
 
 ### Available Scripts
 
@@ -36,12 +43,13 @@ To set up this project:
 ## Project Structure
 
 The structure of this project is as follows:
+
 ```
 src/
 ├── components/         # Component library (atomic design)
-│   ├── atoms/          
-│   ├── molecules/      
-│   └── organisms/      
+│   ├── atoms/
+│   ├── molecules/
+│   └── organisms/
 ├── css/
 │   ├── global/         # Global styles
 │   │   ├── colour-variables.css     # Color tokens
@@ -64,26 +72,33 @@ The top priority of this project is to provide components that can be customised
 
 ### Variables
 
-To adapt the componens of this project to your designs, modify the variables found in the following files:
+To adapt the componens of this project to your designs, modify the variables found in the following
+files:
 
 - `src/css/global/variables.css`
 - `src/css/global/colour-variables.css`
 - `src/css/global/typography-variables.css`
 
-All variables use CSS custom properties, so you can override them in your own CSS files or modify them directly in these files.
+All variables use CSS custom properties, so you can override them in your own CSS files or modify
+them directly in these files.
 
 Modify the container and grid classes as needed. These can be found in `src/css/global/layout.css`.
 
 The focus styles can be found on `src/css/global/site.css`.
 
 ### Typography
-To modify the typography, update the font families in `src/css/global/typography-variables.css`, and then adjust the font link in `index.html`.
+
+To modify the typography, update the font families in `src/css/global/typography-variables.css`,
+and then adjust the font link in `index.html`.
 
 The `code` tag styling is located on `src/css/global/site.css`.
+
+If the label's text height line is not `--line-height-base`, then also modify `--checkbox-alignment-height` on `src/css/global/typography-variables.css` to be the same as the checkbox uses this height to centre appropriately to the label's first line.
 
 ### Breakpoints
 
 The breakpoints used for this project are:
+
 - Mobile: `< 768px` This is the default.
 - Tablet: `>= 768px`.
 - Desktop: `>= 1024px`.
@@ -103,4 +118,6 @@ Usage in CSS:
 }
 ```
 
-As previously discussed, CSS variables cannot be used in `@media` queries, so breakpoint values must be written manually. Consequently, in order to modify these breakpoints, do a global search and replace all instances manually across your CSS files.
+As previously discussed, CSS variables cannot be used in `@media` queries, so breakpoint values
+must be written manually. Consequently, in order to modify these breakpoints, do a global search
+and replace all instances manually across your CSS files.

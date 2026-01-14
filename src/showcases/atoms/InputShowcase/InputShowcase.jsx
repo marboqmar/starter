@@ -1,7 +1,7 @@
 import './InputShowcase.css';
 import { Input } from '../../../components/atoms/Input/Input';
 import { Heading } from '../../../components/atoms/Heading/Heading';
-import { Label } from '../../../components/atoms/Label/Label';
+import { Checkbox } from '../../../components/atoms/Checkbox/Checkbox';
 
 export const InputShowcase = () => {
   return (
@@ -63,6 +63,25 @@ export const InputShowcase = () => {
           autoComplete="name"
         />
         <Input label="Error" id="error-showcase-input" errorHelperText="This is an error message" />
+        <div className="stack gap-sm margin-y-md">
+          <Heading level={3}>Checkboxes</Heading>
+          <Checkbox label="Checkbox" />
+          <Checkbox
+            label="Checkbox with long label. This is a very long label that will wrap to a second 
+            line on smaller screens to test alignment."
+          />
+          <Checkbox required label="Checkbox required" />
+          <Checkbox label="Checkbox with helper text" helperText="This is a helper text" />
+          <Checkbox disabled label="Disabled checkbox" />
+          <Checkbox disabled defaultChecked label="Disabled checkbox checked" />
+          <Checkbox className="focused-showcase-checkmark" label="Focused checkbox" />
+          <Checkbox label="Checkbox with an error" errorHelperText="This is an error message" />
+          <Checkbox
+            defaultChecked
+            label="Checkbox with an error and checked"
+            errorHelperText="This is an error message"
+          />
+        </div>
       </div>
     </div>
   );

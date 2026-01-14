@@ -1,0 +1,99 @@
+.checkbox-field {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-0-5);
+}
+
+.checkbox-field .label {
+  margin: 0;
+}
+
+.checkbox-control {
+  position: relative;
+  /* Align checkbox to centre of label's first line */
+  height: var(
+    --checkbox-alignment-height
+  ); /* This is the same as the font height, to centre it appropriately */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox {
+  /* Remove the default browser styling */
+  appearance: none;
+  -webkit-appearance: none;
+
+  /* Custom box */
+  margin: 0;
+  width: var(--spacing-1);
+  height: var(--spacing-1);
+  border: 1px solid var(--colour-primary);
+  border-radius: var(--radius-xs);
+  background-color: var(--colour-white);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Checkmark itself */
+.checkbox-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  pointer-events: none; /* Clicks go through to the input */
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  color: var(--colour-white);
+}
+
+/* Checked */
+.checkbox:checked {
+  background-color: var(--colour-primary);
+  border-color: var(--colour-primary);
+}
+
+.checkbox:checked + .checkbox-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+/* Error */
+.checkbox--error {
+  border-color: var(--colour-error);
+  background-color: var(--colour-error-transparent);
+}
+
+.checkbox--error:checked {
+  border-color: var(--colour-error);
+  background-color: var(--colour-error-transparent);
+}
+
+.checkbox--error:checked + .checkbox-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(0.8);
+  color: var(--colour-error);
+}
+
+/* Disabled*/
+.checkbox:disabled {
+  cursor: not-allowed;
+  border: 1px solid var(--colour-gray-300);
+  background-color: var(--colour-gray-50);
+}
+
+.checkbox-field:has(.checkbox:disabled) .label {
+  cursor: not-allowed;
+  color: var(--colour-gray-400);
+}
+
+.checkbox:disabled:checked {
+  border: 1px solid var(--colour-gray-300);
+  background-color: var(--colour-gray-50);
+}
+
+.checkbox:disabled:checked + .checkbox-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(0.8);
+  color: var(--colour-gray-400);
+}

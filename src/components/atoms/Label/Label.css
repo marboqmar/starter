@@ -1,9 +1,9 @@
-.input-label {
+.label {
   display: block;
   font-weight: var(--font-weight-medium);
   margin-bottom: var(--spacing-0-5);
 }
 
-.input-label__required {
+.label__required {
   color: var(--colour-error);
 }

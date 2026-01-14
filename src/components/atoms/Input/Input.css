@@ -14,5 +14,6 @@
 .input:disabled {
   cursor: not-allowed;
   border: 1px solid var(--colour-gray-300);
+  color: var(--colour-gray-400);
   background-color: var(--colour-gray-50);
 }

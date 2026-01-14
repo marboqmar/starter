@@ -24,6 +24,9 @@
   --line-height-sm: 1.25;
   --line-height-base: 1.5;
   --line-height-lg: 1.75;
+
+  /* Checkbox height to align it to the label's first line */
+  --checkbox-alignment-height: calc(var(--font-size-base) * var(--line-height-base));
 }
 
 /* Font size - Desktop overrides*/

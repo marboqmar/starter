@@ -19,9 +19,9 @@ import { classNames } from '../../../utils/helpers';
 
 export const Label = ({ className = '', htmlFor, children, required, ...rest }) => {
   return (
-    <label htmlFor={htmlFor} className={classNames('input-label', className)} {...rest}>
+    <label htmlFor={htmlFor} className={classNames('label', className)} {...rest}>
       {children}
-      {required && <span className="input-label__required"> *</span>}
+      {required && <span className="label__required"> *</span>}
     </label>
   );
 };
