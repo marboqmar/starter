@@ -1,3 +1,26 @@
+/* Margins - extra small */
+.margin-xs {
+  margin: var(--spacing-xs);
+}
+
+.margin-top-xs {
+  margin-top: var(--spacing-xs);
+}
+
+.margin-bottom-xs {
+  margin-bottom: var(--spacing-xs);
+}
+
+.margin-x-xs {
+  margin-left: var(--spacing-xs);
+  margin-right: var(--spacing-xs);
+}
+
+.margin-y-xs {
+  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+}
+
 /* Margins - small */
 .margin-sm {
   margin: var(--spacing-sm);
@@ -16,7 +39,7 @@
   margin-right: var(--spacing-sm);
 }
 
-.mmargin-y-sm {
+.margin-y-sm {
   margin-top: var(--spacing-sm);
   margin-bottom: var(--spacing-sm);
 }

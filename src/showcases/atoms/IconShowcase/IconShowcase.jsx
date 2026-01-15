@@ -5,7 +5,7 @@ import { Heading } from '../../../components/atoms/Heading/Heading';
 export const IconShowcase = () => {
   return (
     <div className="atom-section">
-      <Heading>Icon</Heading>
+      <Heading>Icons</Heading>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Decorative icon</Heading>
         <p>

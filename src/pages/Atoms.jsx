@@ -1,10 +1,10 @@
 import { ButtonShowcase } from '../showcases/atoms/ButtonShowcase/ButtonShowcase';
-import { DefinitionListShowcase } from '../showcases/atoms/DefinitionListShowcase/DefinitionListShowcase';
 import { Heading } from '../components/atoms/Heading/Heading';
 import { HeadingShowcase } from '../showcases/atoms/HeadingShowcase/HeadingShowcase';
 import { IconShowcase } from '../showcases/atoms/IconShowcase/IconShowcase';
 import { ImageShowcase } from '../showcases/atoms/ImageShowcase/ImageShowcase';
 import { InputShowcase } from '../showcases/atoms/InputShowcase/InputShowcase';
+import { ListShowcase } from '../showcases/atoms/ListShowcase/ListShowcase';
 
 export const Atoms = () => {
   return (
@@ -12,13 +12,10 @@ export const Atoms = () => {
       <Heading level={1} className="margin-bottom-md">
         Atoms
       </Heading>
-      {/* Buttons */}
+      {/* Button */}
       <ButtonShowcase />
 
-      {/* Definition list */}
-      <DefinitionListShowcase />
-
-      {/* Headings */}
+      {/* Heading */}
       <HeadingShowcase />
 
       {/* Icon */}
@@ -29,6 +26,9 @@ export const Atoms = () => {
 
       {/* Input */}
       <InputShowcase />
+
+      {/* List */}
+      <ListShowcase />
     </div>
   );
 };

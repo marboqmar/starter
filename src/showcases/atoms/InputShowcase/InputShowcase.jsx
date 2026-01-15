@@ -6,7 +6,7 @@ import { Checkbox } from '../../../components/atoms/Checkbox/Checkbox';
 export const InputShowcase = () => {
   return (
     <div className="atom-section">
-      <Heading>Input</Heading>
+      <Heading>Inputs</Heading>
       <div className="stack gap-md">
         <Input
           label="Text type"
@@ -67,14 +67,14 @@ export const InputShowcase = () => {
           label="Long error message"
           id="long-error-showcase-input"
           errorHelperText="Long error message. This is a very long error message that will wrap to 
-          a second line on smaller screens to test alignment."
+          a second line on smaller screens to test alignment"
         />
-        <div className="stack gap-sm margin-y-md">
+        <div className="stack gap-sm margin-top-md">
           <Heading level={3}>Checkboxes</Heading>
           <Checkbox label="Checkbox" />
           <Checkbox
             label="Checkbox with long label. This is a very long label that will wrap to a second 
-            line on smaller screens to test alignment."
+            line on smaller screens to test alignment"
           />
           <Checkbox required label="Checkbox required" />
           <Checkbox label="Checkbox with helper text" helperText="This is a helper text" />

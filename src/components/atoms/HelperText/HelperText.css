@@ -23,8 +23,8 @@
   color: var(--colour-error);
 }
 
+/* Align error icon to centre of messages's first line */
 .helper-text--error-icon-wrapper {
-  /* Align error icon to centre of messages's first line */
   height: var(
     --icon-alignment-height
   ); /* This is the same as the line height, to centre it appropriately */

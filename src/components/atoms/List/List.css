@@ -1,0 +1,45 @@
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.list__item {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr;
+  align-items: start;
+}
+
+/* Align bullet to centre of text's first line */
+.list__bullet-wrapper {
+  height: var(
+    --icon-alignment-height
+  ); /* This is the same as the line height, to centre it appropriately */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list__bullet {
+  color: var(--colour-primary);
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.list--ordered {
+  counter-reset: list-counter;
+}
+
+.list__item-number::before {
+  counter-increment: list-counter;
+  content: counter(list-counter) ".";
+  color: var(--colour-primary);
+  font-weight: var(--font-weight-bold);
+  padding-right: var(--spacing-0-25);
+  /* Align number to centre of text's first line */
+  height: var(
+    --icon-alignment-height
+  ); /* This is the same as the line height, to centre it appropriately */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
