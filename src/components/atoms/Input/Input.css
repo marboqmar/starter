@@ -2,7 +2,7 @@
   max-width: 100%;
   padding: var(--spacing-0-5);
   border-radius: var(--radius-sm);
-  border: 1px solid var(--colour-primary);
+  border: var(--border-primary);
 }
 
 /* Error */
@@ -13,7 +13,7 @@
 /* Disabled */
 .input:disabled {
   cursor: not-allowed;
-  border: 1px solid var(--colour-gray-300);
-  color: var(--colour-gray-400);
-  background-color: var(--colour-gray-50);
+  border: var(--border-disabled);
+  color: var(--colour-disabled-text);
+  background-color: var(--colour-disabled-bg);
 }

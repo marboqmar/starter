@@ -28,7 +28,7 @@
   margin: 0;
   width: var(--spacing-1);
   height: var(--spacing-1);
-  border: 1px solid var(--colour-primary);
+  border: var(--border-primary);
   border-radius: var(--radius-xs);
   background-color: var(--colour-white);
   cursor: pointer;
@@ -78,22 +78,22 @@
 /* Disabled*/
 .checkbox:disabled {
   cursor: not-allowed;
-  border: 1px solid var(--colour-gray-300);
-  background-color: var(--colour-gray-50);
+  border: var(--border-disabled);
+  background-color: var(--colour-disabled-bg);
 }
 
 .checkbox-field:has(.checkbox:disabled) .label {
   cursor: not-allowed;
-  color: var(--colour-gray-400);
+  color: var(--colour-disabled-text);
 }
 
 .checkbox:disabled:checked {
-  border: 1px solid var(--colour-gray-300);
-  background-color: var(--colour-gray-50);
+  border: var(--border-disabled);
+  background-color: var(--colour-disabled-bg);
 }
 
 .checkbox:disabled:checked + .checkbox-icon {
   opacity: 1;
   transform: translate(-50%, -50%) scale(0.8);
-  color: var(--colour-gray-400);
+  color: var(--colour-disabled-text);
 }

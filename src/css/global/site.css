@@ -61,6 +61,16 @@ code {
     0 0 4px 4px var(--colour-primary-light);
 }
 
+/* Disabled */
+:disabled,
+.is-disabled {
+  cursor: not-allowed;
+  color: var(--colour-disabled-text);
+  background-color: var(--colour-disabled-bg);
+  border-color: var(--colour-disabled-border);
+  border: var(--border-disabled);
+}
+
 /* Remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
   *,

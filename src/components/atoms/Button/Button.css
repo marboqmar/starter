@@ -71,13 +71,14 @@
 /* Disabled */
 .button:disabled {
   cursor: not-allowed;
-  color: var(--colour-text-black);
-  background-color: var(--colour-gray-100);
-  border: 1px solid var(--colour-gray-300);
+  color: var(--colour-disabled-text);
+  background-color: var(--colour-disabled-bg);
+  border-color: var(--colour-disabled-border);
+  border: var(--border-disabled);
 }
 
 .button:disabled:hover {
-  background-color: var(--colour-gray-300);
+  background-color: var(--colour-disabled--bg-hover);
 }
 
 @media (min-width: 768px) {

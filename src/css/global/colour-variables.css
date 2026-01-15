@@ -37,4 +37,10 @@
   /* Text */
   --colour-text-black: var(--colour-black);
   --colour-text-inverted: var(--colour-white);
+
+  /* Disabled */
+  --colour-disabled-text: var(--colour-gray-400);
+  --colour-disabled-bg: var(--colour-gray-50);
+  --colour-disabled--bg-hover: var(--colour-gray-100);
+  --colour-disabled-border: var(--colour-gray-300);
 }
