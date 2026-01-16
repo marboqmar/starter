@@ -1,17 +1,13 @@
-.heading-examples,
-.paragraph-dark-bg {
+.text-showcase__example {
   padding: var(--spacing-md);
   border-radius: var(--radius-lg);
-}
-
-.heading-examples {
   background-color: var(--colour-gray-100);
 }
 
-.heading-examples .heading-2 {
-  margin-bottom: 0;
+.text-showcase__example--dark {
+  background-color: var(--colour-gray-500);
 }
 
-.paragraph-dark-bg {
-  background-color: var(--colour-gray-500);
+.atom-section .text-showcase__example--no-margin {
+  margin-bottom: 0;
 }

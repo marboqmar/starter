@@ -4,6 +4,6 @@
   margin-bottom: var(--spacing-0-5);
 }
 
-.label__required {
+.label--required {
   color: var(--colour-error);
 }

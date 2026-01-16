@@ -32,7 +32,7 @@ export const IconShowcase = () => {
           The colour and size of the icon component can be modified using CSS, as demonstrated in
           the following icon.
         </p>
-        <Icon isDecorative className="large-coloured">
+        <Icon isDecorative className="icon-showcase--large-coloured">
           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
         </Icon>
       </div>
@@ -42,7 +42,7 @@ export const IconShowcase = () => {
           The icon component also allows to use icons from an external SVG sprite. These icons can
           also be modified using CSS.
         </p>
-        <Icon className="large-coloured" name="checkmark"></Icon>
+        <Icon className="icon-showcase--large-coloured" name="checkmark"></Icon>
       </div>
     </div>
   );

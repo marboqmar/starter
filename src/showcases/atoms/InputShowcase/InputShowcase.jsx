@@ -57,7 +57,7 @@ export const InputShowcase = () => {
         />
         <Input
           label="Focused"
-          className="input--focused"
+          className="input-showcase__example--focused"
           id="focused-showcase-input"
           placeholder="Jon Doe"
           name="name"
@@ -81,7 +81,7 @@ export const InputShowcase = () => {
           <Checkbox defaultChecked label="Checked checkbox" />
           <Checkbox disabled label="Disabled checkbox" />
           <Checkbox disabled defaultChecked label="Checked disabled checkbox" />
-          <Checkbox className="focused-showcase-checkmark" label="Focused checkbox" />
+          <Checkbox className="input-showcase__example--focused" label="Focused checkbox" />
           <Checkbox label="Checkbox with an error" errorHelperText="This is an error message" />
           <Checkbox
             defaultChecked
@@ -104,7 +104,11 @@ export const InputShowcase = () => {
           <Radio name="radio-test" defaultChecked label="Checked radio" />
           <Radio name="radio-test-2" disabled label="Disabled radio" />
           <Radio name="radio-test-2" disabled defaultChecked label="Checked disabled radio" />
-          <Radio name="radio-test-2" className="focused-showcase-checkmark" label="Focused radio" />
+          <Radio
+            name="radio-test-2"
+            className="input-showcase__example--focused"
+            label="Focused radio"
+          />
           <Radio
             name="radio-test-3"
             label="Radio with an error"

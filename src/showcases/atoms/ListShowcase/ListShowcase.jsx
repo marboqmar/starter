@@ -32,7 +32,7 @@ export const ListShowcase = () => {
       </div>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Ordered list</Heading>
-        <List className="ordered-list__list-counter" ordered items={listItems} />
+        <List className="list-showcase__list-counter" ordered items={listItems} />
       </div>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Unordered list</Heading>

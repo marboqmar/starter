@@ -21,7 +21,7 @@ export const Label = ({ className = '', htmlFor, children, required, ...rest }) 
   return (
     <label htmlFor={htmlFor} className={classNames('label', className)} {...rest}>
       {children}
-      {required && <span className="label__required"> *</span>}
+      {required && <span className="label--required"> *</span>}
     </label>
   );
 };

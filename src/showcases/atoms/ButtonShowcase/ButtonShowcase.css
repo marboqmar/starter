@@ -1,5 +1,4 @@
-.button-examples .button,
-.link-examples .button-appearance {
+.button-showcase__button {
   max-width: 16rem;
 }
 
@@ -10,20 +9,18 @@
 }
 
 @media (min-width: 768px) {
-  .button-examples {
+  .button-showcase__item {
     text-align: center;
     align-items: center;
   }
 
-  .button-examples .button,
-  .button-examples .button-appearance {
+  .button-showcase__button {
     width: 12rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .button-examples .button,
-  .button-examples .button-appearance {
+  .button-showcase__button {
     width: 16rem;
   }
 }

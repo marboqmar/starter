@@ -20,7 +20,7 @@ export const Heading = ({ level = 2, children, className = '', ...rest }) => {
   const HeadingComponent = `h${headingLevel}`;
 
   return (
-    <HeadingComponent className={classNames(`heading-${headingLevel}`, className)} {...rest}>
+    <HeadingComponent className={classNames(`heading--${headingLevel}`, className)} {...rest}>
       {children}
     </HeadingComponent>
   );

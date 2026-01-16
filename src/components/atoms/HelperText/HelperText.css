@@ -1,34 +1,34 @@
-.helper-text-wrapper {
+.helper-text {
   display: flex;
   align-items: flex-start;
   gap: var(--spacing-0-25);
 }
 
-.helper-text-wrapper:has(.helper-text--error) {
+.helper-text.helper-text--error {
   margin-top: var(--spacing-0-5);
 }
 
-.helper-text {
+.helper-text__message {
   display: block;
   color: var(--colour-gray-600);
 }
 
-.helper-text--error {
-  color: var(--colour-error);
-}
-
-.helper-text--error-icon {
-  width: var(--spacing-1-5);
-  height: var(--spacing-1-5);
+.helper-text--error .helper-text__message {
   color: var(--colour-error);
 }
 
 /* Align error icon to centre of messages's first line */
-.helper-text--error-icon-wrapper {
+.helper-text__icon-wrapper {
   height: var(
     --icon-alignment-height
   ); /* This is the same as the line height, to centre it appropriately */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.helper-text__icon {
+  width: var(--spacing-1-5);
+  height: var(--spacing-1-5);
+  color: var(--colour-error);
 }

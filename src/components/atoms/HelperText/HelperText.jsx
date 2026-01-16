@@ -21,18 +21,14 @@ import { Icon } from '../../../components/atoms/Icon/Icon';
 
 export const HelperText = ({ className = '', isErrorText, id, children, ...rest }) => {
   return (
-    <div className="helper-text-wrapper">
+    <div className={classNames('helper-text', { 'helper-text--error': isErrorText }, className)}>
       {isErrorText && (
-        <div className="helper-text--error-icon-wrapper">
-          <Icon className="helper-text--error-icon" name="error" isDecorative />
+        <div className="helper-text__icon-wrapper">
+          <Icon className="helper-text__icon" name="error" isDecorative />
         </div>
       )}
 
-      <span
-        className={classNames('helper-text', { 'helper-text--error': isErrorText }, className)}
-        id={id}
-        {...rest}
-      >
+      <span className="helper-text__message" id={id} {...rest}>
         {children}
       </span>
     </div>
