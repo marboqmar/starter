@@ -1,9 +1,8 @@
 import './Input.css';
 import { classNames } from '../../../utils/helpers';
 import { forwardRef } from 'react';
-import { Label } from '../Label/Label';
 import { useId } from 'react';
-import { HelperText } from '../HelperText/HelperText';
+import { FieldWrapper } from '../../molecules/FieldWrapper/FieldWrapper';
 
 /**
  * Input component
@@ -55,10 +54,6 @@ export const Input = forwardRef(
     const generatedId = useId();
     const inputId = id || generatedId;
 
-    // If there is an error, display it rather than the helper text.
-    const isInvalid = !!errorHelperText;
-    const messageToShow = errorHelperText || helperText;
-
     const errorId = `${inputId}-errorHelperText`;
 
     const errorProps = !!errorHelperText
@@ -68,32 +63,27 @@ export const Input = forwardRef(
         }
       : {};
 
+    const field = (
+      <input
+        id={inputId}
+        className={classNames('input', className, { 'input--error': !!errorHelperText })}
+        type={type}
+        ref={ref}
+        {...errorProps}
+        {...rest}
+      />
+    );
+
     return (
-      <div className="input-wrapper">
-        {/* Label */}
-        {label && (
-          <Label htmlFor={inputId} required={required}>
-            {label}
-          </Label>
-        )}
-
-        {/* Input */}
-        <input
-          id={inputId}
-          className={classNames('input', className, { 'input--error': !!errorHelperText })}
-          type={type}
-          ref={ref}
-          {...errorProps}
-          {...rest}
-        />
-
-        {/* Helper text */}
-        {messageToShow && (
-          <HelperText id={isInvalid ? errorId : undefined} isErrorText={isInvalid}>
-            {messageToShow}
-          </HelperText>
-        )}
-      </div>
+      <FieldWrapper
+        label={label}
+        id={inputId}
+        helperText={helperText}
+        errorHelperText={errorHelperText}
+        required={required}
+        errorId={errorId}
+        field={field}
+      ></FieldWrapper>
     );
   },
 );
