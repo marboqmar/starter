@@ -10,9 +10,7 @@ export const TextShowcase = () => {
         <Heading level={3}>Headings</Heading>
         <div className="text-showcase__example stack gap-sm">
           <Heading level={1}>The quick brown fox jumps over the lazy dog</Heading>
-          <Heading className="text-showcase__example--no-margin">
-            The quick brown fox jumps over the lazy dog
-          </Heading>
+          <Heading>The quick brown fox jumps over the lazy dog</Heading>
           <Heading level={3}>The quick brown fox jumps over the lazy dog</Heading>
           <Heading level={4}>The quick brown fox jumps over the lazy dog</Heading>
           <Heading level={5}>The quick brown fox jumps over the lazy dog</Heading>

@@ -7,7 +7,3 @@
 .text-showcase__example--dark {
   background-color: var(--colour-gray-500);
 }
-
-.atom-section .text-showcase__example--no-margin {
-  margin-bottom: 0;
-}

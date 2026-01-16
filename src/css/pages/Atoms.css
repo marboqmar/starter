@@ -2,6 +2,6 @@
   margin-bottom: var(--spacing-xl);
 }
 
-.atom-section .heading--2 {
+.atom-section > .heading--2 {
   margin-bottom: var(--spacing-sm);
 }
