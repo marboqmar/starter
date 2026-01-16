@@ -2,6 +2,7 @@ import './InputShowcase.css';
 import { Input } from '../../../components/atoms/Input/Input';
 import { Heading } from '../../../components/atoms/Heading/Heading';
 import { Checkbox } from '../../../components/atoms/Checkbox/Checkbox';
+import { Radio } from '../../../components/atoms/Radio/Radio';
 
 export const InputShowcase = () => {
   return (
@@ -71,20 +72,48 @@ export const InputShowcase = () => {
         />
         <div className="stack gap-sm margin-top-md">
           <Heading level={3}>Checkboxes</Heading>
-          <Checkbox label="Checkbox" />
+          <Checkbox required label="Required checkbox" />
           <Checkbox
             label="Checkbox with long label. This is a very long label that will wrap to a second 
             line on smaller screens to test alignment"
           />
-          <Checkbox required label="Checkbox required" />
           <Checkbox label="Checkbox with helper text" helperText="This is a helper text" />
+          <Checkbox defaultChecked label="Checked checkbox" />
           <Checkbox disabled label="Disabled checkbox" />
-          <Checkbox disabled defaultChecked label="Disabled checkbox checked" />
+          <Checkbox disabled defaultChecked label="Checked disabled checkbox" />
           <Checkbox className="focused-showcase-checkmark" label="Focused checkbox" />
           <Checkbox label="Checkbox with an error" errorHelperText="This is an error message" />
           <Checkbox
             defaultChecked
-            label="Checkbox with an error and checked"
+            label="Checked checkbox with an error"
+            errorHelperText="This is an error message"
+          />
+        </div>
+        <div className="stack gap-sm margin-top-md">
+          <Heading level={3}>Radio</Heading>
+          <Radio
+            name="radio-test"
+            label="Radio with long label. This is a very long label that will wrap to a second 
+            line on smaller screens to test alignment"
+          />
+          <Radio
+            name="radio-test"
+            label="Radio with helper text"
+            helperText="This is a helper text"
+          />
+          <Radio name="radio-test" defaultChecked label="Checked radio" />
+          <Radio name="radio-test-2" disabled label="Disabled radio" />
+          <Radio name="radio-test-2" disabled defaultChecked label="Checked disabled radio" />
+          <Radio name="radio-test-2" className="focused-showcase-checkmark" label="Focused radio" />
+          <Radio
+            name="radio-test-3"
+            label="Radio with an error"
+            errorHelperText="This is an error message"
+          />
+          <Radio
+            name="radio-test-3"
+            defaultChecked
+            label="Checked radio with an error"
             errorHelperText="This is an error message"
           />
         </div>

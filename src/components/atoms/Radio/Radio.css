@@ -1,76 +1,71 @@
-.checkbox {
+.radio {
   /* Remove the default browser styling */
   appearance: none;
   -webkit-appearance: none;
 
-  /* Custom box */
+  /* Custom radio box*/
   margin: 0;
   width: var(--spacing-1);
   height: var(--spacing-1);
   border: var(--border-primary);
-  border-radius: var(--radius-xs);
+  border-radius: var(--radius-full);
   background-color: var(--colour-white);
   cursor: pointer;
   flex-shrink: 0;
 }
 
-/* Checkmark itself */
-.checkbox__icon {
+/* Radio icon */
+.radio__icon {
   position: absolute;
-  transform: scale(0.5);
+  transform: scale(0.7);
   pointer-events: none; /* Clicks go through to the input */
   opacity: 0;
   transition: all 0.1s ease-in-out;
-  color: var(--colour-white);
+  color: var(--colour-primary);
 }
 
 /* Checked */
-.checkbox:checked {
-  background-color: var(--colour-primary);
-  border-color: var(--colour-primary);
-}
-
-.checkbox:checked + .checkbox__icon {
+.radio:checked + .radio__icon {
   opacity: 1;
-  transform: scale(0.8);
+  transform: scale(1);
 }
 
 /* Error */
-.checkbox--error {
+.radio--error {
   border-color: var(--colour-error);
   background-color: var(--colour-error-transparent);
 }
 
-.checkbox--error:checked {
+.radio--error:checked {
   border-color: var(--colour-error);
   background-color: var(--colour-error-transparent);
 }
 
-.checkbox--error:checked + .checkbox__icon {
+.radio--error:checked + .radio__icon {
   opacity: 1;
-  transform: scale(0.8);
+  transform: scale(1);
   color: var(--colour-error);
 }
 
-/* Disabled*/
-.checkbox:disabled {
+/* Disabled */
+.radio:disabled {
   cursor: not-allowed;
   border: var(--border-disabled);
   background-color: var(--colour-disabled-bg);
 }
 
-.selection-control__field:has(.checkbox:disabled) .label {
+.selection-control__field:has(.radio:disabled) .label {
   cursor: not-allowed;
   color: var(--colour-disabled-text);
 }
 
-.checkbox:disabled:checked {
+.radio:disabled:checked {
   border: var(--border-disabled);
   background-color: var(--colour-disabled-bg);
 }
 
-.checkbox:disabled:checked + .checkbox__icon {
+.radio:disabled:checked + .radio__icon {
   opacity: 1;
-  transform: scale(0.8);
+  transform: scale(1);
   color: var(--colour-disabled-text);
 }

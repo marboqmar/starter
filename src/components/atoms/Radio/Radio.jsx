@@ -1,4 +1,4 @@
-import './Checkbox.css';
+import './Radio.css';
 import { classNames } from '../../../utils/helpers';
 import { forwardRef } from 'react';
 import { Icon } from '../Icon/Icon';
@@ -6,7 +6,7 @@ import { useId } from 'react';
 import { SelectionControlWrapper } from '../../molecules/SelectionControlWrapper/SelectionControlWrapper';
 
 /**
- * Checkbox component
+ * Radio component
  * Uses forwardRef to allow the parent component to grab a reference to a DOM node inside a child
  * component.
  *
@@ -17,26 +17,25 @@ import { SelectionControlWrapper } from '../../molecules/SelectionControlWrapper
  * provided, it defaults to a randomly generated ID.
  * @param {string} [helperText] - Informational text below the input.
  * @param {string} [errorHelperText] - Error message text; turns input border red.
- * @param {boolean} [required] - Adds '*' to the label to indicate this field is required.
  * @param {object} [rest] - Additional props passed.
  *
  * @example
- * <Checkbox label="Checkbox" />
+ * <Radio name="radio-test" label="Radio" />
  *
  * @example
- * // Disabled checkbox
- * <Checkbox disabled label="Disabled checkbox" />
+ * // Disabled radio
+ * <Radio name="radio-test" disabled label="Disabled radio" />
  */
 
-export const Checkbox = forwardRef(
-  ({ className = '', label, id, helperText, errorHelperText, required, ...rest }, ref) => {
+export const Radio = forwardRef(
+  ({ className = '', label, id, helperText, errorHelperText, name, ...rest }, ref) => {
     // If the user does not provide an ID, generate a random one.
     const generatedId = useId();
-    const checkboxId = id || generatedId;
+    const radioId = id || generatedId;
 
     const isInvalid = !!errorHelperText;
 
-    const errorId = `${checkboxId}-errorHelperText`;
+    const errorId = `${radioId}-errorHelperText`;
 
     const errorProps = isInvalid
       ? {
@@ -48,26 +47,26 @@ export const Checkbox = forwardRef(
     const selector = (
       <>
         <input
-          id={checkboxId}
-          className={classNames('checkbox', className, {
-            'checkbox--error': isInvalid,
+          id={radioId}
+          className={classNames('radio', className, {
+            'radio--error': isInvalid,
           })}
-          type="checkbox"
+          type="radio"
+          name={name}
           ref={ref}
           {...errorProps}
           {...rest}
         />
-        <Icon name="checkmark" className="checkbox__icon" aria-hidden="true" isDecorative />
+        <Icon name="radio-button" className="radio__icon" aria-hidden="true" isDecorative />
       </>
     );
 
     return (
       <SelectionControlWrapper
         label={label}
-        id={checkboxId}
+        id={radioId}
         helperText={helperText}
         errorHelperText={errorHelperText}
-        required={required}
         selector={selector}
         errorId={errorId}
       ></SelectionControlWrapper>
@@ -75,4 +74,4 @@ export const Checkbox = forwardRef(
   },
 );
 
-Checkbox.displayName = 'Checkbox';
+Radio.displayName = 'Radio';

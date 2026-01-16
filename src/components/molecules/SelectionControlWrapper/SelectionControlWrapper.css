@@ -6,6 +6,7 @@
 
 .selection-control__field .label {
   margin: 0;
+  cursor: pointer;
 }
 
 .selection-control__selector {
