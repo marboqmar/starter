@@ -1,0 +1,20 @@
+.text-area {
+  max-width: 100%;
+  padding: var(--spacing-0-5);
+  display: block;
+  border-radius: var(--radius-sm);
+  border: var(--border-primary);
+}
+
+/* Error */
+.text-area--error {
+  border: 1px solid var(--colour-error);
+}
+
+/* Disabled */
+.text-area:disabled {
+  cursor: not-allowed;
+  border: var(--border-disabled);
+  color: var(--colour-disabled-text);
+  background-color: var(--colour-disabled-bg);
+}

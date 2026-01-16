@@ -3,6 +3,7 @@ import { Input } from '../../../components/atoms/Input/Input';
 import { Heading } from '../../../components/atoms/Heading/Heading';
 import { Checkbox } from '../../../components/atoms/Checkbox/Checkbox';
 import { Radio } from '../../../components/atoms/Radio/Radio';
+import { TextArea } from '../../../components/atoms/TextArea/TextArea';
 
 export const InputShowcase = () => {
   return (
@@ -70,6 +71,21 @@ export const InputShowcase = () => {
           errorHelperText="Long error message. This is a very long error message that will wrap to 
           a second line on smaller screens to test alignment"
         />
+        <div className="stack gap-sm margin-top-md">
+          <Heading level={3}>Text areas</Heading>
+          <TextArea label="Required text area" required id="showcase-text-area-required" />
+          <TextArea
+            label="Text area with a helper text"
+            helperText="This is a helper text"
+            id="showcase-text-area-helper-text"
+          />
+          <TextArea disabled label="Disabled text area" id="showcase-text-area-disabled" />
+          <TextArea
+            label="Text area with an error"
+            errorHelperText="This is an error message"
+            id="showcase-text-area-error"
+          />
+        </div>
         <div className="stack gap-sm margin-top-md">
           <Heading level={3}>Checkboxes</Heading>
           <Checkbox required label="Required checkbox" />
