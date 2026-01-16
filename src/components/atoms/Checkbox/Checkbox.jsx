@@ -2,9 +2,8 @@ import './Checkbox.css';
 import { classNames } from '../../../utils/helpers';
 import { forwardRef } from 'react';
 import { Icon } from '../Icon/Icon';
-import { Label } from '../Label/Label';
 import { useId } from 'react';
-import { HelperText } from '../HelperText/HelperText';
+import { SelectionControlWrapper } from '../../molecules/SelectionControlWrapper/SelectionControlWrapper';
 
 /**
  * Checkbox component
@@ -18,7 +17,7 @@ import { HelperText } from '../HelperText/HelperText';
  * provided, it defaults to a randomly generated ID.
  * @param {string} [helperText] - Informational text below the input.
  * @param {string} [errorHelperText] - Error message text; turns input border red.
- * @param {boolean} [required] - Adds '*' to the label to indicate this field is required..
+ * @param {boolean} [required] - Adds '*' to the label to indicate this field is required.
  * @param {object} [rest] - Additional props passed.
  *
  * @example
@@ -33,13 +32,11 @@ export const Checkbox = forwardRef(
   ({ className = '', label, id, helperText, errorHelperText, required, ...rest }, ref) => {
     // If the user does not provide an ID, generate a random one.
     const generatedId = useId();
-    const inputId = id || generatedId;
+    const checkboxId = id || generatedId;
 
-    // If there is an error, display it rather than the helper text.
     const isInvalid = !!errorHelperText;
-    const messageToShow = errorHelperText || helperText;
 
-    const errorId = `${inputId}-errorHelperText`;
+    const errorId = `${checkboxId}-errorHelperText`;
 
     const errorProps = isInvalid
       ? {
@@ -48,42 +45,32 @@ export const Checkbox = forwardRef(
         }
       : {};
 
+    const selector = (
+      <>
+        <input
+          id={checkboxId}
+          className={classNames('checkbox', className, {
+            'checkbox--error': isInvalid,
+          })}
+          type="checkbox"
+          ref={ref}
+          {...errorProps}
+          {...rest}
+        />
+        <Icon name="checkmark" className="checkbox-icon" aria-hidden="true" isDecorative />
+      </>
+    );
+
     return (
-      <div className="checkbox-wrapper">
-        <div className="checkbox-field">
-          {/* Input */}
-          <div className="checkbox-control">
-            <input
-              id={inputId}
-              className={classNames('checkbox', className, {
-                'checkbox--error': isInvalid,
-              })}
-              type="checkbox"
-              ref={ref}
-              {...errorProps}
-              {...rest}
-            />
-
-            <Icon name="checkmark" className="checkbox-icon" aria-hidden="true" isDecorative />
-          </div>
-
-          <div className="checkbox-content">
-            {/* Label */}
-            {label && (
-              <Label htmlFor={inputId} required={required}>
-                {label}
-              </Label>
-            )}
-
-            {/* Helper text */}
-            {messageToShow && (
-              <HelperText id={isInvalid ? errorId : undefined} isErrorText={isInvalid}>
-                {messageToShow}
-              </HelperText>
-            )}
-          </div>
-        </div>
-      </div>
+      <SelectionControlWrapper
+        label={label}
+        id={checkboxId}
+        helperText={helperText}
+        errorHelperText={errorHelperText}
+        required={required}
+        selector={selector}
+        errorId={errorId}
+      ></SelectionControlWrapper>
     );
   },
 );

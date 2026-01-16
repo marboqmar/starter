@@ -1,24 +1,3 @@
-.checkbox-field {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--spacing-0-5);
-}
-
-.checkbox-field .label {
-  margin: 0;
-}
-
-.checkbox-control {
-  position: relative;
-  /* Align checkbox to centre of label's first line */
-  height: var(
-    --icon-alignment-height
-  ); /* This is the same as the line height, to centre it appropriately */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .checkbox {
   /* Remove the default browser styling */
   appearance: none;
