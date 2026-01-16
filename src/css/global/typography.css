@@ -1,9 +1,0 @@
-p,
-.body-copy {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-lg);
-  color: var(--color-black);
-}
