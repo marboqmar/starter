@@ -41,7 +41,7 @@ export const Checkbox = forwardRef(
 
     const errorId = `${inputId}-errorHelperText`;
 
-    const errorProps = !!errorHelperText
+    const errorProps = isInvalid
       ? {
           'aria-invalid': true,
           'aria-describedby': errorId,
@@ -56,7 +56,7 @@ export const Checkbox = forwardRef(
             <input
               id={inputId}
               className={classNames('checkbox', className, {
-                'checkbox--error': !!errorHelperText,
+                'checkbox--error': isInvalid,
               })}
               type="checkbox"
               ref={ref}
@@ -87,3 +87,5 @@ export const Checkbox = forwardRef(
     );
   },
 );
+
+Checkbox.displayName = 'Checkbox';
