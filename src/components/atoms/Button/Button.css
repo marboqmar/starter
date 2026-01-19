@@ -82,6 +82,8 @@
 }
 
 @media (min-width: 768px) {
+  .button--primary,
+  .button--secondary,
   .button__padding-size--small {
     padding: var(--spacing-0-75) var(--spacing-1-5);
   }

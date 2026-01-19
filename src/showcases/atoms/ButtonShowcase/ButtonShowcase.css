@@ -1,26 +1,38 @@
+.button-showcase__column {
+  grid-column: span 6;
+}
+
 .button-showcase__button {
+  width: 100%;
   max-width: 16rem;
 }
 
-.button--focused {
+.button-showcase__example--focused {
   outline: none;
-  box-shadow: 0 0 0 1px var(--colour-white), 0 0 0 2px var(--colour-primary-dark),
+  box-shadow:
+    0 0 0 1px var(--colour-white),
+    0 0 0 2px var(--colour-primary-dark),
     0 0 4px 4px var(--colour-primary-light);
 }
 
 @media (min-width: 768px) {
-  .button-showcase__item {
-    text-align: center;
+  .button-showcase__column {
     align-items: center;
   }
 
   .button-showcase__button {
-    width: 12rem;
+    max-width: 12rem;
   }
 }
 
 @media (min-width: 1024px) {
   .button-showcase__button {
     width: 16rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .button-showcase__column {
+    grid-column: span 3;
   }
 }

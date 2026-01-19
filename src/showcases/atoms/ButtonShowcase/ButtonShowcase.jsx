@@ -7,9 +7,9 @@ export const ButtonShowcase = () => {
   return (
     <div className="atom-section">
       <Heading>Buttons</Heading>
-      <div className="button-atoms grid grid-cols-1 grid-cols-tablet-2 grid-cols-desktop-lg-4 gap-lg">
+      <div className="button-showcase grid gap-md">
         {/* Buttons - Colours / States */}
-        <div className="button-showcase__item stack gap-sm">
+        <div className="button-showcase__column stack gap-sm">
           <Heading level={3}>Colours / States</Heading>
           <Button className="button-showcase__button">Primary</Button>
           <Button className="button-showcase__button" buttonStyle={'secondary'}>
@@ -18,20 +18,24 @@ export const ButtonShowcase = () => {
           <Button className="button-showcase__button" disabled>
             Disabled
           </Button>
-          <Button className="button-showcase__button button--focused">Focused</Button>
+          <Button className="button-showcase__button button-showcase__example--focused">
+            Focused
+          </Button>
         </div>
 
         {/* Buttons - Padding */}
-        <div className="button-showcase__item stack gap-sm">
+        <div className="button-showcase__column stack gap-sm">
           <Heading level={3}>Padding</Heading>
-          <Button className="button-showcase__button">Small padding</Button>
+          <Button className="button-showcase__button" paddingSize={'small'}>
+            Small padding
+          </Button>
           <Button className="button-showcase__button" paddingSize={'large'}>
             Large padding
           </Button>
         </div>
 
         {/* Buttons - Border radius */}
-        <div className="button-showcase__item stack gap-sm">
+        <div className="button-showcase__column stack gap-sm">
           <Heading level={3}>Border radius</Heading>
           <Button className="button-showcase__button" borderRadius={'none'}>
             No border radius
@@ -43,7 +47,7 @@ export const ButtonShowcase = () => {
         </div>
 
         {/* Buttons - Link */}
-        <div className="button-showcase__item stack gap-sm">
+        <div className="button-showcase__column stack gap-sm">
           <Heading level={3}>Links</Heading>
           <Button
             className="button-showcase__button"
@@ -63,7 +67,7 @@ export const ButtonShowcase = () => {
           >
             Button-looking link
           </Button>
-          <p>
+          <p className="button-showcase__button">
             Lorem ipsum{' '}
             <Button component={Link} to={'/'}>
               inline link
