@@ -1,0 +1,7 @@
+.grid-showcase__element {
+  padding-top: var(--spacing-xs);
+  padding-bottom: var(--spacing-xs);
+  text-align: center;
+  border-radius: var(--radius-sm);
+  background-color: var(--colour-primary-transparent);
+}

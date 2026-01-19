@@ -3,6 +3,7 @@
   --colour-primary: #5925dc;
   --colour-primary-light: #6938ef;
   --colour-primary-dark: #4a1fb8;
+  --colour-primary-transparent: rgba(89, 37, 220, 0.3);
 
   /* Secondary */
   --colour-secondary: #9e165f;
