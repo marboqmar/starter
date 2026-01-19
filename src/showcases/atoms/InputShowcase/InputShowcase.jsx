@@ -9,69 +9,89 @@ export const InputShowcase = () => {
   return (
     <div className="atom-section">
       <Heading>Inputs</Heading>
-      <div className="stack gap-md">
-        <Input
-          label="Text type"
-          id="text-showcase-input"
-          placeholder="Jon Doe"
-          name="name"
-          autoComplete="name"
-        />
-        <Input
-          label="Password type"
-          type="password"
-          id="password-showcase-input"
-          name="password"
-          autoComplete="current-password"
-        />
-        <Input
-          label="Number type"
-          type="number"
-          id="number-showcase-input"
-          placeholder="12345"
-          name="test-number"
-        />
-        <Input
-          label="Date type"
-          type="date"
-          id="date-showcase-input"
-          name="birthday"
-          autoComplete="bday"
-        />
-        <Input label="Required" required id="required-showcase-input" />
-        <Input
-          label="With helper text"
-          id="helper-text-showcase-input"
-          helperText="This is a helper text"
-        />
-        <Input
-          label="Read only"
-          id="read-only-showcase-input"
-          value="This value can not be edited"
-          readOnly
-        />
-        <Input
-          label="Disabled"
-          disabled
-          id="disabled-showcase-input"
-          value="This input is disabled"
-        />
-        <Input
-          label="Focused"
-          className="input-showcase__example--focused"
-          id="focused-showcase-input"
-          placeholder="Jon Doe"
-          name="name"
-          autoComplete="name"
-        />
-        <Input label="Error" id="error-showcase-input" errorHelperText="This is an error message" />
-        <Input
-          label="Long error message"
-          id="long-error-showcase-input"
-          errorHelperText="Long error message. This is a very long error message that will wrap to 
+      <div className="input-showcase stack gap-md">
+        <div className="input-showcase__input-group grid gap md">
+          <Input
+            className="input-showcase__input-example"
+            label="Text type"
+            id="text-showcase-input"
+            placeholder="Jon Doe"
+            name="name"
+            autoComplete="name"
+          />
+          <Input
+            className="input-showcase__input-example"
+            label="Password type"
+            type="password"
+            id="password-showcase-input"
+            name="password"
+            autoComplete="current-password"
+          />
+          <Input
+            className="input-showcase__input-example"
+            label="Number type"
+            type="number"
+            id="number-showcase-input"
+            placeholder="12345"
+            name="test-number"
+          />
+          <Input
+            className="input-showcase__input-example"
+            label="Date type"
+            type="date"
+            id="date-showcase-input"
+            name="birthday"
+            autoComplete="bday"
+          />
+          <Input
+            className="input-showcase__input-example"
+            label="Required"
+            required
+            id="required-showcase-input"
+          />
+          <Input
+            className="input-showcase__input-example"
+            label="With helper text"
+            id="helper-text-showcase-input"
+            helperText="This is a helper text"
+          />
+          <Input
+            className="input-showcase__input-example"
+            label="Read only"
+            id="read-only-showcase-input"
+            value="This value can not be edited"
+            readOnly
+          />
+          <Input
+            className="input-showcase__input-example"
+            label="Disabled"
+            disabled
+            id="disabled-showcase-input"
+            value="This input is disabled"
+          />
+          <Input
+            className="input-showcase__input-example input-showcase__example--focused"
+            label="Focused"
+            id="focused-showcase-input"
+            placeholder="Jon Doe"
+            name="name"
+            autoComplete="name"
+          />
+          <Input
+            className="input-showcase__input-example"
+            label="Error"
+            id="error-showcase-input"
+            errorHelperText="This is an error message"
+          />
+          <Input
+            className="input-showcase__input-example"
+            label="Long error message"
+            id="long-error-showcase-input"
+            errorHelperText="Long error message. This is a very long error message that will wrap to 
           a second line on smaller screens to test alignment"
-        />
-        <div className="stack gap-sm margin-top-md">
+          />
+        </div>
+        <div className="stack gap-sm">
           <Heading level={3}>Text areas</Heading>
           <TextArea label="Required text area" required id="showcase-text-area-required" />
           <TextArea
@@ -86,7 +106,7 @@ export const InputShowcase = () => {
             id="showcase-text-area-error"
           />
         </div>
-        <div className="stack gap-sm margin-top-md">
+        <div className="stack gap-sm">
           <Heading level={3}>Checkboxes</Heading>
           <Checkbox required label="Required checkbox" />
           <Checkbox
@@ -105,7 +125,7 @@ export const InputShowcase = () => {
             errorHelperText="This is an error message"
           />
         </div>
-        <div className="stack gap-sm margin-top-md">
+        <div className="stack gap-sm">
           <Heading level={3}>Radio</Heading>
           <Radio
             name="radio-test"
