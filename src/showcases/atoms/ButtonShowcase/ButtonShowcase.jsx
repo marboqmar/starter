@@ -5,9 +5,9 @@ import { Heading } from '../../../components/atoms/Heading/Heading';
 
 export const ButtonShowcase = () => {
   return (
-    <div className="atom-section">
+    <div className="button-showcase stack gap-sm">
       <Heading>Buttons</Heading>
-      <div className="button-showcase grid gap-md">
+      <div className="grid gap-md">
         {/* Buttons - Colours / States */}
         <div className="button-showcase__column stack gap-sm">
           <Heading level={3}>Colours / States</Heading>

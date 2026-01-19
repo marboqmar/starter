@@ -12,23 +12,25 @@ export const Atoms = () => {
       <Heading level={1} className="margin-bottom-md">
         Atoms
       </Heading>
-      {/* Button */}
-      <ButtonShowcase />
+      <div className="stack gap-xl">
+        {/* Button */}
+        <ButtonShowcase />
 
-      {/* Icon */}
-      <IconShowcase />
+        {/* Icon */}
+        <IconShowcase />
 
-      {/* Image */}
-      <ImageShowcase />
+        {/* Image */}
+        <ImageShowcase />
 
-      {/* Input */}
-      <InputShowcase />
+        {/* Input */}
+        <InputShowcase />
 
-      {/* List */}
-      <ListShowcase />
+        {/* List */}
+        <ListShowcase />
 
-      {/* Texts */}
-      <TextShowcase />
+        {/* Texts */}
+        <TextShowcase />
+      </div>
     </div>
   );
 };

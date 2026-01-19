@@ -7,9 +7,9 @@ import { TextArea } from '../../../components/atoms/TextArea/TextArea';
 
 export const InputShowcase = () => {
   return (
-    <div className="atom-section">
+    <div className="input-showcase stack gap-sm">
       <Heading>Inputs</Heading>
-      <div className="input-showcase stack gap-md">
+      <div className="stack gap-md">
         <div className="input-showcase__input-group grid gap md">
           <Input
             className="input-showcase__input-example"

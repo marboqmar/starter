@@ -24,17 +24,17 @@ const listItems = [
 
 export const ListShowcase = () => {
   return (
-    <div className="atom-section">
+    <div className="list-showcase stack gap-sm">
       <Heading>Lists</Heading>
-      <div className="stack gap-sm margin-bottom-md">
+      <div className="stack gap-sm">
         <Heading level={3}>Definition list</Heading>
         <DefinitionList items={descriptionItems} />
       </div>
-      <div className="stack gap-sm margin-bottom-md">
+      <div className="stack gap-sm">
         <Heading level={3}>Ordered list</Heading>
         <List className="list-showcase__list-counter" ordered items={listItems} />
       </div>
-      <div className="stack gap-sm margin-bottom-md">
+      <div className="stack gap-sm">
         <Heading level={3}>Unordered list</Heading>
         <List items={listItems} />
       </div>

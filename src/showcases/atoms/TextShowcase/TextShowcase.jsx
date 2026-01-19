@@ -4,7 +4,7 @@ import { Paragraph } from '../../../components/atoms/Paragraph/Paragraph';
 
 export const TextShowcase = () => {
   return (
-    <div className="atom-section">
+    <div className="text-showcase stack gap-sm">
       <Heading>Texts</Heading>
       <div className="stack gap-md">
         <Heading level={3}>Headings</Heading>

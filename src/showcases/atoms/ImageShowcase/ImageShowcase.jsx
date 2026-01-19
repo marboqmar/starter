@@ -1,16 +1,17 @@
 import './ImageShowcase.css';
 import { Image } from '../../../components/atoms/Image/Image';
 import { Heading } from '../../../components/atoms/Heading/Heading';
+import { Paragraph } from '../../../components/atoms/Paragraph/Paragraph';
 
 export const ImageShowcase = () => {
   return (
-    <div className="atom-section">
+    <div className="image-showcase stack gap-sm">
       <Heading>Images</Heading>
-      <div className="stack gap-sm margin-bottom-md">
+      <div className="stack gap-sm">
         <Heading level={3}>
           Image with descriptive <code>alt</code>
         </Heading>
-        <p>The following image contains a descriptive alternative text.</p>
+        <Paragraph>The following image contains a descriptive alternative text.</Paragraph>
         <Image
           src="/assets/images/test-image-sm.png"
           alt={
@@ -19,31 +20,31 @@ export const ImageShowcase = () => {
           }
         />
       </div>
-      <div className="stack gap-sm margin-bottom-md">
+      <div className="stack gap-sm">
         <Heading level={3}>
           Image with an empty <code>alt</code>
         </Heading>
-        <p>
+        <Paragraph>
           The image component has a default empty <code>alt</code> to avoid accessibility issues,
           and also a default lazy loading.
-        </p>
+        </Paragraph>
         <Image src="/assets/images/test-image-sm.png" />
       </div>
-      <div className="stack gap-sm margin-bottom-md">
+      <div className="stack gap-sm">
         <Heading level={3}>Image with eager loading</Heading>
-        <p>
+        <Paragraph>
           When an image is set to be eager loaded, <code>decoding="sync"</code> and{' '}
           <code>fetchPriority="high"</code> are also applied automatically.
-        </p>
+        </Paragraph>
         <Image src="/assets/images/test-image-sm.png" loading="eager" />
       </div>
-      <div className="stack gap-sm margin-bottom-md">
+      <div className="stack gap-sm">
         <Heading level={3}>Responsive images</Heading>
-        <p>
+        <Paragraph>
           This component supports responsive image delivery through the attributes{' '}
           <code>srcSet</code> and <code>sizes</code>, allowing the browser to select the most
           efficient image size for the user's device.
-        </p>
+        </Paragraph>
         <Image
           src="/assets/images/test-image-sm.png"
           srcSet="

@@ -1,47 +1,48 @@
 import './IconShowcase.css';
 import { Icon } from '../../../components/atoms/Icon/Icon';
 import { Heading } from '../../../components/atoms/Heading/Heading';
+import { Paragraph } from '../../../components/atoms/Paragraph/Paragraph';
 
 export const IconShowcase = () => {
   return (
-    <div className="atom-section">
+    <div className="icon-showcase stack gap-sm">
       <Heading>Icons</Heading>
-      <div className="stack gap-sm margin-bottom-md">
+      <div className="margin-bottom-md">
         <Heading level={3}>Decorative icon</Heading>
-        <p>
+        <Paragraph>
           The following icon contains the HTML attributes <code>aria-hidden="true"</code>,{' '}
           <code>tabindex="-1"</code>, and <code>focusable="false"</code>.
-        </p>
+        </Paragraph>
         <Icon isDecorative>
           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
         </Icon>
       </div>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Non decorative icon</Heading>
-        <p>
+        <Paragraph>
           The following icon contains the HTML attributes <code>role="img"</code> and{' '}
           <code>aria-label</code>.
-        </p>
+        </Paragraph>
         <Icon ariaLabel={'check mark'}>
           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
         </Icon>
       </div>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Different colours and sizes</Heading>
-        <p>
+        <Paragraph>
           The colour and size of the icon component can be modified using CSS, as demonstrated in
           the following icon.
-        </p>
+        </Paragraph>
         <Icon isDecorative className="icon-showcase--large-coloured">
           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
         </Icon>
       </div>
       <div className="stack gap-sm margin-bottom-md">
         <Heading level={3}>Icon from an SVG file</Heading>
-        <p>
+        <Paragraph>
           The icon component also allows to use icons from an external SVG sprite. These icons can
           also be modified using CSS.
-        </p>
+        </Paragraph>
         <Icon className="icon-showcase--large-coloured" name="checkmark"></Icon>
       </div>
     </div>

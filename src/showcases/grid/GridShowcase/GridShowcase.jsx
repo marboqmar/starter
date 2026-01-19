@@ -1,5 +1,6 @@
 import './GridShowcase.css';
 import { Heading } from '../../../components/atoms/Heading/Heading';
+import { Paragraph } from '../../../components/atoms/Paragraph/Paragraph';
 
 export const GridShowcase = () => {
   return (
@@ -25,7 +26,7 @@ export const GridShowcase = () => {
       </div>
       {/* Mobile examples */}
       <Heading>Mobile grid layout examples</Heading>
-      <p>On mobile, the grid has 6 columns by default.</p>
+      <Paragraph>On mobile, the grid has 6 columns by default.</Paragraph>
       <div className="grid-showcase__column grid">
         <span className="grid-showcase__element col-span-3">3/6</span>
         <span className="grid-showcase__element col-span-3">3/6</span>
@@ -45,10 +46,10 @@ export const GridShowcase = () => {
       </div>
       {/* Desktop examples */}
       <Heading>Desktop grid layout examples</Heading>
-      <p>
+      <Paragraph>
         On desktop, the grid has 12 columns by default. On mobile, the following examples are set to
         occupy the whole grid.
-      </p>
+      </Paragraph>
       <div className="grid-showcase__column grid">
         <span className="grid-showcase__element col-span-6 col-span-tablet-6">6/12</span>
         <span className="grid-showcase__element col-span-6 col-span-tablet-6">6/12</span>
