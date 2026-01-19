@@ -47,7 +47,7 @@ export const GridShowcase = () => {
       <Heading>Desktop grid layout examples</Heading>
       <p>
         On desktop, the grid has 12 columns by default. On mobile, the following examples are set to
-        ocupy the whole grid.
+        occupy the whole grid.
       </p>
       <div className="grid-showcase__column grid">
         <span className="grid-showcase__element col-span-6 col-span-tablet-6">6/12</span>

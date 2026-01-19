@@ -9,6 +9,9 @@ export const Homepage = () => {
       <p>Explanation about the project</p>
       <p>It uses the atomic design system. See how the components display</p>
       <div className="components-classification stack gap-md margin-top-md margin-bottom-md">
+        <Button component={Link} buttonAppearance buttonStyle={'primary'} to="/grid">
+          Grid
+        </Button>
         <Button component={Link} buttonAppearance buttonStyle={'primary'} to="/atoms">
           Atoms
         </Button>
