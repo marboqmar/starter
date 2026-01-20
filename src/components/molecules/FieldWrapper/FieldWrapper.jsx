@@ -12,6 +12,8 @@ import { HelperText } from '../../atoms/HelperText/HelperText';
  * @param {string} [errorHelperText] - Error message text; turns input border red.
  * @param {boolean} [required] - Adds '*' to the label to indicate this field is required.
  * @param {node} [field] - The form element to be wrapped (input, or textarea).
+ * @param {string} [helperId] - This ID is assigned to the label and the input receives the same
+ * helperId as its aria-describedby.
  * @param {string} [errorId] - If there is an error this ID is assigned to the label and the input
  * receives the same errorId as its aria-describedby.
  *
@@ -43,8 +45,9 @@ export const FieldWrapper = ({
   id,
   helperText,
   errorHelperText,
-  required,
+  helperId,
   errorId,
+  required,
   field,
 }) => {
   // If there is an error, display it rather than the helper text.
@@ -65,7 +68,7 @@ export const FieldWrapper = ({
 
       {/* Helper text */}
       {messageToShow && (
-        <HelperText id={isInvalid ? errorId : undefined} isErrorText={isInvalid}>
+        <HelperText id={errorId || helperId} isErrorText={isInvalid}>
           {messageToShow}
         </HelperText>
       )}

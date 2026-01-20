@@ -10,7 +10,7 @@ export const InputShowcase = () => {
     <div className="input-showcase stack gap-sm">
       <Heading>Inputs</Heading>
       <div className="stack gap-md">
-        <div className="input-showcase__input-group grid gap md">
+        <div className="input-showcase__input-group grid gap-md">
           <Input
             className="input-showcase__input-example"
             label="Text type"
@@ -63,19 +63,19 @@ export const InputShowcase = () => {
             readOnly
           />
           <Input
-            className="input-showcase__input-example"
-            label="Disabled"
-            disabled
-            id="disabled-showcase-input"
-            value="This input is disabled"
-          />
-          <Input
             className="input-showcase__input-example input-showcase__example--focused"
             label="Focused"
             id="focused-showcase-input"
             placeholder="Jon Doe"
             name="name"
             autoComplete="name"
+          />
+          <Input
+            className="input-showcase__input-example"
+            label="Disabled"
+            disabled
+            id="disabled-showcase-input"
+            value="This input is disabled"
           />
           <Input
             className="input-showcase__input-example"
@@ -88,7 +88,7 @@ export const InputShowcase = () => {
             label="Long error message"
             id="long-error-showcase-input"
             errorHelperText="Long error message. This is a very long error message that will wrap to 
-          a second line on smaller screens to test alignment"
+          a second line to test alignment"
           />
         </div>
         <div className="stack gap-sm">
@@ -98,6 +98,13 @@ export const InputShowcase = () => {
             label="Text area with a helper text"
             helperText="This is a helper text"
             id="showcase-text-area-helper-text"
+          />
+          <TextArea label="Custom number of rows" rows={5} />
+          <TextArea label="Number of characters limited to 5" maxLength={5} />
+          <TextArea
+            label="Focused text area"
+            className="input-showcase__example--focused"
+            id="focused-showcase-text-area"
           />
           <TextArea disabled label="Disabled text area" id="showcase-text-area-disabled" />
           <TextArea
@@ -115,9 +122,9 @@ export const InputShowcase = () => {
           />
           <Checkbox label="Checkbox with helper text" helperText="This is a helper text" />
           <Checkbox defaultChecked label="Checked checkbox" />
+          <Checkbox className="input-showcase__example--focused" label="Focused checkbox" />
           <Checkbox disabled label="Disabled checkbox" />
           <Checkbox disabled defaultChecked label="Checked disabled checkbox" />
-          <Checkbox className="input-showcase__example--focused" label="Focused checkbox" />
           <Checkbox label="Checkbox with an error" errorHelperText="This is an error message" />
           <Checkbox
             defaultChecked
@@ -138,13 +145,13 @@ export const InputShowcase = () => {
             helperText="This is a helper text"
           />
           <Radio name="radio-test" defaultChecked label="Checked radio" />
-          <Radio name="radio-test-2" disabled label="Disabled radio" />
-          <Radio name="radio-test-2" disabled defaultChecked label="Checked disabled radio" />
           <Radio
             name="radio-test-2"
             className="input-showcase__example--focused"
             label="Focused radio"
           />
+          <Radio name="radio-test-2" disabled label="Disabled radio" />
+          <Radio name="radio-test-2" disabled defaultChecked label="Checked disabled radio" />
           <Radio
             name="radio-test-3"
             label="Radio with an error"

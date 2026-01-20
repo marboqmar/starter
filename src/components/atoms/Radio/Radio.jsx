@@ -33,28 +33,21 @@ export const Radio = forwardRef(
     const generatedId = useId();
     const radioId = id || generatedId;
 
-    const isInvalid = !!errorHelperText;
-
-    const errorId = `${radioId}-errorHelperText`;
-
-    const errorProps = isInvalid
-      ? {
-          'aria-invalid': true,
-          'aria-describedby': errorId,
-        }
-      : {};
+    const helperId = !!helperText ? `${radioId}-helperText` : null;
+    const errorId = !!errorHelperText ? `${radioId}-errorHelperText` : null;
 
     const selector = (
       <>
         <input
           id={radioId}
           className={classNames('radio', className, {
-            'radio--error': isInvalid,
+            'radio--error': !!errorHelperText,
           })}
           type="radio"
           name={name}
           ref={ref}
-          {...errorProps}
+          aria-describedby={errorId || helperId || undefined}
+          aria-invalid={!!errorHelperText || undefined}
           {...rest}
         />
         <Icon name="radio-button" className="radio__icon" aria-hidden="true" isDecorative />
@@ -69,6 +62,7 @@ export const Radio = forwardRef(
         errorHelperText={errorHelperText}
         selector={selector}
         errorId={errorId}
+        helperId={helperId}
       ></SelectionControlWrapper>
     );
   },

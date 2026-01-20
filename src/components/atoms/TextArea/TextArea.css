@@ -5,6 +5,7 @@
   border-radius: var(--radius-sm);
   border: var(--border-primary);
   box-sizing: border-box;
+  resize: vertical;
 }
 
 /* Error */

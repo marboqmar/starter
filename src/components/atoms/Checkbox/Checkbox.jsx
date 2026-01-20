@@ -34,27 +34,20 @@ export const Checkbox = forwardRef(
     const generatedId = useId();
     const checkboxId = id || generatedId;
 
-    const isInvalid = !!errorHelperText;
-
-    const errorId = `${checkboxId}-errorHelperText`;
-
-    const errorProps = isInvalid
-      ? {
-          'aria-invalid': true,
-          'aria-describedby': errorId,
-        }
-      : {};
+    const helperId = !!helperText ? `${checkboxId}-helperText` : null;
+    const errorId = !!errorHelperText ? `${checkboxId}-errorHelperText` : null;
 
     const selector = (
       <>
         <input
           id={checkboxId}
           className={classNames('checkbox', className, {
-            'checkbox--error': isInvalid,
+            'checkbox--error': !!errorHelperText,
           })}
           type="checkbox"
           ref={ref}
-          {...errorProps}
+          aria-describedby={errorId || helperId || undefined}
+          aria-invalid={!!errorHelperText || undefined}
           {...rest}
         />
         <Icon name="checkmark" className="checkbox__icon" aria-hidden="true" isDecorative />
@@ -70,6 +63,7 @@ export const Checkbox = forwardRef(
         required={required}
         selector={selector}
         errorId={errorId}
+        helperId={helperId}
       ></SelectionControlWrapper>
     );
   },

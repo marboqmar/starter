@@ -28,21 +28,13 @@ import { FieldWrapper } from '../../molecules/FieldWrapper/FieldWrapper';
  *   type="password"
  *   name="password"
  *   autoComplete="current-password"
- *   id="password-showcase-input"
- * />
- *
- * @example
- * // Helper text
- * <Input
- *   label="With helper text"
- *   id="helper-text-showcase-input"
  *   helperText="This is a helper text"
+ *   id="password-showcase-input"
  * />
  *
  * @example
  * // Disabled input
  * <Input disabled id="disabled-showcase-input" value="This input is disabled" />
- *
  */
 
 export const Input = forwardRef(
@@ -54,14 +46,8 @@ export const Input = forwardRef(
     const generatedId = useId();
     const inputId = id || generatedId;
 
-    const errorId = `${inputId}-errorHelperText`;
-
-    const errorProps = !!errorHelperText
-      ? {
-          'aria-invalid': true,
-          'aria-describedby': errorId,
-        }
-      : {};
+    const helperId = !!helperText ? `${inputId}-helperText` : null;
+    const errorId = !!errorHelperText ? `${inputId}-errorHelperText` : null;
 
     const field = (
       <input
@@ -69,7 +55,8 @@ export const Input = forwardRef(
         className={classNames('input', className, { 'input--error': !!errorHelperText })}
         type={type}
         ref={ref}
-        {...errorProps}
+        aria-describedby={errorId || helperId || undefined}
+        aria-invalid={!!errorHelperText || undefined}
         {...rest}
       />
     );
@@ -82,6 +69,7 @@ export const Input = forwardRef(
         errorHelperText={errorHelperText}
         required={required}
         errorId={errorId}
+        helperId={helperId}
         field={field}
       ></FieldWrapper>
     );
