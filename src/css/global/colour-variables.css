@@ -3,7 +3,9 @@
   --colour-primary: #5925dc;
   --colour-primary-light: #6938ef;
   --colour-primary-dark: #4a1fb8;
+  --colour-primary-darker: #3e1c96;
   --colour-primary-transparent: rgba(89, 37, 220, 0.3);
+  --colour-primary-transparent-light: rgba(89, 37, 220, 0.1);
 
   /* Secondary */
   --colour-secondary: #9e165f;
@@ -27,6 +29,8 @@
   --colour-gray-400: #717680;
   --colour-gray-500: #535862;
   --colour-gray-600: #414651;
+  --colour-gray-700: #252b37;
+  --colour-gray-800: #101828;
 
   /* Alerts */
   --colour-success: #12b76a;

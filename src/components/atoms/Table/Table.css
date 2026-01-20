@@ -1,0 +1,97 @@
+/* Dark table */
+.table--dark {
+  color: var(--colour-text-inverted);
+
+  .table__header {
+    background-color: var(--colour-primary-darker);
+  }
+
+  .table__row {
+    background-color: var(--colour-gray-700);
+  }
+
+  .table__row:nth-child(even) {
+    background-color: var(--colour-gray-800);
+  }
+}
+
+/* Mobile table */
+@media (max-width: 768px) {
+  .table,
+  .table__header,
+  .table__body,
+  .table__row,
+  .table__cell {
+    display: block; /* Break the table structure */
+    width: 100%;
+  }
+
+  /* Hide the actual header row visually but keep it for screen readers */
+  .table__header {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    background-color: transparent;
+  }
+
+  .table__row {
+    border-top: var(--border-primary);
+    border-right: var(--border-primary);
+    border-left: var(--border-primary);
+  }
+
+  .table__row:last-of-type {
+    border-bottom: var(--border-primary);
+  }
+
+  .table__row:nth-child(even) {
+    background-color: var(--colour-primary-transparent-light);
+  }
+
+  .table__cell {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-sm);
+    text-align: right;
+    border-bottom: var(--border-primary);
+  }
+
+  /* Inject the label using the data-label attribute */
+  .table__cell::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-align: left;
+    margin-right: var(--spacing-md);
+  }
+
+  .table__cell:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Desktop table */
+@media (min-width: 768px) {
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+
+  .table__header {
+    background-color: var(--colour-primary-transparent);
+  }
+
+  .table__row:nth-child(even) {
+    background-color: var(--colour-primary-transparent-light);
+  }
+
+  .table__cell {
+    padding: var(--spacing-sm);
+    border-bottom: var(--border-primary);
+  }
+}

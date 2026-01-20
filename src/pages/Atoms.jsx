@@ -5,6 +5,7 @@ import { ImageShowcase } from '../showcases/atoms/ImageShowcase/ImageShowcase';
 import { InputShowcase } from '../showcases/atoms/InputShowcase/InputShowcase';
 import { ListShowcase } from '../showcases/atoms/ListShowcase/ListShowcase';
 import { TextShowcase } from '../showcases/atoms/TextShowcase/TextShowcase';
+import { TableShowcase } from '../showcases/atoms/TableShowcase/TableShowcase';
 
 export const Atoms = () => {
   return (
@@ -30,6 +31,9 @@ export const Atoms = () => {
 
         {/* Texts */}
         <TextShowcase />
+
+        {/* Tables */}
+        <TableShowcase />
       </div>
     </div>
   );
