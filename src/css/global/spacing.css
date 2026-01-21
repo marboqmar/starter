@@ -1,5 +1,5 @@
 /* Gap */
-.gap {
+.gap-xs {
   gap: var(--spacing-xs);
 }
 
