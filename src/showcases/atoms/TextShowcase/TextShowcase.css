@@ -1,4 +1,4 @@
-.text-showcase__example {
+.text-showcase__example-bg {
   padding: var(--spacing-md);
   border-radius: var(--radius-lg);
   background-color: var(--colour-gray-100);
@@ -8,7 +8,7 @@
   background-color: var(--colour-gray-500);
 }
 
-[data-theme="dark"] .text-showcase__example {
+[data-theme="dark"] .text-showcase__example-bg {
   background-color: var(--colour-gray-600);
 }
 
