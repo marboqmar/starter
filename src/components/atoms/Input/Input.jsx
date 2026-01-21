@@ -3,6 +3,7 @@ import { classNames } from '../../../utils/helpers';
 import { forwardRef } from 'react';
 import { useId } from 'react';
 import { FieldWrapper } from '../../molecules/FieldWrapper/FieldWrapper';
+import { Icon } from '../Icon/Icon';
 
 /**
  * Input component
@@ -49,16 +50,21 @@ export const Input = forwardRef(
     const helperId = !!helperText ? `${inputId}-helperText` : null;
     const errorId = !!errorHelperText ? `${inputId}-errorHelperText` : null;
 
+    const isDateType = type === 'date';
+
     const field = (
-      <input
-        id={inputId}
-        className={classNames('input', className, { 'input--error': !!errorHelperText })}
-        type={type}
-        ref={ref}
-        aria-describedby={errorId || helperId || undefined}
-        aria-invalid={!!errorHelperText || undefined}
-        {...rest}
-      />
+      <div className="input-container">
+        <input
+          id={inputId}
+          className={classNames('input', className, { 'input--error': !!errorHelperText })}
+          type={type}
+          ref={ref}
+          aria-describedby={errorId || helperId || undefined}
+          aria-invalid={!!errorHelperText || undefined}
+          {...rest}
+        />
+        {isDateType && <Icon className="input__icon" name="icon-calendar" />}
+      </div>
     );
 
     return (

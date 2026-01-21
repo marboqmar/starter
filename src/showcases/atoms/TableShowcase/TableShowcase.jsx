@@ -7,7 +7,6 @@ export const TableShowcase = () => {
     <div className="table-showcase stack gap-sm">
       <Heading>Table</Heading>
       <Paragraph>See how the following table wrap on mobile.</Paragraph>
-
       <Table>
         <Table.Header>
           <Table.Cell isHeader>Fruit</Table.Cell>

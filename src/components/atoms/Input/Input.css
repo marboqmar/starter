@@ -1,3 +1,7 @@
+.input-container {
+  position: relative;
+}
+
 .input {
   max-width: 100%;
   padding: var(--spacing-0-5);
@@ -23,4 +27,29 @@
   border: var(--border-disabled);
   color: var(--disabled-text);
   background-color: var(--disabled-bg);
+}
+
+/* Custom icon */
+.input__icon {
+  position: absolute;
+  top: 50%;
+  right: var(--spacing-0-5);
+  transform: translateY(-50%);
+  pointer-events: none; /* Clicks go through to the native calendar picker icon */
+  width: 18px;
+  height: 18px;
+  color: var(--input-icon);
+}
+
+/* Hide native date icon but keep it functional */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px; /* Covers the area of the custom icon */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0; /* Hidden but clickable */
 }
