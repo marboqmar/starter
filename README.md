@@ -1,15 +1,19 @@
 # Starter
 
-This is a starter project to use as a foundation for future projects, containing basic components
-and being easily customisable.
+This is a starter template designed to serve as a solid foundation for web projects. It provides a
+library of essential, easily customizable components while maintaining a minimal dependency
+footprint.
+
+The goal is to provide all the core building blocks needed for modern web development without the
+overhead of unnecessary third-party packages.
 
 ## Tech Stack
 
-- **React 19** - UI library
-- **React Router 7** - Routing
-- **Vite** - Build tool and dev server
-- **ESLint** - Code linting
-- **CSS** - Styling (no preprocessors)
+- **React 19**: UI library
+- **React Router 7**: routing
+- **Vite**: build tool and dev server
+- **ESLint**: code linting
+- **CSS**: styling (no preprocessors)
 
 ## Why CSS rather than SCSS?
 
