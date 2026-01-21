@@ -6,17 +6,24 @@
   border: var(--border-primary);
   box-sizing: border-box;
   resize: vertical;
+  color: var(--text-main);
+  background-color: var(--control-bg);
+}
+
+/* Placeholder */
+.text-area::placeholder {
+  color: var(--text-placeholder);
 }
 
 /* Error */
 .text-area--error {
-  border: 1px solid var(--colour-error);
+  border-color: var(--error-border);
 }
 
 /* Disabled */
 .text-area:disabled {
   cursor: not-allowed;
   border: var(--border-disabled);
-  color: var(--colour-disabled-text);
-  background-color: var(--colour-disabled-bg);
+  color: var(--disabled-text);
+  background-color: var(--disabled-bg);
 }

@@ -1,13 +1,9 @@
 import './Table.css';
 import { classNames } from '../../../utils/helpers';
 
-export const Table = ({ className = '', children, isDarkTable, ...rest }) => {
+export const Table = ({ className = '', children, ...rest }) => {
   return (
-    <table
-      className={classNames('table', { 'table--dark': isDarkTable }, className)}
-      role="table"
-      {...rest}
-    >
+    <table className={classNames('table', className)} role="table" {...rest}>
       {children}
     </table>
   );

@@ -4,6 +4,7 @@ import { Heading } from '../../../components/atoms/Heading/Heading';
 import { Checkbox } from '../../../components/atoms/Checkbox/Checkbox';
 import { Radio } from '../../../components/atoms/Radio/Radio';
 import { TextArea } from '../../../components/atoms/TextArea/TextArea';
+import { Button } from '../../../components/atoms/Button/Button';
 
 export const InputShowcase = () => {
   return (
@@ -15,7 +16,7 @@ export const InputShowcase = () => {
             className="input-showcase__input-example"
             label="Text type"
             id="text-showcase-input"
-            placeholder="Jon Doe"
+            placeholder="Place holder text"
             name="name"
             autoComplete="name"
           />
@@ -66,7 +67,6 @@ export const InputShowcase = () => {
             className="input-showcase__input-example input-showcase__example--focused"
             label="Focused"
             id="focused-showcase-input"
-            placeholder="Jon Doe"
             name="name"
             autoComplete="name"
           />
@@ -93,7 +93,12 @@ export const InputShowcase = () => {
         </div>
         <div className="stack gap-sm">
           <Heading level={3}>Text areas</Heading>
-          <TextArea label="Required text area" required id="showcase-text-area-required" />
+          <TextArea
+            label="Required text area"
+            placeholder="Place holder text"
+            required
+            id="showcase-text-area-required"
+          />
           <TextArea
             label="Text area with a helper text"
             helperText="This is a helper text"

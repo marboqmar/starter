@@ -3,7 +3,7 @@
   --font-family-base: "Familjen Grotesk", sans-serif;
   --font-family-heading: "Bitter", serif;
 
-  /* Font size - Responsive (mobile defaults) */
+  /* Font size - responsive (mobile defaults) */
   --font-size-xs: 0.75rem; /* 12px */
   --font-size-sm: 0.875rem; /* 14px */
   --font-size-base: 1rem; /* 16px */
@@ -31,7 +31,7 @@
   --icon-alignment-height: calc(var(--font-size-base) * var(--line-height-base));
 }
 
-/* Font size - Desktop overrides*/
+/* Font size - desktop overrides*/
 @media (min-width: 1024px) {
   :root {
     --font-size-xs: 0.875rem; /* 14px */

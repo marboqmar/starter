@@ -19,7 +19,7 @@
   --grid-column-count: 6;
 }
 
-/* Grid columns - Tablet */
+/* Grid columns - tablet */
 @media (min-width: 768px) {
   .grid-cols-tablet-1 {
     --grid-column-count: 1;
@@ -46,7 +46,7 @@
   }
 }
 
-/* Grid columns - Desktop */
+/* Grid columns - desktop */
 @media (min-width: 1024px) {
   .grid-cols-desktop-1 {
     --grid-column-count: 1;
@@ -73,7 +73,7 @@
   }
 }
 
-/* Grid columns - Desktop large */
+/* Grid columns - desktop large */
 @media (min-width: 1280px) {
   .grid-cols-desktop-lg-1 {
     --grid-column-count: 1;
@@ -125,7 +125,7 @@
   grid-column: span 12;
 }
 
-/* Grid column span - Tablet */
+/* Grid column span - tablet */
 @media (min-width: 768px) {
   .col-span-tablet-1 {
     grid-column: span 1;
@@ -152,7 +152,7 @@
   }
 }
 
-/* Grid column span - Desktop */
+/* Grid column span - desktop */
 @media (min-width: 1024px) {
   .col-span-desktop-1 {
     grid-column: span 1;
@@ -230,7 +230,7 @@
   grid-column-start: 12;
 }
 
-/* Grid column start - Tablet */
+/* Grid column start - tablet */
 @media (min-width: 768px) {
   .col-start-tablet-1 {
     grid-column-start: 1;
@@ -257,7 +257,7 @@
   }
 }
 
-/* Grid column start - Desktop */
+/* Grid column start - desktop */
 @media (min-width: 1024px) {
   .col-start-desktop-1 {
     grid-column-start: 1;
@@ -284,7 +284,7 @@
   }
 }
 
-/* Grid column start - Desktop large */
+/* Grid column start - desktop large */
 @media (min-width: 1280px) {
   .col-start-desktop-lg-1 {
     grid-column-start: 1;

@@ -6,26 +6,26 @@
 
 /* Primary */
 .button--primary {
-  background-color: var(--colour-primary);
-  color: var(--colour-text-inverted);
+  color: var(--button-primary-text);
+  background-color: var(--button-primary-bg);
   padding: var(--spacing-0-5) var(--spacing-1);
   border-radius: var(--spacing-0-375);
 }
 
 .button--primary:hover {
-  background-color: var(--colour-primary-dark);
+  background-color: var(--button-primary-hover-bg);
 }
 
 /* Secondary */
 .button--secondary {
-  background-color: var(--colour-secondary);
-  color: var(--colour-text-inverted);
+  color: var(--button-secondary-text);
+  background-color: var(--button-secondary-bg);
   padding: var(--spacing-0-5) var(--spacing-1);
   border-radius: var(--spacing-0-375);
 }
 
 .button--secondary:hover {
-  background-color: var(--colour-secondary-dark);
+  background-color: var(--button-secondary-hover-bg);
 }
 
 /* Padding */
@@ -55,7 +55,7 @@
 /* Link */
 .button--link,
 .button--link:visited {
-  color: var(--colour-text-black);
+  color: var(--button-link-text);
 }
 
 .button-appearance {
@@ -64,21 +64,25 @@
   width: 100%;
 }
 
-.button-appearance:visited {
-  color: var(--colour-text-inverted);
+.button-appearance.button--primary:visited {
+  color: var(--button-primary-text);
+}
+
+.button-appearance.button--secondary:visited {
+  color: var(--button-secondary-text);
 }
 
 /* Disabled */
 .button:disabled {
   cursor: not-allowed;
-  color: var(--colour-disabled-text);
-  background-color: var(--colour-disabled-bg);
-  border-color: var(--colour-disabled-border);
+  color: var(--disabled-text);
+  background-color: var(--disabled-bg);
+  border-color: var(--disabled-border);
   border: var(--border-disabled);
 }
 
 .button:disabled:hover {
-  background-color: var(--colour-disabled--bg-hover);
+  background-color: var(--disabled--bg-hover);
 }
 
 @media (min-width: 768px) {

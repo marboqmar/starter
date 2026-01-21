@@ -7,13 +7,14 @@
 html {
   font-family: var(--font-family-base);
   line-height: var(--line-height-base);
+  color: var(--text-main);
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--colour-white);
+  background-color: var(--page-bg);
 }
 
 img,
@@ -51,7 +52,7 @@ dl {
 
 code {
   font-size: var(--font-size-sm);
-  background-color: var(--colour-gray-50);
+  background-color: var(--code-bg);
   border-radius: var(--radius-sm);
   padding-right: var(--spacing-0-25);
   padding-left: var(--spacing-0-25);
@@ -64,18 +65,18 @@ code {
 .text-area:focus-visible {
   outline: none;
   box-shadow:
-    0 0 0 1px var(--colour-white),
-    0 0 0 2px var(--colour-primary-dark),
-    0 0 4px 4px var(--colour-primary-light);
+    0 0 0 1px var(--focus-spacer),
+    0 0 0 2px var(--focus-ring),
+    0 0 4px 4px var(--focus-glow);
 }
 
 /* Disabled */
 :disabled,
 .is-disabled {
   cursor: not-allowed;
-  color: var(--colour-disabled-text);
-  background-color: var(--colour-disabled-bg);
-  border-color: var(--colour-disabled-border);
+  color: var(--disabled-text);
+  background-color: var(--disabled-bg);
+  border-color: var(--disabled-border);
   border: var(--border-disabled);
 }
 

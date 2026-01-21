@@ -20,7 +20,7 @@
 }
 
 .list__bullet {
-  color: var(--colour-primary);
+  color: var(--list-marker);
   width: 0.75rem;
   height: 0.75rem;
 }
@@ -32,7 +32,7 @@
 .list__item-number::before {
   counter-increment: list-counter;
   content: counter(list-counter) ".";
-  color: var(--colour-primary);
+  color: var(--list-marker);
   font-weight: var(--font-weight-bold);
   padding-right: var(--spacing-0-25);
   /* Align number to centre of text's first line */

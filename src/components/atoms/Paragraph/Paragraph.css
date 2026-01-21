@@ -6,7 +6,7 @@ p,
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-base);
   line-height: var(--line-height-lg);
-  color: var(--color-black);
+  color: var(--text-main);
 }
 
 /* Font size */
@@ -28,6 +28,6 @@ p,
 }
 
 /* Colour */
-.paragraph--colour-light {
-  color: var(--colour-text-inverted);
+.paragraph--colour-inverted {
+  color: var(--text-inverted);
 }

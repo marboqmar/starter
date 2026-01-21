@@ -9,7 +9,7 @@
   height: var(--spacing-1);
   border: var(--border-primary);
   border-radius: var(--radius-full);
-  background-color: var(--colour-white);
+  background-color: var(--control-bg);
   cursor: pointer;
   flex-shrink: 0;
 }
@@ -21,7 +21,7 @@
   pointer-events: none; /* Clicks go through to the input */
   opacity: 0;
   transition: all 0.1s ease-in-out;
-  color: var(--colour-primary);
+  color: var(--control-bg-checked);
 }
 
 /* Checked */
@@ -32,40 +32,40 @@
 
 /* Error */
 .radio--error {
-  border-color: var(--colour-error);
-  background-color: var(--colour-error-transparent);
+  border-color: var(--error-border);
+  background-color: var(--error-bg);
 }
 
 .radio--error:checked {
-  border-color: var(--colour-error);
-  background-color: var(--colour-error-transparent);
+  border-color: var(--error-border);
+  background-color: var(--error-bg);
 }
 
 .radio--error:checked + .radio__icon {
   opacity: 1;
   transform: scale(1);
-  color: var(--colour-error);
+  color: var(--error-border);
 }
 
 /* Disabled */
 .radio:disabled {
   cursor: not-allowed;
   border: var(--border-disabled);
-  background-color: var(--colour-disabled-bg);
+  background-color: var(--disabled-bg);
 }
 
 .selection-control__field:has(.radio:disabled) .label {
   cursor: not-allowed;
-  color: var(--colour-disabled-text);
+  color: var(--disabled-text);
 }
 
 .radio:disabled:checked {
   border: var(--border-disabled);
-  background-color: var(--colour-disabled-bg);
+  background-color: var(--disabled-bg);
 }
 
 .radio:disabled:checked + .radio__icon {
   opacity: 1;
   transform: scale(1);
-  color: var(--colour-disabled-text);
+  color: var(--disabled-text);
 }

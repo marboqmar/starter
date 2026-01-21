@@ -1,3 +1,4 @@
 .header {
-  color: var(--colour-text-black);
+  padding-top: var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
 }

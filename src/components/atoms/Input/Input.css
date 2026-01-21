@@ -3,17 +3,24 @@
   padding: var(--spacing-0-5);
   border-radius: var(--radius-sm);
   border: var(--border-primary);
+  color: var(--text-main);
+  background-color: var(--control-bg);
+}
+
+/* Placeholder */
+.input::placeholder {
+  color: var(--text-placeholder);
 }
 
 /* Error */
 .input--error {
-  border: 1px solid var(--colour-error);
+  border-color: var(--error-border);
 }
 
 /* Disabled */
 .input:disabled {
   cursor: not-allowed;
   border: var(--border-disabled);
-  color: var(--colour-disabled-text);
-  background-color: var(--colour-disabled-bg);
+  color: var(--disabled-text);
+  background-color: var(--disabled-bg);
 }

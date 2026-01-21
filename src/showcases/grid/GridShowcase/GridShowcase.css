@@ -5,3 +5,7 @@
   border-radius: var(--radius-sm);
   background-color: var(--colour-primary-transparent);
 }
+
+[data-theme="dark"] .grid-showcase__element {
+  background-color: var(--colour-primary-darker);
+}

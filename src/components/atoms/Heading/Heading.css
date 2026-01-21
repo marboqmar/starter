@@ -4,7 +4,7 @@ h1,
   font-size: var(--font-size-4xl);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-sm);
-  color: var(--color-black);
+  color: var(--text-main);
 }
 
 h2,
@@ -13,7 +13,7 @@ h2,
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-sm);
-  color: var(--color-black);
+  color: var(--text-main);
 }
 
 h3,
@@ -22,7 +22,7 @@ h3,
   font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-sm);
-  color: var(--color-black);
+  color: var(--text-main);
 }
 
 h4,
@@ -31,7 +31,7 @@ h4,
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-base);
-  color: var(--color-black);
+  color: var(--text-main);
 }
 
 h5,
@@ -40,7 +40,7 @@ h5,
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-base);
-  color: var(--color-black);
+  color: var(--text-main);
 }
 
 h6,
@@ -49,5 +49,5 @@ h6,
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-base);
-  color: var(--color-black);
+  color: var(--text-main);
 }

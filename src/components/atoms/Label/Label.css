@@ -5,5 +5,5 @@
 }
 
 .label--required {
-  color: var(--colour-error);
+  color: var(--error-text);
 }

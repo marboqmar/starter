@@ -10,11 +10,11 @@
 
 .helper-text__message {
   display: block;
-  color: var(--colour-gray-600);
+  color: var(--helper-text-text);
 }
 
 .helper-text--error .helper-text__message {
-  color: var(--colour-error);
+  color: var(--error-text);
 }
 
 /* Align error icon to centre of messages's first line */
@@ -30,5 +30,5 @@
 .helper-text__icon {
   width: var(--spacing-1-5);
   height: var(--spacing-1-5);
-  color: var(--colour-error);
+  color: var(--error-icon);
 }

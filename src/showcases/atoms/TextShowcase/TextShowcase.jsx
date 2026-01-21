@@ -35,9 +35,9 @@ export const TextShowcase = () => {
         </div>
 
         <div className="stack gap-sm">
-          <Heading level={4}>Light colour</Heading>
-          <div className="text-showcase__example text-showcase__example--dark">
-            <Paragraph isLightColour>
+          <Heading level={4}>Inverted colour</Heading>
+          <div className="text-showcase__example text-showcase__example--inverted">
+            <Paragraph isInvertedColour>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius sagittis
               fermentum. Mauris at augue diam. Ut vel rhoncus ante, ut egestas justo. Sed luctus
               luctus erat, in aliquet ipsum pretium vel. Proin et risus libero.
