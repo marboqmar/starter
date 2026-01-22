@@ -9,11 +9,11 @@ overhead of unnecessary third-party packages.
 
 ## Tech Stack
 
-- **React 19**: UI library
-- **React Router 7**: routing
-- **Vite**: build tool and dev server
-- **ESLint**: code linting
-- **CSS**: styling (no preprocessors)
+- **React 19**: frontend library.
+- **React Router 7**: routing.
+- **Vite**: build tool and dev server.
+- **ESLint** and **Prettier**: code quality and formatting
+- **Vanilla CSS**: styling (no preprocessors)
 
 ## Why CSS rather than SCSS?
 
@@ -69,6 +69,20 @@ src/
 ├── routes.jsx          # React Router configuration
 └── main.jsx            # Application entry point
 ```
+
+## Showcases
+
+This project includes live showcases to demonstrate how components behave and interact. To view
+them, run `pnpm run dev`. Then, navigate the local URL in your browser to explore the available
+components.
+
+### Cleaning up the showcases
+
+When you are ready to start building your actual site, you can remove the showcase logic to keep
+your project lean:
+
+- Files: delete the `src/showcases` folder and all files within `src/pages`.
+- Routes: in `src/routes.jsx`, remove the showcase imports and their corresponding route objects.
 
 ## Customisation
 
@@ -129,3 +143,12 @@ Usage in CSS:
 As previously discussed, CSS variables cannot be used in `@media` queries, so breakpoint values
 must be written manually. Consequently, in order to modify these breakpoints, do a global search
 and replace all instances manually across your CSS files.
+
+## Create new pages
+
+1. Create the new page adding a new `.jsx` file in `src/pages/`.
+2. Style (optional): create a corresponding `.css` file in `src/css/pages/` and import it in the
+   new page.
+3. Register the route: define the path for the new page in src/routes.jsx .
+4. Build the page's content: import and use the design system components (atoms, molecules, etc.)
+   within your page to maintain consistency.

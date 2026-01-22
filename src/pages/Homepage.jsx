@@ -1,3 +1,4 @@
+import '../css/pages/Homepage.css';
 import { Heading } from '../components/atoms/Heading/Heading';
 import { Button } from '../components/atoms/Button/Button';
 import { Link } from 'react-router-dom';

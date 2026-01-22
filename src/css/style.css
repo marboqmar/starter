@@ -7,7 +7,3 @@
 @import "./global/spacing.css";
 @import "./global/colours.css";
 @import "./global/grid-utils.css";
-
-/* Showcases */
-@import "./pages/showcase.css";
-@import "./pages/Homepage.css";

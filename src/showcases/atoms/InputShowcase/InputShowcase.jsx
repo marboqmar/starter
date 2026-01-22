@@ -9,7 +9,7 @@ export const InputShowcase = () => {
   return (
     <div className="input-showcase showcase-item">
       <Heading>Inputs</Heading>
-      <div className="stack gap-md">
+      <div className="input-showcase__wrapper showcase-item__wrapper">
         <div className="input-showcase__input-group grid gap-md">
           <Input
             className="input-showcase__input-example"

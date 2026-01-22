@@ -6,7 +6,7 @@ export const TextShowcase = () => {
   return (
     <div className="text-showcase showcase-item">
       <Heading>Texts</Heading>
-      <div className="stack gap-md">
+      <div className="text-showcase__wrapper showcase-item__wrapper">
         <div className="text-showcase__example-group">
           <Heading level={3}>Headings</Heading>
           <div className="text-showcase__example showcase-item__example text-showcase__example-bg">

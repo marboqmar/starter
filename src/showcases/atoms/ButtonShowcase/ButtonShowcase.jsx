@@ -7,7 +7,7 @@ export const ButtonShowcase = () => {
   return (
     <div className="button-showcase showcase-item">
       <Heading>Buttons</Heading>
-      <div className="grid gap-md">
+      <div className="button-showcase__wrapper showcase-item__wrapper">
         {/* Buttons - Colours / States */}
         <div className="button-showcase__column">
           <Heading level={3}>Colours / States</Heading>

@@ -10,6 +10,12 @@
   gap: var(--spacing-component-inner);
 }
 
+.showcase-item__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
 .showcase-item__example {
   display: flex;
   flex-direction: column;

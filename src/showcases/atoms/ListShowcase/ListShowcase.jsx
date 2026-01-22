@@ -26,7 +26,7 @@ export const ListShowcase = () => {
   return (
     <div className="list-showcase showcase-item">
       <Heading>Lists</Heading>
-      <div className="stack gap-md">
+      <div className="list-showcase__wrapper showcase-item__wrapper">
         <div className="list-showcase__example showcase-item__example">
           <Heading level={3}>Definition list</Heading>
           <DefinitionList items={descriptionItems} />

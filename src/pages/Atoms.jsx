@@ -1,3 +1,4 @@
+import '../css/pages/showcase.css';
 import { ButtonShowcase } from '../showcases/atoms/ButtonShowcase/ButtonShowcase';
 import { Heading } from '../components/atoms/Heading/Heading';
 import { IconShowcase } from '../showcases/atoms/IconShowcase/IconShowcase';

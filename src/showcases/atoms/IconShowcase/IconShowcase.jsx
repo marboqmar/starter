@@ -7,7 +7,7 @@ export const IconShowcase = () => {
   return (
     <div className="icon-showcase showcase-item">
       <Heading>Icons</Heading>
-      <div className="stack gap-md">
+      <div className="icon-showcase__wrapper showcase-item__wrapper">
         <div className="icon-showcase__example showcase-item__example">
           <Heading level={3}>Decorative icon</Heading>
           <Paragraph>
