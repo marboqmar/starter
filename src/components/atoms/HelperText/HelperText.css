@@ -2,7 +2,7 @@
   display: flex;
   align-items: flex-start;
   gap: var(--spacing-inline-icon-gap);
-  margin-top: var(--spacing-field-helper);
+  margin-top: var(--spacing-helper-field);
 }
 
 .helper-text__message {
