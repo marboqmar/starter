@@ -4,12 +4,6 @@
   gap: var(--spacing-md);
 }
 
-.text-showcase__example {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
-}
-
 .text-showcase__example-bg {
   padding: var(--spacing-md);
   border-radius: var(--radius-lg);

@@ -8,7 +8,7 @@ export const IconShowcase = () => {
     <div className="icon-showcase showcase-item">
       <Heading>Icons</Heading>
       <div className="stack gap-md">
-        <div className="icon-showcase__example">
+        <div className="icon-showcase__example showcase-item__example">
           <Heading level={3}>Decorative icon</Heading>
           <Paragraph>
             The following icon contains the HTML attributes <code>aria-hidden="true"</code>,{' '}
@@ -18,7 +18,7 @@ export const IconShowcase = () => {
             <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
           </Icon>
         </div>
-        <div className="icon-showcase__example">
+        <div className="icon-showcase__example showcase-item__example">
           <Heading level={3}>Non decorative icon</Heading>
           <Paragraph>
             The following icon contains the HTML attributes <code>role="img"</code> and{' '}
@@ -28,7 +28,7 @@ export const IconShowcase = () => {
             <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
           </Icon>
         </div>
-        <div className="icon-showcase__example">
+        <div className="icon-showcase__example showcase-item__example">
           <Heading level={3}>Different colours and sizes</Heading>
           <Paragraph>
             The colour and size of the icon component can be modified using CSS, as demonstrated in
@@ -38,7 +38,7 @@ export const IconShowcase = () => {
             <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
           </Icon>
         </div>
-        <div className="icon-showcase__example">
+        <div className="icon-showcase__example showcase-item__example">
           <Heading level={3}>Icon from an SVG file</Heading>
           <Paragraph>
             The icon component also allows to use icons from an external SVG sprite. These icons can

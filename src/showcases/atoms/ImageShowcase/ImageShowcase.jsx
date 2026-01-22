@@ -8,7 +8,7 @@ export const ImageShowcase = () => {
     <div className="image-showcase showcase-item">
       <Heading>Images</Heading>
       <div className="stack gap-xl">
-        <div className="image-showcase__example">
+        <div className="image-showcase__example showcase-item__example">
           <Heading level={3}>
             Image with descriptive <code>alt</code>
           </Heading>
@@ -21,7 +21,7 @@ export const ImageShowcase = () => {
             }
           />
         </div>
-        <div className="image-showcase__example">
+        <div className="image-showcase__example showcase-item__example">
           <Heading level={3}>
             Image with an empty <code>alt</code>
           </Heading>
@@ -31,7 +31,7 @@ export const ImageShowcase = () => {
           </Paragraph>
           <Image src="/assets/images/test-image-sm.png" />
         </div>
-        <div className="image-showcase__example">
+        <div className="image-showcase__example showcase-item__example">
           <Heading level={3}>Image with eager loading</Heading>
           <Paragraph>
             When an image is set to be eager loaded, <code>decoding="sync"</code> and{' '}
@@ -39,7 +39,7 @@ export const ImageShowcase = () => {
           </Paragraph>
           <Image src="/assets/images/test-image-sm.png" loading="eager" />
         </div>
-        <div className="image-showcase__example">
+        <div className="image-showcase__example showcase-item__example">
           <Heading level={3}>Responsive images</Heading>
           <Paragraph>
             This component supports responsive image delivery through the attributes{' '}

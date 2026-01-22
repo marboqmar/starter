@@ -3,9 +3,3 @@
     max-width: 800px;
   }
 }
-
-.image-showcase__example {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
-}

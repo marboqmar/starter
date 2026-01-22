@@ -90,7 +90,7 @@ export const InputShowcase = () => {
           a second line to test alignment"
           />
         </div>
-        <div className="input-showcase__column-group ">
+        <div className="input-showcase__column-group showcase-item__example ">
           <Heading level={3}>Text areas</Heading>
           <TextArea
             label="Required text area"
@@ -117,7 +117,7 @@ export const InputShowcase = () => {
             id="showcase-text-area-error"
           />
         </div>
-        <div className="input-showcase__column-group ">
+        <div className="input-showcase__column-group showcase-item__example ">
           <Heading level={3}>Checkboxes</Heading>
           <Checkbox required label="Required checkbox" />
           <Checkbox
@@ -136,7 +136,7 @@ export const InputShowcase = () => {
             errorHelperText="This is an error message"
           />
         </div>
-        <div className="input-showcase__column-group ">
+        <div className="input-showcase__column-group showcase-item__example ">
           <Heading level={3}>Radio</Heading>
           <Radio
             name="radio-test"

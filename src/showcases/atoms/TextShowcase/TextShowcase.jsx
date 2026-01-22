@@ -9,7 +9,7 @@ export const TextShowcase = () => {
       <div className="stack gap-md">
         <div className="text-showcase__example-group">
           <Heading level={3}>Headings</Heading>
-          <div className="text-showcase__example text-showcase__example-bg">
+          <div className="text-showcase__example showcase-item__example text-showcase__example-bg">
             <Heading level={1}>H1 - The quick brown fox jumps over the lazy dog</Heading>
             <Heading>H2 - The quick brown fox jumps over the lazy dog</Heading>
             <Heading level={3}>H3 - The quick brown fox jumps over the lazy dog</Heading>
@@ -20,7 +20,7 @@ export const TextShowcase = () => {
         </div>
         <div className="text-showcase__example-group">
           <Heading level={3}>Paragraphs</Heading>
-          <div className="text-showcase__example">
+          <div className="text-showcase__example showcase-item__example">
             <Heading level={4}>Regular</Heading>
             <Paragraph>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius sagittis
@@ -28,7 +28,7 @@ export const TextShowcase = () => {
               luctus erat, in aliquet ipsum pretium vel. Proin et risus libero.
             </Paragraph>
           </div>
-          <div className="text-showcase__example">
+          <div className="text-showcase__example showcase-item__example">
             <Heading level={4}>Large and bold</Heading>
             <Paragraph fontSize="large" fontWeight="bold">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius sagittis
@@ -37,7 +37,7 @@ export const TextShowcase = () => {
             </Paragraph>
           </div>
 
-          <div className="text-showcase__example">
+          <div className="text-showcase__example showcase-item__example">
             <Heading level={4}>Inverted colour</Heading>
             <div className="text-showcase__example-bg text-showcase__example--inverted">
               <Paragraph isInvertedColour>
