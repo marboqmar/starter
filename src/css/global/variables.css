@@ -47,6 +47,12 @@
   --radius-lg: 1rem; /* 16px */
   --radius-xl: 1.5rem; /* 24px */
   --radius-full: 9999px;
+
+  /* Semantic and component border radius */
+  --radius-main: var(--radius-sm);
+  --checkbox-radius: var(--radius-xs);
+  --image-radius: var(--radius-md);
+  --video-radius: var(--radius-md);
 }
 
 /* Spacing - tablet overrides */

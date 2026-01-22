@@ -53,7 +53,7 @@ dl {
 code {
   font-size: var(--font-size-sm);
   background-color: var(--code-bg);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-main);
   padding-right: var(--spacing-0-25);
   padding-left: var(--spacing-0-25);
 }

@@ -1,3 +1,4 @@
+import './Image.css';
 import { classNames } from '../../../utils/helpers';
 
 /**

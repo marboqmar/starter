@@ -8,7 +8,7 @@
   width: var(--spacing-1);
   height: var(--spacing-1);
   border: var(--border-primary);
-  border-radius: var(--radius-xs);
+  border-radius: var(--checkbox-radius);
   background-color: var(--control-bg);
   cursor: pointer;
   flex-shrink: 0;

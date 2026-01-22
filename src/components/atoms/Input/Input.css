@@ -5,7 +5,7 @@
 .input {
   max-width: 100%;
   padding: var(--spacing-0-5);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-main);
   border: var(--border-primary);
   color: var(--text-main);
   background-color: var(--control-bg);

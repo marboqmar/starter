@@ -2,7 +2,7 @@
   width: 100%;
   padding: var(--spacing-0-5);
   display: block;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-main);
   border: var(--border-primary);
   box-sizing: border-box;
   resize: vertical;
