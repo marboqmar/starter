@@ -4,7 +4,7 @@
 
 .input {
   max-width: 100%;
-  padding: var(--spacing-0-5);
+  padding: var(--spacing-input-padding);
   border-radius: var(--radius-main);
   border: var(--border-primary);
   color: var(--text-main);
@@ -33,7 +33,7 @@
 .input__icon {
   position: absolute;
   top: 50%;
-  right: var(--spacing-0-5);
+  right: var(--spacing-input-icon);
   transform: translateY(-50%);
   pointer-events: none; /* Clicks go through to the native calendar picker icon */
   width: 18px;

@@ -16,7 +16,11 @@
  */
 
 :root {
-  /* Spacing - fixed values */
+  /* ==========================================================================
+    1. SPACING
+    ========================================================================== */
+
+  /* --- PRIMITIVES --- */
   --spacing-0-25: 0.25rem; /* 4px */
   --spacing-0-375: 0.375rem; /* 6px */
   --spacing-0-5: 0.5rem; /* 8px */
@@ -29,22 +33,73 @@
   --spacing-4: 4rem; /* 64px */
   --spacing-5: 5rem; /* 80px */
 
-  /* Spacing - responsive defaults (mobile) */
+  /* --- RESPONSIVE DEFAULTS (mobile) --- */
   --spacing-xs: 0.5rem; /* 8px */
   --spacing-sm: 1rem; /* 16px */
   --spacing-md: 1.5rem; /* 24px */
   --spacing-lg: 2rem; /* 32px */
   --spacing-xl: 3rem; /* 48px */
 
-  /* Spacing - semantic and component tokens*/
+  /* --- SEMANTIC TOKENS --- */
   --spacing-layout: var(--spacing-xl); /* Spacing between major sections/components */
   --spacing-component-inner: var(--spacing-sm); /* Spacing between elements within a component */
+  --spacing-inline-icon-gap: var(--spacing-0-25);
+  --spacing-field-helper: var(
+    --spacing-0-5
+  ); /* Spacing between a helper and the field it refers to */
+  --spacing-field-label: var(
+    --spacing-0-5
+  ); /* Spacing between a label and the field it refers to */
+  --spacing-control-text: var(--spacing-0-5);
 
-  /* Border */
-  --border-primary: 1px solid var(--border-main);
-  --border-disabled: 1px solid var(--disabled-border);
+  /* --- COMPONENT TOKENS --- */
+  /* Atoms */
+  --spacing-button-padding: var(--spacing-0-5) var(--spacing-1);
+  --spacing-button-padding-lg: var(--spacing-0-75) var(--spacing-1-5);
+  --spacing-code-lat-padding: var(--spacing-0-25);
+  --spacing-definition-list-items: var(--spacing-0-5); /* Spacing between each dt and dd group */
+  --spacing-definition-list-description: var(
+    --spacing-0-25
+  ); /* Spacing between the dt and the dd */
+  --spacing-input-padding: var(--spacing-0-5);
+  --spacing-input-icon: var(--spacing-0-5); /* Right spacing of the input's icon */
+  --spacing-list-number: var(
+    --spacing-0-25
+  ); /* Gap between the number marker and the text on an ordered list */
+  --spacing-table-cell-padding: var(--spacing-sm);
 
-  /* Border radius */
+  /* Molecules */
+  --spacing-cta: var(--spacing-md); /* CTA padding */
+
+  /* ==========================================================================
+    2. SIZE (width and height) 
+    ========================================================================== */
+
+  /* --- PRIMITIVES --- */
+  --size-icon-xs: 1rem;
+  --size-icon-sm: 1.5rem;
+  --size-icon-md: 2rem;
+
+  /* --- COMPONENT TOKENS --- */
+  /* Atoms */
+  --size-control: var(--size-icon-xs);
+
+  /* ==========================================================================
+    3. BORDER
+    ========================================================================== */
+  /* --- PRIMITIVES --- */
+  --border-1: 1px;
+  --border-2: 2px;
+
+  /* --- SEMANTIC TOKENS --- */
+  --border-primary: var(--border-1) solid var(--border-main);
+  --border-disabled: var(--border-1) solid var(--disabled-border);
+
+  /* ==========================================================================
+    4. BORDER RADIUS
+    ========================================================================== */
+
+  /* --- PRIMITIVES --- */
   --radius-xs: 0.25rem; /* 4px */
   --radius-sm: 0.375rem; /* 6px */
   --radius-md: 0.75rem; /* 12px */
@@ -52,27 +107,49 @@
   --radius-xl: 1.5rem; /* 24px */
   --radius-full: 9999px;
 
-  /* Border radius - semantic and component tokens */
+  /* --- SEMANTIC TOKENS ---*/
   --radius-main: var(--radius-sm);
+
+  /* --- COMPONENT TOKENS */
+  /* Atoms */
   --radius-checkbox: var(--radius-xs);
+  --radius-button: var(--radius-main);
+  --radius-button-lg: var(--radius-md);
   --radius-image: var(--radius-md);
   --radius-video: var(--radius-md);
+
+  /* ==========================================================================
+    5. Z-INDEX
+    ========================================================================== */
+  --z-negative: -1;
+  --z-elevated: 1;
+  --z-sticky: 100;
+  --z-drawer: 200;
+  --z-modal: 300;
+  --z-popover: 400;
+  --z-tooltip: 500;
 }
 
-/* Spacing - tablet overrides */
+/* Tablet overrides */
 @media (min-width: 768px) {
   :root {
+    /* Spacing - responsive */
     --spacing-xs: 1rem; /* 16px */
     --spacing-sm: 1.5rem; /* 24px */
     --spacing-md: 2rem; /* 32px */
     --spacing-lg: 2.5rem; /* 40px */
     --spacing-xl: 4rem; /* 64px */
+
+    /* Spacing - semantic and component tokens*/
+    --spacing-button: var(--spacing-0-75) var(--spacing-1-5);
+    --spacing-button-lg: var(--spacing-1) var(--spacing-2);
   }
 }
 
-/* Spacing - desktop overrides */
+/* Desktop overrides */
 @media (min-width: 1024px) {
   :root {
+    /* Spacing - responsive */
     --spacing-xs: 1.5rem; /* 24px */
     --spacing-sm: 2rem; /* 32px */
     --spacing-md: 2.5rem; /* 40px */

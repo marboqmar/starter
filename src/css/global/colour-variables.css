@@ -9,7 +9,7 @@
   --colour-primary-lightest: #9b8afb;
   --colour-primary-dark: #4a1fb8;
   --colour-primary-darker: #3e1c96;
-  --colour-primary-transparent: rgba(89, 37, 220, 0.3);
+  --colour-primary-transparent: rgba(89, 37, 220, 0.2);
   --colour-primary-transparent-light: rgba(89, 37, 220, 0.1);
 
   /* Secondary */
@@ -89,6 +89,7 @@
    ========================================================================== */
 
 :root {
+  /* --- ATOMS --- */
   /* Button - primary */
   --button-primary-text: var(--text-inverted);
   --button-primary-bg: var(--colour-primary);
@@ -120,6 +121,10 @@
   /* Table */
   --table-header: var(--colour-primary-transparent);
   --table-row: var(--colour-primary-transparent-light);
+
+  /* --- MOLECULES --- */
+  /* CTA */
+  --cta-bg: var(--colour-primary-transparent);
 }
 
 /* ==========================================================================

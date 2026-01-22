@@ -1,6 +1,6 @@
 .icon {
-  width: var(--spacing-md);
-  height: var(--spacing-md);
+  width: var(--size-icon-sm);
+  height: var(--size-icon-sm);
   flex-shrink: 0;
   display: inline-block;
   vertical-align: middle;

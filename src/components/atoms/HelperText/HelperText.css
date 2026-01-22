@@ -1,11 +1,8 @@
 .helper-text {
   display: flex;
   align-items: flex-start;
-  gap: var(--spacing-0-25);
-}
-
-.helper-text.helper-text--error {
-  margin-top: var(--spacing-0-5);
+  gap: var(--spacing-inline-icon-gap);
+  margin-top: var(--spacing-field-helper);
 }
 
 .helper-text__message {
@@ -28,7 +25,7 @@
 }
 
 .helper-text__icon {
-  width: var(--spacing-1-5);
-  height: var(--spacing-1-5);
+  width: var(--size-icon-sm);
+  height: var(--size-icon-sm);
   color: var(--error-icon);
 }

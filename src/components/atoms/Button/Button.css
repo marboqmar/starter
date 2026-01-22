@@ -8,8 +8,8 @@
 .button--primary {
   color: var(--button-primary-text);
   background-color: var(--button-primary-bg);
-  padding: var(--spacing-0-5) var(--spacing-1);
-  border-radius: var(--spacing-0-375);
+  padding: var(--spacing-button-padding);
+  border-radius: var(--radius-button);
 }
 
 .button--primary:hover {
@@ -20,8 +20,8 @@
 .button--secondary {
   color: var(--button-secondary-text);
   background-color: var(--button-secondary-bg);
-  padding: var(--spacing-0-5) var(--spacing-1);
-  border-radius: var(--spacing-0-375);
+  padding: var(--spacing-button-padding);
+  border-radius: var(--radius-button);
 }
 
 .button--secondary:hover {
@@ -31,12 +31,12 @@
 /* Padding */
 /* 8px 16px on mobile, 12px 24px on tablet */
 .button__padding-size--small {
-  padding: var(--spacing-0-5) var(--spacing-1);
+  padding: var(--spacing-button-padding);
 }
 
 /* 12px 24px on mobile, 16px 32px on tablet */
 .button__padding-size--large {
-  padding: var(--spacing-0-75) var(--spacing-1-5);
+  padding: var(--spacing-button-padding-lg);
 }
 
 /* Border radius */
@@ -45,11 +45,11 @@
 }
 
 .button__border-radius--small {
-  border-radius: var(--spacing-0-375);
+  border-radius: var(--radius-button);
 }
 
 .button__border-radius--large {
-  border-radius: var(--spacing-0-75);
+  border-radius: var(--radius-button-lg);
 }
 
 /* Link */
@@ -83,16 +83,4 @@
 
 .button:disabled:hover {
   background-color: var(--disabled--bg-hover);
-}
-
-@media (min-width: 768px) {
-  .button--primary,
-  .button--secondary,
-  .button__padding-size--small {
-    padding: var(--spacing-0-75) var(--spacing-1-5);
-  }
-
-  .button__padding-size--large {
-    padding: var(--spacing-1) var(--spacing-2);
-  }
 }

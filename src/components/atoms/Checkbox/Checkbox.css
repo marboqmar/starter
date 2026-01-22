@@ -5,8 +5,8 @@
 
   /* Custom box */
   margin: 0;
-  width: var(--spacing-1);
-  height: var(--spacing-1);
+  width: var(--size-control);
+  height: var(--size-control);
   border: var(--border-primary);
   border-radius: var(--radius-checkbox);
   background-color: var(--control-bg);

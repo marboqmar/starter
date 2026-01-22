@@ -1,6 +1,6 @@
 .text-area {
   width: 100%;
-  padding: var(--spacing-0-5);
+  padding: var(--spacing-input-padding);
   display: block;
   border-radius: var(--radius-main);
   border: var(--border-primary);
