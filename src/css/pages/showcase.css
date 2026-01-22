@@ -1,4 +1,4 @@
-.atoms-page__showcases-wrapper {
+.showcase-wrapper {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-layout);
@@ -13,5 +13,5 @@
 .showcase-item__example {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-component-inner);
 }

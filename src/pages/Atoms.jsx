@@ -14,7 +14,7 @@ export const Atoms = () => {
       <Heading level={1} className="margin-bottom-md">
         Atoms
       </Heading>
-      <div className="atoms-page__showcases-wrapper">
+      <div className="atoms-page__showcase-wrapper showcase-wrapper">
         {/* Button */}
         <ButtonShowcase />
 
