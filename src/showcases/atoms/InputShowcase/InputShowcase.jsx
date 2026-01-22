@@ -8,7 +8,7 @@ import { Button } from '../../../components/atoms/Button/Button';
 
 export const InputShowcase = () => {
   return (
-    <div className="input-showcase stack gap-sm">
+    <div className="input-showcase showcase-item">
       <Heading>Inputs</Heading>
       <div className="stack gap-lg">
         <div className="input-showcase__input-group grid gap-md">

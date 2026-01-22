@@ -24,7 +24,7 @@ const listItems = [
 
 export const ListShowcase = () => {
   return (
-    <div className="list-showcase stack gap-sm">
+    <div className="list-showcase showcase-item">
       <Heading>Lists</Heading>
       <div className="stack gap-md">
         <div className="list-showcase__example stack gap-sm">

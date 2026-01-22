@@ -7,15 +7,14 @@ import { ListShowcase } from '../showcases/atoms/ListShowcase/ListShowcase';
 import { TextShowcase } from '../showcases/atoms/TextShowcase/TextShowcase';
 import { TableShowcase } from '../showcases/atoms/TableShowcase/TableShowcase';
 import { VideoShowcase } from '../showcases/atoms/VideoShowcase/VideoShowcase';
-import { Video } from '../components/atoms/Video/Video';
 
 export const Atoms = () => {
   return (
-    <div className="components container">
+    <div className="atoms-page container">
       <Heading level={1} className="margin-bottom-md">
         Atoms
       </Heading>
-      <div className="stack gap-xl">
+      <div className="atoms-page__showcases-wrapper">
         {/* Button */}
         <ButtonShowcase />
 
@@ -31,11 +30,11 @@ export const Atoms = () => {
         {/* List */}
         <ListShowcase />
 
-        {/* Texts */}
-        <TextShowcase />
-
         {/* Tables */}
         <TableShowcase />
+
+        {/* Texts */}
+        <TextShowcase />
 
         {/* Video */}
         <VideoShowcase />

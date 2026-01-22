@@ -1,7 +1,7 @@
 .video {
   width: 100%;
   aspect-ratio: 16 / 9;
-  border-radius: var(--video-radius);
+  border-radius: var(--radius-video);
   object-fit: cover;
 }
 

@@ -3,7 +3,7 @@ import { Heading } from '../../../components/atoms/Heading/Heading';
 
 export const VideoShowcase = () => {
   return (
-    <div className="video-showcase stack gap-sm">
+    <div className="video-showcase showcase-item">
       <Heading>Videos</Heading>
       <div className="stack gap-xl">
         <div className="video-showcase__example stack gap-xs">

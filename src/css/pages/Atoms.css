@@ -1,7 +1,11 @@
-.atom-section {
-  margin-bottom: var(--spacing-xl);
+.atoms-page__showcases-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-layout);
 }
 
-.atom-section > .heading--2 {
-  margin-bottom: var(--spacing-sm);
+.showcase-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-component-inner);
 }

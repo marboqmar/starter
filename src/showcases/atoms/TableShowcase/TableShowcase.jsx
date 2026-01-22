@@ -4,7 +4,7 @@ import { Paragraph } from '../../../components/atoms/Paragraph/Paragraph';
 
 export const TableShowcase = () => {
   return (
-    <div className="table-showcase stack gap-sm">
+    <div className="table-showcase showcase-item">
       <Heading>Table</Heading>
       <Paragraph>See how the following table wrap on mobile.</Paragraph>
       <Table>

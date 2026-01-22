@@ -5,7 +5,7 @@ import { Paragraph } from '../../../components/atoms/Paragraph/Paragraph';
 
 export const IconShowcase = () => {
   return (
-    <div className="icon-showcase stack gap-sm">
+    <div className="icon-showcase showcase-item">
       <Heading>Icons</Heading>
       <div className="stack gap-md">
         <div className="icon-showcase__example stack gap-sm">
