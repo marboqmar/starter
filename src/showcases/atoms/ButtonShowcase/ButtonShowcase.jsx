@@ -9,7 +9,7 @@ export const ButtonShowcase = () => {
       <Heading>Buttons</Heading>
       <div className="grid gap-md">
         {/* Buttons - Colours / States */}
-        <div className="button-showcase__column stack gap-sm">
+        <div className="button-showcase__column">
           <Heading level={3}>Colours / States</Heading>
           <Button className="button-showcase__button">Primary</Button>
           <Button className="button-showcase__button" buttonStyle={'secondary'}>
@@ -24,7 +24,7 @@ export const ButtonShowcase = () => {
         </div>
 
         {/* Buttons - Padding */}
-        <div className="button-showcase__column stack gap-sm">
+        <div className="button-showcase__column">
           <Heading level={3}>Padding</Heading>
           <Button className="button-showcase__button" paddingSize={'small'}>
             Small padding
@@ -35,7 +35,7 @@ export const ButtonShowcase = () => {
         </div>
 
         {/* Buttons - Border radius */}
-        <div className="button-showcase__column stack gap-sm">
+        <div className="button-showcase__column">
           <Heading level={3}>Border radius</Heading>
           <Button className="button-showcase__button" borderRadius={'none'}>
             No border radius
@@ -47,7 +47,7 @@ export const ButtonShowcase = () => {
         </div>
 
         {/* Buttons - Link */}
-        <div className="button-showcase__column stack gap-sm">
+        <div className="button-showcase__column">
           <Heading level={3}>Links</Heading>
           <Button
             className="button-showcase__button"

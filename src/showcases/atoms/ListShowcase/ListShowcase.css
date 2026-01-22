@@ -1,3 +1,9 @@
 .list.list-showcase__list-counter {
   counter-reset: list-counter 7;
 }
+
+.list-showcase__example {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}

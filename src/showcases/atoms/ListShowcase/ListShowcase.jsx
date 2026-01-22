@@ -27,15 +27,15 @@ export const ListShowcase = () => {
     <div className="list-showcase showcase-item">
       <Heading>Lists</Heading>
       <div className="stack gap-md">
-        <div className="list-showcase__example stack gap-sm">
+        <div className="list-showcase__example">
           <Heading level={3}>Definition list</Heading>
           <DefinitionList items={descriptionItems} />
         </div>
-        <div className="list-showcase__example stack gap-sm">
+        <div className="list-showcase__example">
           <Heading level={3}>Ordered list</Heading>
           <List className="list-showcase__list-counter" ordered items={listItems} />
         </div>
-        <div className="list-showcase__example stack gap-sm">
+        <div className="list-showcase__example">
           <Heading level={3}>Unordered list</Heading>
           <List items={listItems} />
         </div>

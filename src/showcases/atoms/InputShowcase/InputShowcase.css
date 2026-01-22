@@ -6,6 +6,12 @@
   width: 100%;
 }
 
+.input-showcase__column-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
 .input-showcase__example--focused {
   outline: none;
   box-shadow:
