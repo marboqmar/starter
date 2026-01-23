@@ -2,7 +2,7 @@ import './Input.css';
 import { classNames } from '../../../utils/helpers';
 import { forwardRef } from 'react';
 import { useId } from 'react';
-import { FieldWrapper } from '../../molecules/FieldWrapper/FieldWrapper';
+import { FieldWrapper } from '../../molecules/internal/FieldWrapper/FieldWrapper';
 import { Icon } from '../Icon/Icon';
 
 /**

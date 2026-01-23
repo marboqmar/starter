@@ -1,5 +1,5 @@
-import { Label } from '../../atoms/Label/Label';
-import { HelperText } from '../../atoms/HelperText/HelperText';
+import { Label } from '../../../atoms/Label/Label';
+import { HelperText } from '../../../atoms/HelperText/HelperText';
 
 /**
  * Field wrapper

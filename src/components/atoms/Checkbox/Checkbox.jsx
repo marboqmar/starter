@@ -3,7 +3,7 @@ import { classNames } from '../../../utils/helpers';
 import { forwardRef } from 'react';
 import { Icon } from '../Icon/Icon';
 import { useId } from 'react';
-import { SelectionControlWrapper } from '../../molecules/SelectionControlWrapper/SelectionControlWrapper';
+import { SelectionControlWrapper } from '../../molecules/internal/SelectionControlWrapper/SelectionControlWrapper';
 
 /**
  * Checkbox component
