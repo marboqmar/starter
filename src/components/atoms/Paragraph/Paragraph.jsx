@@ -22,11 +22,13 @@ export const Paragraph = ({
   children,
   ...rest
 }) => {
-  const classes = classNames('paragraph', className, {
-    [`paragraph--font-size-${fontSize}`]: fontSize,
-    [`paragraph--font-weight-${fontWeight}`]: fontWeight,
-    'paragraph--colour-inverted': isInvertedColour,
-  });
+  const classes = classNames(
+    'paragraph',
+    className,
+    `paragraph--font-size-${fontSize}`,
+    `paragraph--font-weight-${fontWeight}`,
+    { 'paragraph--colour-inverted': isInvertedColour },
+  );
 
   return (
     <p className={classes} {...rest}>

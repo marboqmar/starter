@@ -7,14 +7,22 @@ export const ButtonShowcase = () => {
   return (
     <div className="button-showcase showcase-item">
       <Heading>Buttons</Heading>
-      <div className="button-showcase__wrapper showcase-item__wrapper">
-        {/* Buttons - Colours / States */}
+      <div className="button-showcase__wrapper grid gap-md">
+        {/* Buttons - styles */}
         <div className="button-showcase__column">
-          <Heading level={3}>Colours / States</Heading>
+          <Heading level={3}>Styles</Heading>
           <Button className="button-showcase__button">Primary</Button>
-          <Button className="button-showcase__button" buttonStyle={'secondary'}>
+          <Button className="button-showcase__button" buttonStyle="secondary">
             Secondary
           </Button>
+          <Button className="button-showcase__button" buttonStyle="tertiary">
+            Tertiary
+          </Button>
+        </div>
+
+        {/* Buttons - states */}
+        <div className="button-showcase__column">
+          <Heading level={3}>States</Heading>
           <Button className="button-showcase__button" disabled>
             Disabled
           </Button>
@@ -23,37 +31,37 @@ export const ButtonShowcase = () => {
           </Button>
         </div>
 
-        {/* Buttons - Padding */}
-        <div className="button-showcase__column">
-          <Heading level={3}>Padding</Heading>
-          <Button className="button-showcase__button" paddingSize={'small'}>
-            Small padding
-          </Button>
-          <Button className="button-showcase__button" paddingSize={'large'}>
-            Large padding
-          </Button>
-        </div>
-
-        {/* Buttons - Border radius */}
+        {/* Buttons - border radius */}
         <div className="button-showcase__column">
           <Heading level={3}>Border radius</Heading>
-          <Button className="button-showcase__button" borderRadius={'none'}>
+          <Button className="button-showcase__button" borderRadius="none">
             No border radius
           </Button>
           <Button className="button-showcase__button">Small border radius</Button>
-          <Button className="button-showcase__button" borderRadius={'large'}>
+          <Button className="button-showcase__button" borderRadius="large">
             Large border radius
           </Button>
         </div>
 
-        {/* Buttons - Link */}
+        {/* Buttons - padding */}
+        <div className="button-showcase__column">
+          <Heading level={3}>Padding</Heading>
+          <Button className="button-showcase__button" paddingSize="small">
+            Small padding
+          </Button>
+          <Button className="button-showcase__button" paddingSize="large">
+            Large padding
+          </Button>
+        </div>
+
+        {/* Buttons - link */}
         <div className="button-showcase__column">
           <Heading level={3}>Links</Heading>
           <Button
             className="button-showcase__button"
             component={Link}
             buttonAppearance
-            buttonStyle={'primary'}
+            buttonStyle="primary"
             to={'/'}
           >
             Button-looking link
@@ -62,7 +70,7 @@ export const ButtonShowcase = () => {
             className="button-showcase__button"
             component={Link}
             buttonAppearance
-            buttonStyle={'secondary'}
+            buttonStyle="secondary"
             to={'/'}
           >
             Button-looking link

@@ -1,0 +1,65 @@
+.cta {
+  padding: var(--spacing-cta-padding);
+  background-color: var(--cta-bg);
+  border-radius: var(--radius-cta);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--spacing-cta-gap);
+  width: 100%;
+}
+
+.cta__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-component-inner);
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.cta__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-cta-button-gap);
+  flex-shrink: 0;
+}
+
+.cta__button {
+  width: 100%;
+}
+
+.cta__image {
+  display: flex;
+  width: 100%;
+}
+
+/* Ensure image fills its container */
+.cta__image .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .cta {
+    flex-direction: row;
+    gap: var(--spacing-cta-gap);
+  }
+
+  .cta--with-image .cta__wrapper {
+    justify-content: center;
+  }
+
+  .cta:not(.cta--with-image) .cta__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-cta-gap);
+  }
+
+  .cta__button-wrapper {
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+  }
+}

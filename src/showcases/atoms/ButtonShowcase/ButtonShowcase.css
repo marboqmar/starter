@@ -32,10 +32,7 @@
   .button-showcase__button {
     width: 16rem;
   }
-}
-
-@media (min-width: 1280px) {
   .button-showcase__column {
-    grid-column: span 3;
+    grid-column: span 4;
   }
 }

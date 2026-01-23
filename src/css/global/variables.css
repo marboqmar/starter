@@ -47,6 +47,7 @@
 
   /* --- COMPONENT TOKENS --- */
   /* Atoms */
+  --spacing-button-padding-sm: var(--spacing-0-25) var(--spacing-0-5);
   --spacing-button-padding: var(--spacing-0-5) var(--spacing-1);
   --spacing-button-padding-lg: var(--spacing-0-75) var(--spacing-1-5);
   --spacing-code-lat-padding: var(--spacing-0-25);
@@ -69,7 +70,9 @@
   --spacing-table-cell-padding: var(--spacing-sm);
 
   /* Molecules */
-  --spacing-cta-padding: var(--spacing-md); /* CTA padding */
+  --spacing-cta-padding: var(--spacing-md);
+  --spacing-cta-gap: var(--spacing-xl); /* Vertical gap on mobile and horizontal gap on desktop*/
+  --spacing-cta-button-gap: var(--spacing-1);
 
   /* ==========================================================================
     2. SIZE (width and height) 
@@ -144,8 +147,9 @@
     --spacing-xl: 4rem; /* 64px */
 
     /* Spacing - semantic and component tokens*/
-    --spacing-button: var(--spacing-0-75) var(--spacing-1-5);
-    --spacing-button-lg: var(--spacing-1) var(--spacing-2);
+    --spacing-button-padding-sm: var(--spacing-0-5) var(--spacing-1);
+    --spacing-button-padding: var(--spacing-0-75) var(--spacing-1-5);
+    --spacing-button-padding-lg: var(--spacing-1) var(--spacing-2);
   }
 }
 

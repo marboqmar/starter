@@ -6,7 +6,7 @@ import { classNames } from '../../../utils/helpers';
  *
  * Component props:
  * @param {string} [className] - Additional CSS classes.
- * @param {'primary' | 'secondary'} [buttonStyle] - Button styling. Defaults to 'primary' for
+ * @param {'primary' | 'secondary' | 'tertiary'} [buttonStyle] - Button styling. Defaults to 'primary' for
  * <button>.
  * @param {'small' | 'large'} [paddingSize] - Padding variant. Defaults to 'small' for <button>.
  * @param {'small' | 'large'} [borderRadius] - Border radius. Defaults to 'small' for <button>.
@@ -25,7 +25,7 @@ import { classNames } from '../../../utils/helpers';
  *
  * @example
  * // Link that looks like a button
- * <Button component={Link} to="/about" buttonAppearance buttonStyle={'primary'}>About</Button>
+ * <Button component={Link} to="/about" buttonAppearance buttonStyle="primary">About</Button>
  *
  * @example
  * // Standard text link (not a button)
@@ -64,14 +64,18 @@ export const Button = ({
       }
     : {};
 
-  const classes = classNames('button', className, {
-    [`button--${finalStyling}`]: finalStyling,
-    [`button__padding-size--${paddingSize}`]: paddingSize,
-    [`button__border-radius--${borderRadius}`]: borderRadius,
-    'button-appearance': hasButtonAppearance,
-    'button--link': notButtonAppearance,
-    'button--disabled': disabled,
-  });
+  const classes = classNames(
+    'button',
+    className,
+    `button--${finalStyling}`,
+    `button--padding-${paddingSize}`,
+    `button--radius-${borderRadius}`,
+    {
+      'button-appearance': hasButtonAppearance,
+      'button--link': notButtonAppearance,
+      'button--disabled': disabled,
+    },
+  );
 
   return (
     <Component

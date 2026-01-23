@@ -9,8 +9,9 @@
   --colour-primary-lightest: #9b8afb;
   --colour-primary-dark: #4a1fb8;
   --colour-primary-darker: #3e1c96;
-  --colour-primary-transparent: rgba(89, 37, 220, 0.2);
-  --colour-primary-transparent-light: rgba(89, 37, 220, 0.1);
+  --colour-primary-a10: rgba(89, 37, 220, 0.1);
+  --colour-primary-a20: rgba(89, 37, 220, 0.2);
+  --colour-primary-a30: rgba(89, 37, 220, 0.3);
 
   /* Secondary */
   --colour-secondary: #9e165f;
@@ -27,7 +28,7 @@
   /* Black */
   --colour-black: #1a1d20;
 
-  /* Grey */
+  /* Gray */
   --colour-gray-50: #f5f5f5;
   --colour-gray-100: #e9eaeb;
   --colour-gray-200: #d5d7da;
@@ -94,11 +95,19 @@
   --button-primary-text: var(--text-inverted);
   --button-primary-bg: var(--colour-primary);
   --button-primary-hover-bg: var(--colour-primary-dark);
+  --button-primary-border: var(--colour-primary);
 
   /* Button -secondary */
   --button-secondary-text: var(--text-inverted);
   --button-secondary-bg: var(--colour-secondary);
   --button-secondary-hover-bg: var(--colour-secondary-dark);
+  --button-secondary-border: var(--colour-secondary);
+
+  /* Button - tertiary */
+  --button-tertiary-text: var(--colour-primary-darker);
+  --button-tertiary-bg: var(--pg-main);
+  --button-tertiary-hover-text: var(--text-inverted);
+  --button-tertiary-hover-bg: var(--colour-primary-lighter);
 
   /* Button - link */
   --button-link-text: var(--text-main);
@@ -119,12 +128,12 @@
   --list-marker: var(--colour-primary);
 
   /* Table */
-  --table-header: var(--colour-primary-transparent);
-  --table-row: var(--colour-primary-transparent-light);
+  --table-header: var(--colour-primary-a20);
+  --table-row: var(--colour-primary-a10);
 
   /* --- MOLECULES --- */
   /* CTA */
-  --cta-bg: var(--colour-primary-transparent);
+  --cta-bg: var(--colour-primary-a20);
 }
 
 /* ==========================================================================
@@ -163,6 +172,7 @@
   --error-bg: var(--colour-error-transparent);
 
   /* --- COMPONENTS / ELEMENTS --- */
+  /* ATOMS */
   /* Button - primary */
   --button-primary-text: var(--text-main);
   --button-primary-bg: var(--colour-primary-dark);
@@ -172,6 +182,11 @@
   --button-secondary-text: var(--text-main);
   --button-secondary-bg: var(--colour-secondary-dark);
   --button-secondary-hover-bg: var(--colour-secondary-darker);
+
+  /* Button - tertiary */
+  --button-tertiary-text: var(--text-main);
+  --button-tertiary-hover-text: var(--text-main);
+  --button-tertiary-hover-bg: var(--colour-primary);
 
   /* Checkbox */
   --checkbox-icon: var(--page-bg);
@@ -187,5 +202,9 @@
 
   /* Table */
   --table-header: var(--colour-primary-darker);
-  --table-row: var(--colour-primary-transparent);
+  --table-row: var(--colour-primary-a20);
+
+  /* MOLECULES */
+  /* CTA */
+  --cta-bg: var(--colour-primary-a30);
 }
