@@ -9,12 +9,14 @@ export const classNames = (...args) => {
 
   for (const arg of args) {
     // Handle strings and objects separately
-    if (typeof arg === 'string') {
-      classes.push(arg);
+    if (typeof arg === 'string' && arg.trim() !== '') {
+      classes.push(arg.trim());
     } else if (typeof arg === 'object' && arg !== null) {
       for (const key in arg) {
         if (Object.prototype.hasOwnProperty.call(arg, key) && arg[key]) {
-          classes.push(key);
+          if (key.trim() !== '') {
+            classes.push(key.trim());
+          }
         }
       }
     }
