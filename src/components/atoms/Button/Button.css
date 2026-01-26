@@ -89,6 +89,15 @@
   color: var(--button-secondary-text);
 }
 
+/* Icon and text button */
+.button--icon {
+  display: inlint-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-button-icon-gap);
+}
+
 /* Icon only button*/
 .button--icon-only {
   padding: 0;

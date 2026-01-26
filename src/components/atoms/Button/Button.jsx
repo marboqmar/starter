@@ -16,6 +16,9 @@ import { classNames } from '../../../utils/helpers';
  * @param {string} [to] - Target URL if component is Link.
  * @param {string} [role] - ARIA role.
  * @param {boolean} [disabled] - Disables the button and adds disabled styling.
+ * @param {boolean} [hasIcon] - Adds class to style a button containing text and an icon.
+ * @param {boolean} [isIconOnly] - Adds class to style a button containing only an icon.
+ * @param {string} [ariaLabel] - Required if isIconOnly. Provides the accessible name.
  * @param {node} children - Button content.
  * @param {object} [rest] - Additional props passed.
  *
@@ -30,6 +33,13 @@ import { classNames } from '../../../utils/helpers';
  * @example
  * // Standard text link (not a button)
  * <Button component={Link} to="/contact">Contact</Button>
+ *
+ * @example
+ * // Button with icon and text
+ * <Button className="button-showcase__button" hasIcon>
+ *   <span>Text and icon</span>
+ *   <Icon isDecorative name="icon-calendar" />
+ * </Button>
  *
  * @example
  * // Icon only button
@@ -49,6 +59,7 @@ export const Button = ({
   to,
   role,
   disabled,
+  hasIcon,
   isIconOnly,
   ariaLabel,
   children,
@@ -78,6 +89,7 @@ export const Button = ({
     'button-appearance': hasButtonAppearance,
     'button--link': notButtonAppearance,
     'button--disabled': disabled,
+    'button--icon': hasIcon,
     'button--icon-only': isIconOnly,
   });
 

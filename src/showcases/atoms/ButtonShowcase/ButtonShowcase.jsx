@@ -87,7 +87,16 @@ export const ButtonShowcase = () => {
 
         {/* Buttons - icon only */}
         <div className="button-showcase__column">
-          <Heading level={3}>Icon only</Heading>
+          <Heading level={3}>Icon buttons</Heading>
+          <Button className="button-showcase__button" hasIcon>
+            <span>Text and icon</span>
+            <Icon isDecorative name="icon-calendar" />
+          </Button>
+          <Button className="button-showcase__button" hasIcon>
+            <Icon isDecorative name="icon-calendar" />
+            <span>Icon and text</span>
+          </Button>
+          <Heading level={4}>Icon only buttons</Heading>
           <div className="button-showcase__icon-showcases row gap-sm">
             <Button isIconOnly ariaLabel="Open Calendar">
               <Icon isDecorative name="icon-calendar" />

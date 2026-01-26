@@ -53,6 +53,7 @@
   --spacing-button-padding-sm: var(--spacing-0-25) var(--spacing-0-5);
   --spacing-button-padding: var(--spacing-0-5) var(--spacing-1);
   --spacing-button-padding-lg: var(--spacing-0-75) var(--spacing-1-5);
+  --spacing-button-icon-gap: var(--spacing-0-375);
   --spacing-code-lat-padding: var(--spacing-0-25);
   --spacing-control-text: var(--spacing-0-5);
   --spacing-definition-list-items: var(--spacing-0-5); /* Spacing between each dt and dd group */
