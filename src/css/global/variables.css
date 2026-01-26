@@ -93,6 +93,7 @@
 
   /* --- COMPONENT TOKENS --- */
   /* Atoms */
+  --size-button-icon-only: var(--spacing-2-5);
   --size-control: var(--size-icon-xs);
   --size-text-area-height: var(--spacing-8);
 

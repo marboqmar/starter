@@ -89,6 +89,22 @@
   color: var(--button-secondary-text);
 }
 
+/* Icon only button*/
+.button--icon-only {
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size-button-icon-only);
+  height: var(--size-button-icon-only);
+}
+
+.button--icon-only .icon {
+  flex-shrink: 0;
+  width: var(--size-icon-sm);
+  height: var(--size-icon-sm);
+}
+
 /* Disabled */
 .button:disabled {
   cursor: not-allowed;

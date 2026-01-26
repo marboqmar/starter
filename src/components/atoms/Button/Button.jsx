@@ -43,6 +43,8 @@ export const Button = ({
   to,
   role,
   disabled,
+  isIconOnly,
+  ariaLabel,
   children,
   ...rest
 }) => {
@@ -59,31 +61,27 @@ export const Button = ({
   // Button-specific props.
   const buttonProps = isButtonComponent
     ? {
-        type: 'button',
+        type: type || 'button',
         disabled: disabled,
       }
     : {};
 
-  const classes = classNames(
-    'button',
-    className,
-    `button--${finalStyling}`,
-    `button--padding-${paddingSize}`,
-    `button--radius-${borderRadius}`,
-    {
-      'button-appearance': hasButtonAppearance,
-      'button--link': notButtonAppearance,
-      'button--disabled': disabled,
-    },
-  );
+  const classes = classNames('button', className, `button--${finalStyling}`, {
+    [`button--padding-${paddingSize}`]: paddingSize,
+    [`button--radius-${borderRadius}`]: borderRadius,
+    'button-appearance': hasButtonAppearance,
+    'button--link': notButtonAppearance,
+    'button--disabled': disabled,
+    'button--icon-only': isIconOnly,
+  });
 
   return (
     <Component
       className={classes}
       role={role}
       to={to}
+      aria-label={ariaLabel}
       {...buttonProps}
-      {...(type && { type })}
       {...rest}
     >
       {children}

@@ -2,6 +2,7 @@ import './ButtonShowcase.css';
 import { Button } from '../../../components/atoms/Button/Button';
 import { Link } from 'react-router-dom';
 import { Heading } from '../../../components/atoms/Heading/Heading';
+import { Icon } from '../../../components/atoms/Icon/Icon';
 
 export const ButtonShowcase = () => {
   return (
@@ -82,6 +83,22 @@ export const ButtonShowcase = () => {
             </Button>
             .
           </p>
+        </div>
+
+        {/* Buttons - icon only */}
+        <div className="button-showcase__column">
+          <Heading level={3}>Icon only</Heading>
+          <div className="button-showcase__icon-showcases row gap-sm">
+            <Button isIconOnly ariaLabel="Open Calendar">
+              <Icon isDecorative name="icon-calendar" />
+            </Button>
+            <Button buttonStyle="secondary" isIconOnly ariaLabel="Open Calendar">
+              <Icon isDecorative name="icon-calendar" />
+            </Button>
+            <Button buttonStyle="tertiary" isIconOnly ariaLabel="Open Calendar">
+              <Icon isDecorative name="icon-calendar" />
+            </Button>
+          </div>
         </div>
       </div>
     </div>
