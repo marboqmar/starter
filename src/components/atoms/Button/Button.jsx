@@ -30,6 +30,12 @@ import { classNames } from '../../../utils/helpers';
  * @example
  * // Standard text link (not a button)
  * <Button component={Link} to="/contact">Contact</Button>
+ *
+ * @example
+ * // Icon only button
+ * <Button isIconOnly ariaLabel="Open Calendar">
+ *   <Icon isDecorative name="icon-calendar" />
+ * </Button>
  */
 
 export const Button = ({
