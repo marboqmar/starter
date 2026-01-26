@@ -1,6 +1,7 @@
 import '../css/pages/showcase.css';
 import { Heading } from '../components/atoms/Heading/Heading';
 import { CtaShowcase } from '../showcases/molecules/CtaShowcase/CtaShowcase';
+import { FormShowcase } from '../showcases/molecules/FormShowcase/FormShowcase';
 
 export const Molecules = () => {
   return (
@@ -11,6 +12,9 @@ export const Molecules = () => {
       <div className="molecules-page__showcases-wrapper showcase-wrapper">
         {/* CTA */}
         <CtaShowcase />
+
+        {/* Form */}
+        <FormShowcase />
       </div>
     </div>
   );

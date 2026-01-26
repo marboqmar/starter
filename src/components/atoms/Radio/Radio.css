@@ -31,16 +31,19 @@
 }
 
 /* Error */
+.form-fieldset--error .radio,
 .radio--error {
   border-color: var(--error-border);
   background-color: var(--error-bg);
 }
 
+.form-fieldset--error .radio:checked,
 .radio--error:checked {
   border-color: var(--error-border);
   background-color: var(--error-bg);
 }
 
+.form-fieldset--error .radio:checked + .radio__icon,
 .radio--error:checked + .radio__icon {
   opacity: 1;
   transform: scale(1);

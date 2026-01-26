@@ -32,6 +32,9 @@
   --spacing-3: 3rem; /* 48px */
   --spacing-4: 4rem; /* 64px */
   --spacing-5: 5rem; /* 80px */
+  --spacing-6: 6rem; /* 96px */
+  --spacing-7: 7rem; /* 112px */
+  --spacing-8: 8rem; /* 128px */
 
   /* --- RESPONSIVE DEFAULTS (mobile) --- */
   --spacing-xs: 0.5rem; /* 8px */
@@ -73,6 +76,11 @@
   --spacing-cta-padding: var(--spacing-md);
   --spacing-cta-gap: var(--spacing-xl); /* Vertical gap on mobile and horizontal gap on desktop*/
   --spacing-cta-button-gap: var(--spacing-1);
+  --spacing-form-section-gap: var(--spacing-lg);
+  --spacing-form-field-gap: var(--spacing-component-inner);
+  --spacing-form-grid-gap: var(--spacing-md);
+  --spacing-form-heading: var(--spacing-sm);
+  --spacing-form-button: var(--spacing-lg);
 
   /* ==========================================================================
     2. SIZE (width and height) 
@@ -86,6 +94,7 @@
   /* --- COMPONENT TOKENS --- */
   /* Atoms */
   --size-control: var(--size-icon-xs);
+  --size-text-area-height: var(--spacing-8);
 
   /* ==========================================================================
     3. BORDER

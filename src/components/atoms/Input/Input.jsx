@@ -19,7 +19,8 @@ import { Icon } from '../Icon/Icon';
  * provided, it defaults to a randomly generated ID.
  * @param {string} [helperText] - Informational text below the input.
  * @param {string} [errorHelperText] - Error message text; turns input border red.
- * @param {boolean} [required] - Adds '*' to the label to indicate this field is required..
+ * @param {boolean} [required] - Adds '*' to the label to indicate this field is required and
+ * triggers browser validation.
  * @param {object} [rest] - Additional props passed.
  *
  * @example
@@ -31,11 +32,12 @@ import { Icon } from '../Icon/Icon';
  *   autoComplete="current-password"
  *   helperText="This is a helper text"
  *   id="password-showcase-input"
+ *   errorHelperText={fieldErrors.password}
  * />
  *
  * @example
  * // Disabled input
- * <Input disabled id="disabled-showcase-input" value="This input is disabled" />
+ * <Input disabled />
  */
 
 export const Input = forwardRef(
@@ -59,6 +61,7 @@ export const Input = forwardRef(
           className={classNames('input', className, { 'input--error': !!errorHelperText })}
           type={type}
           ref={ref}
+          required={required}
           aria-describedby={errorId || helperId || undefined}
           aria-invalid={!!errorHelperText || undefined}
           {...rest}

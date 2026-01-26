@@ -17,15 +17,20 @@ import { SelectionControlWrapper } from '../../molecules/internal/SelectionContr
  * provided, it defaults to a randomly generated ID.
  * @param {string} [helperText] - Informational text below the input.
  * @param {string} [errorHelperText] - Error message text; turns input border red.
- * @param {boolean} [required] - Adds '*' to the label to indicate this field is required.
+ * @param {boolean} [required] - Adds '*' to the label to indicate this field is required and
+ * triggers browser validation.
  * @param {object} [rest] - Additional props passed.
  *
  * @example
- * <Checkbox label="Checkbox" />
+ * <Checkbox
+ *   label="Email notifications"
+ *   name="email_pref"
+ *   errorHelperText={fieldErrors.email_pref}
+ * />
  *
  * @example
  * // Disabled checkbox
- * <Checkbox disabled label="Disabled checkbox" />
+ * <Checkbox disabled />
  */
 
 export const Checkbox = forwardRef(
@@ -46,6 +51,7 @@ export const Checkbox = forwardRef(
           })}
           type="checkbox"
           ref={ref}
+          required={required}
           aria-describedby={errorId || helperId || undefined}
           aria-invalid={!!errorHelperText || undefined}
           {...rest}

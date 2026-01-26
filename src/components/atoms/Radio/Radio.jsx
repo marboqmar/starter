@@ -15,20 +15,21 @@ import { SelectionControlWrapper } from '../../molecules/internal/SelectionContr
  * @param {string} [label] - The content of the label. Needed to avoid accessibility issues.
  * @param {string} [id=randomId] - The ID to relate label, input, and helper text. If no ID is
  * provided, it defaults to a randomly generated ID.
+ * @param {boolean} [required] - Triggers browser validation.
  * @param {string} [helperText] - Informational text below the input.
  * @param {string} [errorHelperText] - Error message text; turns input border red.
  * @param {object} [rest] - Additional props passed.
  *
  * @example
- * <Radio name="radio-test" label="Radio" />
+ * <Radio name="radio-test" label="Radio" value="option-1" />
  *
  * @example
  * // Disabled radio
- * <Radio name="radio-test" disabled label="Disabled radio" />
+ * <Radio disabled />
  */
 
 export const Radio = forwardRef(
-  ({ className = '', label, id, helperText, errorHelperText, name, ...rest }, ref) => {
+  ({ className = '', label, id, helperText, errorHelperText, name, required, ...rest }, ref) => {
     // If the user does not provide an ID, generate a random one.
     const generatedId = useId();
     const radioId = id || generatedId;
@@ -46,6 +47,7 @@ export const Radio = forwardRef(
           type="radio"
           name={name}
           ref={ref}
+          required={required}
           aria-describedby={errorId || helperId || undefined}
           aria-invalid={!!errorHelperText || undefined}
           {...rest}

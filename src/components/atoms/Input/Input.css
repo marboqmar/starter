@@ -3,7 +3,8 @@
 }
 
 .input {
-  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
   padding: var(--spacing-input-padding);
   border-radius: var(--radius-main);
   border: var(--border-primary);

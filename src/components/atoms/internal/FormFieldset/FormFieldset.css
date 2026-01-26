@@ -1,0 +1,22 @@
+.form-fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  min-width: 0; /* Fixes a flexbox bug in some browsers */
+}
+
+.form-fieldset__legend {
+  margin-bottom: var(--spacing-form-field-gap);
+  padding: 0;
+  display: block; /* Ensures it behaves like a heading */
+}
+
+.form-fieldset__legend--required {
+  color: var(--error-text);
+}
+
+.form-fieldset__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-form-field-gap);
+}

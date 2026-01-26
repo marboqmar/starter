@@ -16,7 +16,8 @@ import { FieldWrapper } from '../../molecules/internal/FieldWrapper/FieldWrapper
  * provided, it defaults to a randomly generated ID.
  * @param {string} [helperText] - Informational text below the input.
  * @param {string} [errorHelperText] - Error message text; turns input border red.
- * @param {boolean} [required] - Adds '*' to the label to indicate this field is required..
+ * @param {boolean} [required] - Adds '*' to the label to indicate this field is required and
+ * triggers browser validation.
  * @param {object} [rest] - Additional props passed.
  *
  * @example
@@ -24,7 +25,8 @@ import { FieldWrapper } from '../../molecules/internal/FieldWrapper/FieldWrapper
  *   label="Required text area"
  *   required
  *   helperText="This is a helper text"
- *   id="showcase-text-area-required"
+ *   name="message"
+ *   errorHelperText={fieldErrors.message}
  * />
  */
 
@@ -42,6 +44,7 @@ export const TextArea = forwardRef(
         className={classNames('text-area', { 'text-area--error': errorHelperText }, className)}
         id={textAreaId}
         ref={ref}
+        required={required}
         aria-describedby={errorId || helperId || undefined}
         aria-invalid={!!errorHelperText || undefined}
         {...rest}
