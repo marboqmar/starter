@@ -1,5 +1,5 @@
-.icon.icon-showcase--large-coloured {
+.icon.icon-showcase--large-colored {
   width: var(--spacing-xl);
   height: var(--spacing-xl);
-  color: var(--colour-success);
+  color: var(--color-success);
 }

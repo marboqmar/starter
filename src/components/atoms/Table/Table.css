@@ -27,21 +27,21 @@
   }
 
   .table__row {
-    border-top: var(--border-primary);
-    border-right: var(--border-primary);
-    border-left: var(--border-primary);
+    border-top: var(--table-border);
+    border-right: var(--table-border);
+    border-left: var(--table-border);
   }
 
   .table__row:last-of-type {
-    border-bottom: var(--border-primary);
+    border-bottom: var(--table-border);
   }
 
   .table__cell {
     display: flex;
     justify-content: space-between;
-    padding: var(--spacing-table-cell-padding);
+    padding: var(--table-spacing-cell-padding);
     text-align: right;
-    border-bottom: var(--border-primary);
+    border-bottom: var(--table-border);
   }
 
   /* Inject the label using the data-label attribute */
@@ -49,7 +49,7 @@
     content: attr(data-label);
     font-weight: bold;
     text-align: left;
-    margin-right: var(--spacing-table-cell-padding);
+    margin-right: var(--table-spacing-cell-padding);
   }
 
   .table__cell:last-child {
@@ -70,7 +70,7 @@
   }
 
   .table__cell {
-    padding: var(--spacing-table-cell-padding);
-    border-bottom: var(--border-primary);
+    padding: var(--table-spacing-cell-padding);
+    border-bottom: var(--table-border);
   }
 }

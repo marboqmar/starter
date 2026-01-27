@@ -5,36 +5,36 @@
 .input {
   width: 100%;
   box-sizing: border-box;
-  padding: var(--spacing-input-padding);
-  border-radius: var(--radius-main);
-  border: var(--border-primary);
-  color: var(--text-main);
+  padding: var(--control-spacing-padding);
+  border-radius: var(--control-radius);
+  border: var(--control-border);
+  color: var(--control-text);
   background-color: var(--control-bg);
 }
 
 /* Placeholder */
 .input::placeholder {
-  color: var(--text-placeholder);
+  color: var(--control-text-placeholder);
 }
 
 /* Error */
 .input--error {
-  border-color: var(--error-border);
+  border-color: var(--control-error-border-color);
 }
 
 /* Disabled */
 .input:disabled {
   cursor: not-allowed;
-  border: var(--border-disabled);
-  color: var(--disabled-text);
-  background-color: var(--disabled-bg);
+  border: var(--control-disabled-border);
+  color: var(--control-disabled-text);
+  background-color: var(--control-disabled-bg);
 }
 
 /* Custom icon */
 .input__icon {
   position: absolute;
   top: 50%;
-  right: var(--spacing-input-icon);
+  right: var(--input-spacing-icon);
   transform: translateY(-50%);
   pointer-events: none; /* Clicks go through to the native calendar picker icon */
   width: 18px;

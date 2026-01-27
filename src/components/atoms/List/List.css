@@ -33,8 +33,8 @@
   counter-increment: list-counter;
   content: counter(list-counter) ".";
   color: var(--list-marker);
-  font-weight: var(--font-weight-bold);
-  padding-right: var(--spacing-list-number);
+  font-weight: var(--list-number-font-weight);
+  padding-right: var(--list-spacing-number);
   /* Align number to centre of text's first line */
   height: var(
     --icon-alignment-height

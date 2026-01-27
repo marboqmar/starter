@@ -1,28 +1,28 @@
 .form__heading,
 .form__section .heading {
-  margin-bottom: var(--spacing-form-heading);
+  margin-bottom: var(--form-spacing-heading);
 }
 
 .form__error-message {
-  color: var(--error-text);
-  margin-bottom: var(--spacing-component-inner);
+  color: var(--form-error-text);
+  margin-bottom: var(--form-spacing-server-error);
 }
 
 .form__wrapper {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-form-section-gap);
+  gap: var(--form-spacing-section-gap);
 }
 
 .form__grid {
   display: grid;
-  gap: var(--spacing-form-field-gap);
+  gap: var(--form-spacing-field-gap);
 }
 
 .form__button {
   display: flex;
   justify-content: flex-start;
-  margin-top: var(--spacing-form-button);
+  margin-top: var(--form-spacing-button);
 }
 
 .form__button .button {
@@ -32,7 +32,7 @@
 @media (min-width: 768px) {
   .form__grid {
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-form-grid-gap);
+    gap: var(--form-spacing-grid-gap);
   }
 
   .form__button .button {

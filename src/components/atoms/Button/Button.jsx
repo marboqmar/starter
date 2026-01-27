@@ -8,8 +8,8 @@ import { classNames } from '../../../utils/helpers';
  * @param {string} [className] - Additional CSS classes.
  * @param {'primary' | 'secondary' | 'tertiary'} [buttonStyle] - Button styling. Defaults to 'primary' for
  * <button>.
- * @param {'small' | 'large'} [paddingSize] - Padding variant. Defaults to 'small' for <button>.
- * @param {'small' | 'large'} [borderRadius] - Border radius. Defaults to 'small' for <button>.
+ * @param {'sm' | 'lg'} [paddingSize] - Padding variant. Defaults to 'sm' for <button>.
+ * @param {'sm' | 'lg'} [borderRadius] - Border radius. Defaults to 'sm' for <button>.
  * @param {ElementType} [component="button"] - The element to render (e.g., 'button', 'a', or Link).
  * @param {boolean} [buttonAppearance] - Applies the 'button-appearance' styling class.
  * @param {'button' | 'submit' | 'reset'} [type="button"] - HTML type attribute (buttons only).
@@ -23,8 +23,8 @@ import { classNames } from '../../../utils/helpers';
  * @param {object} [rest] - Additional props passed.
  *
  * @example
- * // Button with secondary colour and large padding
- * <Button buttonStyle="secondary" paddingSize="large">Text</Button>
+ * // Button with secondary color and large padding
+ * <Button buttonStyle="secondary" paddingSize="lg">Text</Button>
  *
  * @example
  * // Link that looks like a button

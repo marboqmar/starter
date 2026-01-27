@@ -1,0 +1,240 @@
+/* ==========================================================================
+   1. PRIMITIVES
+   ========================================================================== */
+:root {
+  /* Primary */
+  --color-primary: #5925dc;
+  --color-primary-light: #6938ef;
+  --color-primary-lighter: #7a5af8;
+  --color-primary-lightest: #9b8afb;
+  --color-primary-dark: #4a1fb8;
+  --color-primary-darker: #3e1c96;
+  --color-primary-a10: rgba(89, 37, 220, 0.1);
+  --color-primary-a20: rgba(89, 37, 220, 0.2);
+  --color-primary-a30: rgba(89, 37, 220, 0.3);
+
+  /* Secondary */
+  --color-secondary: #9e165f;
+  --color-secondary-light: #c11574;
+  --color-secondary-dark: #851651;
+  --color-secondary-darker: #740d44;
+
+  /* Neutral */
+  --color-neutral: #1f425e;
+
+  /* White */
+  --color-white: #fdfdfd;
+
+  /* Black */
+  --color-black: #1a1d20;
+
+  /* Gray */
+  --color-gray-50: #f5f5f5;
+  --color-gray-100: #e9eaeb;
+  --color-gray-200: #d5d7da;
+  --color-gray-300: #a4a7ae;
+  --color-gray-400: #717680;
+  --color-gray-500: #535862;
+  --color-gray-600: #414651;
+  --color-gray-700: #373e4c;
+  --color-gray-800: #252b37;
+  --color-gray-900: #101828;
+
+  /* Alerts */
+  --color-success: #12b76a;
+  --color-warning: #f79009;
+  --color-error: #dd2214;
+  --color-error-light: #f0665c;
+  --color-error-transparent: rgba(240, 68, 56, 0.2);
+  --color-error-transparent-light: rgba(240, 68, 56, 0.1);
+  --color-info: #2e90fa;
+}
+
+/* ==========================================================================
+   2. SEMANTIC TOKENS
+   ========================================================================== */
+:root {
+  /* Text */
+  --text-main: var(--color-black);
+  --text-inverted: var(--color-white);
+  --text-placeholder: var(--color-gray-400);
+
+  /* Border */
+  --border-main: var(--color-primary);
+
+  /* Background */
+  --page-bg: var(--color-white);
+
+  /* Focus */
+  --focus-spacer: var(--page-bg);
+  --focus-ring: var(--color-primary-dark);
+  --focus-glow: var(--color-primary-light);
+
+  /* Disabled */
+  --disabled-text: var(--color-gray-400);
+  --disabled-bg: var(--color-gray-100);
+  --disabled-hover-bg: var(--color-gray-200);
+  --disabled-border-color: var(--color-gray-300);
+
+  /* Error */
+  --error-text: var(--color-error);
+  --error-icon: var(--color-error);
+  --error-border-color: var(--color-error);
+  --error-bg: var(--color-error-transparent-light);
+
+  /* Control */
+  --control-text: var(--text-main);
+  --control-text-placeholder: var(--text-placeholder);
+  --control-bg: var(--page-bg);
+  --control-bg-checked: var(--color-primary);
+  --control-error-bg: var(--error-bg);
+  --control-error-border-color: var(--error-border-color);
+  --control-disabled-text: var(--disabled-text);
+  --control-disabled-bg: var(--disabled-bg);
+}
+
+/* ==========================================================================
+   3. COMPONENT TOKENS
+   ========================================================================== */
+:root {
+  /* --- ATOMS --- */
+  /* Button - primary */
+  --button-primary-text: var(--text-inverted);
+  --button-primary-bg: var(--color-primary);
+  --button-primary-hover-bg: var(--color-primary-dark);
+  --button-primary-border: var(--color-primary);
+
+  /* Button -secondary */
+  --button-secondary-text: var(--text-inverted);
+  --button-secondary-bg: var(--color-secondary);
+  --button-secondary-hover-bg: var(--color-secondary-dark);
+  --button-secondary-border: var(--color-secondary);
+
+  /* Button - tertiary */
+  --button-tertiary-text: var(--color-primary-darker);
+  --button-tertiary-bg: transparent;
+  --button-tertiary-hover-text: var(--text-inverted);
+  --button-tertiary-hover-bg: var(--color-primary-lighter);
+
+  /* Button - link */
+  --button-link-text: var(--text-main);
+
+  /* Button - disabled */
+  --button-disabled-text: var(--disabled-text);
+  --button-disabled-bg: var(--disabled-bg);
+  --button-disabled-hover-bg: var(--disabled-hover-bg);
+
+  /* Checkbox */
+  --checkbox-icon: var(--page-bg);
+  --checkbox-disabled-icon: var(--disabled-text);
+
+  /* Code */
+  --code-bg: var(--color-gray-50);
+
+  /* Form fieldset */
+  --form-fieldset-error-text: var(--error-text);
+
+  /* Heading */
+  --heading-text: var(--text-main);
+
+  /* Helper text */
+  --helper-text-text: var(--color-gray-600);
+  --helper-text-error-text: var(--error-text);
+  --helper-text-error-icon: var(--error-text);
+
+  /* Input */
+  --input-icon: var(--text-main);
+
+  /* Label */
+  --label-required: var(--error-text);
+
+  /* List */
+  --list-marker: var(--color-primary);
+
+  /* Paragraph */
+  --paragraph-color: var(--text-main);
+  --paragraph-color-inverted: var(--text-inverted);
+
+  /* Table */
+  --table-header: var(--color-primary-a20);
+  --table-row: var(--color-primary-a10);
+
+  /* --- MOLECULES --- */
+  /* CTA */
+  --cta-bg: var(--color-primary-a20);
+
+  /* Form */
+  --form-error-text: var(--error-text);
+}
+
+/* ==========================================================================
+   4. DARK THEME TOKENS
+   ========================================================================== */
+/* Dark theme */
+[data-theme="dark"] {
+  /* --- SEMANTIC --- */
+  /* Text */
+  --text-main: var(--color-white);
+  --text-inverted: var(--color-black);
+  --text-placeholder: var(--color-gray-300);
+
+  /* Border */
+  --border-main: var(--color-primary-lightest);
+
+  /* Background */
+  --page-bg: var(--color-gray-800);
+  --control-bg: var(--page-bg);
+  --control-bg-checked: var(--color-primary-lightest);
+
+  /* Focus */
+  --focus-ring: var(--color-primary-light);
+  --focus-glow: var(--color-primary-light);
+
+  /* Disabled */
+  --disabled-text: var(--color-gray-200);
+  --disabled-bg: var(--color-gray-600);
+  --disabled-hover-bg: var(--color-gray-700);
+
+  /* Error */
+  --error-text: var(--color-error-light);
+  --error-icon: var(--color-error-light);
+  --error-border-color: var(--color-error-light);
+  --error-bg: var(--color-error-transparent);
+
+  /* --- COMPONENT TOKENS --- */
+  /* ATOMS */
+  /* Button - primary */
+  --button-primary-text: var(--text-main);
+  --button-primary-bg: var(--color-primary-dark);
+  --button-primary-hover-bg: var(--color-primary-darker);
+
+  /* Button - secondary */
+  --button-secondary-text: var(--text-main);
+  --button-secondary-bg: var(--color-secondary-dark);
+  --button-secondary-hover-bg: var(--color-secondary-darker);
+
+  /* Button - tertiary */
+  --button-tertiary-text: var(--text-main);
+  --button-tertiary-hover-text: var(--text-main);
+  --button-tertiary-hover-bg: var(--color-primary);
+
+  /* Checkbox */
+  --checkbox-icon: var(--page-bg);
+
+  /* Code */
+  --code-bg: var(--color-gray-600);
+
+  /* Helper text */
+  --helper-text-text: var(--color-gray-300);
+
+  /* List */
+  --list-marker: var(--color-primary-lightest);
+
+  /* Table */
+  --table-header: var(--color-primary-darker);
+  --table-row: var(--color-primary-a20);
+
+  /* MOLECULES */
+  /* CTA */
+  --cta-bg: var(--color-primary-a30);
+}

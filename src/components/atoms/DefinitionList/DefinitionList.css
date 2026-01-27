@@ -1,7 +1,7 @@
 .definition-list {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-definition-list-items);
+  gap: var(--definition-spacing-list-items);
 }
 
 .definition-list__group {
@@ -17,5 +17,5 @@
 }
 
 .definition-list__description {
-  margin-left: var(--spacing-definition-list-description);
+  margin-left: var(--definition-spacing-list-description);
 }

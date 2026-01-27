@@ -1,9 +1,9 @@
 .label {
   display: block;
-  font-weight: var(--font-weight-medium);
-  margin-bottom: var(--spacing-label-field);
+  font-weight: var(--label-font-weight);
+  margin-bottom: var(--label-spacing-field);
 }
 
 .label--required {
-  color: var(--error-text);
+  color: var(--label-required);
 }

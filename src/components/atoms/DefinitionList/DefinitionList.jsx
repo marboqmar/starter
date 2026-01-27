@@ -15,7 +15,7 @@ import { classNames } from '../../../utils/helpers';
  *
  * @example
  * const descriptionGroup = [
- *   { id: item-colour, term: 'Colour', description: 'blue' },
+ *   { id: item-color, term: 'color', description: 'blue' },
  *   { term: 'Material', description: 'cotton' },
  * ]
  *

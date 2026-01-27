@@ -64,8 +64,8 @@ code {
   font-size: var(--font-size-sm);
   background-color: var(--code-bg);
   border-radius: var(--radius-main);
-  padding-right: var(--spacing-code-lat-padding);
-  padding-left: var(--spacing-code-lat-padding);
+  padding-right: var(--code-spacing-lat-padding);
+  padding-left: var(--code-spacing-lat-padding);
 }
 
 /* Focus */
@@ -88,7 +88,7 @@ code {
   cursor: not-allowed;
   color: var(--disabled-text);
   background-color: var(--disabled-bg);
-  border-color: var(--disabled-border);
+  border-color: var(--disabled-border-color);
   border: var(--border-disabled);
 }
 

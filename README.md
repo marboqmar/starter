@@ -56,8 +56,8 @@ src/
 │   └── organisms/
 ├── css/
 │   ├── global/         # Global styles
-│   │   ├── colour-variables.css     # Color tokens
-│   │   ├── colours.css              # Color utility classes
+│   │   ├── color-variables.css     # Color tokens
+│   │   ├── colors.css              # Color utility classes
 │   │   ├── layout.css               # Margin, flex, and grid classes
 │   │   ├── site.css                 # Base reset and site styles
 │   │   ├── typography-variables.css # Typography tokens
@@ -94,7 +94,7 @@ To adapt the componens of this project to your designs, modify the variables fou
 files:
 
 - `src/css/global/variables.css`
-- `src/css/global/colour-variables.css`
+- `src/css/global/color-variables.css`
 - `src/css/global/typography-variables.css`
 
 All variables use CSS custom properties, so you can override them in your own CSS files or modify

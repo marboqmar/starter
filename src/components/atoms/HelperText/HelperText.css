@@ -1,8 +1,8 @@
 .helper-text {
   display: flex;
   align-items: flex-start;
-  gap: var(--spacing-inline-icon-gap);
-  margin-top: var(--spacing-helper-field);
+  gap: var(--helper-spacing-inline-icon);
+  margin-top: var(--helper-spacing-field);
 }
 
 .helper-text__message {
@@ -11,7 +11,7 @@
 }
 
 .helper-text--error .helper-text__message {
-  color: var(--error-text);
+  color: var(--helper-text-error-text);
 }
 
 /* Align error icon to centre of messages's first line */
@@ -25,7 +25,7 @@
 }
 
 .helper-text__icon {
-  width: var(--size-icon-sm);
-  height: var(--size-icon-sm);
-  color: var(--error-icon);
+  width: var(--helper-text-icon-size);
+  height: var(--helper-text-icon-size);
+  color: var(--helper-text-error-icon);
 }

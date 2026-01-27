@@ -6,10 +6,10 @@ import { classNames } from '../../../utils/helpers';
  *
  * Component props:
  * @param {string} [className] - Additional CSS classes.
- * @param {'small | 'large'} [fontSize] - Modifies font size from "base" to the stated value.
+ * @param {'sm | 'lg'} [fontSize] - Modifies font size from "base" to the stated value.
  * @param {'semibold' | 'bold'} [fontWeight] - Modifies the font weight from "regular" to the
  * stated value.
- * @param {boolean} isInvertedColour - Adds class to invert text colour.
+ * @param {boolean} isInvertedcolor - Adds class to invert text color.
  * @param {node} children - Paragraph content.
  * @param {object} [rest] - Additional props passed.
  */
@@ -18,7 +18,7 @@ export const Paragraph = ({
   className = '',
   fontSize,
   fontWeight,
-  isInvertedColour,
+  isInvertedcolor,
   children,
   ...rest
 }) => {
@@ -27,7 +27,7 @@ export const Paragraph = ({
     className,
     `paragraph--font-size-${fontSize}`,
     `paragraph--font-weight-${fontWeight}`,
-    { 'paragraph--colour-inverted': isInvertedColour },
+    { 'paragraph--color-inverted': isInvertedcolor },
   );
 
   return (

@@ -2,5 +2,5 @@
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: var(--radius-image);
+  border-radius: var(--image-radius);
 }

@@ -29,18 +29,41 @@ export const TextShowcase = () => {
             </Paragraph>
           </div>
           <div className="text-showcase__example showcase-item__example">
-            <Heading level={4}>Large and bold</Heading>
-            <Paragraph fontSize="large" fontWeight="bold">
+            <Heading level={4}>Small</Heading>
+            <Paragraph fontSize="sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius sagittis
               fermentum. Mauris at augue diam. Ut vel rhoncus ante, ut egestas justo. Sed luctus
               luctus erat, in aliquet ipsum pretium vel. Proin et risus libero.
             </Paragraph>
           </div>
-
           <div className="text-showcase__example showcase-item__example">
-            <Heading level={4}>Inverted colour</Heading>
+            <Heading level={4}>Large</Heading>
+            <Paragraph fontSize="lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius sagittis
+              fermentum. Mauris at augue diam. Ut vel rhoncus ante, ut egestas justo. Sed luctus
+              luctus erat, in aliquet ipsum pretium vel. Proin et risus libero.
+            </Paragraph>
+          </div>
+          <div className="text-showcase__example showcase-item__example">
+            <Heading level={4}>Semibold</Heading>
+            <Paragraph fontWeight="semibold">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius sagittis
+              fermentum. Mauris at augue diam. Ut vel rhoncus ante, ut egestas justo. Sed luctus
+              luctus erat, in aliquet ipsum pretium vel. Proin et risus libero.
+            </Paragraph>
+          </div>
+          <div className="text-showcase__example showcase-item__example">
+            <Heading level={4}>Bold</Heading>
+            <Paragraph fontWeight="bold">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius sagittis
+              fermentum. Mauris at augue diam. Ut vel rhoncus ante, ut egestas justo. Sed luctus
+              luctus erat, in aliquet ipsum pretium vel. Proin et risus libero.
+            </Paragraph>
+          </div>
+          <div className="text-showcase__example showcase-item__example">
+            <Heading level={4}>Inverted color</Heading>
             <div className="text-showcase__example-bg text-showcase__example--inverted">
-              <Paragraph isInvertedColour>
+              <Paragraph isInvertedcolor>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius sagittis
                 fermentum. Mauris at augue diam. Ut vel rhoncus ante, ut egestas justo. Sed luctus
                 luctus erat, in aliquet ipsum pretium vel. Proin et risus libero.

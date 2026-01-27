@@ -4,7 +4,7 @@ import { DefinitionList } from '../../../components/atoms/DefinitionList/Definit
 import { List } from '../../../components/atoms/List/List';
 
 const descriptionItems = [
-  { id: 'item-colour', term: 'Colour', description: 'blue' },
+  { id: 'item-color', term: 'color', description: 'blue' },
   { id: 'item-material', term: 'Material', description: 'cotton' },
   {
     term: 'Size',

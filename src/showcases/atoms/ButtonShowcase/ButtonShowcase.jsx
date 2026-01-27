@@ -39,7 +39,7 @@ export const ButtonShowcase = () => {
             No border radius
           </Button>
           <Button className="button-showcase__button">Small border radius</Button>
-          <Button className="button-showcase__button" borderRadius="large">
+          <Button className="button-showcase__button" borderRadius="lg">
             Large border radius
           </Button>
         </div>
@@ -47,10 +47,10 @@ export const ButtonShowcase = () => {
         {/* Buttons - padding */}
         <div className="button-showcase__column">
           <Heading level={3}>Padding</Heading>
-          <Button className="button-showcase__button" paddingSize="small">
+          <Button className="button-showcase__button" paddingSize="sm">
             Small padding
           </Button>
-          <Button className="button-showcase__button" paddingSize="large">
+          <Button className="button-showcase__button" paddingSize="lg">
             Large padding
           </Button>
         </div>
