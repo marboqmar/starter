@@ -18,6 +18,7 @@ import { classNames } from '../../../utils/helpers';
  * @param {boolean} [disabled] - Disables the button and adds disabled styling.
  * @param {boolean} [hasIcon] - Adds class to style a button containing text and an icon.
  * @param {boolean} [isIconOnly] - Adds class to style a button containing only an icon.
+ * @param {boolean} [isRound] - Adds class to apply circular border radius.
  * @param {string} [ariaLabel] - Required if isIconOnly. Provides the accessible name.
  * @param {node} children - Button content.
  * @param {object} [rest] - Additional props passed.
@@ -61,6 +62,7 @@ export const Button = ({
   disabled,
   hasIcon,
   isIconOnly,
+  isRound,
   ariaLabel,
   children,
   ...rest
@@ -91,6 +93,7 @@ export const Button = ({
     'button--disabled': disabled,
     'button--icon': hasIcon,
     'button--icon-only': isIconOnly,
+    'button--round': isRound,
   });
 
   return (

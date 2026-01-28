@@ -85,7 +85,7 @@ export const ButtonShowcase = () => {
           </p>
         </div>
 
-        {/* Buttons - icon only */}
+        {/* Buttons - icon */}
         <div className="button-showcase__column">
           <Heading level={3}>Icon buttons</Heading>
           <Button className="button-showcase__button" hasIcon>
@@ -96,8 +96,13 @@ export const ButtonShowcase = () => {
             <Icon isDecorative name="icon-calendar" />
             <span>Icon and text</span>
           </Button>
-          <Heading level={4}>Icon only buttons</Heading>
-          <div className="button-showcase__icon-showcases row gap-sm">
+        </div>
+
+        {/* Buttons - icon only */}
+        <div className="button-showcase__column">
+          <Heading level={3}>Icon only</Heading>
+
+          <div className="button-showcase__icon-showcases">
             <Button isIconOnly ariaLabel="Open Calendar">
               <Icon isDecorative name="icon-calendar" />
             </Button>
@@ -105,6 +110,17 @@ export const ButtonShowcase = () => {
               <Icon isDecorative name="icon-calendar" />
             </Button>
             <Button buttonStyle="tertiary" isIconOnly ariaLabel="Open Calendar">
+              <Icon isDecorative name="icon-calendar" />
+            </Button>
+          </div>
+          <div className="button-showcase__icon-showcases">
+            <Button isIconOnly isRound ariaLabel="Open Calendar">
+              <Icon isDecorative name="icon-calendar" />
+            </Button>
+            <Button buttonStyle="secondary" isIconOnly isRound ariaLabel="Open Calendar">
+              <Icon isDecorative name="icon-calendar" />
+            </Button>
+            <Button buttonStyle="tertiary" isIconOnly isRound ariaLabel="Open Calendar">
               <Icon isDecorative name="icon-calendar" />
             </Button>
           </div>

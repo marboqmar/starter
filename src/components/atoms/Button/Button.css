@@ -114,6 +114,12 @@
   height: var(--button-icon-size);
 }
 
+/* Icon round button */
+.button--icon-only.button--round {
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-full);
+}
+
 /* Disabled */
 .button:disabled {
   cursor: not-allowed;

@@ -18,6 +18,12 @@
     0 0 4px 4px var(--focus-glow);
 }
 
+.button-showcase__icon-showcases {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-sm);
+}
+
 @media (min-width: 768px) {
   .button-showcase__column {
     align-items: center;
