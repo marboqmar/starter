@@ -48,6 +48,9 @@
   --spacing-layout: var(--spacing-xl); /* Spacing between major sections/components */
   --spacing-component-inner: var(--spacing-sm); /* Spacing between elements within a component */
   --spacing-inline-icon-gap: var(--spacing-0-25); /* Spacing between inline icon and text */
+  --spacing-surface-padding: var(
+    --spacing-md
+  ); /* Spacing between a surface's edge and its content */
 
   /* Control */
   --control-spacing-padding: var(--spacing-0-5);
@@ -97,9 +100,11 @@
 
   /* MOLECULES */
   /* CTA */
-  --cta-spacing-padding: var(--spacing-md);
+  --cta-spacing-padding: var(--spacing-surface-padding);
   --cta-spacing-gap: var(--spacing-xl); /* Main gap between image and text */
-  --cta-spacing-content: var(--spacing-component-inner); /* Gap between title and body */
+  --cta-spacing-text: var(--spacing-component-inner); /* Gap between title and body */
+  --cta-spacing-content: var(--spacing-md); /* Gap between text and buttons */
+
   --cta-spacing-actions: var(--spacing-1); /* Gap between buttons */
 
   /* Form */
@@ -109,6 +114,10 @@
   --form-spacing-grid-gap: var(--spacing-md);
   --form-spacing-heading: var(--spacing-sm);
   --form-spacing-button: var(--spacing-lg);
+
+  /* Media object */
+  --media-object-spacing-padding: var(--spacing-surface-padding);
+  --media-object-spacing-gap: var(--spacing-xl); /* Main gap between media and text */
 
   /* ==========================================================================
     2. SIZE (width and height) 
@@ -204,6 +213,9 @@
   /* MOLECULES */
   /* CTA */
   --cta-radius: var(--radius-main);
+
+  /* Media object */
+  --media-object-radius: var(--radius-main);
 
   /* ==========================================================================
     5. Z-INDEX
