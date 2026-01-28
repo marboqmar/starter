@@ -114,6 +114,11 @@
   height: var(--button-icon-size);
 }
 
+.button--icon .icon:focus,
+.button--icon-only .icon:focus {
+  outline: none;
+}
+
 /* Icon round button */
 .button--icon-only.button--round {
   aspect-ratio: 1 / 1;

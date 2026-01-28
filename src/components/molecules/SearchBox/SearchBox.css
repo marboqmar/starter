@@ -34,6 +34,10 @@
   border: none;
 }
 
+.search-box__icon:focus {
+  outline: none;
+}
+
 .search-box__button:hover {
   background-color: transparent;
 }
