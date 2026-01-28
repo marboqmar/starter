@@ -43,7 +43,7 @@ export const List = ({ className = '', ordered, items, ...rest }) => {
               <span className="list__item-number" aria-hidden="true" />
             ) : (
               <div className="list__bullet-wrapper">
-                <Icon className="list__bullet" name="list-bullet" isDecorative />
+                <Icon className="list__bullet" href="/assets/icons/solid-circle.svg" isDecorative />
               </div>
             )}
             {item.value}

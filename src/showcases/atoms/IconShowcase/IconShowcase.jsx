@@ -14,9 +14,7 @@ export const IconShowcase = () => {
             The following icon contains the HTML attributes <code>aria-hidden="true"</code>,{' '}
             <code>tabindex="-1"</code>, and <code>focusable="false"</code>.
           </Paragraph>
-          <Icon isDecorative>
-            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-          </Icon>
+          <Icon isDecorative href="/assets/icons/check.svg" />
         </div>
         <div className="icon-showcase__example showcase-item__example">
           <Heading level={3}>Non decorative icon</Heading>
@@ -24,9 +22,7 @@ export const IconShowcase = () => {
             The following icon contains the HTML attributes <code>role="img"</code> and{' '}
             <code>aria-label</code>.
           </Paragraph>
-          <Icon ariaLabel={'check mark'}>
-            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-          </Icon>
+          <Icon ariaLabel={'check mark'} href="/assets/icons/check.svg" />
         </div>
         <div className="icon-showcase__example showcase-item__example">
           <Heading level={3}>Different colors and sizes</Heading>
@@ -34,17 +30,19 @@ export const IconShowcase = () => {
             The color and size of the icon component can be modified using CSS, as demonstrated in
             the following icon.
           </Paragraph>
-          <Icon isDecorative className="icon-showcase--large-colored">
-            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-          </Icon>
+          <Icon
+            isDecorative
+            className="icon-showcase--large-colored"
+            href="/assets/icons/check.svg"
+          />
         </div>
         <div className="icon-showcase__example showcase-item__example">
-          <Heading level={3}>Icon from an SVG file</Heading>
+          <Heading level={3}>Icon from a sprite file</Heading>
           <Paragraph>
-            The icon component also allows to use icons from an external SVG sprite. These icons can
-            also be modified using CSS.
+            The icon component also allows to use icons from an external SVG sprite file. These
+            icons can also be modified using CSS.
           </Paragraph>
-          <Icon className="icon-showcase--large-colored" name="checkmark"></Icon>
+          <Icon className="icon-showcase--large-colored" name="icon-check"></Icon>
         </div>
       </div>
     </div>

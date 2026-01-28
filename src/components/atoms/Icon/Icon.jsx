@@ -22,11 +22,11 @@ import { classNames } from '../../../utils/helpers';
  *
  * @example
  * // Icon from a file
- * <Icon href="/assets/icons/checkmark.svg"></Icon>
+ * <Icon href="/assets/icons/check.svg"></Icon>
  *
  * @example
  * // Icon from SVG sprite
- * <Icon name="checkmark"></Icon>
+ * <Icon name="icon-check"></Icon>
  */
 
 export const Icon = ({

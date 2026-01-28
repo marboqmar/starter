@@ -22,7 +22,7 @@ import { HelperText } from '../../../atoms/HelperText/HelperText';
  * const selector = (
  *   <>
  *     <input type="checkbox" .../>
- *     <Icon name="checkmark" ... />
+ *     <Icon href="/assets/icons/check.svg" ... />
  *   </>
  * );
  *

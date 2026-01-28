@@ -77,7 +77,7 @@ export const Input = forwardRef(
           aria-invalid={!!errorHelperText || undefined}
           {...rest}
         />
-        {isDateType && <Icon className="input__icon" name="icon-calendar" />}
+        {isDateType && <Icon className="input__icon" href="/assets/icons/calendar.svg" />}
       </div>
     );
 

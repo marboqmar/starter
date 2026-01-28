@@ -56,7 +56,12 @@ export const Checkbox = forwardRef(
           aria-invalid={!!errorHelperText || undefined}
           {...rest}
         />
-        <Icon name="checkmark" className="checkbox__icon" aria-hidden="true" isDecorative />
+        <Icon
+          href="/assets/icons/check.svg"
+          className="checkbox__icon"
+          aria-hidden="true"
+          isDecorative
+        />
       </>
     );
 

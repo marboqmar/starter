@@ -39,13 +39,13 @@ import { classNames } from '../../../utils/helpers';
  * // Button with icon and text
  * <Button className="button-showcase__button" hasIcon>
  *   <span>Text and icon</span>
- *   <Icon isDecorative name="icon-calendar" />
+ *   <Icon isDecorative href="/assets/icons/check.svg" />
  * </Button>
  *
  * @example
  * // Icon only button
  * <Button isIconOnly isRound ariaLabel="Open Calendar">
- *   <Icon isDecorative name="icon-calendar" />
+ *   <Icon isDecorative href="/assets/icons/check.svg" />
  * </Button>
  */
 

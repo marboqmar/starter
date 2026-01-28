@@ -24,7 +24,7 @@ export const HelperText = ({ className = '', isErrorText, id, children, ...rest 
     <div className={classNames('helper-text', { 'helper-text--error': isErrorText }, className)}>
       {isErrorText && (
         <div className="helper-text__icon-wrapper">
-          <Icon className="helper-text__icon" name="error" isDecorative />
+          <Icon className="helper-text__icon" href="/assets/icons/error.svg" isDecorative />
         </div>
       )}
 

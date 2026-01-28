@@ -90,10 +90,10 @@ export const ButtonShowcase = () => {
           <Heading level={3}>Icon buttons</Heading>
           <Button className="button-showcase__button" hasIcon>
             <span>Text and icon</span>
-            <Icon isDecorative name="icon-calendar" />
+            <Icon isDecorative href="/assets/icons/check.svg" />
           </Button>
           <Button className="button-showcase__button" hasIcon>
-            <Icon isDecorative name="icon-calendar" />
+            <Icon isDecorative href="/assets/icons/check.svg" />
             <span>Icon and text</span>
           </Button>
         </div>
@@ -104,24 +104,24 @@ export const ButtonShowcase = () => {
 
           <div className="button-showcase__icon-showcases">
             <Button isIconOnly ariaLabel="Open Calendar">
-              <Icon isDecorative name="icon-calendar" />
+              <Icon isDecorative href="/assets/icons/check.svg" />
             </Button>
             <Button buttonStyle="secondary" isIconOnly ariaLabel="Open Calendar">
-              <Icon isDecorative name="icon-calendar" />
+              <Icon isDecorative href="/assets/icons/check.svg" />
             </Button>
             <Button buttonStyle="tertiary" isIconOnly ariaLabel="Open Calendar">
-              <Icon isDecorative name="icon-calendar" />
+              <Icon isDecorative href="/assets/icons/check.svg" />
             </Button>
           </div>
           <div className="button-showcase__icon-showcases">
             <Button isIconOnly isRound ariaLabel="Open Calendar">
-              <Icon isDecorative name="icon-calendar" />
+              <Icon isDecorative href="/assets/icons/check.svg" />
             </Button>
             <Button buttonStyle="secondary" isIconOnly isRound ariaLabel="Open Calendar">
-              <Icon isDecorative name="icon-calendar" />
+              <Icon isDecorative href="/assets/icons/check.svg" />
             </Button>
             <Button buttonStyle="tertiary" isIconOnly isRound ariaLabel="Open Calendar">
-              <Icon isDecorative name="icon-calendar" />
+              <Icon isDecorative href="/assets/icons/check.svg" />
             </Button>
           </div>
         </div>

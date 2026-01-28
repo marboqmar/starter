@@ -15,7 +15,7 @@ export const InputShowcase = () => {
             className="input-showcase__input-example"
             label="Text type"
             id="text-showcase-input"
-            placeholder="Place holder text"
+            placeholder="Placeholder text"
             name="name"
             autoComplete="name"
           />

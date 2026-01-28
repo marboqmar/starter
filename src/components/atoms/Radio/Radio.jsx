@@ -52,7 +52,12 @@ export const Radio = forwardRef(
           aria-invalid={!!errorHelperText || undefined}
           {...rest}
         />
-        <Icon name="radio-button" className="radio__icon" aria-hidden="true" isDecorative />
+        <Icon
+          href="/assets/icons/solid-circle.svg"
+          className="radio__icon"
+          aria-hidden="true"
+          isDecorative
+        />
       </>
     );
 

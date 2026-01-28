@@ -37,8 +37,8 @@
   right: var(--input-spacing-icon);
   transform: translateY(-50%);
   pointer-events: none; /* Clicks go through to the native calendar picker icon */
-  width: 18px;
-  height: 18px;
+  width: var(--input-icon-size);
+  height: var(--input-icon-size);
   color: var(--input-icon);
 }
 
