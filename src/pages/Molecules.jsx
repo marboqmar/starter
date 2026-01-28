@@ -2,6 +2,7 @@ import '../css/pages/showcase.css';
 import { Heading } from '../components/atoms/Heading/Heading';
 import { CtaShowcase } from '../showcases/molecules/CtaShowcase/CtaShowcase';
 import { FormShowcase } from '../showcases/molecules/FormShowcase/FormShowcase';
+import { MediaObjectShowcase } from '../showcases/molecules/MediaObjectShowcase/MediaObjectShowcase';
 
 export const Molecules = () => {
   return (
@@ -15,6 +16,9 @@ export const Molecules = () => {
 
         {/* Form */}
         <FormShowcase />
+
+        {/* Media object */}
+        <MediaObjectShowcase />
       </div>
     </div>
   );

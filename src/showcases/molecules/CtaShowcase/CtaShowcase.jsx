@@ -37,7 +37,7 @@ export const CtaShowcase = () => {
           buttonUrl="/molecules"
           secondButtonText="Contact us"
           secondButtonUrl="/molecules"
-          imageSrc="/assets/images/test-image-sm.png"
+          imageSrc="/assets/images/test-image-md.png"
         />
       </div>
     </div>

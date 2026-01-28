@@ -65,6 +65,9 @@
   /* Background */
   --page-bg: var(--color-white);
 
+  /* Surface */
+  --surface-main: var(--color-primary-a20);
+
   /* Focus */
   --focus-spacer: var(--page-bg);
   --focus-ring: var(--color-primary-dark);
@@ -161,10 +164,13 @@
 
   /* --- MOLECULES --- */
   /* CTA */
-  --cta-bg: var(--color-primary-a20);
+  --cta-bg: var(--surface-main);
 
   /* Form */
   --form-error-text: var(--error-text);
+
+  /* Media object */
+  --media-object-bg: var(--surface-main);
 }
 
 /* ==========================================================================
@@ -185,6 +191,9 @@
   --page-bg: var(--color-gray-800);
   --control-bg: var(--page-bg);
   --control-bg-checked: var(--color-primary-lightest);
+
+  /* Surface */
+  --surface-main: var(--color-primary-a30);
 
   /* Focus */
   --focus-ring: var(--color-primary-light);
@@ -233,8 +242,4 @@
   /* Table */
   --table-header: var(--color-primary-darker);
   --table-row: var(--color-primary-a20);
-
-  /* MOLECULES */
-  /* CTA */
-  --cta-bg: var(--color-primary-a30);
 }

@@ -104,7 +104,6 @@
   --cta-spacing-gap: var(--spacing-xl); /* Main gap between image and text */
   --cta-spacing-text: var(--spacing-component-inner); /* Gap between title and body */
   --cta-spacing-content: var(--spacing-md); /* Gap between text and buttons */
-
   --cta-spacing-actions: var(--spacing-1); /* Gap between buttons */
 
   /* Form */
@@ -118,6 +117,7 @@
   /* Media object */
   --media-object-spacing-padding: var(--spacing-surface-padding);
   --media-object-spacing-gap: var(--spacing-xl); /* Main gap between media and text */
+  --media-object-spacing-text: var(--spacing-component-inner); /* Gap between title and body */
 
   /* ==========================================================================
     2. SIZE (width and height) 

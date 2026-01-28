@@ -36,6 +36,8 @@
 
 .cta__image {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -53,7 +55,12 @@
   }
 
   .cta--with-image .cta__wrapper {
+    flex: 1;
     justify-content: center;
+  }
+
+  .cta__image {
+    flex: 1;
   }
 
   .cta:not(.cta--with-image) .cta__wrapper {
