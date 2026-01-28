@@ -3,6 +3,7 @@ import { Heading } from '../components/atoms/Heading/Heading';
 import { CtaShowcase } from '../showcases/molecules/CtaShowcase/CtaShowcase';
 import { FormShowcase } from '../showcases/molecules/FormShowcase/FormShowcase';
 import { MediaObjectShowcase } from '../showcases/molecules/MediaObjectShowcase/MediaObjectShowcase';
+import { SearchBoxShowcase } from '../showcases/molecules/SearchBoxShowcase/SearchBoxShowcase';
 
 export const Molecules = () => {
   return (
@@ -19,6 +20,9 @@ export const Molecules = () => {
 
         {/* Media object */}
         <MediaObjectShowcase />
+
+        {/* Search box */}
+        <SearchBoxShowcase />
       </div>
     </div>
   );

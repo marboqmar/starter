@@ -171,6 +171,9 @@
 
   /* Media object */
   --media-object-bg: var(--surface-main);
+
+  /* Search box */
+  --search-box-bg: var(--page-bg);
 }
 
 /* ==========================================================================

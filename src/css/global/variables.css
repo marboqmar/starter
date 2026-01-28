@@ -119,6 +119,9 @@
   --media-object-spacing-gap: var(--spacing-xl); /* Main gap between media and text */
   --media-object-spacing-text: var(--spacing-component-inner); /* Gap between title and body */
 
+  /* Search box */
+  --search-box-button-padding: var(--spacing-0-25);
+
   /* ==========================================================================
     2. SIZE (width and height) 
     ========================================================================== */
@@ -143,6 +146,9 @@
 
   /* Icon */
   --icon-atom-size: var(--size-icon-sm);
+
+  /* Input */
+  --input-icon-size: var(--size-icon-xs);
 
   /* Text area */
   --text-area-height: var(--spacing-8);
@@ -170,6 +176,10 @@
 
   /* Table */
   --table-border: var(--border-primary);
+
+  /* MOLECULES */
+  /* Search box */
+  --search-box-border: var(--border-primary);
 
   /* ==========================================================================
     4. BORDER RADIUS
@@ -216,6 +226,9 @@
 
   /* Media object */
   --media-object-radius: var(--radius-main);
+
+  /* Search box */
+  --search-box-radius: var(--radius-main);
 
   /* ==========================================================================
     5. Z-INDEX

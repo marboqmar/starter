@@ -74,7 +74,8 @@ code {
 .checkbox[type="checkbox"]:focus-visible,
 .radio[type="radio"]:focus-visible,
 .text-area:focus-visible,
-.video:focus-visible {
+.video:focus-visible,
+.search-box:focus-within {
   outline: none;
   box-shadow:
     0 0 0 1px var(--focus-spacer),
