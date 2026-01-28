@@ -44,7 +44,7 @@ import { classNames } from '../../../utils/helpers';
  *
  * @example
  * // Icon only button
- * <Button isIconOnly ariaLabel="Open Calendar">
+ * <Button isIconOnly isRound ariaLabel="Open Calendar">
  *   <Icon isDecorative name="icon-calendar" />
  * </Button>
  */

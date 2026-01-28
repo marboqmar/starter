@@ -21,6 +21,7 @@ import { Icon } from '../Icon/Icon';
  * @param {string} [errorHelperText] - Error message text; turns input border red.
  * @param {boolean} [required] - Adds '*' to the label to indicate this field is required and
  * triggers browser validation.
+ * @param {boolean} [isPlain] - Returns only a plain input, without the field wrapper.
  * @param {object} [rest] - Additional props passed.
  *
  * @example
@@ -42,7 +43,17 @@ import { Icon } from '../Icon/Icon';
 
 export const Input = forwardRef(
   (
-    { className = '', type = 'text', label, id, helperText, errorHelperText, required, ...rest },
+    {
+      className = '',
+      type = 'text',
+      label,
+      id,
+      helperText,
+      errorHelperText,
+      required,
+      isPlain,
+      ...rest
+    },
     ref,
   ) => {
     // If the user does not provide an ID, generate a random one.
@@ -69,6 +80,10 @@ export const Input = forwardRef(
         {isDateType && <Icon className="input__icon" name="icon-calendar" />}
       </div>
     );
+
+    if (isPlain) {
+      return field;
+    }
 
     return (
       <FieldWrapper
