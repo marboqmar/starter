@@ -4,11 +4,12 @@ import { CtaShowcase } from '../showcases/molecules/CtaShowcase/CtaShowcase';
 import { FormShowcase } from '../showcases/molecules/FormShowcase/FormShowcase';
 import { MediaObjectShowcase } from '../showcases/molecules/MediaObjectShowcase/MediaObjectShowcase';
 import { SearchBoxShowcase } from '../showcases/molecules/SearchBoxShowcase/SearchBoxShowcase';
+import { StatusMessageShowcase } from '../showcases/molecules/StatusMessageShowcase/StatusMessageShowcase';
 
 export const Molecules = () => {
   return (
     <div className="molecules-page container">
-      <Heading level={1} className="margin-bottom-md">
+      <Heading level={1} className="showcase-page__title">
         Molecules
       </Heading>
       <div className="molecules-page__showcases-wrapper showcase-wrapper">
@@ -23,6 +24,9 @@ export const Molecules = () => {
 
         {/* Search box */}
         <SearchBoxShowcase />
+
+        {/* Status message */}
+        <StatusMessageShowcase />
       </div>
     </div>
   );

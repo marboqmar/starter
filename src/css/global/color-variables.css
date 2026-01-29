@@ -40,14 +40,26 @@
   --color-gray-800: #252b37;
   --color-gray-900: #101828;
 
-  /* Alerts */
+  /* Alerts - info */
+  --color-info: #2e90fa;
+  --color-info-a10: rgba(46, 144, 250, 0.1);
+  --color-info-a20: rgba(46, 144, 250, 0.2);
+
+  /* Alerts - success */
   --color-success: #12b76a;
+  --color-success-a10: rgba(18, 183, 106, 0.1);
+  --color-success-a20: rgba(18, 183, 106, 0.2);
+
+  /* Alerts - warning */
   --color-warning: #f79009;
+  --color-warning-a10: rgba(247, 144, 9, 0.1);
+  --color-warning-a20: rgba(247, 144, 9, 0.2);
+
+  /* Alerts - error */
   --color-error: #dd2214;
   --color-error-light: #f0665c;
-  --color-error-transparent: rgba(240, 68, 56, 0.2);
-  --color-error-transparent-light: rgba(240, 68, 56, 0.1);
-  --color-info: #2e90fa;
+  --color-error-a10: rgba(240, 68, 56, 0.1);
+  --color-error-a20: rgba(240, 68, 56, 0.2);
 }
 
 /* ==========================================================================
@@ -79,11 +91,29 @@
   --disabled-hover-bg: var(--color-gray-200);
   --disabled-border-color: var(--color-gray-300);
 
-  /* Error */
+  /* Alerts - info */
+  --info-text: var(--color-info);
+  --info-icon: var(--color-info);
+  --info-border-color: var(--color-info);
+  --info-bg: var(--color-info-a10);
+
+  /* Alerts - success */
+  --success-text: var(--color-success);
+  --success-icon: var(--color-success);
+  --success-border-color: var(--color-success);
+  --success-bg: var(--color-success-a10);
+
+  /* Alerts - warning */
+  --warning-text: var(--color-warning);
+  --warning-icon: var(--color-warning);
+  --warning-border-color: var(--color-warning);
+  --warning-bg: var(--color-warning-a10);
+
+  /* Alerts - error */
   --error-text: var(--color-error);
   --error-icon: var(--color-error);
   --error-border-color: var(--color-error);
-  --error-bg: var(--color-error-transparent-light);
+  --error-bg: var(--color-error-a10);
 
   /* Control */
   --control-text: var(--text-main);
@@ -143,7 +173,7 @@
   /* Helper text */
   --helper-text-text: var(--color-gray-600);
   --helper-text-error-text: var(--error-text);
-  --helper-text-error-icon: var(--error-text);
+  --helper-text-error-icon: var(--error-icon);
 
   /* Input */
   --input-icon: var(--text-main);
@@ -174,6 +204,30 @@
 
   /* Search box */
   --search-box-bg: var(--page-bg);
+
+  /* Status message - info */
+  --status-message-info-text: var(--info-text);
+  --status-message-info-icon: var(--info-icon);
+  --status-message-info-bg: var(--info-bg);
+  --status-message-info-border-color: var(--info-border-color);
+
+  /* Status message - success */
+  --status-message-success-text: var(--success-text);
+  --status-message-success-icon: var(--success-icon);
+  --status-message-success-bg: var(--success-bg);
+  --status-message-success-border-color: var(--success-border-color);
+
+  /* Status message - warning */
+  --status-message-warning-text: var(--warning-text);
+  --status-message-warning-icon: var(--warning-icon);
+  --status-message-warning-bg: var(--warning-bg);
+  --status-message-warning-border-color: var(--warning-border-color);
+
+  /* Status message - error */
+  --status-message-error-text: var(--error-text);
+  --status-message-error-icon: var(--error-icon);
+  --status-message-error-bg: var(--error-bg);
+  --status-message-error-border-color: var(--error-border-color);
 }
 
 /* ==========================================================================
@@ -207,11 +261,20 @@
   --disabled-bg: var(--color-gray-600);
   --disabled-hover-bg: var(--color-gray-700);
 
-  /* Error */
+  /* Alerts - info */
+  --info-bg: var(--color-info-a20);
+
+  /* Alerts - success */
+  --success-bg: var(--color-success-a20);
+
+  /* Alerts - warning */
+  --warning-bg: var(--color-warning-a20);
+
+  /* Alerts - error */
   --error-text: var(--color-error-light);
   --error-icon: var(--color-error-light);
   --error-border-color: var(--color-error-light);
-  --error-bg: var(--color-error-transparent);
+  --error-bg: var(--color-error-a20);
 
   /* --- COMPONENT TOKENS --- */
   /* ATOMS */

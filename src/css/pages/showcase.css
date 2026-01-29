@@ -1,3 +1,7 @@
+.showcase-page__title {
+  margin-bottom: var(--spacing-component-inner);
+}
+
 .showcase-wrapper {
   display: flex;
   flex-direction: column;
