@@ -106,6 +106,9 @@
   --table-spacing-cell-padding: var(--spacing-sm);
 
   /* MOLECULES */
+  /* Breadbrumbs */
+  --breadcrumbs-separator-spacing: var(--spacing-0-25);
+
   /* CTA */
   --cta-spacing-padding: var(--spacing-surface-padding);
   --cta-spacing-gap: var(--spacing-xl); /* Main gap between image and text */
@@ -147,6 +150,8 @@
   --size-icon-md: 2rem;
 
   /* --- SEMANTIC --- */
+  --ratio-icon-to-text: 0.7; /* Used to reduce size of icons */
+
   /* Control */
   --control-size: var(--size-icon-xs);
 
@@ -167,6 +172,11 @@
 
   /* Text area */
   --text-area-height: var(--spacing-8);
+
+  /* MOLECULES */
+  --breadcrumbs-icon-size: calc(
+    var(--icon-alignment-height) * var(--ratio-icon-to-text)
+  ); /* Scales down the height of the icon */
 
   /* ==========================================================================
     3. BORDER

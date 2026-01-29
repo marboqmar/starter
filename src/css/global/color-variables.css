@@ -193,6 +193,9 @@
   --table-row: var(--color-primary-a10);
 
   /* --- MOLECULES --- */
+  /* Breadbrumbs */
+  --breadcrumbs-text: var(--text-main);
+
   /* CTA */
   --cta-bg: var(--surface-main);
 

@@ -1,0 +1,23 @@
+.breadcrumbs__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs__link,
+.breadcrumbs__link:visited {
+  color: var(--breadcrumbs-text);
+  text-decoration: none;
+}
+
+.breadcrumbs__separator {
+  padding-right: var(--breadcrumbs-separator-spacing);
+  padding-left: var(--breadcrumbs-separator-spacing);
+}
+
+.breadcrumbs__icon {
+  width: var(--breadcrumbs-icon-size);
+  height: var(--breadcrumbs-icon-size);
+}

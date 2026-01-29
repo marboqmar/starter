@@ -1,5 +1,6 @@
 import '../css/pages/showcase.css';
 import { Heading } from '../components/atoms/Heading/Heading';
+import { BreadcrumbsShowcase } from '../showcases/molecules/BreadcrumbsShowcase/BreadcrumbsShowcase';
 import { CtaShowcase } from '../showcases/molecules/CtaShowcase/CtaShowcase';
 import { FormShowcase } from '../showcases/molecules/FormShowcase/FormShowcase';
 import { MediaObjectShowcase } from '../showcases/molecules/MediaObjectShowcase/MediaObjectShowcase';
@@ -13,6 +14,9 @@ export const Molecules = () => {
         Molecules
       </Heading>
       <div className="molecules-page__showcases-wrapper showcase-wrapper">
+        {/* Breadcrumbs */}
+        <BreadcrumbsShowcase />
+
         {/* CTA */}
         <CtaShowcase />
 
