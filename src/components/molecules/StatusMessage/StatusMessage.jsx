@@ -13,23 +13,30 @@ import { Paragraph } from '../../atoms/Paragraph/Paragraph';
  * @param {node} children - Status message content.
  */
 
+const iconMap = {
+  info: '/assets/icons/info.svg',
+  success: '/assets/icons/success.svg',
+  warning: '/assets/icons/warning.svg',
+  error: '/assets/icons/error.svg',
+};
+
+const roleType = {
+  info: 'status',
+  success: 'status',
+  warning: 'alert',
+  error: 'alert',
+};
+
 export const StatusMessage = ({ className = '', type, children, ...rest }) => {
-  const finalType = type !== 'success' && type !== 'warning' && type !== 'error' ? 'info' : type;
-
-  let finalHref = '';
-
-  if (finalType === 'info') {
-    finalHref = '/assets/icons/info.svg';
-  } else if (finalType === 'success') {
-    finalHref = '/assets/icons/success.svg';
-  } else if (finalType === 'warning') {
-    finalHref = '/assets/icons/warning.svg';
-  } else if (finalType === 'error') {
-    finalHref = '/assets/icons/error.svg';
-  }
+  const finalType = iconMap[type] ? type : 'info';
+  const finalHref = iconMap[finalType];
 
   return (
-    <div className={classNames('status-message', `status-message--${type}`, className)} {...rest}>
+    <div
+      className={classNames('status-message', `status-message--${finalType}`, className)}
+      role={roleType[finalType]}
+      {...rest}
+    >
       <div className="status-message__icon-wrapper">
         <Icon className="status-message__icon" href={finalHref} />
       </div>
