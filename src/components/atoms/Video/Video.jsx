@@ -48,8 +48,10 @@ export const Video = ({ className = '', src, isEagerLoading, title = 'Video play
         className={classNames('video video--external', className)}
         src={getEmbedUrl(src)}
         title={title}
-        allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
         loading={isEagerLoading ? 'eager' : 'lazy'}
+        referrerPolicy="strict-origin-when-cross-origin"
         {...rest}
       ></iframe>
     );

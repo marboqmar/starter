@@ -45,6 +45,7 @@ export const MediaObjectShowcase = () => {
         component="section"
         mediaLocation="left"
         title="Video"
+        videoTitle="YouTube test video for Media Object"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
         videoSrc="https://www.youtube.com/watch?v=G1hKzCkywM8"
       />
