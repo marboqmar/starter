@@ -51,17 +51,20 @@
   --spacing-surface-padding: var(
     --spacing-md
   ); /* Spacing between a surface's edge and its content */
+  --spacing-inset: var(--spacing-0-375) var(--spacing-0-75); /* Spacing between border and content */
+  --spacing-inset-sm: var(--spacing-0-25) var(--spacing-0-5);
+  --spacing-inset-lg: var(--spacing-0-5) var(--spacing-1);
 
   /* Control */
-  --control-spacing-padding: var(--spacing-0-5);
+  --control-spacing-padding: var(--spacing-inset);
   --control-spacing-text: var(--spacing-0-5);
 
   /* --- COMPONENT TOKENS --- */
   /* ATOMS */
   /* Button */
-  --button-spacing-padding-sm: var(--spacing-0-25) var(--spacing-0-5);
-  --button-spacing-padding: var(--spacing-0-5) var(--spacing-1);
-  --button-spacing-padding-lg: var(--spacing-0-75) var(--spacing-1-5);
+  --button-spacing-padding: var(--spacing-inset);
+  --button-spacing-padding-sm: var(--spacing-inset-sm);
+  --button-spacing-padding-lg: var(--spacing-inset-lg);
   --button-spacing-icon-gap: var(--spacing-0-375);
 
   /* Code */
@@ -122,6 +125,10 @@
   /* Search box */
   --search-box-button-padding: var(--spacing-0-25);
 
+  /* Status message */
+  --status-message-spacing-padding: var(--spacing-inset);
+  --status-message-inline-gap: var(--spacing-inline-icon-gap); /* Gap between icon and text */
+
   /* ==========================================================================
     2. SIZE (width and height) 
     ========================================================================== */
@@ -181,6 +188,9 @@
   /* Search box */
   --search-box-border: var(--border-primary);
 
+  /* Status message */
+  --status-message-border: var(--border-primary);
+
   /* ==========================================================================
     4. BORDER RADIUS
     ========================================================================== */
@@ -230,6 +240,9 @@
   /* Search box */
   --search-box-radius: var(--radius-main);
 
+  /* Status message */
+  --status-message-radius: var(--radius-main);
+
   /* ==========================================================================
     5. Z-INDEX
     ========================================================================== */
@@ -255,11 +268,10 @@
     --spacing-lg: 2.5rem; /* 40px */
     --spacing-xl: 4rem; /* 64px */
 
-    /* COMPONENT TOKENS */
-    /* Button */
-    --button-spacing-padding-sm: var(--spacing-0-5) var(--spacing-1);
-    --button-spacing-padding: var(--spacing-0-75) var(--spacing-1-5);
-    --button-spacing-padding-lg: var(--spacing-1) var(--spacing-2);
+    /* General */
+    --spacing-inset: var(--spacing-0-5) var(--spacing-1);
+    --spacing-inset-sm: var(--spacing-0-375) var(--spacing-0-5);
+    --spacing-inset-lg: var(--spacing-0-75) var(--spacing-1-5);
   }
 }
 
