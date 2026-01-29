@@ -27,7 +27,7 @@
 .search-box__button {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: var(--search-box-button-offset);
   transform: translateY(-50%);
   padding: var(--search-box-button-padding);
   background-color: transparent;

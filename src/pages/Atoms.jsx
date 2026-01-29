@@ -12,7 +12,7 @@ import { VideoShowcase } from '../showcases/atoms/VideoShowcase/VideoShowcase';
 export const Atoms = () => {
   return (
     <div className="atoms-page container">
-      <Heading level={1} className="margin-bottom-md">
+      <Heading level={1} className="showcase-page__title">
         Atoms
       </Heading>
       <div className="atoms-page__showcase-wrapper showcase-wrapper">

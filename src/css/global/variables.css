@@ -51,7 +51,11 @@
   --spacing-surface-padding: var(
     --spacing-md
   ); /* Spacing between a surface's edge and its content */
-  --spacing-inset: var(--spacing-0-375) var(--spacing-0-75); /* Spacing between border and content */
+
+  /* Inset */
+  --spacing-inset-v: var(--spacing-0-375);
+  --spacing-inset-h: var(--spacing-0-75);
+  --spacing-inset: var(--spacing-inset-v) var(--spacing-inset-h); /* Spacing between border and content */
   --spacing-inset-sm: var(--spacing-0-25) var(--spacing-0-5);
   --spacing-inset-lg: var(--spacing-0-5) var(--spacing-1);
 
@@ -86,7 +90,7 @@
   --helper-spacing-inline-icon: var(--spacing-inline-icon-gap);
 
   /* Input */
-  --input-spacing-icon: var(--spacing-0-5); /* Right spacing of the input's icon */
+  --input-spacing-icon: var(--spacing-inset-h); /* Right spacing of the input's icon */
 
   /* Label */
   --label-spacing-field: var(
@@ -124,6 +128,10 @@
 
   /* Search box */
   --search-box-button-padding: var(--spacing-0-25);
+  --search-box-button-offset: calc(
+    var(--spacing-inset-h) - var(--search-box-button-padding)
+  ); /* Lateral icon offset: for it to look the same as the text, subtracted to the inset 
+  spacing the icon padding*/
 
   /* Status message */
   --status-message-spacing-padding: var(--spacing-inset);
