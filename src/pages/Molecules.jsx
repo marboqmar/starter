@@ -1,4 +1,5 @@
 import '../css/pages/showcase.css';
+import { Breadcrumbs } from '../components/molecules/Breadcrumbs/Breadcrumbs';
 import { Heading } from '../components/atoms/Heading/Heading';
 import { BreadcrumbsShowcase } from '../showcases/molecules/BreadcrumbsShowcase/BreadcrumbsShowcase';
 import { CtaShowcase } from '../showcases/molecules/CtaShowcase/CtaShowcase';
@@ -7,9 +8,15 @@ import { MediaObjectShowcase } from '../showcases/molecules/MediaObjectShowcase/
 import { SearchBoxShowcase } from '../showcases/molecules/SearchBoxShowcase/SearchBoxShowcase';
 import { StatusMessageShowcase } from '../showcases/molecules/StatusMessageShowcase/StatusMessageShowcase';
 
+const breadcrumbsInfo = [
+  { label: 'Home', href: '/' },
+  { label: 'Molecules', href: '/molecules' },
+];
+
 export const Molecules = () => {
   return (
     <div className="molecules-page container">
+      <Breadcrumbs items={breadcrumbsInfo} />
       <Heading level={1} className="showcase-page__title">
         Molecules
       </Heading>
