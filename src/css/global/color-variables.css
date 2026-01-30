@@ -173,10 +173,10 @@
   --form-fieldset-error-text: var(--error-text);
 
   /* Heading */
-  --heading-text: var(--text-main);
-  --heading-h1-text: var(--text-main);
-  --heading-h2-text: var(--color-secondary);
-  --heading-h3-text: var(--color-secondary-darkest);
+  --heading: var(--text-main);
+  --heading-h1: var(--text-main);
+  --heading-h2: var(--color-secondary);
+  --heading-h3: var(--color-secondary-darkest);
 
   /* Helper text */
   --helper-text-text: var(--color-gray-600);
@@ -193,14 +193,19 @@
   --list-marker: var(--color-primary);
 
   /* Paragraph */
-  --paragraph-text: var(--text-main);
-  --paragraph-text-inverted: var(--text-inverted);
+  --paragraph: var(--text-main);
+  --paragraph-inverted: var(--text-inverted);
 
   /* Table */
   --table-header: var(--color-primary-a20);
   --table-row: var(--color-primary-a10);
 
   /* --- MOLECULES --- */
+  /* Accordion item */
+  --accortion-item-heading: var(--text-main);
+  --accordion-item-icon: var(--text-main);
+  --accordion-item-separator: var(--color-primary-a10);
+
   /* Breadbrumbs */
   --breadcrumbs-text: var(--text-main);
 
@@ -217,6 +222,7 @@
 
   /* Search box */
   --search-box-bg: var(--page-bg);
+  --search-box-icon: var(--text-main);
 
   /* Status message - info */
   --status-message-info-text: var(--info-text);
@@ -313,8 +319,8 @@
   --code-bg: var(--color-gray-600);
 
   /* Heading */
-  --heading-h2-text: var(--color-secondary-lightest);
-  --heading-h3-text: var(--color-secondary-lighter);
+  --heading-h2: var(--color-secondary-lightest);
+  --heading-h3: var(--color-secondary-lighter);
 
   /* Helper text */
   --helper-text-text: var(--color-gray-300);

@@ -51,6 +51,11 @@
   --spacing-surface-padding: var(
     --spacing-md
   ); /* Spacing between a surface's edge and its content */
+  --clearance-action-icon: var(
+    --spacing-3
+  ); /* Ensures text doesn't overlap an absolute-positioned icon at the end of a container 
+  (e.g. search or accordion) */
+  --clearance-action-icon-lg: var(--spacing-4);
 
   /* Inset */
   --spacing-inset-v: var(--spacing-0-375);
@@ -62,6 +67,11 @@
   --spacing-inset-lg-v: var(--spacing-0-5);
   --spacing-inset-lg-h: var(--spacing-1);
   --spacing-inset-lg: var(--spacing-inset-lg-v) var(--spacing-inset-lg-h);
+
+  /* Animation */
+  --motion-duration-standard: 0.3s;
+  --motion-duration-fast: 0.2s;
+  --motion-easing-standard: ease;
 
   /* Control */
   --control-spacing-padding: var(--spacing-inset);
@@ -111,11 +121,10 @@
 
   /* MOLECULES */
   /* Accordion item */
-  --accordion-item-heading-padding: var(--spacing-inset);
-  --accordion-item-button-offset-h: var(--spacing-inset-h);
-  --accordion-item-button-offset-v: var(--spacing-inset-v);
-  --accordion-item-separator-padding: var(--spacing-component-inner);
-  --accordion-item-content-padding: var(--spacing-inset);
+  --accordion-item-heading-padding: var(--spacing-surface-padding);
+  --accordion-item-button-offset-h: var(--spacing-surface-padding);
+  --accordion-item-button-offset-v: var(--spacing-surface-padding);
+  --accordion-item-content-padding: var(--spacing-surface-padding);
 
   /* Breadbrumbs */
   --breadcrumbs-separator-spacing: var(--spacing-0-25);
@@ -185,6 +194,8 @@
   /* MOLECULES */
   /* Accordion item */
   --accordion-item-icon-size: var(--size-icon-main);
+  --accordion-item-separator-width: 80%;
+  --accordion-item-separator-height: 1px;
 
   /* Breadcrumbs */
   --breadcrumbs-padding-upper: var(--spacing-sm);
@@ -272,6 +283,9 @@
   --video-radius: var(--radius-md);
 
   /* MOLECULES */
+  /* Accordion item */
+  --accordion-item-radius: var(--radius-main);
+
   /* CTA */
   --cta-radius: var(--radius-main);
 

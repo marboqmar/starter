@@ -14,7 +14,7 @@
 
 .search-box__input {
   width: 100%;
-  padding-right: 40px; /* Space for the button */
+  padding-right: var(--clearance-action-icon); /* Space for the button */
   border: none;
   background-color: transparent;
 }
@@ -29,9 +29,14 @@
   top: 50%;
   right: var(--search-box-button-offset);
   transform: translateY(-50%);
-  padding: var(--search-box-button-padding);
   background-color: transparent;
   border: none;
+}
+
+.search-box__icon {
+  width: var(--search-box-icon-size);
+  height: var(--search-box-icon-size);
+  color: var(--search-box-icon);
 }
 
 .search-box__icon:focus {

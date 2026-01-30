@@ -20,7 +20,7 @@
   transform: scale(0.5);
   pointer-events: none; /* Clicks go through to the input */
   opacity: 0;
-  transition: all 0.1s ease-in-out;
+  transition: all var(--motion-duration-fast) var(--motion-easing-standard);
   color: var(--checkbox-icon);
 }
 

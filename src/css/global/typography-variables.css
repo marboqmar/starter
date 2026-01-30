@@ -39,9 +39,14 @@
   --icon-alignment-height: calc(
     var(--font-size-base) * var(--line-height-base)
   ); /* For span, li, controls, etc. */
+
   --icon-alignment-height-paragraph: calc(
-    var(--font-size-base) * var(--line-height-lg)
-  ); /* For paragraphs as they have a different line height */
+    var(--paragraph-font-size) * var(--paragraph-line-height)
+  ); /* For paragraphs */
+
+  --icon-alignment-height-heading: calc(
+    var(--heading-font-size-h5) * var(--heading-line-height-h5)
+  ); /* For accordion item heading */
 }
 
 /* ==========================================================================
