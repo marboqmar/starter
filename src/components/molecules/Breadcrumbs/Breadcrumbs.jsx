@@ -3,6 +3,23 @@ import { classNames } from '../../../utils/helpers';
 import { Link } from 'react-router-dom';
 import { Icon } from '../../../components/atoms/Icon/Icon';
 
+/**
+ * Breadcrumbs component
+ *
+ * Component props:
+ * @param {string} [className] - Additional CSS classes.
+ * @param {Object[]} items - Content of the breadcrumbs.
+ * @param {object} [rest] - Additional props passed.
+ *
+ * @example
+ * const breadcrumbsInfo = [
+ *   { label: 'Home', href: '/' },
+ *   { label: 'Atoms', href: '/atoms' },
+ * ];
+ *
+ * <Breadcrumbs items={breadcrumbsInfo} />
+ */
+
 export const Breadcrumbs = ({ className = '', items = [], ...rest }) => {
   const homeIconHref = '/assets/icons/home.svg';
 
