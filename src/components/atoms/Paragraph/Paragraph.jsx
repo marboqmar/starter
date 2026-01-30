@@ -25,8 +25,8 @@ export const Paragraph = ({
   const classes = classNames(
     'paragraph',
     className,
-    `paragraph--font-size-${fontSize}`,
-    `paragraph--font-weight-${fontWeight}`,
+    { [`paragraph--font-size-${fontSize}`]: fontSize },
+    { [`paragraph--font-weight-${fontWeight}`]: fontWeight },
     { 'paragraph--color-inverted': isInvertedcolor },
   );
 
