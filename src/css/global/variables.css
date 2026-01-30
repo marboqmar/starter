@@ -56,8 +56,12 @@
   --spacing-inset-v: var(--spacing-0-375);
   --spacing-inset-h: var(--spacing-0-75);
   --spacing-inset: var(--spacing-inset-v) var(--spacing-inset-h); /* Spacing between border and content */
-  --spacing-inset-sm: var(--spacing-0-25) var(--spacing-0-5);
-  --spacing-inset-lg: var(--spacing-0-5) var(--spacing-1);
+  --spacing-inset-sm-v: var(--spacing-0-25);
+  --spacing-inset-sm-h: var(--spacing-0-5);
+  --spacing-inset-sm: var(--spacing-inset-sm-v) var(--spacing-inset-sm-h);
+  --spacing-inset-lg-v: var(--spacing-0-5);
+  --spacing-inset-lg-h: var(--spacing-1);
+  --spacing-inset-lg: var(--spacing-inset-lg-v) var(--spacing-inset-lg-h);
 
   /* Control */
   --control-spacing-padding: var(--spacing-inset);
@@ -106,6 +110,13 @@
   --table-spacing-cell-padding: var(--spacing-sm);
 
   /* MOLECULES */
+  /* Accordion item */
+  --accordion-item-heading-padding: var(--spacing-inset);
+  --accordion-item-button-offset-h: var(--spacing-inset-h);
+  --accordion-item-button-offset-v: var(--spacing-inset-v);
+  --accordion-item-separator-padding: var(--spacing-component-inner);
+  --accordion-item-content-padding: var(--spacing-inset);
+
   /* Breadbrumbs */
   --breadcrumbs-separator-spacing: var(--spacing-0-25);
 
@@ -130,11 +141,7 @@
   --media-object-spacing-text: var(--spacing-component-inner); /* Gap between title and body */
 
   /* Search box */
-  --search-box-button-padding: var(--spacing-0-25);
-  --search-box-button-offset: calc(
-    var(--spacing-inset-h) - var(--search-box-button-padding)
-  ); /* Lateral icon offset: for it to look the same as the text, subtracted to the inset 
-  spacing the icon padding*/
+  --search-box-button-offset: var(--spacing-inset-h);
 
   /* Status message */
   --status-message-spacing-padding: var(--spacing-inset);
@@ -150,6 +157,8 @@
   --size-icon-md: 2rem;
 
   /* --- SEMANTIC --- */
+  --size-icon-main: var(--size-icon-sm);
+
   --ratio-icon-to-text: 0.7; /* Used to reduce size of icons */
 
   /* Control */
@@ -159,13 +168,13 @@
   /* ATOMS */
   /* Button */
   --button-size-icon-only: var(--spacing-2-5); /* Button container size */
-  --button-icon-size: var(--size-icon-sm); /* Size of the icon inside the button */
+  --button-icon-size: var(--size-icon-main); /* Size of the icon inside the button */
 
   /* Helper text */
-  --helper-text-icon-size: var(--size-icon-sm);
+  --helper-text-icon-size: var(--size-icon-main);
 
   /* Icon */
-  --icon-atom-size: var(--size-icon-sm);
+  --icon-atom-size: var(--size-icon-main);
 
   /* Input */
   --input-icon-size: var(--size-icon-xs);
@@ -174,12 +183,19 @@
   --text-area-height: var(--spacing-8);
 
   /* MOLECULES */
+  /* Accordion item */
+  --accordion-item-icon-size: var(--size-icon-main);
+
+  /* Breadcrumbs */
   --breadcrumbs-padding-upper: var(--spacing-sm);
   --breadcrumbs-padding-lower: var(--spacing-sm);
   --breadcrumbs-padding-left: 0;
   --breadcrumbs-icon-size: calc(
     var(--icon-alignment-height) * var(--ratio-icon-to-text)
   ); /* Scales down the height of the icon */
+
+  /* Search box*/
+  --search-box-icon-size: var(--size-icon-main);
 
   /* ==========================================================================
     3. BORDER
@@ -206,6 +222,9 @@
   --table-border: var(--border-primary);
 
   /* MOLECULES */
+  /* Accordion item */
+  --accordion-item-border: var(--border-primary);
+
   /* Search box */
   --search-box-border: var(--border-primary);
 
@@ -233,8 +252,9 @@
   /* --- COMPONENT TOKENS */
   /* ATOMS */
   /* Button */
-  --button-radius: var(--radius-main);
+  --button-radius-sm: var(--radius-main);
   --button-radius-lg: var(--radius-md);
+  --button-radius-pill: var(--radius-full);
 
   /* Checkbox*/
   --checkbox-radius: var(--radius-xs);
@@ -290,9 +310,15 @@
     --spacing-xl: 4rem; /* 64px */
 
     /* General */
-    --spacing-inset: var(--spacing-0-5) var(--spacing-1);
-    --spacing-inset-sm: var(--spacing-0-375) var(--spacing-0-5);
-    --spacing-inset-lg: var(--spacing-0-75) var(--spacing-1-5);
+    --spacing-inset-v: var(--spacing-0-5);
+    --spacing-inset-h: var(--spacing-1);
+    --spacing-inset: var(--spacing-inset-v) var(--spacing-inset-h);
+    --spacing-inset-sm-v: var(--spacing-0-375);
+    --spacing-inset-sm-h: var(--spacing-0-5);
+    --spacing-inset-sm: var(--spacing-inset-sm-v) var(--spacing-inset-sm-h);
+    --spacing-inset-lg-v: var(--spacing-0-75);
+    --spacing-inset-lg-h: var(--spacing-1-5);
+    --spacing-inset-lg: var(--spacing-inset-lg-v) var(--spacing-inset-lg-h);
   }
 }
 

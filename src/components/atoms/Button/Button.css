@@ -13,7 +13,7 @@
   color: var(--button-primary-text);
   background-color: var(--button-primary-bg);
   padding: var(--button-spacing-padding);
-  border-radius: var(--button-radius);
+  border-radius: var(--button-radius-sm);
   border-color: var(--button-primary-border);
 }
 
@@ -26,7 +26,7 @@
   color: var(--button-secondary-text);
   background-color: var(--button-secondary-bg);
   padding: var(--button-spacing-padding);
-  border-radius: var(--button-radius);
+  border-radius: var(--button-radius-sm);
   border-color: var(--button-secondary-border);
 }
 
@@ -39,7 +39,7 @@
   color: var(--button-tertiary-text);
   background-color: var(--button-tertiary-bg);
   padding: var(--button-spacing-padding);
-  border-radius: var(--button-radius);
+  border-radius: var(--button-radius-sm);
 }
 
 .button--tertiary:hover {
@@ -62,11 +62,15 @@
 }
 
 .button--radius-sm {
-  border-radius: var(--button-radius);
+  border-radius: var(--button-radius-sm);
 }
 
 .button--radius-lg {
   border-radius: var(--button-radius-lg);
+}
+
+.button--radius-pill {
+  border-radius: var(--button-radius-pill);
 }
 
 /* Link */

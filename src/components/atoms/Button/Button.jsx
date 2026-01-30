@@ -9,7 +9,7 @@ import { classNames } from '../../../utils/helpers';
  * @param {'primary' | 'secondary' | 'tertiary'} [buttonStyle] - Button styling. Defaults to 'primary' for
  * <button>.
  * @param {'sm' | 'lg'} [paddingSize] - Padding variant. Defaults to 'sm' for <button>.
- * @param {'sm' | 'lg'} [borderRadius] - Border radius. Defaults to 'sm' for <button>.
+ * @param {'none' | 'sm' | 'lg' | 'pill'} [borderRadius] - Border radius. Defaults to 'sm' for <button>.
  * @param {ElementType} [component="button"] - The element to render (e.g., 'button', 'a', or Link).
  * @param {boolean} [buttonAppearance] - Applies the 'button-appearance' styling class.
  * @param {'button' | 'submit' | 'reset'} [type="button"] - HTML type attribute (buttons only).
