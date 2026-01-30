@@ -9,6 +9,7 @@
   margin-bottom: var(--form-fieldset-spacing-field-gap);
   padding: 0;
   display: block; /* Ensures it behaves like a heading */
+  color: var(--form-fieldset-legend);
 }
 
 .form-fieldset__legend--required {

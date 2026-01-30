@@ -23,6 +23,10 @@
   gap: var(--cta-spacing-text);
 }
 
+.cta__heading {
+  color: var(--cta-heading);
+}
+
 .cta__button-wrapper {
   display: flex;
   flex-direction: column;

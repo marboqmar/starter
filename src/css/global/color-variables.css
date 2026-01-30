@@ -16,8 +16,11 @@
   /* Secondary */
   --color-secondary: #9e165f;
   --color-secondary-light: #c11574;
+  --color-secondary-lighter: #df0c81;
+  --color-secondary-lightest: #f30287;
   --color-secondary-dark: #851651;
   --color-secondary-darker: #740d44;
+  --color-secondary-darkest: #5f0033;
 
   /* Neutral */
   --color-neutral: #1f425e;
@@ -165,10 +168,14 @@
   --code-bg: var(--color-gray-50);
 
   /* Form fieldset */
+  --form-fieldset-legend: var(--text-main);
   --form-fieldset-error-text: var(--error-text);
 
   /* Heading */
   --heading-text: var(--text-main);
+  --heading-h1-text: var(--text-main);
+  --heading-h2-text: var(--color-secondary);
+  --heading-h3-text: var(--color-secondary-darkest);
 
   /* Helper text */
   --helper-text-text: var(--color-gray-600);
@@ -185,8 +192,8 @@
   --list-marker: var(--color-primary);
 
   /* Paragraph */
-  --paragraph-color: var(--text-main);
-  --paragraph-color-inverted: var(--text-inverted);
+  --paragraph-text: var(--text-main);
+  --paragraph-text-inverted: var(--text-inverted);
 
   /* Table */
   --table-header: var(--color-primary-a20);
@@ -197,12 +204,14 @@
   --breadcrumbs-text: var(--text-main);
 
   /* CTA */
+  --cta-heading: var(--text-main);
   --cta-bg: var(--surface-main);
 
   /* Form */
   --form-error-text: var(--error-text);
 
   /* Media object */
+  --media-object-heading: var(--text-main);
   --media-object-bg: var(--surface-main);
 
   /* Search box */
@@ -301,6 +310,10 @@
 
   /* Code */
   --code-bg: var(--color-gray-600);
+
+  /* Heading */
+  --heading-h2-text: var(--color-secondary-lightest);
+  --heading-h3-text: var(--color-secondary-lighter);
 
   /* Helper text */
   --helper-text-text: var(--color-gray-300);

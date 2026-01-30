@@ -4,6 +4,11 @@
   gap: var(--spacing-md);
 }
 
+.text-showcase__example .heading--2,
+.text-showcase__example .heading--3 {
+  color: var(--text-main);
+}
+
 .text-showcase__example-bg {
   padding: var(--spacing-md);
   border-radius: var(--radius-lg);

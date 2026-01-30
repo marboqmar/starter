@@ -1,5 +1,4 @@
-.form__heading,
-.form__section .heading {
+.form__heading {
   margin-bottom: var(--form-spacing-heading);
 }
 

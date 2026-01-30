@@ -12,6 +12,7 @@ h6 {
 
 h1,
 .heading--1 {
+  color: var(--heading-h1-text);
   font-size: var(--heading-font-size-h1);
   font-weight: var(--heading-font-weight-h1);
   line-height: var(--heading-line-height-h1);
@@ -19,6 +20,7 @@ h1,
 
 h2,
 .heading--2 {
+  color: var(--heading-h2-text);
   font-size: var(--heading-font-size-h2);
   font-weight: var(--heading-font-weight-h2);
   line-height: var(--heading-line-height-h2);
@@ -26,6 +28,7 @@ h2,
 
 h3,
 .heading--3 {
+  color: var(--heading-h3-text);
   font-size: var(--heading-font-size-h3);
   font-weight: var(--heading-font-weight-h3);
   line-height: var(--heading-line-height-h3);
