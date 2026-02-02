@@ -218,7 +218,6 @@
 
   /* Media object */
   --media-object-heading: var(--text-main);
-  --media-object-bg: var(--surface-main);
 
   /* Search box */
   --search-box-bg: var(--page-bg);
