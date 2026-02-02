@@ -25,6 +25,16 @@ import { Video } from '../../atoms/Video/Video';
  * recommended for heavy images.
  * @param {string} [imageAlt=""] - Alternative text for the image.
  * @param {object} [rest] - Additional props passed.
+ *
+ * @example
+ * <MediaObject
+ *   component="section"
+ *   mediaLocation="down"
+ *   title="Title"
+ *   titleLevel={4}
+ *   body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
+ *   imageSrc="/assets/images/test-image-md.png"
+ * />
  */
 
 export const MediaObject = ({
