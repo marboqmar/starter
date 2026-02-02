@@ -157,7 +157,13 @@
   --status-message-inline-gap: var(--spacing-inline-icon-gap); /* Gap between icon and text */
 
   /* ORGANISMS */
+  /* Accordion */
   --accordion-gap: var(--spacing-component-inner);
+
+  /* Card */
+  --card-padding: var(--spacing-surface-padding);
+  --card-image-spacing: var(--spacing-md); /* Margin between image and text */
+  --card-spacing-text: var(--spacing-component-inner); /* Gap between title and body */
 
   /* ==========================================================================
     2. SIZE (width and height) 
@@ -245,6 +251,10 @@
   /* Status message */
   --status-message-border: var(--border-primary);
 
+  /* ORGANISMS */
+  /* Card */
+  --card-border: var(--border-primary);
+
   /* ==========================================================================
     4. BORDER RADIUS
     ========================================================================== */
@@ -300,6 +310,9 @@
 
   /* Status message */
   --status-message-radius: var(--radius-main);
+
+  /* ORGANISMS */
+  --card-radius: var(--radius-main);
 
   /* ==========================================================================
     5. Z-INDEX

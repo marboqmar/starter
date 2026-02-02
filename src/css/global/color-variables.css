@@ -246,6 +246,11 @@
   --status-message-error-icon: var(--error-icon);
   --status-message-error-bg: var(--error-bg);
   --status-message-error-border-color: var(--error-border-color);
+
+  /* ORGANISMS */
+  /* Card */
+  --card-heading: var(--text-main);
+  --card-bg: transparent;
 }
 
 /* ==========================================================================
