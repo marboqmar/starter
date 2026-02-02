@@ -11,6 +11,7 @@ import { Paragraph } from '../../atoms/Paragraph/Paragraph';
  * @param {'info' | 'success' | 'warning' | 'error'} [type="info"] - Type of message, provides its corresponding role
  * and icon.
  * @param {node} children - Status message content.
+ * @param {object} [rest] - Additional props passed.
  */
 
 const iconMap = {
