@@ -145,8 +145,8 @@
   --form-spacing-button: var(--spacing-lg);
 
   /* Media object */
-  --media-object-spacing-padding: var(--spacing-surface-padding);
-  --media-object-spacing-gap: var(--spacing-xl); /* Main gap between media and text */
+  --media-object-padding: var(--spacing-surface-padding);
+  --media-object-gap: var(--spacing-xl); /* Main gap between media and text */
   --media-object-spacing-text: var(--spacing-component-inner); /* Gap between title and body */
 
   /* Search box */

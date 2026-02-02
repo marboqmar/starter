@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: var(--media-object-spacing-gap);
-  padding: var(--media-object-spacing-padding);
+  gap: var(--media-object-gap);
+  padding: var(--media-object-padding);
   background-color: var(--media-object-bg);
   border-radius: var(--media-object-radius);
 }
