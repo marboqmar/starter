@@ -14,7 +14,6 @@ export const CardShowcase = () => {
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
             imageSrc="/assets/images/test-image-md.png"
             to="/"
-            ariaLabel="Testing card"
           />
         </div>
         <div className="card-showcase__example showcase-item__example">
