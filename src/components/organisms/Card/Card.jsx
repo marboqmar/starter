@@ -30,7 +30,6 @@ import { Link } from 'react-router-dom';
  *   body="Lorem ipsum dolor sit amet"
  *   imageSrc="/assets/images/test-image-md.png"
  *   to="/"
- *   ariaLabel="Testing card"
  * />
  */
 
