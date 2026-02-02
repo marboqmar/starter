@@ -121,10 +121,6 @@
   grid-column: span 6;
 }
 
-.col-span-12 {
-  grid-column: span 12;
-}
-
 /* Grid column span - tablet */
 @media (min-width: 768px) {
   .col-span-tablet-1 {

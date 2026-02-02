@@ -3,6 +3,7 @@ import { Breadcrumbs } from '../components/molecules/Breadcrumbs/Breadcrumbs';
 import { Heading } from '../components/atoms/Heading/Heading';
 import { AccordionShowcase } from '../showcases/organisms/AccordionShowcase/AccordionShowcase';
 import { CardShowcase } from '../showcases/organisms/CardShowcase/CardShowcase';
+import { CardGridShowcase } from '../showcases/organisms/CardGridShowcase/CardGridShowcase';
 
 const breadcrumbsInfo = [
   { label: 'Home', href: '/' },
@@ -22,6 +23,9 @@ export const Organisms = () => {
 
         {/* Card */}
         <CardShowcase />
+
+        {/* Card grid */}
+        <CardGridShowcase />
       </div>
     </div>
   );
