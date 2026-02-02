@@ -19,6 +19,7 @@ export const MediaObjectShowcase = () => {
         component="section"
         mediaLocation="up"
         title="Title"
+        titleLevel={4}
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
         imageSrc="/assets/images/test-image-md.png"
       />
@@ -27,6 +28,7 @@ export const MediaObjectShowcase = () => {
         component="section"
         mediaLocation="right"
         title="Title"
+        titleLevel={4}
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
         imageSrc="/assets/images/test-image-md.png"
       />
@@ -35,6 +37,7 @@ export const MediaObjectShowcase = () => {
         component="section"
         mediaLocation="down"
         title="Title"
+        titleLevel={4}
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
         imageSrc="/assets/images/test-image-md.png"
       />
@@ -43,6 +46,7 @@ export const MediaObjectShowcase = () => {
         component="section"
         mediaLocation="left"
         title="Title"
+        titleLevel={4}
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
         imageSrc="/assets/images/test-image-md.png"
       />
@@ -51,6 +55,7 @@ export const MediaObjectShowcase = () => {
         component="section"
         mediaLocation="left"
         title="Video"
+        titleLevel={4}
         videoTitle="YouTube test video for Media Object"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
         videoSrc="https://www.youtube.com/watch?v=G1hKzCkywM8"
