@@ -85,7 +85,8 @@ export const Button = ({
       }
     : {};
 
-  const classes = classNames('button', className, `button--${finalStyling}`, {
+  const classes = classNames('button', className, {
+    [`button--${finalStyling}`]: finalStyling,
     [`button--padding-${paddingSize}`]: paddingSize,
     [`button--radius-${borderRadius}`]: borderRadius,
     'button-appearance': hasButtonAppearance,
