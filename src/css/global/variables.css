@@ -156,6 +156,9 @@
   --status-message-spacing-padding: var(--spacing-inset);
   --status-message-inline-gap: var(--spacing-inline-icon-gap); /* Gap between icon and text */
 
+  /* ORGANISMS */
+  --accordion-gap: var(--spacing-component-inner);
+
   /* ==========================================================================
     2. SIZE (width and height) 
     ========================================================================== */

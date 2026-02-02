@@ -9,9 +9,9 @@ import { useState } from 'react';
  * Accordion item component
  *
  * Component props:
- * @param {string} title - The text displayed in the accordion header.
+ * @param {string} title - The text displayed in the accordion heading.
  * @param {1 | 2 | 3 | 4 | 5 | 6} [titleLevel=2] - Heading level. Values outside 1-6 fallback to 2.
- * @param {string} content - The text or to be displayed when the accordion is expanded.
+ * @param {string} content - The text to be displayed when the accordion is expanded.
  * @param {object} [rest] - Additional props passed.
  *
  * @example

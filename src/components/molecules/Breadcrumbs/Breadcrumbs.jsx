@@ -9,6 +9,9 @@ import { Icon } from '../../../components/atoms/Icon/Icon';
  * Component props:
  * @param {string} [className] - Additional CSS classes.
  * @param {Object[]} items - Content of the breadcrumbs.
+ * @param {string} items[].label - The text for the link or current page.
+ * @param {string} items[].href - The URL to which this label redirects to.
+ * @param {boolean} [items[].hasHomeIcon] - If true, rather than text assigns an icon to the first link.
  * @param {object} [rest] - Additional props passed.
  *
  * @example
@@ -18,6 +21,11 @@ import { Icon } from '../../../components/atoms/Icon/Icon';
  * ];
  *
  * <Breadcrumbs items={breadcrumbsInfo} />
+ *
+ * @example
+ * // Breadcrumbs with home icon
+ * const breadcrumbsInfo = [
+ *   { label: 'Home', href: '/', hasHomeIcon: true },
  */
 
 export const Breadcrumbs = ({ className = '', items = [], ...rest }) => {

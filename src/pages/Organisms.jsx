@@ -1,6 +1,7 @@
 import '../css/pages/showcase.css';
 import { Breadcrumbs } from '../components/molecules/Breadcrumbs/Breadcrumbs';
 import { Heading } from '../components/atoms/Heading/Heading';
+import { AccordionShowcase } from '../showcases/organisms/AccordionShowcase/AccordionShowcase';
 
 const breadcrumbsInfo = [
   { label: 'Home', href: '/' },
@@ -14,7 +15,10 @@ export const Organisms = () => {
       <Heading level={1} className="showcase-page__title">
         Organisms
       </Heading>
-      <div className="organisms-page__showcases-wrapper showcase-wrapper"></div>
+      <div className="organisms-page__showcases-wrapper showcase-wrapper">
+        {/* Accordion */}
+        <AccordionShowcase />
+      </div>
     </div>
   );
 };
