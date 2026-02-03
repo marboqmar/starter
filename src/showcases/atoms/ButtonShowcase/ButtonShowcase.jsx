@@ -19,6 +19,9 @@ export const ButtonShowcase = () => {
           <Button className="button-showcase__button" buttonStyle="tertiary">
             Tertiary
           </Button>
+          <Button className="button-showcase__button" buttonStyle="transparent">
+            Transparent
+          </Button>
         </div>
 
         {/* Buttons - states */}

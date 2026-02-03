@@ -6,7 +6,7 @@ import { classNames } from '../../../utils/helpers';
  *
  * Component props:
  * @param {string} [className] - Additional CSS classes.
- * @param {'primary' | 'secondary' | 'tertiary'} [buttonStyle] - Button styling. Defaults to 'primary' for
+ * @param {'primary' | 'secondary' | 'tertiary' | 'transparent'} [buttonStyle] - Button styling. Defaults to 'primary' for
  * <button>.
  * @param {'sm' | 'lg'} [paddingSize] - Padding variant. Defaults to 'sm' for <button>.
  * @param {'none' | 'sm' | 'lg' | 'pill'} [borderRadius] - Border radius. Defaults to 'sm' for <button>.

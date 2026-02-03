@@ -47,6 +47,13 @@
   background-color: var(--button-tertiary-hover-bg);
 }
 
+/* Transparent */
+.button--transparent {
+  border: none;
+  padding: var(--button-spacing-padding);
+  background-color: transparent;
+}
+
 /* Padding */
 .button--padding-sm {
   padding: var(--button-spacing-padding-sm);
