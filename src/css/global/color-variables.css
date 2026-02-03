@@ -254,6 +254,7 @@
 
   /* Footer */
   --footer-bg: var(--page-bg);
+  --footer-icon-hover: var(--color-primary);
 }
 
 /* ==========================================================================
@@ -338,4 +339,8 @@
   /* Table */
   --table-header: var(--color-primary-darker);
   --table-row: var(--color-primary-a20);
+
+  /* ORGANISM */
+  /* Footer */
+  --footer-icon-hover: var(--color-primary-lightest);
 }

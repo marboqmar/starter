@@ -1,3 +1,4 @@
+import './FooterShowcase.css';
 import { Footer } from '../../../components/organisms/Footer/Footer';
 import { Heading } from '../../../components/atoms/Heading/Heading';
 

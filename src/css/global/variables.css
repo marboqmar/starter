@@ -43,7 +43,7 @@
   --spacing-md: 1.5rem; /* 24px */
   --spacing-lg: 2rem; /* 32px */
   --spacing-xl: 3rem; /* 48px */
-  --spacing-xxl: 4rem; /* 64px */
+  --spacing-xxl: 5rem; /* 80px */
 
   /* General */
   --spacing-layout: var(--spacing-xl); /* Spacing between major sections/components */
@@ -169,7 +169,7 @@
 
   /* Footer */
   --footer-padding: var(--spacing-xxl);
-  --footer-content-gap: var(--spacing-xxl); /* Gap between top content and bottom content */
+  --footer-content-gap: var(--spacing-xl); /* Gap between top content and bottom content */
   --footer-content-top-gap: var(--spacing-xl); /* Gap between top content elements*/
   --footer-columns-gap: var(--spacing-xl); /* Gap between link columns */
   --footer-columns-gap-compact: var(--spacing-component-inner); /* Gap between link columns */
@@ -356,7 +356,7 @@
     --spacing-md: 2rem; /* 32px */
     --spacing-lg: 2.5rem; /* 40px */
     --spacing-xl: 4rem; /* 64px */
-    --spacing-xl: 5rem; /* 80px */
+    --spacing-xxl: 8rem; /* 124px */
 
     /* General */
     --spacing-inset-v: var(--spacing-0-5);
@@ -382,7 +382,7 @@
     --spacing-sm: 2rem; /* 32px */
     --spacing-md: 2.5rem; /* 40px */
     --spacing-lg: 3rem; /* 48px */
-    --spacing-xl: 4rem; /* 64px */
-    --spacing-xxl: 5rem; /* 80px */
+    --spacing-xl: 6rem; /* 96px */
+    --spacing-xxl: 10rem; /* 160px */
   }
 }

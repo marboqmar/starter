@@ -1,0 +1,12 @@
+/* Extra class needed for specificity over icon atom fill */
+.footer__social-media-link[aria-label="Instagram"] .footer__social-media-icon:hover {
+  fill: #ff0069;
+}
+
+.footer__social-media-link[aria-label="Facebook"] .footer__social-media-icon:hover {
+  fill: #0866ff;
+}
+
+.footer__social-media-link[aria-label="YouTube"] .footer__social-media-icon:hover {
+  fill: #ff0000;
+}

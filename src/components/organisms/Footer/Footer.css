@@ -57,6 +57,11 @@
   gap: var(--footer-content-bottom-gap);
 }
 
+/* Extra class needed for specificity over icon atom fill */
+.footer__social-media-icon.icon:hover {
+  fill: var(--footer-icon-hover);
+}
+
 /* Footer compact */
 .footer--compact .footer__columns-group {
   gap: var(--footer-columns-gap-compact);
