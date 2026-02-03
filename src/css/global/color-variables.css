@@ -251,6 +251,9 @@
   /* Card */
   --card-heading: var(--text-main);
   --card-bg: transparent;
+
+  /* Footer */
+  --footer-bg: var(--page-bg);
 }
 
 /* ==========================================================================

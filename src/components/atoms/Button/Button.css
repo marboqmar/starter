@@ -85,6 +85,7 @@
 .button--link:visited {
   color: var(--button-link-text);
   border: none;
+  text-decoration: none;
 }
 
 .button-appearance {
@@ -102,7 +103,7 @@
 
 /* Icon and text button */
 .button--icon {
-  display: inlint-flex;
+  display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;

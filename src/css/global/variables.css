@@ -43,10 +43,12 @@
   --spacing-md: 1.5rem; /* 24px */
   --spacing-lg: 2rem; /* 32px */
   --spacing-xl: 3rem; /* 48px */
+  --spacing-xxl: 4rem; /* 64px */
 
   /* General */
   --spacing-layout: var(--spacing-xl); /* Spacing between major sections/components */
   --spacing-component-inner: var(--spacing-sm); /* Spacing between elements within a component */
+  --spacing-component-inner-lg: var(--spacing-md); /* Spacing between elements within a component */
   --spacing-inline-icon-gap: var(--spacing-0-25); /* Spacing between inline icon and text */
   --spacing-surface-padding: var(
     --spacing-md
@@ -83,7 +85,7 @@
   --button-spacing-padding: var(--spacing-inset);
   --button-spacing-padding-sm: var(--spacing-inset-sm);
   --button-spacing-padding-lg: var(--spacing-inset-lg);
-  --button-spacing-icon-gap: var(--spacing-0-375);
+  --button-spacing-icon-gap: var(--spacing-0-75);
 
   /* Code */
   --code-spacing-lat-padding: var(--spacing-0-25);
@@ -133,15 +135,15 @@
   --cta-spacing-padding: var(--spacing-surface-padding);
   --cta-spacing-gap: var(--spacing-xl); /* Main gap between image and text */
   --cta-spacing-text: var(--spacing-component-inner); /* Gap between title and body */
-  --cta-spacing-content: var(--spacing-md); /* Gap between text and buttons */
+  --cta-spacing-content: var(--spacing-component-inner-lg); /* Gap between text and buttons */
   --cta-spacing-actions: var(--spacing-1); /* Gap between buttons */
 
   /* Form */
   --form-spacing-server-error: var(--spacing-component-inner);
   --form-spacing-section-gap: var(--spacing-lg);
   --form-spacing-field-gap: var(--spacing-component-inner);
-  --form-spacing-grid-gap: var(--spacing-md);
-  --form-spacing-heading: var(--spacing-sm);
+  --form-spacing-grid-gap: var(--spacing-component-inner-lg);
+  --form-spacing-heading: var(--spacing-component-inner);
   --form-spacing-button: var(--spacing-lg);
 
   /* Media object */
@@ -162,13 +164,26 @@
 
   /* Card */
   --card-padding: var(--spacing-surface-padding);
-  --card-image-spacing: var(--spacing-md); /* Margin between image and text */
+  --card-image-spacing: var(--spacing-component-inner-lg); /* Margin between image and text */
   --card-spacing-text: var(--spacing-component-inner); /* Gap between title and body */
+
+  /* Footer */
+  --footer-padding: var(--spacing-xxl);
+  --footer-content-gap: var(--spacing-xxl); /* Gap between top content and bottom content */
+  --footer-content-top-gap: var(--spacing-xl); /* Gap between top content elements*/
+  --footer-columns-gap: var(--spacing-xl); /* Gap between link columns */
+  --footer-columns-gap-compact: var(--spacing-component-inner); /* Gap between link columns */
+  --footer-column-content-gap: var(
+    --spacing-component-inner
+  ); /* Gap between column heading and links */
+  --footer-links-gap: var(--spacing-xs); /* Gap between links within a column */
+  --footer-content-bottom-gap: var(
+    --spacing-component-inner
+  ); /* Gap between bottom content elements*/
 
   /* ==========================================================================
     2. SIZE (width and height) 
     ========================================================================== */
-
   /* --- PRIMITIVES --- */
   --size-icon-xs: 1rem;
   --size-icon-sm: 1.5rem;
@@ -207,8 +222,8 @@
   --accordion-item-separator-height: 1px;
 
   /* Breadcrumbs */
-  --breadcrumbs-padding-upper: var(--spacing-sm);
-  --breadcrumbs-padding-lower: var(--spacing-sm);
+  --breadcrumbs-padding-upper: var(--spacing-component-inner);
+  --breadcrumbs-padding-lower: var(--spacing-component-inner);
   --breadcrumbs-padding-left: 0;
   --breadcrumbs-icon-size: calc(
     var(--icon-alignment-height) * var(--ratio-icon-to-text)
@@ -216,6 +231,9 @@
 
   /* Search box*/
   --search-box-icon-size: var(--size-icon-main);
+
+  /* Footer */
+  --footer-logo-size: var(--spacing-2);
 
   /* ==========================================================================
     3. BORDER
@@ -338,6 +356,7 @@
     --spacing-md: 2rem; /* 32px */
     --spacing-lg: 2.5rem; /* 40px */
     --spacing-xl: 4rem; /* 64px */
+    --spacing-xl: 5rem; /* 80px */
 
     /* General */
     --spacing-inset-v: var(--spacing-0-5);
@@ -363,6 +382,7 @@
     --spacing-sm: 2rem; /* 32px */
     --spacing-md: 2.5rem; /* 40px */
     --spacing-lg: 3rem; /* 48px */
-    --spacing-xl: 5rem; /* 80px */
+    --spacing-xl: 4rem; /* 64px */
+    --spacing-xxl: 5rem; /* 80px */
   }
 }

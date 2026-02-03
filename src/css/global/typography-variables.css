@@ -102,6 +102,10 @@
   --paragraph-font-weight: var(--font-weight-base);
   --paragraph-font-weight-semibold: var(--font-weight-semibold);
   --paragraph-font-weight-bold: var(--font-weight-bold);
+
+  /* ORGANISMS */
+  /* Footer */
+  --footer-heading-font-weight: var(--font-weight-semibold);
 }
 
 /* ==========================================================================
