@@ -2,7 +2,7 @@ import './FooterShowcase.css';
 import { Footer } from '../../../components/organisms/Footer/Footer';
 import { Heading } from '../../../components/atoms/Heading/Heading';
 
-const footer1Content = [
+const footer1Items = [
   {
     heading: 'Elements',
     links: [
@@ -40,12 +40,16 @@ const footer1Content = [
 ];
 
 const footer1Social = [
-  { url: '/', iconHref: '/assets/icons/instagram.svg', ariaLabel: 'Instagram' },
-  { url: '/', iconHref: '/assets/icons/facebook.svg', ariaLabel: 'Facebook' },
-  { url: '/', iconHref: '/assets/icons/youtube.svg', ariaLabel: 'YouTube' },
+  {
+    url: '/',
+    iconHref: '/assets/icons/instagram.svg',
+    ariaLabel: 'Instagram (opens in a new tab)',
+  },
+  { url: '/', iconHref: '/assets/icons/facebook.svg', ariaLabel: 'Facebook (opens in a new tab)' },
+  { url: '/', iconHref: '/assets/icons/youtube.svg', ariaLabel: 'YouTube (opens in a new tab)' },
 ];
 
-const footer2Content = [
+const footer2Items = [
   {
     links: [{ text: 'Atoms', url: '/atoms' }],
   },
@@ -61,9 +65,13 @@ const footer2Content = [
 ];
 
 const footer2Social = [
-  { url: '/', iconHref: '/assets/icons/instagram.svg', ariaLabel: 'Instagram' },
-  { url: '/', iconHref: '/assets/icons/facebook.svg', ariaLabel: 'Facebook' },
-  { url: '/', iconHref: '/assets/icons/youtube.svg', ariaLabel: 'YouTube' },
+  {
+    url: '/',
+    iconHref: '/assets/icons/instagram.svg',
+    ariaLabel: 'Instagram (opens in a new tab)',
+  },
+  { url: '/', iconHref: '/assets/icons/facebook.svg', ariaLabel: 'Facebook (opens in a new tab)' },
+  { url: '/', iconHref: '/assets/icons/youtube.svg', ariaLabel: 'YouTube (opens in a new tab)' },
 ];
 
 export const FooterShowcase = () => {
@@ -71,9 +79,9 @@ export const FooterShowcase = () => {
     <div className="footer-showcase showcase-item">
       <Heading>Footer</Heading>
       <Heading level={3}>Standard footer</Heading>
-      <Footer items={footer1Content} socialMedia={footer1Social} />
+      <Footer items={footer1Items} socialMedia={footer1Social} />
       <Heading level={3}>Compact footer</Heading>
-      <Footer items={footer2Content} socialMedia={footer2Social} isCompact />
+      <Footer items={footer2Items} socialMedia={footer2Social} isCompact />
     </div>
   );
 };

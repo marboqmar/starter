@@ -23,7 +23,7 @@ import { Link } from 'react-router-dom';
  * @param {object} [rest] - Additional props passed.
  *
  * @example
- * const footerContent = [
+ * const footerItems = [
  *   {
  *     heading: 'Test column',
  *     links: [
@@ -41,11 +41,11 @@ import { Link } from 'react-router-dom';
  * ];
  *
  * const footerSocial = [
- *   { url: '/', iconHref: '/assets/icons/instagram.svg', ariaLabel: 'Instagram' },
- *   { url: '/', iconHref: '/assets/icons/facebook.svg', ariaLabel: 'Facebook' },
+ *   { url: '/', iconHref: '/assets/icons/instagram.svg', ariaLabel: 'Instagram (opens in a new tab)' },
+ *   { url: '/', iconHref: '/assets/icons/facebook.svg', ariaLabel: 'Facebook (opens in a new tab)' },
  * ];
  *
- * <Footer items={footerContent} socialMedia={footerSocial} />
+ * <Footer items={footerItems} socialMedia={footerSocial} />
  */
 
 export const Footer = ({ className = '', items = [], socialMedia = [], isCompact, ...rest }) => {
@@ -101,6 +101,7 @@ export const Footer = ({ className = '', items = [], socialMedia = [], isCompact
                     component={Link}
                     to={link.url}
                     ariaLabel={link.ariaLabel}
+                    isExternalLink
                   >
                     <Icon className="footer__social-media-icon" href={link.iconHref}></Icon>
                   </Button>

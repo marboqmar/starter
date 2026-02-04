@@ -6,8 +6,8 @@ import { classNames } from '../../../utils/helpers';
  *
  * Component props:
  * @param {string} [className] - Additional CSS classes.
- * @param {'primary' | 'secondary' | 'tertiary' | 'transparent'} [buttonStyle] - Button styling. Defaults to 'primary' for
- * <button>.
+ * @param {'primary' | 'secondary' | 'tertiary' | 'transparent'} [buttonStyle] - Button styling.
+ * Defaults to 'primary' for <button>.
  * @param {'sm' | 'lg'} [paddingSize] - Padding variant. Defaults to 'sm' for <button>.
  * @param {'none' | 'sm' | 'lg' | 'pill'} [borderRadius] - Border radius. Defaults to 'sm' for <button>.
  * @param {ElementType} [component="button"] - The element to render (e.g., 'button', 'a', or Link).
@@ -15,6 +15,7 @@ import { classNames } from '../../../utils/helpers';
  * @param {'button' | 'submit' | 'reset'} [type="button"] - HTML type attribute (buttons only).
  * @param {string} [to] - Target URL if component is Link.
  * @param {string} [role] - ARIA role.
+ * @param {boolean} [isExternalLink] - Opens link in a new tab with 'noopener noreferrer' for security.
  * @param {boolean} [disabled] - Disables the button and adds disabled styling.
  * @param {boolean} [hasIcon] - Adds class to style a button containing text and an icon.
  * @param {boolean} [isIconOnly] - Adds class to style a button containing only an icon.
@@ -59,6 +60,7 @@ export const Button = ({
   type,
   to,
   role,
+  isExternalLink,
   disabled,
   hasIcon,
   isIconOnly,
@@ -77,6 +79,9 @@ export const Button = ({
   const hasButtonAppearance = !isButtonComponent && buttonAppearance;
   const notButtonAppearance = !isButtonComponent && !hasButtonAppearance;
 
+  // Use href or to, depending on if it is an <a> or a <Link>
+  const linkTargetProp = Component === 'a' ? { href: to } : { to: to };
+
   // Button-specific props.
   const buttonProps = isButtonComponent
     ? {
@@ -84,6 +89,15 @@ export const Button = ({
         disabled: disabled,
       }
     : {};
+
+  // Link-specific props
+  const externalLinkProps =
+    isExternalLink && !isButtonComponent
+      ? {
+          rel: 'noopener noreferrer',
+          target: '_blank',
+        }
+      : {};
 
   const classes = classNames('button', className, {
     [`button--${finalStyling}`]: finalStyling,
@@ -101,9 +115,10 @@ export const Button = ({
     <Component
       className={classes}
       role={role}
-      to={to}
       aria-label={ariaLabel}
+      {...linkTargetProp}
       {...buttonProps}
+      {...externalLinkProps}
       {...rest}
     >
       {children}

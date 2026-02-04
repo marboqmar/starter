@@ -49,6 +49,7 @@
 
 /* Transparent */
 .button--transparent {
+  color: var(--button-transparent-text);
   border: none;
   padding: var(--button-spacing-padding);
   background-color: transparent;
@@ -85,7 +86,6 @@
 .button--link:visited {
   color: var(--button-link-text);
   border: none;
-  text-decoration: none;
 }
 
 .button-appearance {

@@ -48,6 +48,11 @@
   gap: var(--footer-links-gap);
 }
 
+.footer__logo,
+.footer__link {
+  text-decoration: none;
+}
+
 .footer .footer__social-media {
   padding: 0;
   margin: 0;

@@ -320,6 +320,9 @@
   --button-tertiary-hover-text: var(--text-main);
   --button-tertiary-hover-bg: var(--color-primary);
 
+  /* Button - transparent */
+  --button-transparent-text: var(--text-main);
+
   /* Checkbox */
   --checkbox-icon: var(--page-bg);
 
