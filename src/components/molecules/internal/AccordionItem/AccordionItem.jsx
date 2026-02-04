@@ -30,24 +30,21 @@ export const AccordionItem = ({ title, titleLevel, content, ...rest }) => {
       className={`accordion-item ${isAccordionExpanded ? 'accordion-item--expanded' : ''}`}
       {...rest}
     >
-      <div className="accordion-item__heading-wrapper">
-        <Heading className="accordion-item__heading" level={titleLevel} size={5}>
-          {title}
-        </Heading>
+      <Heading className="accordion-item__heading" level={titleLevel} size={5}>
         <Button
           onClick={handleClick}
           className="accordion-item__button"
-          isIconOnly
-          ariaLabel={isAccordionExpanded ? 'Collapse section' : 'Expand section'}
           aria-expanded={isAccordionExpanded}
         >
+          <span className="accordion-item__heading-text">{title}</span>
           <Icon
-            className="accordion-item__icon"
+            className="accordion-item__icon focus-like-hover"
             isDecorative
             href="/assets/icons/chevron-down.svg"
           />
         </Button>
-      </div>
+      </Heading>
+
       <div className="accordion-item__content-wrapper">
         <div className="accordion-item__content-inner">
           <Paragraph className="accordion-item__content">{content}</Paragraph>

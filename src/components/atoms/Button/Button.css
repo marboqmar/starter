@@ -50,7 +50,8 @@
 /* Transparent */
 .button--transparent {
   color: var(--button-transparent-text);
-  border: none;
+  border-color: transparent;
+  border-radius: var(--button-radius-sm);
   padding: var(--button-spacing-padding);
   background-color: transparent;
 }

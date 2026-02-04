@@ -75,6 +75,7 @@ code {
 .radio[type="radio"]:focus-visible,
 .text-area:focus-visible,
 .video:focus-visible,
+.breadcrumbs__link:focus-visible,
 .search-box:focus-within,
 .card:focus-within {
   outline: none;
@@ -85,7 +86,7 @@ code {
   transition: box-shadow var(--motion-duration-fast) var(--motion-easing-standard);
 }
 
-/* Hover with focus style */
+/* Hover - focus style */
 .focus-like-hover:hover {
   outline: none;
   box-shadow:
@@ -97,7 +98,7 @@ code {
     transform var(--motion-duration-standard) var(--motion-easing-standard);
 }
 
-/* Hover with translate */
+/* Hover - translate */
 .translate-hover {
   transition: transform var(--motion-duration-standard) var(--motion-easing-standard);
 }

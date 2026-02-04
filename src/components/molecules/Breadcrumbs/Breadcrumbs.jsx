@@ -46,7 +46,7 @@ export const Breadcrumbs = ({ className = '', items = [], ...rest }) => {
                 </span>
               ) : (
                 <>
-                  <Link to={item.href} className="breadcrumbs__link">
+                  <Link to={item.href} className="breadcrumbs__link simple-hover">
                     {isFirst && item.hasHomeIcon ? (
                       <Icon
                         className="breadcrumbs__icon"

@@ -101,6 +101,7 @@ export const Button = ({
 
   const classes = classNames('button', className, {
     [`button--${finalStyling}`]: finalStyling,
+    'focus-like-hover': finalStyling === 'transparent',
     [`button--padding-${paddingSize}`]: paddingSize,
     [`button--radius-${borderRadius}`]: borderRadius,
     'button-appearance': hasButtonAppearance,

@@ -316,6 +316,7 @@
   /* MOLECULES */
   /* Accordion item */
   --accordion-item-radius: var(--radius-main);
+  --accordion-item-icon-radius: var(--radius-full);
 
   /* CTA */
   --cta-radius: var(--radius-main);

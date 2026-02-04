@@ -215,6 +215,7 @@
 
   /* Breadbrumbs */
   --breadcrumbs-text: var(--text-main);
+  --breadcrumbs-link-hover: var(--hover-primary);
 
   /* CTA */
   --cta-heading: var(--text-main);
@@ -261,6 +262,7 @@
 
   /* Footer */
   --footer-bg: var(--page-bg);
+  --footer-logo-text: var(--text-main);
   --footer-icon-hover: var(--hover-primary);
 }
 

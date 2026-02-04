@@ -26,3 +26,8 @@
   width: var(--breadcrumbs-icon-size);
   height: var(--breadcrumbs-icon-size);
 }
+
+/* Hover */
+.breadcrumbs__link:hover {
+  color: var(--breadcrumbs-link-hover);
+}
