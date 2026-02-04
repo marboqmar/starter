@@ -88,6 +88,10 @@
   border: none;
 }
 
+.button--link:hover {
+  color: var(--button-link-hover);
+}
+
 .button-appearance {
   text-decoration: none;
   text-align: center;

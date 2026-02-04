@@ -61,7 +61,7 @@ export const Footer = ({ className = '', items = [], socialMedia = [], isCompact
       <div className="container footer__wrapper">
         <Heading className="sr-only">Footer</Heading>
         <div className="footer__content-top">
-          <Button className="footer__logo" component={Link} hasIcon to="/">
+          <Button className="footer__logo focus-like-hover" component={Link} hasIcon to="/">
             <Icon
               className="footer__logo-icon"
               viewBox="0 0 512 512"

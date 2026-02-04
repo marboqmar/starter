@@ -75,12 +75,35 @@ code {
 .radio[type="radio"]:focus-visible,
 .text-area:focus-visible,
 .video:focus-visible,
-.search-box:focus-within {
+.search-box:focus-within,
+.card:focus-within {
   outline: none;
   box-shadow:
     0 0 0 1px var(--focus-spacer),
     0 0 0 2px var(--focus-ring),
     0 0 4px 4px var(--focus-glow);
+  transition: box-shadow var(--motion-duration-fast) var(--motion-easing-standard);
+}
+
+/* Hover with focus style */
+.focus-like-hover:hover {
+  outline: none;
+  box-shadow:
+    0 0 0 1px var(--focus-spacer),
+    0 0 0 2px var(--focus-ring),
+    0 0 4px 4px var(--focus-glow);
+  transition:
+    box-shadow var(--motion-duration-fast) var(--motion-easing-standard),
+    transform var(--motion-duration-standard) var(--motion-easing-standard);
+}
+
+/* Hover with translate */
+.translate-hover {
+  transition: transform var(--motion-duration-standard) var(--motion-easing-standard);
+}
+
+.translate-hover:hover {
+  transform: translateY(-2px);
 }
 
 /* Disabled */

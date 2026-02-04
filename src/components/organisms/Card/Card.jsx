@@ -46,7 +46,7 @@ export const Card = ({
   ...rest
 }) => {
   return (
-    <div className={classNames('card', className)} {...rest}>
+    <div className={classNames('card focus-like-hover translate-hover', className)} {...rest}>
       {imageSrc && (
         <div className="card__image">
           <Image src={imageSrc} srcSet={imageSrcSet} sizes={imageSizes} alt={imageAlt} />

@@ -84,6 +84,9 @@
   /* Surface */
   --surface-main: var(--color-primary-a20);
 
+  /* Hover */
+  --hover-primary: var(--color-primary);
+
   /* Focus */
   --focus-spacer: var(--page-bg);
   --focus-ring: var(--color-primary-dark);
@@ -153,8 +156,12 @@
   --button-tertiary-hover-text: var(--text-inverted);
   --button-tertiary-hover-bg: var(--color-primary-lighter);
 
+  /* Button - transparent */
+  --button-transparent-text: var(--text-main);
+
   /* Button - link */
   --button-link-text: var(--text-main);
+  --button-link-hover: var(--hover-primary);
 
   /* Button - disabled */
   --button-disabled-text: var(--disabled-text);
@@ -254,7 +261,7 @@
 
   /* Footer */
   --footer-bg: var(--page-bg);
-  --footer-icon-hover: var(--color-primary);
+  --footer-icon-hover: var(--hover-primary);
 }
 
 /* ==========================================================================
@@ -278,6 +285,9 @@
 
   /* Surface */
   --surface-main: var(--color-primary-a30);
+
+  /* Hover */
+  --hover-primary: var(--color-primary-lightest);
 
   /* Focus */
   --focus-ring: var(--color-primary-light);
@@ -320,9 +330,6 @@
   --button-tertiary-hover-text: var(--text-main);
   --button-tertiary-hover-bg: var(--color-primary);
 
-  /* Button - transparent */
-  --button-transparent-text: var(--text-main);
-
   /* Checkbox */
   --checkbox-icon: var(--page-bg);
 
@@ -342,8 +349,4 @@
   /* Table */
   --table-header: var(--color-primary-darker);
   --table-row: var(--color-primary-a20);
-
-  /* ORGANISM */
-  /* Footer */
-  --footer-icon-hover: var(--color-primary-lightest);
 }

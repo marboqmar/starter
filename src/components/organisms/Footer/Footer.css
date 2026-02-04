@@ -53,6 +53,10 @@
   text-decoration: none;
 }
 
+.footer__logo:hover {
+  color: var(--footer-logo-text);
+}
+
 .footer .footer__social-media {
   padding: 0;
   margin: 0;
@@ -63,6 +67,12 @@
 }
 
 /* Extra class needed for specificity over icon atom fill */
+.footer__social-media-link:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.footer__social-media-link:focus-visible .footer__social-media-icon,
 .footer__social-media-icon.icon:hover {
   fill: var(--footer-icon-hover);
 }

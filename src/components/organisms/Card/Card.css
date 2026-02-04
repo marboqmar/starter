@@ -7,13 +7,6 @@
   transition: box-shadow var(--motion-duration-fast) var(--motion-easing-standard);
 }
 
-.card:hover {
-  box-shadow:
-    0 0 0 1px var(--focus-spacer),
-    0 0 0 2px var(--focus-ring),
-    0 0 4px 4px var(--focus-glow);
-}
-
 .card__image {
   margin-bottom: var(--card-image-spacing);
 }
@@ -31,6 +24,10 @@
 .card__link {
   color: var(--card-heading);
   text-decoration: none;
+}
+
+.card__link:focus-visible {
+  outline: none;
 }
 
 .card__link:visited {
