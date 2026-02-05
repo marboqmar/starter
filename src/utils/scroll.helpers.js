@@ -10,6 +10,8 @@ export const scrollToTop = (hasSmoothAnimation = true) => {
     behavior: hasSmoothAnimation ? 'smooth' : 'instant',
   });
 
-  // Move focus back to the top so 'Tab' starts at the beginning
-  document.querySelector('header')?.focus();
+  // Move focus back to the top. preventScroll is needed to allow the smooth animation to happen.
+  document.querySelector('header')?.focus({
+    preventScroll: true,
+  });
 };
