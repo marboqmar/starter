@@ -59,18 +59,24 @@ export const Footer = ({ className = '', items = [], socialMedia = [], isCompact
       {...rest}
     >
       <div className="container footer__wrapper">
+        {/* Screen reader heading */}
         <Heading className="sr-only">Footer</Heading>
+
+        {/* Top content */}
         <div className="footer__content-top">
+          {/* Logo */}
           <Button className="footer__logo focus-like-hover" component={Link} hasIcon to="/">
             <Icon
               className="footer__logo-icon"
               viewBox="0 0 512 512"
-              ariaLabel="Logo"
+              ariaLabel="Home"
               href="/favicon.svg"
             ></Icon>
             <span className="heading--5">Starter project</span>
           </Button>
-          <div className="footer__columns-group">
+
+          {/* Navigation */}
+          <nav className="footer__columns-group" aria-label="Footer navigation">
             {safeItems.map((column, index) => (
               <div key={`col-${index}`} className="footer__column">
                 {column.heading && (
@@ -89,25 +95,30 @@ export const Footer = ({ className = '', items = [], socialMedia = [], isCompact
                 </ul>
               </div>
             ))}
-          </div>
+          </nav>
         </div>
+
+        {/* Bottom content */}
         <div className="footer__content-bottom">
+          {/* Social media */}
           {safeSocialMedia.length > 0 && (
-            <ul className="footer__social-media">
-              {safeSocialMedia.map((link, index) => (
-                <li key={`link-${index}`}>
-                  <Button
-                    className="footer__social-media-link"
-                    component={Link}
-                    to={link.url}
-                    ariaLabel={link.ariaLabel}
-                    isExternalLink
-                  >
-                    <Icon className="footer__social-media-icon" href={link.iconHref}></Icon>
-                  </Button>
-                </li>
-              ))}
-            </ul>
+            <nav aria-label="Social media links">
+              <ul className="footer__social-media">
+                {safeSocialMedia.map((link, index) => (
+                  <li key={`link-${index}`}>
+                    <Button
+                      className="footer__social-media-link"
+                      component={Link}
+                      to={link.url}
+                      ariaLabel={link.ariaLabel}
+                      isExternalLink
+                    >
+                      <Icon className="footer__social-media-icon" href={link.iconHref}></Icon>
+                    </Button>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           )}
         </div>
       </div>
