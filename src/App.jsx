@@ -1,5 +1,5 @@
 import './css/style.css';
-import { Outlet } from 'react-router-dom';
+import { Outlet, ScrollRestoration } from 'react-router-dom';
 import { Header } from './components/organisms/Header/Header';
 import { Footer } from './components/organisms/Footer/Footer';
 import { FOOTER_ITEMS, FOOTER_SOCIAL } from './constants/footer.constants';
@@ -7,6 +7,8 @@ import { FOOTER_ITEMS, FOOTER_SOCIAL } from './constants/footer.constants';
 export const App = () => {
   return (
     <>
+      {/* React Router's built-in scroll manager */}
+      <ScrollRestoration />
       <Header />
       <main role="main" className="main">
         <Outlet />
