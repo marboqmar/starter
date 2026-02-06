@@ -141,3 +141,22 @@ code {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* When changing theme, make colour change smooth */
+body,
+.header,
+.footer,
+.main,
+.button,
+.card,
+:disabled,
+.is-disabled {
+  transition:
+    background-color var(--motion-duration-standard) var(--motion-easing-standard),
+    color var(--motion-duration-standard) var(--motion-easing-standard),
+    border-color var(--motion-duration-standard) var(--motion-easing-standard);
+}
+
+.icon {
+  transition: fill var(--motion-duration-standard) var(--motion-easing-standard);
+}
