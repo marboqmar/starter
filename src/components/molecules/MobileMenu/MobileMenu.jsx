@@ -6,6 +6,7 @@ import { Button } from '../../atoms/Button/Button';
 import { Icon } from '../../atoms/Icon/Icon';
 import { useScrollLock } from '../../../hooks/useScrollLock';
 import { FocusTrap } from '../../utils/FocusTrap/FocusTrap';
+import { Backdrop } from '../../atoms/internal/Backdrop/Backdrop';
 
 export const MobileMenu = ({ items }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -18,6 +19,7 @@ export const MobileMenu = ({ items }) => {
   return (
     <div className={`mobile-menu ${isExpanded ? 'mobile-menu--expanded' : ''}`}>
       <BurgerButton isExpanded={isExpanded} onClick={toggleMenu} />
+      <Backdrop isVisible={isExpanded} onClick={toggleMenu} />
       <FocusTrap isActive={isExpanded}>
         <div className="mobile-menu__content">
           <Button

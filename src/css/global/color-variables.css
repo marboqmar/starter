@@ -44,6 +44,7 @@
   --color-gray-700: #373e4c;
   --color-gray-800: #252b37;
   --color-gray-900: #101828;
+  --color-gray-600-a60: rgba(65, 70, 81, 0.6);
 
   /* Alerts - info */
   --color-info: #2e90fa;
@@ -140,6 +141,9 @@
    ========================================================================== */
 :root {
   /* --- ATOMS --- */
+  /* Backdrop */
+  --backdrop-bg: var(--color-gray-600-a60);
+
   /* Button - primary */
   --button-primary-text: var(--text-inverted);
   --button-primary-bg: var(--color-primary-600);
