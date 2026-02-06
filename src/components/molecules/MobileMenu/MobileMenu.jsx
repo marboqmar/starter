@@ -4,11 +4,15 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Button } from '../../atoms/Button/Button';
 import { Icon } from '../../atoms/Icon/Icon';
+import { useScrollLock } from '../../../hooks/useScrollLock';
 
 export const MobileMenu = ({ items }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const toggleMenu = () => setIsExpanded(!isExpanded);
   const safeItems = Array.isArray(items) ? items : [];
+
+  // Lock the scroll when the menu is open
+  useScrollLock(isExpanded);
 
   return (
     <div className={`mobile-menu ${isExpanded ? 'mobile-menu--expanded' : ''}`}>
