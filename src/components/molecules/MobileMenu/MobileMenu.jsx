@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { Button } from '../../atoms/Button/Button';
 import { Icon } from '../../atoms/Icon/Icon';
 import { useScrollLock } from '../../../hooks/useScrollLock';
+import { FocusTrap } from '../../utils/FocusTrap/FocusTrap';
 
 export const MobileMenu = ({ items }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -17,29 +18,31 @@ export const MobileMenu = ({ items }) => {
   return (
     <div className={`mobile-menu ${isExpanded ? 'mobile-menu--expanded' : ''}`}>
       <BurgerButton isExpanded={isExpanded} onClick={toggleMenu} />
-      <div className="mobile-menu__content">
-        <Button
-          onClick={toggleMenu}
-          isIconOnly
-          isRound
-          buttonStyle="transparent"
-          ariaLabel="Close menu"
-        >
-          <Icon isDecorative href="/assets/icons/x-mark.svg" />
-        </Button>
-        <nav className="mobile-menu__nav">
-          {safeItems.map((link, index) => (
-            <NavLink
-              className="mobile-menu__link header__link button button--link"
-              key={`link-${index}`}
-              to={link.url}
-              onClick={() => setIsExpanded(false)}
-            >
-              {link.text}
-            </NavLink>
-          ))}
-        </nav>
-      </div>
+      <FocusTrap isActive={isExpanded}>
+        <div className="mobile-menu__content">
+          <Button
+            onClick={toggleMenu}
+            isIconOnly
+            isRound
+            buttonStyle="transparent"
+            ariaLabel="Close menu"
+          >
+            <Icon isDecorative href="/assets/icons/x-mark.svg" />
+          </Button>
+          <nav className="mobile-menu__nav">
+            {safeItems.map((link, index) => (
+              <NavLink
+                className="mobile-menu__link header__link button button--link"
+                key={`link-${index}`}
+                to={link.url}
+                onClick={() => setIsExpanded(false)}
+              >
+                {link.text}
+              </NavLink>
+            ))}
+          </nav>
+        </div>
+      </FocusTrap>
     </div>
   );
 };
