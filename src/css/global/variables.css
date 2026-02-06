@@ -129,7 +129,7 @@
   --accordion-item-content-padding: var(--spacing-surface-padding);
 
   /* Breadbrumbs */
-  --breadcrumbs-padding-upper: 0;
+  --breadcrumbs-padding-upper: var(--spacing-0-25);
   --breadcrumbs-padding-lower: var(--spacing-component-inner);
   --breadcrumbs-padding-left: 0;
   --breadcrumbs-separator-spacing: var(--spacing-0-25);
