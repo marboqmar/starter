@@ -31,6 +31,10 @@
   width: 100%;
 }
 
+.back-to-top-wrapper {
+  padding-top: var(--spacing-xxl);
+}
+
 @media (min-width: 768px) {
   .back-to-top-wrapper {
     display: flex;

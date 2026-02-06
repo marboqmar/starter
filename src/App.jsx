@@ -6,13 +6,14 @@ import { FOOTER_ITEMS, FOOTER_SOCIAL } from './constants/footer.constants';
 import { scrollToTop } from './utils/scroll.helpers';
 import { Button } from './components/atoms/Button/Button';
 import { Icon } from './components/atoms/Icon/Icon';
+import { HEADER_ITEMS } from './constants/header.constants';
 
 export const App = () => {
   return (
     <>
       {/* React Router's built-in scroll manager */}
       <ScrollRestoration />
-      <Header />
+      <Header items={HEADER_ITEMS} />
       <main role="main" className="main">
         <Outlet />
         <div className="back-to-top-wrapper container">

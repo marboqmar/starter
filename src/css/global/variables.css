@@ -129,6 +129,9 @@
   --accordion-item-content-padding: var(--spacing-surface-padding);
 
   /* Breadbrumbs */
+  --breadcrumbs-padding-upper: 0;
+  --breadcrumbs-padding-lower: var(--spacing-component-inner);
+  --breadcrumbs-padding-left: 0;
   --breadcrumbs-separator-spacing: var(--spacing-0-25);
 
   /* CTA */
@@ -150,6 +153,12 @@
   --media-object-padding: var(--spacing-surface-padding);
   --media-object-gap: var(--spacing-xl); /* Main gap between media and text */
   --media-object-spacing-text: var(--spacing-component-inner); /* Gap between title and body */
+
+  /* Mobile menu */
+  --mobile-menu-padding: var(--spacing-md);
+  --mobile-menu-padding-bottom: var(--spacing-xxl);
+  --mobile-menu-content-gap: var(--spacing-component-inner-lg);
+  --mobile-menu-link-padding: var(--spacing-inset);
 
   /* Search box */
   --search-box-button-offset: var(--spacing-inset-h);
@@ -180,6 +189,11 @@
   --footer-content-bottom-gap: var(
     --spacing-component-inner
   ); /* Gap between bottom content elements*/
+
+  /* Header */
+  --header-padding: var(--spacing-md);
+  --header-content-gap: var(--spacing-component-inner);
+  --header-links-gap: var(--spacing-xs);
 
   /* ==========================================================================
     2. SIZE (width and height) 
@@ -222,9 +236,6 @@
   --accordion-item-separator-height: 1px;
 
   /* Breadcrumbs */
-  --breadcrumbs-padding-upper: var(--spacing-component-inner);
-  --breadcrumbs-padding-lower: var(--spacing-component-inner);
-  --breadcrumbs-padding-left: 0;
   --breadcrumbs-icon-size: calc(
     var(--icon-alignment-height) * var(--ratio-icon-to-text)
   ); /* Scales down the height of the icon */
@@ -234,6 +245,9 @@
 
   /* Footer */
   --footer-logo-size: var(--spacing-2);
+
+  /* Header */
+  --header-logo-size: var(--spacing-2);
 
   /* ==========================================================================
     3. BORDER
@@ -323,6 +337,9 @@
 
   /* Media object */
   --media-object-radius: var(--radius-main);
+
+  /* Mobile menu */
+  --mobile-menu-radius: var(--radius-xl);
 
   /* Search box */
   --search-box-radius: var(--radius-main);

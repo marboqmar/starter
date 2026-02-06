@@ -3,25 +3,26 @@
    ========================================================================== */
 :root {
   /* Primary */
-  --color-primary: #5925dc;
-  --color-primary-light: #6938ef;
-  --color-primary-lighter: #7a5af8;
-  --color-primary-lightest: #9b8afb;
-  --color-primary-dark: #4a1fb8;
-  --color-primary-darker: #3e1c96;
-  --color-primary-darkest: #250674;
-  --color-primary-a10: rgba(89, 37, 220, 0.1);
-  --color-primary-a20: rgba(89, 37, 220, 0.2);
-  --color-primary-a30: rgba(89, 37, 220, 0.3);
+  --color-primary-200: #c2b8ff;
+  --color-primary-300: #9b8afb;
+  --color-primary-400: #7a5af8;
+  --color-primary-500: #6938ef;
+  --color-primary-600: #5925dc;
+  --color-primary-700: #4a1fb8;
+  --color-primary-800: #3e1c96;
+  --color-primary-900: #250674;
+  --color-primary-600-a10: rgba(89, 37, 220, 0.1);
+  --color-primary-600-a20: rgba(89, 37, 220, 0.2);
+  --color-primary-600-a30: rgba(89, 37, 220, 0.3);
 
   /* Secondary */
-  --color-secondary: #9e165f;
-  --color-secondary-light: #c11574;
-  --color-secondary-lighter: #df0c81;
-  --color-secondary-lightest: #f30287;
-  --color-secondary-dark: #851651;
-  --color-secondary-darker: #740d44;
-  --color-secondary-darkest: #5f0033;
+  --color-secondary-600: #9e165f;
+  --color-secondary-600-500: #c11574;
+  --color-secondary-600-400: #df0c81;
+  --color-secondary-600-300: #f30287;
+  --color-secondary-600-700: #851651;
+  --color-secondary-600-800: #740d44;
+  --color-secondary-600-900: #5f0033;
 
   /* Neutral */
   --color-neutral: #1f425e;
@@ -76,21 +77,22 @@
   --text-placeholder: var(--color-gray-400);
 
   /* Border */
-  --border-main: var(--color-primary);
+  --border-main: var(--color-primary-600);
 
   /* Background */
   --page-bg: var(--color-white);
 
   /* Surface */
-  --surface-main: var(--color-primary-a20);
+  --surface-main: var(--color-primary-600-a20);
+  --surface-solid: var(--color-primary-200);
 
   /* Hover */
-  --hover-primary: var(--color-primary);
+  --hover-primary: var(--color-primary-600);
 
   /* Focus */
   --focus-spacer: var(--page-bg);
-  --focus-ring: var(--color-primary-dark);
-  --focus-glow: var(--color-primary-light);
+  --focus-ring: var(--color-primary-700);
+  --focus-glow: var(--color-primary-500);
 
   /* Disabled */
   --disabled-text: var(--color-gray-400);
@@ -126,7 +128,7 @@
   --control-text: var(--text-main);
   --control-text-placeholder: var(--text-placeholder);
   --control-bg: var(--page-bg);
-  --control-bg-checked: var(--color-primary);
+  --control-bg-checked: var(--color-primary-600);
   --control-error-bg: var(--error-bg);
   --control-error-border-color: var(--error-border-color);
   --control-disabled-text: var(--disabled-text);
@@ -140,21 +142,21 @@
   /* --- ATOMS --- */
   /* Button - primary */
   --button-primary-text: var(--text-inverted);
-  --button-primary-bg: var(--color-primary);
-  --button-primary-hover-bg: var(--color-primary-dark);
-  --button-primary-border: var(--color-primary);
+  --button-primary-bg: var(--color-primary-600);
+  --button-primary-hover-bg: var(--color-primary-700);
+  --button-primary-border: var(--color-primary-600);
 
   /* Button -secondary */
   --button-secondary-text: var(--text-inverted);
-  --button-secondary-bg: var(--color-secondary);
-  --button-secondary-hover-bg: var(--color-secondary-dark);
-  --button-secondary-border: var(--color-secondary);
+  --button-secondary-bg: var(--color-secondary-600);
+  --button-secondary-hover-bg: var(--color-secondary-600-700);
+  --button-secondary-border: var(--color-secondary-600);
 
   /* Button - tertiary */
-  --button-tertiary-text: var(--color-primary-darker);
+  --button-tertiary-text: var(--color-primary-800);
   --button-tertiary-bg: transparent;
   --button-tertiary-hover-text: var(--text-inverted);
-  --button-tertiary-hover-bg: var(--color-primary-lighter);
+  --button-tertiary-hover-bg: var(--color-primary-400);
 
   /* Button - transparent */
   --button-transparent-text: var(--text-main);
@@ -182,8 +184,8 @@
   /* Heading */
   --heading: var(--text-main);
   --heading-h1: var(--text-main);
-  --heading-h2: var(--color-secondary);
-  --heading-h3: var(--color-secondary-darkest);
+  --heading-h2: var(--color-secondary-600);
+  --heading-h3: var(--color-secondary-600-900);
 
   /* Helper text */
   --helper-text-text: var(--color-gray-600);
@@ -197,21 +199,21 @@
   --label-required: var(--error-text);
 
   /* List */
-  --list-marker: var(--color-primary);
+  --list-marker: var(--color-primary-600);
 
   /* Paragraph */
   --paragraph: var(--text-main);
   --paragraph-inverted: var(--text-inverted);
 
   /* Table */
-  --table-header: var(--color-primary-a20);
-  --table-row: var(--color-primary-a10);
+  --table-header: var(--color-primary-600-a20);
+  --table-row: var(--color-primary-600-a10);
 
   /* --- MOLECULES --- */
   /* Accordion item */
   --accortion-item-heading: var(--text-main);
   --accordion-item-icon: var(--text-main);
-  --accordion-item-separator: var(--color-primary-a10);
+  --accordion-item-separator: var(--color-primary-600-a10);
 
   /* Breadbrumbs */
   --breadcrumbs-text: var(--text-main);
@@ -226,6 +228,9 @@
 
   /* Media object */
   --media-object-heading: var(--text-main);
+
+  /* Mobile menu */
+  --mobile-menu-bg: var(--surface-solid);
 
   /* Search box */
   --search-box-bg: var(--page-bg);
@@ -264,6 +269,11 @@
   --footer-bg: var(--page-bg);
   --footer-logo-text: var(--text-main);
   --footer-icon-hover: var(--hover-primary);
+
+  /* Header */
+  --header-bg: var(--page-bg);
+  --header-logo-text: var(--text-main);
+  --header-icon-hover: var(--hover-primary);
 }
 
 /* ==========================================================================
@@ -278,22 +288,23 @@
   --text-placeholder: var(--color-gray-300);
 
   /* Border */
-  --border-main: var(--color-primary-lightest);
+  --border-main: var(--color-primary-300);
 
   /* Background */
   --page-bg: var(--color-gray-800);
   --control-bg: var(--page-bg);
-  --control-bg-checked: var(--color-primary-lightest);
+  --control-bg-checked: var(--color-primary-300);
 
   /* Surface */
-  --surface-main: var(--color-primary-a30);
+  --surface-main: var(--color-primary-600-a30);
+  --surface-solid: var(--color-primary-800);
 
   /* Hover */
-  --hover-primary: var(--color-primary-lightest);
+  --hover-primary: var(--color-primary-300);
 
   /* Focus */
-  --focus-ring: var(--color-primary-light);
-  --focus-glow: var(--color-primary-light);
+  --focus-ring: var(--color-primary-500);
+  --focus-glow: var(--color-primary-500);
 
   /* Disabled */
   --disabled-text: var(--color-gray-200);
@@ -319,18 +330,18 @@
   /* ATOMS */
   /* Button - primary */
   --button-primary-text: var(--text-main);
-  --button-primary-bg: var(--color-primary-dark);
-  --button-primary-hover-bg: var(--color-primary-darker);
+  --button-primary-bg: var(--color-primary-700);
+  --button-primary-hover-bg: var(--color-primary-800);
 
   /* Button - secondary */
   --button-secondary-text: var(--text-main);
-  --button-secondary-bg: var(--color-secondary-dark);
-  --button-secondary-hover-bg: var(--color-secondary-darker);
+  --button-secondary-bg: var(--color-secondary-600-700);
+  --button-secondary-hover-bg: var(--color-secondary-600-800);
 
   /* Button - tertiary */
   --button-tertiary-text: var(--text-main);
   --button-tertiary-hover-text: var(--text-main);
-  --button-tertiary-hover-bg: var(--color-primary);
+  --button-tertiary-hover-bg: var(--color-primary-600);
 
   /* Checkbox */
   --checkbox-icon: var(--page-bg);
@@ -339,16 +350,16 @@
   --code-bg: var(--color-gray-600);
 
   /* Heading */
-  --heading-h2: var(--color-secondary-lightest);
-  --heading-h3: var(--color-secondary-lighter);
+  --heading-h2: var(--color-secondary-600-300);
+  --heading-h3: var(--color-secondary-600-400);
 
   /* Helper text */
   --helper-text-text: var(--color-gray-300);
 
   /* List */
-  --list-marker: var(--color-primary-lightest);
+  --list-marker: var(--color-primary-300);
 
   /* Table */
-  --table-header: var(--color-primary-darker);
-  --table-row: var(--color-primary-a20);
+  --table-header: var(--color-primary-800);
+  --table-row: var(--color-primary-600-a20);
 }

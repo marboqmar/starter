@@ -23,6 +23,16 @@
   height: var(--footer-logo-size);
 }
 
+.footer__logo,
+.footer__link {
+  text-decoration: none;
+}
+
+/* Extra class needed for specificity over link color */
+.footer .footer__logo:hover {
+  color: var(--footer-logo-text);
+}
+
 .footer__columns-group {
   display: flex;
   flex-direction: column;
@@ -46,15 +56,6 @@
   display: flex;
   flex-direction: column;
   gap: var(--footer-links-gap);
-}
-
-.footer__logo,
-.footer__link {
-  text-decoration: none;
-}
-
-.footer__logo:hover {
-  color: var(--footer-logo-text);
 }
 
 .footer .footer__social-media {

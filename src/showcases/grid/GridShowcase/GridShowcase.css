@@ -3,9 +3,9 @@
   padding-bottom: var(--spacing-xs);
   text-align: center;
   border-radius: var(--radius-sm);
-  background-color: var(--color-primary-transparent);
+  background-color: var(--color-primary-600-transparent);
 }
 
 [data-theme="dark"] .grid-showcase__element {
-  background-color: var(--color-primary-darker);
+  background-color: var(--color-primary-800);
 }
