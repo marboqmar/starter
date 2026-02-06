@@ -42,8 +42,6 @@ export const Icon = ({
   const accessibilityProps = isDecorative
     ? {
         'aria-hidden': 'true',
-        'tabIndex': -1,
-        'focusable': 'false',
       }
     : {
         'role': 'img',
@@ -57,6 +55,8 @@ export const Icon = ({
     <svg
       viewBox={viewBox}
       className={classNames('icon', className)}
+      tabIndex={-1}
+      focusable="false"
       {...accessibilityProps}
       {...rest}
     >

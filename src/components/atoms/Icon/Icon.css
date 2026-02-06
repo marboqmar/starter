@@ -7,6 +7,7 @@
   fill: currentColor;
   max-width: 100%;
   max-height: 100%;
+  pointer-events: none; /* Needed to prevent focus warning */
 }
 
 .icon path,
