@@ -7,7 +7,7 @@ dependency footprint. It also provides live showcases of these components.
 The goal is to provide all the core building blocks needed for modern web development without the
 overhead of unnecessary third-party packages.
 
-## Tech Stack
+## Tech stack
 
 - **React 19**.
 - **React Router 7**: routing.
