@@ -1,5 +1,5 @@
 @media (min-width: 768px) {
-  .atom-section .image {
-    max-width: 800px;
+  .image-showcase .image {
+    max-width: 600px;
   }
 }
