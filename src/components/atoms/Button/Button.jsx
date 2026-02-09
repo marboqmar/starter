@@ -6,7 +6,7 @@ import { classNames } from '../../../utils/helpers';
  *
  * Component props:
  * @param {string} [className] - Additional CSS classes.
- * @param {'primary' | 'secondary' | 'tertiary' | 'transparent'} [buttonStyle] - Button styling.
+ * @param {'primary' | 'secondary' | 'tertiary' | 'transparent'} [style] - Button styling.
  * Defaults to 'primary' for <button>.
  * @param {'sm' | 'lg'} [paddingSize] - Padding variant. Defaults to 'sm' for <button>.
  * @param {'none' | 'sm' | 'lg' | 'pill'} [borderRadius] - Border radius. Defaults to 'sm' for <button>.
@@ -26,11 +26,11 @@ import { classNames } from '../../../utils/helpers';
  *
  * @example
  * // Button with secondary color and large padding
- * <Button buttonStyle="secondary" paddingSize="lg">Text</Button>
+ * <Button style="secondary" paddingSize="lg">Text</Button>
  *
  * @example
  * // Link that looks like a button
- * <Button component={Link} to="/about" buttonAppearance buttonStyle="primary">About</Button>
+ * <Button component={Link} to="/about" buttonAppearance style="primary">About</Button>
  *
  * @example
  * // Standard text link (not a button)
@@ -52,7 +52,7 @@ import { classNames } from '../../../utils/helpers';
 
 export const Button = ({
   className = '',
-  buttonStyle,
+  style,
   paddingSize,
   borderRadius,
   component = 'button',
@@ -73,7 +73,7 @@ export const Button = ({
   const isButtonComponent = Component === 'button';
 
   // Apply styling default only for buttons (not links).
-  const finalStyling = isButtonComponent ? buttonStyle || 'primary' : buttonStyle;
+  const finalStyling = isButtonComponent ? style || 'primary' : style;
 
   // Apply link styling.
   const hasButtonAppearance = !isButtonComponent && buttonAppearance;

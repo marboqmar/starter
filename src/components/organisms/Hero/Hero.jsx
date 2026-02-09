@@ -75,7 +75,7 @@ export const Hero = ({
               component={Link}
               to={buttonUrl}
               buttonAppearance
-              buttonStyle="primary"
+              style="primary"
             >
               {buttonText}
             </Button>
@@ -85,7 +85,7 @@ export const Hero = ({
                 component={Link}
                 to={secondButtonUrl}
                 buttonAppearance
-                buttonStyle="tertiary"
+                style="tertiary"
               >
                 {secondButtonText}
               </Button>

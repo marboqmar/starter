@@ -26,7 +26,7 @@ export const MobileMenu = ({ items }) => {
             onClick={toggleMenu}
             isIconOnly
             isRound
-            buttonStyle="transparent"
+            style="transparent"
             ariaLabel="Close menu"
           >
             <Icon isDecorative href="/assets/icons/x-mark.svg" />

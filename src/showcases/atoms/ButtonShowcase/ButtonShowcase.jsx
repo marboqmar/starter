@@ -13,13 +13,13 @@ export const ButtonShowcase = () => {
         <div className="button-showcase__column">
           <Heading level={3}>Styles</Heading>
           <Button className="button-showcase__button">Primary</Button>
-          <Button className="button-showcase__button" buttonStyle="secondary">
+          <Button className="button-showcase__button" style="secondary">
             Secondary
           </Button>
-          <Button className="button-showcase__button" buttonStyle="tertiary">
+          <Button className="button-showcase__button" style="tertiary">
             Tertiary
           </Button>
-          <Button className="button-showcase__button" buttonStyle="transparent">
+          <Button className="button-showcase__button" style="transparent">
             Transparent
           </Button>
         </div>
@@ -68,7 +68,7 @@ export const ButtonShowcase = () => {
             className="button-showcase__button"
             component={Link}
             buttonAppearance
-            buttonStyle="primary"
+            style="primary"
             to={'/'}
           >
             Button-looking link
@@ -77,7 +77,7 @@ export const ButtonShowcase = () => {
             className="button-showcase__button"
             component={Link}
             buttonAppearance
-            buttonStyle="secondary"
+            style="secondary"
             to={'/'}
           >
             Button-looking link
@@ -112,10 +112,10 @@ export const ButtonShowcase = () => {
             <Button isIconOnly ariaLabel="Open Calendar">
               <Icon isDecorative href="/assets/icons/check.svg" />
             </Button>
-            <Button buttonStyle="secondary" isIconOnly ariaLabel="Open Calendar">
+            <Button style="secondary" isIconOnly ariaLabel="Open Calendar">
               <Icon isDecorative href="/assets/icons/check.svg" />
             </Button>
-            <Button buttonStyle="tertiary" isIconOnly ariaLabel="Open Calendar">
+            <Button style="tertiary" isIconOnly ariaLabel="Open Calendar">
               <Icon isDecorative href="/assets/icons/check.svg" />
             </Button>
           </div>
@@ -123,10 +123,10 @@ export const ButtonShowcase = () => {
             <Button isIconOnly isRound ariaLabel="Open Calendar">
               <Icon isDecorative href="/assets/icons/check.svg" />
             </Button>
-            <Button buttonStyle="secondary" isIconOnly isRound ariaLabel="Open Calendar">
+            <Button style="secondary" isIconOnly isRound ariaLabel="Open Calendar">
               <Icon isDecorative href="/assets/icons/check.svg" />
             </Button>
-            <Button buttonStyle="tertiary" isIconOnly isRound ariaLabel="Open Calendar">
+            <Button style="tertiary" isIconOnly isRound ariaLabel="Open Calendar">
               <Icon isDecorative href="/assets/icons/check.svg" />
             </Button>
           </div>

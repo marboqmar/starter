@@ -19,7 +19,7 @@ export const BurgerButton = ({ className = '', isExpanded, onClick, ...rest }) =
   return (
     <Button
       className={classNames('burger-button', { 'burger-button--expanded': isExpanded }, className)}
-      buttonStyle="transparent"
+      style="transparent"
       onClick={onClick}
       ariaLabel="Toggle menu"
       aria-expanded={isExpanded}

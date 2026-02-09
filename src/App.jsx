@@ -21,7 +21,7 @@ export const App = () => {
           <div className="back-to-top-wrapper container">
             <Button
               className="back-to-top"
-              buttonStyle="tertiary"
+              style="tertiary"
               hasIcon
               onClick={() => scrollToTop(true)}
             >

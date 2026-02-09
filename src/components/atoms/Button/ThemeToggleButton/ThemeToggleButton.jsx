@@ -11,7 +11,7 @@ export const ThemeToggleButton = () => {
     <Button
       className="header__theme-button"
       onClick={toggleTheme}
-      buttonStyle="transparent"
+      style="transparent"
       isIconOnly
       isRound
       ariaLabel={isDarkTheme ? 'Switch to light theme' : 'Switch to dark theme'}

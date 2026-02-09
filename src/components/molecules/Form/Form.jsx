@@ -68,7 +68,7 @@ export const Form = ({
 
       {/* Submit button */}
       <div className="form__button">
-        <Button type="submit" buttonStyle="primary">
+        <Button type="submit" style="primary">
           {submitText}
         </Button>
       </div>

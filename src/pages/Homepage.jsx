@@ -11,16 +11,16 @@ export const Homepage = () => {
       <Paragraph>Explanation about the project</Paragraph>
       <Paragraph>It uses the atomic design system. See how the components display</Paragraph>
       <div className="components-classification stack gap-md margin-top-md margin-bottom-md">
-        <Button component={Link} buttonAppearance buttonStyle={'primary'} to="/grid">
+        <Button component={Link} buttonAppearance style={'primary'} to="/grid">
           Grid
         </Button>
-        <Button component={Link} buttonAppearance buttonStyle={'primary'} to="/atoms">
+        <Button component={Link} buttonAppearance style={'primary'} to="/atoms">
           Atoms
         </Button>
-        <Button component={Link} buttonAppearance buttonStyle={'primary'} to="/molecules">
+        <Button component={Link} buttonAppearance style={'primary'} to="/molecules">
           Molecules
         </Button>
-        <Button component={Link} buttonAppearance buttonStyle={'primary'} to="/organisms">
+        <Button component={Link} buttonAppearance style={'primary'} to="/organisms">
           Organisms
         </Button>
       </div>
