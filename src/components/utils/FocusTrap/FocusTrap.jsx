@@ -21,37 +21,54 @@ export const FocusTrap = ({ isActive, children }) => {
 
   useEffect(() => {
     // Trap focus only if the component calling the focus trap is active
-    if (!isActive) return;
+    if (!isActive || !containerRef.current) return;
 
     // Save the currently focused element
     const originalFocus = document.activeElement;
 
     // Find all focusable elements within the container
-    const focusableElements = containerRef.current.querySelectorAll(
-      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
-    );
+    const getElements = () => {
+      return containerRef.current.querySelectorAll(
+        'button, a[href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+      );
+    };
 
     // Auto-focus first focusable element within the container with a small delay to ensure CSS
     // transitions have started (as otherwise there will be nothin to focus)
-    if (focusableElements.length > 0) {
-      setTimeout(() => focusableElements[0].focus(), 50);
-    }
+    const focusFirstElement = setTimeout(() => {
+      const elements = getElements();
+      if (elements.length > 0) {
+        elements[0].focus();
+      }
+    }, 50);
 
     const handleKeyDown = keystroke => {
       // Stop execution if pressed key was not "Tab"
       if (keystroke.key !== 'Tab') return;
 
-      // Re-query in case the DOM has changed (e.g. dynamic links)
-      const currentElements = containerRef.current.querySelectorAll(
-        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
-      );
+      // Recalculate focusable elements in case the DOM has changed
+      const elements = getElements();
 
-      const firstElement = currentElements[0];
-      const lastElement = currentElements[currentElements.length - 1];
+      // If no focusable elements found, stay in the trap
+      if (elements.length === 0) {
+        keystroke.preventDefault();
+        return;
+      }
+
+      // If there is only one focusable element, stay on it
+      if (elements.length === 1) {
+        keystroke.preventDefault();
+        elements[0].focus();
+        return;
+      }
+
+      console.log(elements);
+
+      const firstElement = elements[0];
+      const lastElement = elements[elements.length - 1];
 
       if (keystroke.shiftKey) {
         // If "Shift" + "Tab" and focus is on the first element, wrap to the last element
-
         if (document.activeElement === firstElement) {
           keystroke.preventDefault();
           lastElement.focus();
@@ -69,12 +86,13 @@ export const FocusTrap = ({ isActive, children }) => {
 
     // Clean up function to remove the listener and return focus
     return () => {
+      clearTimeout(focusFirstElement);
       document.removeEventListener('keydown', handleKeyDown);
       if (originalFocus) {
         originalFocus.focus();
       }
     };
-  }, [isActive]);
+  }, [isActive, children]);
 
   return (
     <div ref={containerRef} className="focus-trap-wrapper">

@@ -281,6 +281,10 @@
 
   /* Hero */
   --hero-heading: var(--text-main);
+
+  /* Modal */
+  --modal-bg: var(--color-gray-200);
+  --modal-heading: var(--text-main);
 }
 
 /* ==========================================================================

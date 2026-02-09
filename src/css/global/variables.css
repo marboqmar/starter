@@ -202,6 +202,11 @@
   --hero-spacing-actions: var(--spacing-1); /* Gap between buttons */
   --hero-spacing-text: var(--spacing-component-inner); /* Gap between title and body */
 
+  /* Modal */
+  --modal-padding: var(--spacing-lg);
+  --modal-gap: var(--spacing-md); /* Space between modal content and close button */
+  --modal-heading-margin: var(--spacing-component-inner);
+
   /* ==========================================================================
     2. SIZE (width and height) 
     ========================================================================== */
@@ -250,11 +255,17 @@
   /* Search box*/
   --search-box-icon-size: var(--size-icon-main);
 
+  /* ORGANISMS*/
   /* Footer */
   --footer-logo-size: var(--spacing-2);
 
   /* Header */
   --header-logo-size: var(--spacing-2);
+
+  /* Modal */
+  --modal-width: 90%;
+  --modal-max-width: 600px;
+  --modal-max-height: 90vh;
 
   /* ==========================================================================
     3. BORDER
@@ -355,7 +366,11 @@
   --status-message-radius: var(--radius-main);
 
   /* ORGANISMS */
+  /* Card */
   --card-radius: var(--radius-main);
+
+  /* Modal */
+  --modal-radius: var(--radius-md);
 
   /* ==========================================================================
     5. Z-INDEX
