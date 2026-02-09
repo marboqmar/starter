@@ -39,6 +39,7 @@
 
 .back-to-top-wrapper {
   padding-top: var(--spacing-xxl);
+  padding-bottom: var(--spacing-0-25);
 }
 
 @media (min-width: 768px) {
