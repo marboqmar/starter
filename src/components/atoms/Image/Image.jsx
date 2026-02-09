@@ -23,7 +23,7 @@ import { classNames } from '../../../utils/helpers';
  * <Image src="/photo.png" alt="Description" />
  * @example
  * // Eager loading (for hero sections)
- * <Image src="/hero.png" loading="eager" alt="Hero description" />
+ * <Image src="/hero.png" loading="eager" alt="Hero image description" />
  * @example
  * // Responsive images
  * <Image

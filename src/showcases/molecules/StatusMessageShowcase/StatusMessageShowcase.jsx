@@ -13,7 +13,7 @@ export const StatusMessageShowcase = () => {
         <StatusMessage type="warning">Warning status message</StatusMessage>
         <StatusMessage type="error">Error status message</StatusMessage>
         <StatusMessage type="info">
-          Long error message. This is a very long error message that wrap to test alignment. Lorem
+          Long error message. This is a very long error message that wraps to test alignment. Lorem
           ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis felis at est condimentum,
           vel condimentum est venenatis. Pellentesque a mi vel felis congue tempor a vitae metus.
         </StatusMessage>

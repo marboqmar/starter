@@ -12,7 +12,6 @@ export const MediaObjectShowcase = () => {
         value of the property <code>mediaLocation</code>.<br />
         On mobile, the media is always displayed on top of the text unless "down" was stated as the{' '}
         <code>mediaLocation</code>.<br />
-        Borders are applied only in this showcase, to highlight the component's boundaries.
       </Paragraph>
       <Heading level={3}>Image up</Heading>
       <MediaObject
@@ -22,6 +21,7 @@ export const MediaObjectShowcase = () => {
         titleLevel={4}
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
         imageSrc="/assets/images/test-image-md.png"
+        imageAlt="Testing image displaying on top of the text"
       />
       <Heading level={3}>Image right</Heading>
       <MediaObject
@@ -31,6 +31,7 @@ export const MediaObjectShowcase = () => {
         titleLevel={4}
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
         imageSrc="/assets/images/test-image-md.png"
+        imageAlt="Testing image displaying to the right of the text"
       />
       <Heading level={3}>Image down</Heading>
       <MediaObject
@@ -40,6 +41,7 @@ export const MediaObjectShowcase = () => {
         titleLevel={4}
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
         imageSrc="/assets/images/test-image-md.png"
+        imageAlt="Testing image displaying below the text"
       />
       <Heading level={3}>Image left</Heading>
       <MediaObject
@@ -49,6 +51,7 @@ export const MediaObjectShowcase = () => {
         titleLevel={4}
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
         imageSrc="/assets/images/test-image-md.png"
+        imageAlt="Testing image displaying to the left of the text"
       />
       <Heading level={3}>Video</Heading>
       <MediaObject

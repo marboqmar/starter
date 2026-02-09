@@ -278,6 +278,9 @@
   --header-bg: var(--page-bg);
   --header-logo-text: var(--text-main);
   --header-icon-hover: var(--hover-primary);
+
+  /* Hero */
+  --hero-heading: var(--text-main);
 }
 
 /* ==========================================================================

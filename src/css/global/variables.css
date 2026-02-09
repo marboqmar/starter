@@ -195,6 +195,13 @@
   --header-content-gap: var(--spacing-component-inner);
   --header-links-gap: var(--spacing-xs);
 
+  /* Hero */
+  --hero-padding: var(--spacing-surface-padding);
+  --hero-gap: var(--spacing-xl); /* Main gap between media and text */
+  --hero-spacing-content: var(--spacing-xl); /* Gap between text and buttons */
+  --hero-spacing-actions: var(--spacing-1); /* Gap between buttons */
+  --hero-spacing-text: var(--spacing-component-inner); /* Gap between title and body */
+
   /* ==========================================================================
     2. SIZE (width and height) 
     ========================================================================== */

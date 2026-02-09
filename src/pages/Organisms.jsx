@@ -6,6 +6,7 @@ import { CardShowcase } from '../showcases/organisms/CardShowcase/CardShowcase';
 import { CardGridShowcase } from '../showcases/organisms/CardGridShowcase/CardGridShowcase';
 import { FooterShowcase } from '../showcases/organisms/FooterShowcase/FooterShowcase';
 import { HeaderShowcase } from '../showcases/organisms/HeaderShowcase/HeaderShowcase';
+import { HeroShowcase } from '../showcases/organisms/HeroShowcase/HeroShowcase';
 
 const breadcrumbsInfo = [
   { label: 'Home', href: '/' },
@@ -34,6 +35,9 @@ export const Organisms = () => {
 
         {/* Header */}
         <HeaderShowcase />
+
+        {/* Hero */}
+        <HeroShowcase />
       </div>
     </div>
   );
