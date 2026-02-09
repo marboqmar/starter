@@ -7,8 +7,32 @@ import { Icon } from '../../atoms/Icon/Icon';
 import { useScrollLock } from '../../../hooks/useScrollLock';
 import { FocusTrap } from '../../utils/FocusTrap/FocusTrap';
 import { Backdrop } from '../../atoms/internal/Backdrop/Backdrop';
+import { classNames } from '../../../utils/helpers';
 
-export const MobileMenu = ({ items }) => {
+/**
+ * Mobile menu component
+ *
+ * Component props:
+ * @param {string} [className] - Additional CSS classes.
+ * @param {Object[]} items - Content of the mobile menu.
+ * @param {object} [rest] - Additional props passed.
+ *
+ * @example
+ * const items = [
+ *   {
+ *     text: 'Atoms',
+ *     url: '/atoms',
+ *   },
+ *   {
+ *     text: 'Molecules',
+ *     url: '/molecules',
+ *   },
+ * ];
+ *
+ * <MobileMenu items={items} />
+ */
+
+export const MobileMenu = ({ className = '', items, ...rest }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const toggleMenu = () => setIsExpanded(!isExpanded);
   const safeItems = Array.isArray(items) ? items : [];
@@ -17,7 +41,10 @@ export const MobileMenu = ({ items }) => {
   useScrollLock(isExpanded);
 
   return (
-    <div className={`mobile-menu ${isExpanded ? 'mobile-menu--expanded' : ''}`}>
+    <div
+      className={classNames('mobile-menu', { 'mobile-menu--expanded': isExpanded }, className)}
+      {...rest}
+    >
       <BurgerButton isExpanded={isExpanded} onClick={toggleMenu} />
       <Backdrop isVisible={isExpanded} onClick={toggleMenu} />
       <FocusTrap isActive={isExpanded}>

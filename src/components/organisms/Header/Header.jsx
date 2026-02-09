@@ -42,7 +42,7 @@ export const Header = ({ items }) => {
           </div>
           <div className="header__mobile">
             <ThemeToggleButton />
-            <MobileMenu items={items} />
+            <MobileMenu items={safeItems} />
           </div>
         </div>
       </div>
