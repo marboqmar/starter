@@ -1,3 +1,5 @@
-.modal-showcase__button {
-  width: fit-content;
+@media (min-width: 768px) {
+  .modal-showcase__button {
+    width: fit-content;
+  }
 }
