@@ -14,10 +14,10 @@ import { Image } from '../../atoms/Image/Image';
  * @param {string} title - Heading content.
  * @param {number} [titleLevel=2] - Level of the title.
  * @param {string} body - Body content.
- * @param {string} buttonText - Button content.
- * @param {string} buttonUrl - Target URL.
- * @param {string} secondButtonText - Second button content.
- * @param {string} secondButtonUrl - Target URL of the second button.
+ * @param {string} primaryCtaText - Button content.
+ * @param {string} primaryCtaUrl - Target URL.
+ * @param {string} secondaryCtaText - Second button content.
+ * @param {string} secondaryCtaUrl - Target URL of the second button.
  * @param {string} [imageSrc] - Default image source. Fallback image if srcSet is used. This is the
  * property needed to add an image to the CTA component.
  * @param {string} [imageSrcSet] - String of different image sizes (e.g., "img-sm.jpg 400w,
@@ -34,10 +34,10 @@ export const Cta = ({
   title,
   titleLevel,
   body,
-  buttonText,
-  buttonUrl,
-  secondButtonText,
-  secondButtonUrl,
+  primaryCtaText,
+  primaryCtaUrl,
+  secondaryCtaText,
+  secondaryCtaUrl,
   imageSrc,
   imageSrcSet,
   imageSizes,
@@ -57,21 +57,21 @@ export const Cta = ({
           <Button
             className="cta__button"
             component={Link}
-            to={buttonUrl}
+            to={primaryCtaUrl}
             buttonAppearance
             style="primary"
           >
-            {buttonText}
+            {primaryCtaText}
           </Button>
-          {secondButtonText && (
+          {secondaryCtaText && (
             <Button
               className="cta__button"
               component={Link}
-              to={secondButtonUrl}
+              to={secondaryCtaUrl}
               buttonAppearance
               style="tertiary"
             >
-              {secondButtonText}
+              {secondaryCtaText}
             </Button>
           )}
         </div>

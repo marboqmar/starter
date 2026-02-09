@@ -23,10 +23,10 @@ export const HeroShowcase = () => {
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
             imageSrc="/assets/images/test-image-md.png"
             imageAlt="Testing image displaying on top of the text"
-            buttonText="Find out more"
-            buttonUrl="/molecules"
-            secondButtonText="Contact us"
-            secondButtonUrl="/molecules"
+            primaryCtaText="Find out more"
+            primaryCtaUrl="/molecules"
+            secondaryCtaText="Contact us"
+            secondaryCtaUrl="/molecules"
           />
         </div>
         <div className="hero-showcase__example showcase-item__example">
@@ -37,10 +37,10 @@ export const HeroShowcase = () => {
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
             imageSrc="/assets/images/test-image-md.png"
             imageAlt="Testing image displaying to the right of the text"
-            buttonText="Find out more"
-            buttonUrl="/molecules"
-            secondButtonText="Contact us"
-            secondButtonUrl="/molecules"
+            primaryCtaText="Find out more"
+            primaryCtaUrl="/molecules"
+            secondaryCtaText="Contact us"
+            secondaryCtaUrl="/molecules"
           />
         </div>
         <div className="hero-showcase__example showcase-item__example">
@@ -50,8 +50,8 @@ export const HeroShowcase = () => {
             title="Lorem ipsum dolor"
             imageSrc="/assets/images/test-image-md.png"
             imageAlt="Testing image displaying below the text"
-            buttonText="Find out more"
-            buttonUrl="/molecules"
+            primaryCtaText="Find out more"
+            primaryCtaUrl="/molecules"
           />
         </div>
         <div className="hero-showcase__example showcase-item__example">
@@ -70,10 +70,10 @@ export const HeroShowcase = () => {
             mediaLocation="left"
             title="Lorem ipsum dolor"
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
-            buttonText="Find out more"
-            buttonUrl="/molecules"
-            secondButtonText="Contact us"
-            secondButtonUrl="/molecules"
+            primaryCtaText="Find out more"
+            primaryCtaUrl="/molecules"
+            secondaryCtaText="Contact us"
+            secondaryCtaUrl="/molecules"
             videoTitle="YouTube test video for Media Object"
             videoSrc="https://www.youtube.com/watch?v=G1hKzCkywM8"
           />
@@ -83,10 +83,10 @@ export const HeroShowcase = () => {
           <Hero
             title="Lorem ipsum dolor"
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
-            buttonText="Find out more"
-            buttonUrl="/molecules"
-            secondButtonText="Contact us"
-            secondButtonUrl="/molecules"
+            primaryCtaText="Find out more"
+            primaryCtaUrl="/molecules"
+            secondaryCtaText="Contact us"
+            secondaryCtaUrl="/molecules"
           />
         </div>
       </div>
