@@ -369,4 +369,8 @@
   /* Table */
   --table-header: var(--color-primary-800);
   --table-row: var(--color-primary-600-a20);
+
+  /* --- MOLECULES --- */
+  /* Accordion item */
+  --accordion-item-separator: var(--color-primary-700);
 }
