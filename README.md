@@ -1,19 +1,19 @@
 # Starter
 
 This is a starter template designed to serve as a solid foundation for web projects. It provides a
-library of essential, easily customizable components while maintaining a minimal dependency
-footprint.
+library of essential, accessible, easily customizable components while maintaining a minimal
+dependency footprint. It also provides live showcases of these components.
 
 The goal is to provide all the core building blocks needed for modern web development without the
 overhead of unnecessary third-party packages.
 
 ## Tech Stack
 
-- **React 19**: frontend library.
+- **React 19**.
 - **React Router 7**: routing.
 - **Vite**: build tool and dev server.
-- **ESLint** and **Prettier**: code quality and formatting
-- **Vanilla CSS**: styling (no preprocessors)
+- **ESLint** and **Prettier**: code quality and formatting.
+- **Vanilla CSS**: styling (no preprocessors).
 
 ## Why CSS rather than SCSS?
 
@@ -54,17 +54,16 @@ src/
 │   ├── atoms/
 │   ├── molecules/
 │   └── organisms/
+├── constants           # Non-changing variables
+├── contexts            # App contexts
 ├── css/
 │   ├── global/         # Global styles
-│   │   ├── color-variables.css     # Color tokens
-│   │   ├── colors.css              # Color utility classes
-│   │   ├── layout.css               # Margin, flex, and grid classes
-│   │   ├── site.css                 # Base reset and site styles
-│   │   ├── typography-variables.css # Typography tokens
-│   │   └── variables.css            # Spacing, border radius
 │   ├── pages/          # Page-specific styles
 │   └── style.css       # Main stylesheet entry point
+├── hooks               # Custom hooks
 ├── pages/              # Page components
+├── showcases           # Live showcases of the available components
+├── utils               # Helper utilities
 ├── App.jsx             # Main app component
 ├── routes.jsx          # React Router configuration
 └── main.jsx            # Application entry point
@@ -93,16 +92,16 @@ The top priority of this project is to provide components that can be customised
 To adapt the componens of this project to your designs, modify the variables found in the following
 files:
 
-- `src/css/global/variables.css`
 - `src/css/global/color-variables.css`
+- `src/css/global/site.css`
+- `src/css/global/spacing.css`
 - `src/css/global/typography-variables.css`
+- `src/css/global/variables.css`
 
 All variables use CSS custom properties, so you can override them in your own CSS files or modify
 them directly in these files.
 
-Modify the container and grid classes as needed. These can be found in `src/css/global/layout.css`.
-
-The focus styles can be found on `src/css/global/site.css`.
+Modify the container and grid classes as needed. These can be found in `src/css/global/layout.css` and `src/css/global/grid-utils.css`.
 
 ### Typography
 
