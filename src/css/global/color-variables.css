@@ -147,7 +147,7 @@
   /* Button - primary */
   --button-primary-text: var(--text-inverted);
   --button-primary-bg: var(--color-primary-600);
-  --button-primary-hover-bg: var(--color-primary-700);
+  --button-primary-hover-bg: var(--color-primary-800);
   --button-primary-border: var(--color-primary-600);
 
   /* Button -secondary */
