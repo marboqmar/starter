@@ -1,3 +1,9 @@
+.showcase-page .heading--1 {
+  text-align: center;
+  padding-top: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+}
+
 .showcase-page__title {
   margin-bottom: var(--spacing-component-inner);
 }

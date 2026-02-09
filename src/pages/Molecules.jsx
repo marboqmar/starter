@@ -15,7 +15,7 @@ const breadcrumbsInfo = [
 
 export const Molecules = () => {
   return (
-    <div className="molecules-page container">
+    <div className="molecules-page showcase-page container">
       <Breadcrumbs items={breadcrumbsInfo} />
       <Heading level={1} className="showcase-page__title">
         Molecules
