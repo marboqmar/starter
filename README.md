@@ -9,7 +9,7 @@ overhead of unnecessary third-party packages.
 
 ## Tech stack
 
-- **React 19**.
+- **React 19**: frontend library.
 - **React Router 7**: routing.
 - **Vite**: build tool and dev server.
 - **ESLint** and **Prettier**: code quality and formatting.
