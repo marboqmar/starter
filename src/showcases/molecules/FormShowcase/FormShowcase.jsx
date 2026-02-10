@@ -7,12 +7,17 @@ import { TextArea } from '../../../components/atoms/TextArea/TextArea';
 import { useForm } from '../../../hooks/useForm';
 import { useState } from 'react';
 import { Heading } from '../../../components/atoms/Heading/Heading';
+import { Modal } from '../../../components/organisms/Modal/Modal';
 
 export const FormShowcase = () => {
   const [submittedData, setSubmittedData] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   const handleData = data => {
     setSubmittedData(data);
+    openModal();
   };
 
   const { handleSubmit, isLoading, fieldErrors, serverError, isSuccess } = useForm(handleData);
@@ -85,13 +90,10 @@ export const FormShowcase = () => {
           <Radio name="radioTest" label="Option 2" value="option-2" required />
         </FormFieldset>
       </Form>
-
-      {submittedData && (
-        <div className="form-showcase__submitted-data">
-          <Heading level={3}>Submitted data:</Heading>
-          <pre className="code-block">{JSON.stringify(submittedData, null, 2)}</pre>
-        </div>
-      )}
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <Heading level={3}>Submitted data:</Heading>
+        <pre className="code-block">{JSON.stringify(submittedData, null, 2)}</pre>
+      </Modal>
     </div>
   );
 };

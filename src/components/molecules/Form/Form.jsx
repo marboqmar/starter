@@ -72,9 +72,6 @@ export const Form = ({
           {submitText}
         </Button>
       </div>
-
-      {/* Success message */}
-      {isSuccess && <Paragraph>Temporary message - form submitted successfully</Paragraph>}
     </form>
   );
 };
