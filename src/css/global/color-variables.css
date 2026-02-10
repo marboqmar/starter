@@ -179,7 +179,7 @@
   --checkbox-disabled-icon: var(--disabled-text);
 
   /* Code */
-  --code-bg: var(--color-gray-50);
+  --code-bg: var(--color-gray-100);
 
   /* Form fieldset */
   --form-fieldset-legend: var(--text-main);
@@ -283,7 +283,7 @@
   --hero-heading: var(--text-main);
 
   /* Modal */
-  --modal-bg: var(--color-gray-200);
+  --modal-bg: var(--color-gray-100);
   --modal-heading: var(--text-main);
 }
 
@@ -303,8 +303,6 @@
 
   /* Background */
   --page-bg: var(--color-gray-800);
-  --control-bg: var(--page-bg);
-  --control-bg-checked: var(--color-primary-300);
 
   /* Surface */
   --surface-main: var(--color-primary-600-a30);
@@ -336,6 +334,10 @@
   --error-icon: var(--color-error-light);
   --error-border-color: var(--color-error-light);
   --error-bg: var(--color-error-a20);
+
+  /* Control */
+  --control-bg: var(--page-bg);
+  --control-bg-checked: var(--color-primary-300);
 
   /* --- COMPONENT TOKENS --- */
   /* ATOMS */
@@ -377,4 +379,8 @@
   /* --- MOLECULES --- */
   /* Accordion item */
   --accordion-item-separator: var(--color-primary-700);
+
+  /* ORGANISMS */
+  /* Modal */
+  --modal-bg: var(--color-gray-900);
 }
