@@ -77,15 +77,14 @@ components.
 
 ### Cleaning up the showcases
 
-When you are ready to start building your actual site, you can remove the showcase logic to keep
-your project lean:
+When you are ready to start building your actual site, you can remove the showcase's files and references to keep your project clean:
 
 - Files: delete the `src/showcases` folder and all files within `src/pages`.
 - Routes: in `src/routes.jsx`, remove the showcase imports and their corresponding route objects.
 
 ## Customisation
 
-The top priority of this project is to provide components that can be customised quickly and easily.
+The top priority of this project is to provide components that are accessible and can be customised quickly and easily.
 
 ### Variables
 
@@ -101,14 +100,14 @@ files:
 All variables use CSS custom properties, so you can override them in your own CSS files or modify
 them directly in these files.
 
-Modify the container and grid classes as needed. These can be found in `src/css/global/layout.css` and `src/css/global/grid-utils.css`.
+Also, modify the container and grid classes as needed. These can be found in `src/css/global/layout.css` and `src/css/global/grid-utils.css`.
 
 ### Typography
 
 To modify the typography, update the font families in `src/css/global/typography-variables.css`,
 and then adjust the font link in `index.html`.
 
-The `code` tag styling is located on `src/css/global/site.css`.
+The `code` tag styling is located in `src/css/global/site.css`.
 
 The `--icon-alignment-height` variable (located in `src/css/global/typography-variables.css`) is a
 'first-line anchor', used to align the icon to the first line of text. It uses the variables
@@ -120,7 +119,7 @@ variable accordingly.
 
 The breakpoints used for this project are:
 
-- Mobile: `< 768px` This is the default.
+- Mobile: `< 768px`, this is the default.
 - Tablet: `>= 768px`.
 - Desktop: `>= 1024px`.
 - Desktop-lg: `>= 1280px`.
@@ -145,9 +144,11 @@ and replace all instances manually across your CSS files.
 
 ## Create new pages
 
+To create a new page, follow these steps:
+
 1. Create the new page adding a new `.jsx` file in `src/pages/`.
 2. Style (optional): create a corresponding `.css` file in `src/css/pages/` and import it in the
    new page.
-3. Register the route: define the path for the new page in src/routes.jsx .
+3. Register the route: define the path for the new page in `src/routes.jsx`.
 4. Build the page's content: import and use the design system components (atoms, molecules, etc.)
    within your page to maintain consistency.
