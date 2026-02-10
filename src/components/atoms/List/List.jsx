@@ -32,17 +32,19 @@ export const List = ({ className = '', ordered, items, ...rest }) => {
   const listTypeClass = ordered ? 'list--ordered' : 'list--unordered';
 
   return (
-    <Component className={classNames('list', listTypeClass, className)} {...rest}>
+    <Component className={classNames('list', listTypeClass, className)} role="list" {...rest}>
       {items.map((item, index) => {
         /* If no ID is provided, use index */
         const itemKey = item.id || `li-item-${index}`;
 
         return (
-          <li className="list__item" key={itemKey}>
+          <li className="list__item" key={itemKey} role="listitem">
             {ordered ? (
-              <span className="list__item-number" aria-hidden="true" />
+              <div className="list__marker-wrapper">
+                <span className="list__item-number" />
+              </div>
             ) : (
-              <div className="list__bullet-wrapper">
+              <div className="list__marker-wrapper">
                 <Icon className="list__bullet" href="/assets/icons/solid-circle.svg" isDecorative />
               </div>
             )}

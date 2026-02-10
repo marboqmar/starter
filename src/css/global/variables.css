@@ -238,6 +238,9 @@
   /* Input */
   --input-icon-size: var(--size-icon-xs);
 
+  /* List */
+  --list-marker-width: var(--spacing-1-5);
+
   /* Text area */
   --text-area-height: var(--spacing-8);
 

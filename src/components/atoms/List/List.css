@@ -4,19 +4,23 @@
 }
 
 .list__item {
-  display: grid;
-  grid-template-columns: 1.5rem 1fr;
-  align-items: start;
+  display: flex;
 }
 
-/* Align bullet to centre of text's first line */
-.list__bullet-wrapper {
+/* Align marker to centre of text's first line */
+.list__marker-wrapper {
   height: var(
     --icon-alignment-height
   ); /* This is the same as the line height, to centre it appropriately */
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  width: var(--list-marker-width);
+}
+
+.list__marker-wrapper:has(.list__item-number) {
+  justify-content: flex-end;
 }
 
 .list__bullet {
@@ -35,11 +39,4 @@
   color: var(--list-marker);
   font-weight: var(--list-number-font-weight);
   padding-right: var(--list-spacing-number);
-  /* Align number to centre of text's first line */
-  height: var(
-    --icon-alignment-height
-  ); /* This is the same as the line height, to centre it appropriately */
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
 }
