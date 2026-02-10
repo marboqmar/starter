@@ -118,6 +118,9 @@
     --spacing-0-25
   ); /* Gap between the number marker and the text on an ordered list */
 
+  /* Pre */
+  --pre--padding: var(--spacing-sm);
+
   /* Table */
   --table-spacing-cell-padding: var(--spacing-sm);
 
@@ -338,6 +341,9 @@
 
   /* Image */
   --image-radius: var(--radius-md);
+
+  /* Pre */
+  --pre-radius: var(--radius-main);
 
   /* Radio */
   --radio-radius: var(--radius-full);

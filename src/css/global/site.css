@@ -68,6 +68,13 @@ code {
   padding-left: var(--code-spacing-lat-padding);
 }
 
+pre {
+  padding: var(--pre--padding);
+  border-radius: var(--pre-radius);
+  background-color: var(--code-bg);
+  overflow-x: auto;
+}
+
 /* Focus */
 .button:focus-visible,
 .input:focus-visible,
