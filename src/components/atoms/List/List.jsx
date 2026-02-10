@@ -48,7 +48,7 @@ export const List = ({ className = '', ordered, items, ...rest }) => {
                 <Icon className="list__bullet" href="/assets/icons/solid-circle.svg" isDecorative />
               </div>
             )}
-            {item.value}
+            <span>{item.value}</span>
           </li>
         );
       })}
