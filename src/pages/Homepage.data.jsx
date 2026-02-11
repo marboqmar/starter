@@ -1,3 +1,6 @@
+import { Button } from '../components/atoms/Button/Button';
+import { Link } from 'react-router-dom';
+
 export const TECH_STACK = [
   {
     id: 'react',
@@ -37,6 +40,73 @@ export const TECH_STACK = [
     value: (
       <>
         <strong>CSS:</strong>&nbsp;styling (no preprocessors).
+      </>
+    ),
+  },
+];
+
+export const GETTING_STARTED = [
+  {
+    id: 'clone',
+    value: (
+      <>
+        Clone this repository from{' '}
+        <Button component={Link} isExternalLink to="https://github.com/marboqmar/starter">
+          GitHub
+        </Button>
+        .
+      </>
+    ),
+  },
+  {
+    id: 'install',
+    value: (
+      <>
+        Access the project's root folder and run&nbsp;<code>pnpm install</code>.
+      </>
+    ),
+  },
+  {
+    id: 'development',
+    value: (
+      <>
+        Every time you want to work on the project, access the project and run from the project's
+        root folder&nbsp;<code>pnpm run dev</code>&nbsp;to start the development server.
+      </>
+    ),
+  },
+];
+
+export const AVAILABLE_SCRIPTS = [
+  {
+    id: 'dev',
+    value: (
+      <>
+        <code>pnpm run dev</code>: to start the development server.
+      </>
+    ),
+  },
+  {
+    id: 'build',
+    value: (
+      <>
+        <code>pnpm run build</code>: to build for production.
+      </>
+    ),
+  },
+  {
+    id: 'preview',
+    value: (
+      <>
+        <code>pnpm run preview</code>: to preview production build.
+      </>
+    ),
+  },
+  {
+    id: 'lint',
+    value: (
+      <>
+        <code>pnpm run lint</code>: to run ESLint.
       </>
     ),
   },
@@ -154,7 +224,7 @@ export const BREAKPOINTS_USAGE = `/* Tablet */
 
 export const NEW_PAGE_STEPS = [
   {
-    id: 'first',
+    id: 'new-page',
     value: (
       <>
         Create the new page adding a new&nbsp;<code>.jsx</code>&nbsp;file in&nbsp;
@@ -163,7 +233,7 @@ export const NEW_PAGE_STEPS = [
     ),
   },
   {
-    id: 'second',
+    id: 'style',
     value: (
       <>
         Style (optional): create a corresponding&nbsp;<code>.css</code>&nbsp;file in&nbsp;
@@ -172,7 +242,7 @@ export const NEW_PAGE_STEPS = [
     ),
   },
   {
-    id: 'third',
+    id: 'route',
     value: (
       <>
         Register the route: define the path for the new page in&nbsp;<code>src/routes.jsx</code>
@@ -181,7 +251,7 @@ export const NEW_PAGE_STEPS = [
     ),
   },
   {
-    id: 'fourth',
+    id: 'content',
     value:
       "Build the page's content: import and use the design system components (atoms, molecules, etc.) within your page to maintain consistency.",
   },

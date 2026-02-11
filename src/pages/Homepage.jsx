@@ -10,6 +10,8 @@ import {
   BREAKPOINTS,
   BREAKPOINTS_USAGE,
   NEW_PAGE_STEPS,
+  GETTING_STARTED,
+  AVAILABLE_SCRIPTS,
 } from './Homepage.data';
 import { Button } from '../components/atoms/Button/Button';
 import { Link } from 'react-router-dom';
@@ -39,6 +41,43 @@ export const Homepage = () => {
           <Paragraph>The technology stack used to create this project is:</Paragraph>
           <List items={TECH_STACK} />
         </div>
+      </section>
+
+      {/* Why CSS */}
+      <section className="homepage__section" aria-labelledby="why-css-heading">
+        <Heading id="why-css-heading">Why CSS rather than SCSS?</Heading>
+        <Paragraph>
+          The author prefers CSS over SCSS, as nesting is not found easier to read, especially in
+          very large files. Apart from nesting, the author sees no real advantage in using SCSS,
+          since CSS now supports variables (custom properties) and does not require compilation,
+          which is a significant benefit.
+        </Paragraph>
+        <Paragraph>
+          While CSS lacks mixins, the author does not consider using multiple classes instead of
+          mixins a major drawback.
+        </Paragraph>
+        <Paragraph>
+          Another limitation is that CSS variables cannot be used in <code>@media</code> queries,
+          which requires writing breakpoints manually. However, the author still considers the fact
+          that CSS does not need to be compiled a major benefit.
+        </Paragraph>
+      </section>
+
+      {/* Getting started */}
+      <section className="homepage__section" aria-labelledby="getting-started-heading">
+        <Heading id="getting-started-heading">Getting started</Heading>
+        <div className="homepage__getting-started-group">
+          <Paragraph>To set up this project:</Paragraph>
+          <List ordered items={GETTING_STARTED} />
+        </div>
+
+        {/* Sub-section - available scripts */}
+        <section className="homepage__sub-section" aria-labelledby="scripts-heading">
+          <Heading id="scripts-heading" level={3}>
+            Available scripts
+          </Heading>
+          <List items={AVAILABLE_SCRIPTS} />
+        </section>
       </section>
 
       {/* Project structure */}
@@ -105,7 +144,7 @@ export const Homepage = () => {
           </Heading>
           <div className="homepage__clean-up-group">
             <Paragraph>
-              When you are ready to start building your actual site, you can remove the showcase's
+              When you are ready to start building your actual site, you can remove the showcases'
               files and references to keep your project clean:
             </Paragraph>
             <List items={SHOWCASES_CLEAN_UP} />
@@ -128,7 +167,7 @@ export const Homepage = () => {
           </Heading>
           <div className="homepage__variables-group">
             <Paragraph>
-              To adapt the componens of this project to your designs, modify the variables found in
+              To adapt the components of this project to your designs, modify the variables found in
               the following files:
             </Paragraph>
             <List items={VARIABLES} />
