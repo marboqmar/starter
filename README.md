@@ -39,7 +39,7 @@ To set up this project:
 
 ### Available Scripts
 
-- `pnpm run dev`: to start development server.
+- `pnpm run dev`: to start the development server.
 - `pnpm run build`: to build for production.
 - `pnpm run preview`: to preview production build.
 - `pnpm run lint`: to run ESLint.
@@ -77,7 +77,7 @@ components.
 
 ### Cleaning up the showcases
 
-When you are ready to start building your actual site, you can remove the showcase's files and references to keep your project clean:
+When you are ready to start building your actual site, you can remove the showcases' files and references to keep your project clean:
 
 - Files: delete the `src/showcases` folder and all files within `src/pages`.
 - Routes: in `src/routes.jsx`, remove the showcase imports and their corresponding route objects.
@@ -88,7 +88,7 @@ The top priority of this project is to provide components that are accessible an
 
 ### Variables
 
-To adapt the componens of this project to your designs, modify the variables found in the following
+To adapt the components of this project to your designs, modify the variables found in the following
 files:
 
 - `src/css/global/color-variables.css`
