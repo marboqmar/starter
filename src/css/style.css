@@ -1,4 +1,5 @@
 /* Global */
+@import "./global/fonts.css";
 @import "./global/variables.css";
 @import "./global/color-variables.css";
 @import "./global/typography-variables.css";
