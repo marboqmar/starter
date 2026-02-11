@@ -34,7 +34,7 @@ import { classNames } from '../../../utils/helpers';
  *
  * @example
  * // Standard text link (not a button)
- * <Button component={Link} to="/contact">Contact</Button>
+ * <Button component={Link} isExternalLink to="https://...">GitHub</Button>
  *
  * @example
  * // Button with icon and text
