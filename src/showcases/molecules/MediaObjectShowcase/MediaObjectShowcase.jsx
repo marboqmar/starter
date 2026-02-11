@@ -20,7 +20,7 @@ export const MediaObjectShowcase = () => {
         title="Title"
         titleLevel={4}
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
-        imageSrc="/assets/images/test-image-md.png"
+        imageSrc="/assets/images/test-image-md.webp"
         imageAlt="Testing image displaying on top of the text"
       />
       <Heading level={3}>Image right</Heading>
@@ -30,7 +30,7 @@ export const MediaObjectShowcase = () => {
         title="Title"
         titleLevel={4}
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
-        imageSrc="/assets/images/test-image-md.png"
+        imageSrc="/assets/images/test-image-md.webp"
         imageAlt="Testing image displaying to the right of the text"
       />
       <Heading level={3}>Image down</Heading>
@@ -40,7 +40,7 @@ export const MediaObjectShowcase = () => {
         title="Title"
         titleLevel={4}
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
-        imageSrc="/assets/images/test-image-md.png"
+        imageSrc="/assets/images/test-image-md.webp"
         imageAlt="Testing image displaying below the text"
       />
       <Heading level={3}>Image left</Heading>
@@ -50,7 +50,7 @@ export const MediaObjectShowcase = () => {
         title="Title"
         titleLevel={4}
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
-        imageSrc="/assets/images/test-image-md.png"
+        imageSrc="/assets/images/test-image-md.webp"
         imageAlt="Testing image displaying to the left of the text"
       />
       <Heading level={3}>Video</Heading>

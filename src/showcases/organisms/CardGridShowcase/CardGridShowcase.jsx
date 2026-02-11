@@ -15,31 +15,31 @@ export const CardGridShowcase = () => {
         <Card
           title="Title"
           body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
-          imageSrc="/assets/images/test-image-md.png"
+          imageSrc="/assets/images/test-image-md.webp"
           to="/"
         />
         <Card
           title="Title"
           body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
-          imageSrc="/assets/images/test-image-md.png"
+          imageSrc="/assets/images/test-image-md.webp"
           to="/"
         />
         <Card
           title="Title"
           body="Lorem ipsum dolor sit amet"
-          imageSrc="/assets/images/test-image-md.png"
+          imageSrc="/assets/images/test-image-md.webp"
           to="/"
         />
         <Card
           title="Title"
           body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
-          imageSrc="/assets/images/test-image-md.png"
+          imageSrc="/assets/images/test-image-md.webp"
           to="/"
         />
         <Card
           title="Title"
           body="Lorem ipsum dolor sit amet"
-          imageSrc="/assets/images/test-image-md.png"
+          imageSrc="/assets/images/test-image-md.webp"
           to="/"
         />
       </CardGrid>

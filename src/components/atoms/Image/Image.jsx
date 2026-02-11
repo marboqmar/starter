@@ -27,11 +27,11 @@ import { classNames } from '../../../utils/helpers';
  * @example
  * // Responsive images
  * <Image
- *   src="/assets/images/test-image-sm.png"
+ *   src="/assets/images/test-image-sm.webp"
  *   srcSet="
- *     /assets/images/test-image-sm.png 400w,
- *     /assets/images/test-image-md.png 800w,
- *     /assets/images/test-image-lg.png 1200w
+ *     /assets/images/test-image-sm.webp 400w,
+ *     /assets/images/test-image-md.webp 800w,
+ *     /assets/images/test-image-lg.webp 1200w
  *   "
  *   sizes="(max-width: 768px) 100vw, 800px"
  * />

@@ -28,7 +28,7 @@ import { Link } from 'react-router-dom';
  * <Card
  *   title="Title"
  *   body="Lorem ipsum dolor sit amet"
- *   imageSrc="/assets/images/test-image-md.png"
+ *   imageSrc="/assets/images/test-image-md.webp"
  *   to="/"
  * />
  */

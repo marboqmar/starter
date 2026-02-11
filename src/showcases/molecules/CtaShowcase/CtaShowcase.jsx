@@ -37,7 +37,7 @@ export const CtaShowcase = () => {
           primaryCtaUrl="/molecules"
           secondaryCtaText="Contact us"
           secondaryCtaUrl="/molecules"
-          imageSrc="/assets/images/test-image-md.png"
+          imageSrc="/assets/images/test-image-md.webp"
         />
       </div>
     </div>

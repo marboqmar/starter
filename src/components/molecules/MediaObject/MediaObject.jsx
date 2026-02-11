@@ -33,7 +33,7 @@ import { Video } from '../../atoms/Video/Video';
  *   title="Title"
  *   titleLevel={4}
  *   body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
- *   imageSrc="/assets/images/test-image-md.png"
+ *   imageSrc="/assets/images/test-image-md.webp"
  * />
  */
 

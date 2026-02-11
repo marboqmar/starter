@@ -12,7 +12,7 @@ export const CardShowcase = () => {
           <Card
             title="Title"
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
-            imageSrc="/assets/images/test-image-md.png"
+            imageSrc="/assets/images/test-image-md.webp"
             to="/"
           />
         </div>

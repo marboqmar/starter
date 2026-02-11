@@ -21,7 +21,7 @@ export const HeroShowcase = () => {
             mediaLocation="up"
             title="Lorem ipsum dolor"
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
-            imageSrc="/assets/images/test-image-md.png"
+            imageSrc="/assets/images/test-image-md.webp"
             imageAlt="Testing image displaying on top of the text"
             primaryCtaText="Find out more"
             primaryCtaUrl="/molecules"
@@ -35,7 +35,7 @@ export const HeroShowcase = () => {
             mediaLocation="right"
             title="Lorem ipsum dolor"
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
-            imageSrc="/assets/images/test-image-md.png"
+            imageSrc="/assets/images/test-image-md.webp"
             imageAlt="Testing image displaying to the right of the text"
             primaryCtaText="Find out more"
             primaryCtaUrl="/molecules"
@@ -48,7 +48,7 @@ export const HeroShowcase = () => {
           <Hero
             mediaLocation="down"
             title="Lorem ipsum dolor"
-            imageSrc="/assets/images/test-image-md.png"
+            imageSrc="/assets/images/test-image-md.webp"
             imageAlt="Testing image displaying below the text"
             primaryCtaText="Find out more"
             primaryCtaUrl="/molecules"
@@ -60,7 +60,7 @@ export const HeroShowcase = () => {
             mediaLocation="left"
             title="Lorem ipsum dolor"
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum fringilla libero, eget convallis tellus consectetur ac"
-            imageSrc="/assets/images/test-image-md.png"
+            imageSrc="/assets/images/test-image-md.webp"
             imageAlt="Testing image displaying to the left of the text"
           />
         </div>
