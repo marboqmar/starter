@@ -7,6 +7,8 @@ dependency footprint. It also provides live showcases of these components.
 The goal is to provide all the core building blocks needed for modern web development without the
 overhead of unnecessary third-party packages.
 
+You can find this project deployed here https://starter-gilt-six.vercel.app
+
 ## Tech stack
 
 - **React 19**: frontend library.
