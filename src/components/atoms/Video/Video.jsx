@@ -11,6 +11,17 @@ import { classNames } from '../../../utils/helpers';
  * @param {object} [isEagerLoading] - Sets the loading attribute to "eager".
  * @param {object} [title='Video player'] - Video title for screenreaders.
  * @param {object} [rest] - Additional props passed.
+ *
+ * @example
+ * <Video src="/assets/videos/Big_Buck_Bunny_360_10s_1MB.mp4" />
+ *
+ * @example
+ * // Youtube eager loading video
+ * <Video title="YouTube testing video" isEagerLoading src="https://www.youtube.com/watch?v=G1hKzCkywM8" />
+ *
+ * @example
+ * // Vimeo video
+ * <Video title="Vimeo testing video" src="https://vimeo.com/117079445" />
  */
 
 export const Video = ({ className = '', src, isEagerLoading, title = 'Video player', ...rest }) => {

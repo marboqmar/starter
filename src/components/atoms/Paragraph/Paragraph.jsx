@@ -12,6 +12,9 @@ import { classNames } from '../../../utils/helpers';
  * @param {boolean} isInvertedcolor - Adds class to invert text color.
  * @param {node} children - Paragraph content.
  * @param {object} [rest] - Additional props passed.
+ *
+ * @example
+ * <Paragraph fontWeight="bold">Lorem ipsum</Paragraph>
  */
 
 export const Paragraph = ({
