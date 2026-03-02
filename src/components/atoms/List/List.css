@@ -37,6 +37,10 @@
   counter-reset: list-counter;
 }
 
+.list__item-number {
+  font-size: var(--list-number-font-size);
+}
+
 .list__item-number::before {
   counter-increment: list-counter;
   content: counter(list-counter) ".";
