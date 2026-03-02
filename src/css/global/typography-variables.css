@@ -90,6 +90,7 @@
   --label-font-weight: var(--font-weight-medium);
 
   /* List */
+  --list-number-font-size: var(--font-size-base);
   --list-number-font-weight: var(--font-weight-bold);
   --list-value-font-size: var(--font-size-base);
 
