@@ -91,6 +91,7 @@
 
   /* List */
   --list-number-font-weight: var(--font-weight-bold);
+  --list-value-font-size: var(--font-size-base);
 
   /* Paragraph */
   --paragraph-font-family: var(--font-family-base);
